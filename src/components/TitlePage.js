@@ -1,0 +1,86 @@
+import React from 'react';
+import { useState, useEffect } from 'react';
+//import Container from 'react-bootstrap/Container';
+//import style from '../css/title_page_style.css';
+//import AudioPlayer from '../AudioPlayer.js';
+import {ContinueButton} from '../components/ContinueButton.js';
+import upenn_shield_dark from '../assets/upenn_shield_dark.png';
+import logotype_dark from '../assets/logotype_white.png';
+const AudioPlayer = props => {
+
+}
+
+/*** Main page of current CNB tests. Contains test title, banner, continue button and other test information */
+export default function TitlePage(props)
+{
+  document.title = props.title;
+
+  let audioPlayer = null;
+  let buttonInvisibility  = '';
+
+  if(props.audio)
+  {
+    audioPlayer = <AudioPlayer audio={props.audio} callback={enableButtons} isTitle={true}/>
+    buttonInvisibility = 'invisible';
+  }
+
+  // Specifically for PVT, remove copyright sign from test title.
+  let title = (<p className={'test-header text--right right'}>{props.title} &copy;</p>);
+  if(props.copyrightTitle === 0)
+  {
+    title = (<p className={'test-header text--right right'}>{props.title}</p>);
+  }
+
+
+  return (
+    <div className={props.container_style || 'page'}>
+      <div className="section--header">
+        <div>
+          <img src={upenn_shield_dark}></img>
+        </div>
+        <div className="right">
+          <img src={logotype_dark} className="right"></img>
+          {title}
+        </div>
+      </div>
+
+      <div className="section--body banner">
+        {
+          props.banner && (
+            <img className="center" src={props.banner} width={props.banner_width || 312} height="auto"></img>
+          )
+        }
+        {
+          props.banner_text && (
+            <div className={'center ' + props.banner_text_style}>
+              {props.banner_text.map((item, index) => (<div key={index}>{item}</div>))}
+            </div>
+          )
+        }
+
+      </div>
+      {audioPlayer}
+      <div className="section--footer">
+       <table><tbody><tr>
+        <td><p className="small text--center test-form">{props.description}</p></td>
+        <td><ContinueButton text={props.continue_button_text} classList={buttonInvisibility} onClick={() => props.onClick()}/></td>
+        <td><p className="small text--center test-name">{props.test}</p></td></tr>
+        <tr><td colSpan="3"><p className="copyright text--center">{props.citation || 'Copyright University of Pennsylvania 2022'}</p></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  );
+}
+
+const enableButtons = () =>
+{
+  let buttons = document.getElementsByClassName('button');
+  if(buttons)
+  {
+		for(let i=0; i < buttons.length; i++)
+    {
+			buttons[i].classList.remove('invisible');
+		}
+  }
+}

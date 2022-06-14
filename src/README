@@ -1,0 +1,35 @@
+CNB cognitive tasks.
+
+Setup:
+Install perl5 via homebrew
+Install mysql server 8 from myssql website.
+Copy SQL dump from production server.
+Load SQL dump into your local database.
+Checkout CNB code.
+Place code in /Library/WebServer/Documents/webcnp
+Create necessary folders.
+The following step is only necessary currently.
+
+Adding a new test:
+Create a test document.
+Create a test trials JSON file.
+Add a test version for the test if it needs a new one.
+
+Upload test document and trials file.
+
+Create task in tasks folder.
+Create task trials handler in trials folder.
+Create any new test instructions handlers in the instructions folder.
+Create any new test components in components folder.
+Add test specific styles in styles folder.
+Add test specific assets (ie banner) to the assets/test/ folder.
+If test requires specific rendering (ie via canvas) add stimuli definition in stimuli folder.
+Finally add task to tools/TestRunner.js for rendering.
+Update tests table for tests that inherit rendering from this test as follows:
+update tests set parent_test = <test_version_id> where tests like '%test_regex%';
+For example with motor praxis:
+update tests set parent_test = 1 where tests like '%mpraxis-2.05%';
+NB: Once set, all those tests that have the parent test will run the test you developed regardless of whether they are in Adobe Flash or react.
+Test task locally by setting test param in main/TaskHandler.js
+npm start
+Go to /assess to view test

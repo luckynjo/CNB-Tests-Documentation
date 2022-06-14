@@ -1,0 +1,13 @@
+{
+  "trials": [
+{"question_number": 1 , "responses":["L", "R"], "stimulus":{},"trial_type": "test"},
+{"question_number": 1 , "responses":[], "stimulus":"<WH>","trial_type": "practice"},
+{"question_number": 2 , "responses":[], "stimulus":"<NWH>","trial_type": "practice"},
+{"question_number": 2 , "responses":[], "stimulus":"<WH>","trial_type": "test"},
+{"question_number": 3 , "responses":[], "stimulus":"<NWH>","trial_type": "test"},
+{"question_number": 4 , "responses":[], "stimulus":"<WH>","trial_type": "test"},
+{"question_number": 5 , "responses":[], "stimulus":"<NWH>","trial_type": "test"},
+{"question_number": 6 , "responses":[], "stimulus":"<WH>","trial_type": "test"},
+{"question_number": 7 , "responses":[], "stimulus":"<NWH>","trial_type": "test"}
+]
+}

@@ -1,0 +1,42 @@
+test: cpf
+version: 2.05
+language: en_US
+
+Page 0: Common
+Penn Face Memory Test
+Click here to continue
+Go back
+
+Page 1: Title
+Penn Face Memory Test
+Click here to continue
+
+Page 2: Instructions
+I'm going to show you some faces.  Look carefully at each one and try to remember it.
+Later, you will pick out the faces you are about to see from a new group of faces.
+
+Page 3: Begin Slideshow
+BEGIN PRESENTATION
+
+Page 4: Slideshow
+No text
+
+Page 5: Demo Instructions
+Now you will see more faces. Some are new, others you have already seen. Decide whether you have seen each face before.
+Click DEFINITELY YES if you are SURE you HAVE seen it.
+Click PROBABLY YES if you THINK you HAVE seen it.
+Click PROBABLY NO if you THINK you HAVE NOT seen it.
+Click DEFINITELY NO if you are SURE you HAVE NOT seen it.
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
+
+Page 6: Begin Test
+BEGIN TEST
+
+Page 7: Test
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
