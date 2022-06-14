@@ -6,7 +6,7 @@ import {Row} from '../layouts/Row.js';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const CPFDemoInstructions = props => {
-  const {instructions, onGoBack, onContinue} = props;
+  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text} = props;
   console.log('les instructions ', instructions);
   return (
     <div className = "instructions">
@@ -32,8 +32,8 @@ export const CPFDemoInstructions = props => {
      <table className="buttons-table">
      <tbody>
      <tr>
-     <td><div><GoBackButton onClick={onGoBack}/></div></td>
-     <td><ContinueButton onClick={onContinue}/></td>
+     <td><div><GoBackButton text={back_button_text} onClick={onGoBack}/></div></td>
+     <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
      <td><div></div></td>
      </tr>
      </tbody>

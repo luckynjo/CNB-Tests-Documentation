@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 var Buffer = require('safe-buffer').Buffer
 
+const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+
 export default class AssetLoader extends React.Component
 {
 	constructor(props)
@@ -30,19 +32,19 @@ export default class AssetLoader extends React.Component
 			if(this.props.practice_trials)
 			{
 				this.props.practice_trials.forEach((item, i) => {
-					images.push("http://localhost/stimuli/" + this.props.stimulus_dir + "/" + JSON.parse(item.stimulus));
+					images.push(BASE_URL + "stimuli/" + this.props.stimulus_dir + "/" + JSON.parse(item.stimulus));
 				});
 			}
 			if(this.props.test_trials)
 			{
 				this.props.test_trials.forEach((item, i) => {
-					images.push("http://localhost/stimuli/" + this.props.stimulus_dir + "/" + JSON.parse(item.stimulus));
+					images.push(BASE_URL + "stimuli/" + this.props.stimulus_dir + "/" + JSON.parse(item.stimulus));
 				});
 			}
 			if(this.slideshow)
 			{
 				this.props.slideshow.forEach((item, i) => {
-					images.push("http://localhost/stimuli/cpf/" + JSON.parse(item.stimulus));
+					images.push(BASE_URL + "stimuli/cpf/" + JSON.parse(item.stimulus));
 				});
 			}
 			this.loadImageAssets(images);

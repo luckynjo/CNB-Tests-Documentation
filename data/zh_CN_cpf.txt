@@ -1,0 +1,42 @@
+test: cpf
+version: 2.05
+language: zh_CN
+
+Page 0: Common
+Penn面部記憶測試
+請按此繼續
+返回
+
+Page 1: Title
+Penn面部記憶測試
+請按此繼續
+
+Page 2: Instructions
+我將會向你展示一些面孔。 仔細看每一張面孔，並嘗試記住他們。
+稍後，你將需要從另一組新面孔中認出這些面孔。
+
+Page 3: Begin Slideshow
+開始顯示面孔
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+現在，你將看到更多面孔。 有些是新的，有些你已經看過。 你需要決定是否之前看過這些面孔。
+如果你肯定有見過它，請點擊 “肯定有見過”。
+如果你認為有見過它，請點擊 “可能有見過”。
+如果你認為沒有見過它，請點擊 “可能沒有見過”。
+如果你肯定沒有見過它，請點擊 “肯定沒有見過”。
+肯定有見過
+可能有見過
+可能沒有見過
+肯定沒有見過
+
+Page 6: Begin Test
+開始測試
+
+Page 7: Test
+肯定有見過
+可能有見過
+可能沒有見過
+肯定沒有見過
