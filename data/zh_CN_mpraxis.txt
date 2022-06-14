@@ -1,0 +1,31 @@
+test: mpraxis
+version: 2.05
+language: zh_CN
+
+Page 0: Common
+請按此繼續
+返回
+
+Page 1: Title
+Motor praxis 測試
+請按此繼續
+
+Page 2: Instructions
+我們想測試你控制滑鼠的能力。
+你會看見一些綠色框，每一次一個。 將滑鼠移動到綠色框，然後點擊一次。
+
+Page 3: Begin Practice
+開始練習
+
+Page 4: Practice
+點擊綠色框
+
+Page 5: Instructions
+這次你有5秒時間點擊每個框。
+盡你所能在框消失之前點擊它。
+
+Page 6: Begin Test
+開始測試
+
+Page 7: Test
+點擊綠色框
