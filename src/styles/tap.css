@@ -1,0 +1,107 @@
+.get-ready--text{
+  font-size: 41pt;
+}
+
+.correct--text{
+  font-size: 60pt;
+}
+
+img.keyboard--continue{
+  height: 100px;
+  width: auto;
+}
+
+div.instructions{
+  min-width: 700px;
+}
+
+span.text-hint{
+  float:right;
+  text-align:right;
+}
+
+img.keyboard--hint{
+  height:86px;
+}
+
+/***Test specific styles **/
+.button-like{
+  background-color: #009900;
+  color:#FFFFFF;
+  border: 2px solid white;
+  margin: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.handedness-button {
+  min-height: 100px;
+  width: 200px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  border: solid 2px white;
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.hand_img{
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.hands--demo img{
+  margin: 16px;
+}
+
+.spacebar--message{
+  text-align: center;
+  width: 450px;
+}
+
+#message{
+  font-size:20px;
+  font-weight:bold;
+  margin-left: 65px;
+  margin-top:8px;
+}
+
+.instructions--left{
+  text-align: left;
+  margin: 16px;
+  height:450px;
+}
+
+.button-like{
+  margin: 8px;
+}
+
+div.position--bottom-abosolute > div.inline{
+  margin: 16px;
+}
+
+p.stop{
+  color: #FF0000;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p.go{
+  color:#00FF00;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+}
+
+table.spacebar-response--table.center--horizontal
+{
+  width: 648px;
+}
+
+img.keyboard--continue{
+  width: 132px;
+  height: auto;
+}

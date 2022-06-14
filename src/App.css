@@ -1,0 +1,418 @@
+body{
+  font-family: Arial, Helvetica;
+}
+.stimulus-text--large{
+font-size: 96pt;
+font-weight:bold;
+}
+.stimulus-text--medium{
+font-size: 75pt;
+font-weight:bold;
+}
+.stimulus-text--small{
+font-size: 24pt;
+font-weight:bold;
+}
+.get-ready--text{
+font-size: 41pt;
+}
+
+.correct--text{
+font-size: 60pt;
+}
+.instructions-text--large{
+font-size:30pt;
+}
+
+.instructions-text--medium{
+font-size:20pt;
+}
+
+.instructions-text--small{
+font-size:14pt;
+}
+
+
+img.keyboard--continue{
+  height: 100px;
+  width: auto;
+}
+div.instructions{
+min-width: 700px;
+}
+div.inline{
+display:flex;
+justify-content: space-between;
+}
+div.flex{
+  display:flex;
+}
+
+.spacebar--message{
+  line-height: 100px;
+}
+
+div.generic-buttons--bottom
+{
+
+}
+table.generic--buttons{
+  width:100%;
+}
+span.text-hint{
+float:right;
+text-align:right;
+}
+
+span.fit-content, div.fit-content{
+max-width: fit-content;
+}
+p.text-hint{
+line-height: 86px;
+text-align:right;
+}
+img.keyboard--hint{
+height:86px;
+}
+div.page
+{
+display:block;
+width: 800px;
+height:600px;
+}
+div.section--header{
+display:flex;
+margin: 16px;
+}
+
+div.section--header div.right{
+min-width: 690px;
+}
+div.section--footer
+{
+    position: relative;
+    display: flex;
+}
+
+div.section--footer table{
+  width: 100%;
+  border: none;
+}
+div.section--footer table tbody tr td{
+  width: 33%;
+}
+table, tr, td{
+  border-collapse: collapse;
+}
+p.test-header{
+font-size: 22pt;
+font-weight:bold
+}
+div.section--body
+{
+height:380px;
+}
+.banner {
+
+  height: 400px;
+  width:380px;
+}
+.App {
+  text-align: center;
+}
+.light
+{
+   background: #FFFFFF;
+   color:#000000;
+}
+
+.dark{
+   background: #000000;
+   color:#FFFFFF;
+}
+
+p,span{
+  margin: 0;
+width:100%;
+font-size:18pt;
+}
+p, h1, h2, h3, h4, table, tr, td{
+}
+
+.stimulus-text--large, .tap--stimuli, .stimulus--cpw, .tap--stimuli, .stimulus--cpw div.col h1{
+font-size:72pt;
+}
+
+.light p{
+color:#003366;
+}
+.dark p{
+color:#FFFFFF;
+}
+.title{
+  font-size:54pt;
+  font-weight:bold;
+  width:90%;
+  text-align:center;
+}
+.container-8-by-6
+{
+    width:800px;
+    height: 600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.frame{
+        border: solid 2px grey;
+}
+.center
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.right{
+float:right;
+}
+
+.position-bottom--absolute
+{
+position:absolute;
+bottom: 15px;
+min-height: 32px;
+width:800px;
+}
+
+.fullWidth{
+width:100%;
+}
+
+.footer{
+text-align:center;
+width:100%;
+}
+.footer, .footer p{
+font-size:14px;
+text-align:center;
+}
+.footer--title.row{
+padding-top: 16px;
+}
+
+p.small, p.copyright{
+font-size: 12px;
+font-weight: bold;
+padding:8px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.text--left{
+text-align:left;
+}
+.text--right{
+text-align:right;
+}
+
+.text--center{
+text-align:center;
+}
+
+.invisible{
+display:none;
+}
+.green{
+color: green;
+}
+.red{
+color: red;
+}
+p.red, span.red{
+  color:red;
+}
+p.green, span.green{
+  color: green;
+}
+
+.center--horizontal{
+	margin: 0 auto;
+}
+
+.center--relative{
+	display:block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center--bottom{
+	display:block;
+  margin: 0;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
+}
+
+body{
+  line-height: 1.3;
+}
+div.instructions{
+  padding: 16px;
+}
+p{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div.row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-sections.container{
+  width:90%;
+  transform: translateX(5%);
+  display: flex;
+}
+table, tbody, tr, td, textarea{
+  width:98%;
+}
+table{
+  margin: 8px;
+}
+.edit-textarea
+{
+  width:100%;
+}
+
+.task-editor.timeline-editor{
+  max-width:30%;
+  min-width:180px;
+  border-right: solid 1px;
+}
+
+.task-editor.section-editor{
+  width:100%;
+}
+
+.container-800{
+  width:1200px;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -ms-transform: translate(-50%, -10px);
+  transform: translate(-50%, -10px);
+}
+
+.timeline{
+  width:90%;
+  transform: translateX(5%);
+  display: flex;
+}
+
+textarea{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 16pt;
+}
+
+
+
+
+
+/***
+
+Admin layout style.
+*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  font-family: system-ui, sans-serif;
+
+  /* this breaks position sticky in Firefox */
+  /* overflow-x: hidden; */
+}
+header {
+  grid-column: 1 / 3;
+  background: #455A64;
+  color: white;
+  padding: 4rem;
+  text-align: center;
+}
+nav {
+  white-space: nowrap;
+  background: #37474F;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 0;
+  }
+}
+nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a.current {
+  background: black;
+}
+main {
+  padding-bottom: 40rem;
+}
+section {
+  padding: 2rem;
+  margin: 0 0 2rem 0;
+}
+footer {
+  grid-column: 1 / 3;
+  background: #607D8B;
+  padding: 5rem 1rem;
+}
+
+
+.admin-area
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,86 @@
+test: spllt-a
+version: 1.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+OTHER
+MOVE TO NEXT TRIAL
+
+Page 1: Title
+Short Penn List Learning Test
+Short form
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+To the test administrator: Turn the computer away from the participant's view now.
+For this entire test, the participant should not be able to see the computer screen.
+Read the instructions below to the participant, then read the words in the lists aloud as the yellow highlighting passes over each one.
+I'm going to read a list of words.
+Listen carefully, because when I'm done, I want you to say back as many of the items as you can.
+It doesn't matter what order they're in -- just tell me as many as you can.
+Here is the list:
+Be ready to read the list of words
+
+Page 3: Slideshow
+<slideshow>
+LION
+EMERALD
+TENT
+TEACHER
+SAPPHIRE
+DENTIST
+HOTEL
+HORSE
+ENGINEER
+OPAL
+TIGER
+CAVE
+PROFESSOR
+PEARL
+COW
+HUT
+
+Page 4: Test
+<trials>
+LION
+HORSE
+TIGER
+COW
+TENT
+HOTEL
+CAVE
+HUT
+EMERALD
+SAPPHIRE
+OPAL
+PEARL
+TEACHER
+DENTIST
+ENGINEER
+PROFESSOR
+
+Page 5: Instructions
+I'm going to repeat the list of words.
+Again, I want you to say back as many of the items as you can, in any order, including words you may have already told me.
+Here is the list:
+Be ready to read the list of words
+
+Page 6: Slideshow
+<slideshow>
+
+Page 7: Test
+<trials>
+
+Page 8: Instructions
+I'm going to repeat the list of words.
+Again, I want you to say back as many of the items as you can, in any order, including words you may have already told me.
+Here is the list:
+Be ready to read the list of words
+
+Page 9: Slideshow
+<slideshow>
+
+Page 10: Test
+<trials>

@@ -1,0 +1,191 @@
+test: sfnb2
+version: 3.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Press the space bar to continue.
+
+Page 1: Title
+Short Fractal-N-Back
+Short Form
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+You will see one image on the screen at a time.
+For each image, decide whether or not to press the space bar.
+There are three parts with different rules:
+0-BACK
+1-BACK
+2-BACK
+We will practice all three parts.
+
+Page 3: 0-Back Instructions
+We will first practice 0-BACK.
+Press the spacebar whenever you see the following image:
+Any questions?
+
+Page 4: Begin Practice
+BEGIN 0-BACK PRACTICE
+
+Page 5: 0-Back Countdown
+0-BACK
+Press the space bar when you see this image:
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+That is not correct.
+Press the spacebar every time you see this image.
+
+Page 6.2: Feedback False Positive
+That is not correct.
+Only press the spacebar when you see this image.
+
+Page 7: 1-Back Instructions
+Now we will practice 1-BACK
+Press the spacebar when the image you see is the same as the image that came "just before it".
+For example:
+PRESS
+Any questions?
+
+Page 8: Begin Practice
+BEGIN 1-BACK PRACTICE
+
+Page 9: 1-Back Countdown
+1-BACK
+Press the space bar when the image that you see is the same as the previous image.
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+That is not correct.
+Press the spacebar when the image you see is the same as the previous image.
+
+Page 10.2: Feedback False Positive
+That is not correct.
+Only press the spacebar when the image you see is the same as the previous image.
+
+Page 11: 1-Back Demo
+1st Image
+Last Image
+PRESS
+
+Page 11.1: 1-Back Demo Section 1
+We're going to try a new way of looking at the task.
+Let's assume that the list of images below is the sequence of the images you will see in this test.
+Whenever the current image is the same as the image that comes right before it, you should press the spacebar.
+
+Page 11.2: 1-Back Demo Section 2
+During the demonstration, images will appear in the window just as they would during the test. You can follow the sequence of images that will be shown by watching the list at the top of the screen. The current image will have a box around it.
+
+Page 11.3: 1-Back Demo Section 3
+What you will see during the test is inside this window.
+Press the spacebar when the image that you see is the same as the previous image.
+
+Page 11.4: 1-Back Demo Section 4
+Now we will try the 1-BACK practice again.
+Like the first time you tried the practice, you will not have the list at the top of the screen to remind you of the previous images.
+Remember to press the space bar when the image on the screen is the same as the previous image.
+Do you have any questions?
+
+Page 12: 2-Back Instructions
+Now we will practice 2-BACK.
+Press the spacebar when the image you see is the same as the one before the previous image.
+For example:
+PRESS
+
+Page 13: Begin Practice
+BEGIN 2-BACK PRACTICE
+
+Page 14: 2-Back Countdown
+2-BACK
+Press the spacebar when the image you see is the same as the one before the previous image.
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+That is not correct.
+Press the spacebar when the image you see is the same as the one before the previous image.
+
+Page 15.2: Feedback False Positive
+That is not correct.
+Only press the spacebar when the image you see is the same as the one before the previous image.
+
+Page 16: 2-Back Demo
+1st Image
+Last Image
+PRESS
+
+Page 16.1: 2-Back Demo Section 1
+We're going to try a different way of looking at the task.
+Let's assume that the list of images below is the order of the images you will see during the 2-BACK.
+Whenever the current image is the same as the image that comes two before it, you should press the spacebar.
+
+Page 16.2: 2-Back Demo Section 2
+During the demonstration, images will appear in the window just as they would during the test. You can follow the sequence of images that will be shown by watching the list at the top of the screen. The current image will have a box around it.
+
+Page 16.3: 2-Back Demo Section 3
+What you will see during the test is inside this window.
+Press the spacebar when the image that you see is the same as the one before the previous image.
+
+Page 16.4: 2-Back Demo Section 4
+Now we will try the 2-BACK practice again.
+Like the first time you tried the practice, you will not have the list at the top of the screen to remind you of the previous images.
+Remember to press the spacebar when the image on the screen is the same as the image that came two before it.
+Do you have any questions?
+
+Page 17: Instructions
+You have completed the practice.
+We will now start the test.
+During the testing you will do the 0-BACK, 1-BACK and 2-BACK tasks several times.
+Do you have any questions before the test begins?
+
+Page 18: Begin Test
+BEGIN TEST
+
+Page 19: 0-Back Countdown
+0-BACK
+Press the space bar when you see this image:
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+1-BACK
+Press the space bar when the image that you see is the same as the previous image.
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+2-BACK
+Press the spacebar when the image you see is the same as the one before the previous image.
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+1-BACK
+Press the space bar when the image that you see is the same as the previous image.
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+2-BACK
+Press the spacebar when the image you see is the same as the one before the previous image.
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+0-BACK
+Press the space bar when you see this image:
+
+Page 30: 0-Back Test
+<0_back_2>

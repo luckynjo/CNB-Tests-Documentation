@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.05
+language: en_US
+
+Page 0: Common
+Click here to continue
+Go back
+
+Page 1: Title
+Motor Praxis Task
+Click here to continue
+
+Page 2: Instructions
+This is a test of your ability to control the mouse.
+You will see some green boxes, one at a time. Move your mouse cursor over each box and click on it ONCE.
+
+Page 3: Begin Practice
+BEGIN PRACTICE
+
+Page 4: Practice
+Click on the green box to continue
+
+Page 5: Instructions
+This time you will have 5 seconds to click on each box. Try to click on the box before it disappears.
+
+Page 6: Begin Test
+BEGIN TEST
+
+Page 7: Test
+Click on the green box to continue

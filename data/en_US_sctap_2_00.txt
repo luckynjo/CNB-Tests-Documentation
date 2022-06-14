@@ -1,0 +1,57 @@
+test: sctap
+version: 2.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+PRESS THE SPACEBAR TO CONTINUE
+<WH> WRITING HAND
+<NWH> NON-WRITING HAND
+
+Page 1: Title
+Short Computerized Finger-Tapping Task
+Short form
+CLICK HERE TO CONTINUE
+
+Page 2: Handedness trial
+This is a test of your finger speed.
+Tap the spacebar as fast as you can.
+You will switch hands after each trial.
+Use the mouse to select your writing hand.
+<HANDEDNESS> Left-Handed
+<HANDEDNESS> Right-Handed
+
+Page 3: Demo Instructions
+Keep your hand in the position you see below.
+
+Page 4: Instructions
+Let's practice.
+When you see "GO!" tap the spacebar as fast as you can.
+Remember to use the hand position you just learned.  DON'T USE YOUR WHOLE HAND OR ARM TO TAP -- just your finger.
+
+Page 5: Begin Practice
+BEGIN PRACTICE
+
+Page 6: Countdown
+PRACTICE TRIAL <TRIAL_NUMBER> USE YOUR
+<WH> WRITING HAND
+<NWH> NON-WRITING HAND
+USE THE CORRECT HAND POSITION WHEN PRESSING THE SPACEBAR
+
+Page 7: Practice
+GO!
+STOP!
+
+Page 8: Begin Test
+BEGIN TEST
+
+Page 9: Countdown
+TRIAL <TRIAL_NUMBER> USE YOUR
+<WH> WRITING HAND
+<NWH> NON-WRITING HAND
+USE THE CORRECT HAND POSITION WHEN PRESSING THE SPACEBAR
+
+Page 8: Test
+GO!
+STOP!

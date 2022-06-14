@@ -1,0 +1,51 @@
+test: k-er40-d
+version: 3.60
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+Penn Emotion Recognition Test
+ER40 Form D
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+In this test you will see some faces. Look carefully at each face and try to decide what the person is feeling.
+Click on the word that best describes how the person feels.
+
+Page 3: Instructions
+If the person isn't showing any feeling, click on "No Feeling."
+Lets try a practice face...
+
+Page 4: Begin Practice
+BEGIN PRACTICE
+
+Page 5: Practice
+What feeling is this face showing?
+HAPPY
+SAD
+ANGRY
+FEAR
+NO FEELING
+
+Page 5.1: Feedback Correct
+Good job!
+
+Page 5.2: Feedback Incorrect
+That's not quite right. Please try again.
+
+Page 6: Instructions
+The test will begin now. Remember to look at each face carefully.
+Be as fast and as accurate as you can.
+
+Page 7: Begin Test
+BEGIN TEST
+
+Page 8: Test
+HAPPY
+SAD
+ANGRY
+FEAR
+NO FEELING

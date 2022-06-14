@@ -1,92 +1,120 @@
-# CNB Cognitive Tests
+# Getting Started with CNB Cognittive Tests
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# First time run
+Run npm install or yarn install depending on your preference.
+
+# Structure
+
+## data
+Folder containing all definitions of task instructions and trials.
+
+## Assets
+All static content for a test such as logos or demos are stored in the assets/test_short_name folder.
+
+## Components
+Defines basic components that we use to build different react tasks. Examples include a TitlePage.
+
+## Instructions
+Defines generic as well as test specific instructions that are used in building a task. For example while instructions are stored as text in the database, some tests like CPF have additional content that needs to be displayed alongside the text. So a SimpleInstructions will not work for such task, build a new Instructions component.
+
+## Loaders
+Defines components that are used to load data from a database, specifically for CNB tasks when running on webcnp or surveys.
+### AssetLoader
+Use this component for tasks that need to preload images such as CPF, VOLT, FNBm CPT etc.
+### TestLoader
+This is the main component responsible for loading a task when it is administered on webcnp, currently does not support surveys.
+For local testing, you can change it to point to tests.pl
+
+## Stimuli
+Defines stimuli for different tasks, specifically defines stimuli that needs a canvas object to render. Applies to tasks like Motor Praxis, Go No GO, and PCET.
+
+## Tools
+Developer helping tools for defining test trials, timelines / documents etc. Entry point manage.
+
+## Trials
+Contains components that define trials for each task. Each trial is a JSON object loaded from the database so it is important that all trials are defined in a consistent manner so the Trials components can basically act as iterators.
+
+## Tasks
+Contains components that define each task. Each task is completelt defined in a task component; from loaders to instructions to trials, the entire task timeline is defined in such components.
+
+## Styles
+Contains css stylesheets for each specific task.
+
+# Utils
+Helping functions.
+
+# Layouts - TO DO
+# Deploy test versions manager
+
+# Deply test runner
 
 
+# React content
+## Available Scripts
 
-## Getting started
+In the project directory, you can run:
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### `yarn start`
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Add your files
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+### `yarn test`
 
-```
-cd existing_repo
-git remote add origin https://gitlab.med.upenn.edu/cnb/cnb-cognitive-tests.git
-git branch -M main
-git push -uf origin main
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Integrate with your tools
+### `yarn build`
 
-- [ ] [Set up project integrations](https://gitlab.med.upenn.edu/cnb/cnb-cognitive-tests/-/settings/integrations)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Collaborate with your team
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Test and Deploy
+### `yarn eject`
 
-Use the built-in continuous integration in GitLab.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-***
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-# Editing this README
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+## Learn More
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Name
-Choose a self-explaining name for your project.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+### Code Splitting
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+### Analyzing the Bundle Size
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### Making a Progressive Web App
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+### Advanced Configuration
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+### Deployment
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### `yarn build` fails to minify
 
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
