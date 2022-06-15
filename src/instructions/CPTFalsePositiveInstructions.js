@@ -14,7 +14,7 @@ import {useEffect, useState} from 'react';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const CPTFalsePositiveInstructions = props => {
-  const {instructions, onContinue, continueText, ...rest} = props;
+  const {instructions, onContinue, spacebar_text, ...rest} = props;
   console.log('les instructions ', instructions);
 
   let [pressed, setPressed] = useState(false);
@@ -87,7 +87,7 @@ export const CPTFalsePositiveInstructions = props => {
     <tbody>
     <tr>
 
-    <td colSpan={2}><p className="center--horizontal text--center">{continueText || 'PRESS THE SPACEBAR TO CONTINUE'}</p></td>
+    <td colSpan={2}><p className="center--horizontal text--center">{spacebar_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p></td>
     <td><div><img src={keyboard} alt="Keyboard image" className="center--horizontal keyboard--continue"/></div></td>
     </tr>
     </tbody>

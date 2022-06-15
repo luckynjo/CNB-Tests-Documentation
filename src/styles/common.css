@@ -186,7 +186,7 @@ float:right;
 .position-bottom--absolute, .position--bottom-abosolute
 {
 position:absolute;
-bottom: 15px;
+bottom: 1px;
 min-height: 32px;
 width:800px;
 }

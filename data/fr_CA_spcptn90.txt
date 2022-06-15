@@ -1,0 +1,84 @@
+test: spcptn90
+version: 2.00
+language: fr_CA
+
+Page 0: Common
+CLIQUE ICI POUR CONTINUER
+RETOUR
+APPUIE SUR LA BARRE D'ESPACEMENT POUR CONTINUER
+
+Page 1: Title
+Test court de rendement en continue de l'Université de Pennsylvanie
+Number
+CLIQUE ICI POUR CONTINUER
+
+Page 2: Number Instructions
+Dans ce test, tu verras des lignes à l'écran.
+Lorsque les lignes forment un CHIFFRE complet, appuie rapidement sur la barre d'espacement.
+Par exemple:
+N'APPUIE PAS
+N'APPUIE PAS
+APPUIE
+Pratiquons-nous.
+CLIQUE ICI POUR CONTINUER
+
+Page 3: Begin Practice
+COMMENCE À TE PRATIQUER AVEC LES CHIFFRES
+CLIQUE ICI POUR CONTINUER
+RETOUR
+
+Page 4: Countdown
+Sois prêt!
+L'essai commence dans:
+Utilise la barre d'espacement pour répondre.
+
+Page 5: Practice
+<number_practice>
+APPUIE SUR LA BARRE D'ESPACEMENT POUR CONTINUER.
+
+Page 5.1: Feedback Correct
+Correct!
+
+Page 5.2: Feedback False Negative
+C'était INCORRECT.
+Tu as vu un chiffre complet, mais tu n'as pas appuyé sur la barre d'espacement.
+Appuie sur la barre d'espacement chaque fois que tu vois un CHIFFRE complet.
+APPUIE
+
+Page 5.3: Feedback False Positive
+C'était INCORRECT.
+Tu n'as pas vu un chiffre complet.
+Appuie sur la barre d'espacement SEULEMENT lorsque tu vois un CHIFFRE complet.
+N'APPUIE PAS
+N'APPUIE PAS
+N'APPUIE PAS
+N'APPUIE PAS
+APPUIE
+
+Page 5: Number Test Instructions
+Bravo!
+N'oublie pas: Appuie sur la barre d'espacement chaque fois que tu vois un CHIFFRE.
+Dans le test, tu verras des chiffres différents de ceux que tu as vus dans l'essai.
+Voici quelques exemples:
+CLIQUE ICI POUR CONTINUER
+RETOUR
+
+Page 6: Instructions
+Le test va maintenant commencer.
+Pendant le test, on ne te dira pas si tes réponses sont correctes ou incorrectes.
+CLIQUE ICI POUR CONTINUER
+RETOUR
+
+Page 7: Begin Test
+COMMENCE LE TEST
+CLIQUE ICI POUR CONTINUER
+RETOUR
+
+Page 8: Countdown
+Sois prêt!
+L'essai commence dans:
+Utilise la barre d'espacement pour répondre.
+
+Page 9: Test
+<number_test>
+Utilise la barre d'espacement pour répondre.

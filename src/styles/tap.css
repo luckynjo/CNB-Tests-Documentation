@@ -35,15 +35,14 @@ img.keyboard--hint{
 }
 
 .handedness-button {
-  min-height: 100px;
   width: 200px;
-  line-height: 100px;
   text-align: center;
   font-size: 23px;
   font-weight: bold;
   border: solid 2px white;
   background: transparent;
   color: #FFFFFF;
+  padding: 16px;
 }
 
 .hand_img{

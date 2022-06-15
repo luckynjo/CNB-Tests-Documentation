@@ -155,8 +155,8 @@ export default class CPT extends React.Component{
     if(feedback)
     {
       return <div>
-      {feedback.section_title.match(FALSE_POSITIVE_REGEX) && <CPTFalsePositiveInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} continue_button_text={this.continue_button_text} />}
-      {feedback.section_title.match(FALSE_NEGATIVE_REGEX) && <CPTFalseNegativeInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} continue_button_text={this.continue_button_text}/>}
+      {feedback.section_title.match(FALSE_POSITIVE_REGEX) && <CPTFalsePositiveInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text} />}
+      {feedback.section_title.match(FALSE_NEGATIVE_REGEX) && <CPTFalseNegativeInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text}/>}
       </div>
     }
     else if(index === 0)
@@ -170,7 +170,7 @@ export default class CPT extends React.Component{
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
-      return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text}/>
+      return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(TEST_INSTRUCTIONS_REGEX))
     {

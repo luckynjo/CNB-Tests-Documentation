@@ -31,7 +31,8 @@ export default class TAP extends React.Component{
       practice: false,
       responses: [],
       assessment_complete: false,
-      skipped: 0
+      skipped: 0,
+      starttime: new Date()
     }
 
     const content = JSON.parse(this.props.timeline[0].content);
@@ -158,7 +159,7 @@ export default class TAP extends React.Component{
 
     if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={motor_praxis_banner} onClick={this.next} {...this.props.test}/>
+      return <TitlePage banner={motor_praxis_banner} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} onClick={this.next} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
@@ -178,7 +179,7 @@ export default class TAP extends React.Component{
     }
     else if(section_title.match(COUNTDOWN_REGEX))
     {
-      return <TapCountdownInstructions instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
+      return <TapCountdownInstructions continue_text={this.spacebar_text} instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {

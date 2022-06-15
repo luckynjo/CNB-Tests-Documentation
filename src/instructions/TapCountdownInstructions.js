@@ -8,7 +8,7 @@ import keyboard_pic from '../assets/keyboard.png';
 */
 
 export const TapCountdownInstructions = props => {
-  const {instructions, onContinue, handedness, trial, ...rest} = props;
+  const {instructions, onContinue, handedness, trial, continue_text, ...rest} = props;
   let [remainingTime, setRemainingTime] = useState(5);
   let [pressed, setPressed] = useState(false);
   let [view, setView] = useState("instructions");
@@ -85,7 +85,7 @@ export const TapCountdownInstructions = props => {
        <tbody>
         <tr className="flex fit-content center--horizontal">
          <td>
-          <p className="center--horizontal text--center">PRESS THE SPACEBAR TO CONTINUE</p>
+          <p className="center--horizontal text--center">{continue_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p>
          </td>
          <td>
           <img src={keyboard_pic} className="keyboard--continue" alt="Keyboard image" />
