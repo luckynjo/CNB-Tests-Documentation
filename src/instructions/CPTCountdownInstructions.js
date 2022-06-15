@@ -45,7 +45,7 @@ export const CPTCountdownInstructions = props => {
     <table>
     <tbody>
     <tr>
-    <td colSpan={2}><p className="text--center">Use the spacebar to respond</p></td>
+    <td colSpan={2}><p className="text--center">{instructions[2] || 'Use the spacebar to respond'}</p></td>
     <td><div><Image img_url={keyboard_pic} classList="keyboard--continue left"/></div></td>
     </tr>
     </tbody>
