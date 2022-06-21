@@ -14,7 +14,7 @@ This class manages the editing of timeline sections.
 Given a section, and a language, use this class to edit section text.
 Containing onbjects must implement updateLanguage which is called whenever the section language changes.
 */
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
 export class TestVersionsEditor extends React.Component
 {
   constructor(props)

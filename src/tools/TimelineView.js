@@ -3,7 +3,7 @@ import axios from 'axios';
 import {TimelineSection} from './TimelineSection.js';
 //const fs = require('fs');
 
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
 
 /****
 This class manages the editing of timeline sections.

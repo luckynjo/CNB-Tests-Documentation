@@ -11,7 +11,7 @@ const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "
 {"option": "xh_SA", "text": "IsiXhosa"}, {"option": "tn_BW", "text": "Setswana (Botswana)"}, {"option": "pt_MZ", "text": "What is pt_MZ language?"},
 {"option": "zn_CN", "text": "What is zn_CN language?"}];
 
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
 /****
 This class manages the editing of timeline sections.
 Given a section, and a language, use this class to edit section text.

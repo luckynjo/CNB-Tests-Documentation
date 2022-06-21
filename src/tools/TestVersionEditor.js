@@ -14,7 +14,7 @@ import axios from 'axios';
 
 // Add comment box for admin notes.
 // Save the file as well affter adding translations to database.
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
 
 export class TestVersionEditor extends React.Component
 {

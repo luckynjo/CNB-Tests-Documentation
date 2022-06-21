@@ -4,6 +4,7 @@ import MotorPraxisTask from '../tasks/MotorPraxisTask.js';
 import CPT from '../tasks/CPT.js';
 import TAP from '../tasks/TAP.js';
 import CPF from '../tasks/CPF.js';
+import SVOLT from '../tasks/SVOLT.js';
 import {TestLoader} from '../loaders/TestLoader.js';
 
 export default class TaskRunner extends React.Component
@@ -21,7 +22,7 @@ export default class TaskRunner extends React.Component
     }
     this.timeline = [];
     this.test_info = null;
-    document.body.classList.add('dark');
+    document.body.classList.add('light');
   }
 
   onTaskLoaded(data)
@@ -78,6 +79,12 @@ export default class TaskRunner extends React.Component
     {
       return <div className="container-8-by-6  dark frame">
       <CPF timeline={timeline} test={test} slideshow={this.state.slideshow} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("svolt"))
+    {
+      return <div className="container-8-by-6  light frame">
+      <SVOLT timeline={timeline} test={test} slideshow={this.state.slideshow} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline")

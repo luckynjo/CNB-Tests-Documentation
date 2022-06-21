@@ -2,12 +2,12 @@
   "name": "cnb_cognitive_tests",
   "version": "0.1.0",
   "private": true,
-    "homepage": "https://penncnp-dev.pmacs.upenn.edu/tests/assess/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
     "axios": "^0.26.1",
+    "buffer": "^6.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",

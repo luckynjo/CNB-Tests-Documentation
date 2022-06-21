@@ -14,7 +14,7 @@ import axios from 'axios';
 // Each section has components
 
 //const SECTION_TYPES = [{"option": "", "text": "Select section to add then press +"}, {"option": "Title_Page", "text": "Test title page."}, {"option": "Simple_Instructions", "text": "Simple instructions in text format."}, {"option": "Complex_Instructions", "text":"Complex instructions with tables or lists."}, {"option": "Header_Text", "text": "Header text like 'Begin Test'"}, {"option": "Practice", "text": "Practice text."}, {"option": "Test", "text": "Test text"}];
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
 const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "he_IL", "text": "Henrew"}, {"option": "bg_BG", "text": "Bulgarian"},
 {"option": "it_IT", "text": "Italian"}, {"option": "nl_NL", "text": "Dutch"},
 {"option": "ar_EG", "text": "Arabic (Egypt)"}, {"option": "zh_CN", "text": "Simplified Chinese"}, {"option": "po_BR", "text": "Portuguese"}, {"option": "de_DE"}, {"option": "es_ES"}, {"option": "fr_CA"}, {"option": "pt_BR"}, {"option": "es_MX"}, {"option": "hi_MK"}, {"option": "ja_JA"}, {"option": "ru_MK"}, {"option": "xh_SA"}, {"option": "tn_BW"}, {"option": "pt_MZ"}, {"option": "zn_CN"}];
