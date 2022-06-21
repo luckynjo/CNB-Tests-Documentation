@@ -2,13 +2,16 @@ import React from 'react';
 import axios from 'axios';
 var Buffer = require('safe-buffer').Buffer
 
+//const this.props.base_url = "https://penncnp-dev.pmacs.upenn.edu/";
+//const this.props.base_url = "http://localhost/";
 export default class AssetLoader extends React.Component
 {
 	constructor(props)
 	{
 		super(props);
 		this.state = {
-			loaded: 0
+			loaded: 0,
+			size: 0
 		};
 		this.assets = [];
 		this.loadImageAssets = this.loadImageAssets.bind(this);
@@ -30,52 +33,66 @@ export default class AssetLoader extends React.Component
 			if(this.props.practice_trials)
 			{
 				this.props.practice_trials.forEach((item, i) => {
-					images.push("http://localhost/stimuli/" + this.props.stimulus_dir + "/" + JSON.parse(item.stimulus));
+					const stimulus = JSON.parse(item.stimulus);
+					if(!images.find(x => x.includes(stimulus)))
+					{
+
+						images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus);
+					}
 				});
 			}
 			if(this.props.test_trials)
 			{
 				this.props.test_trials.forEach((item, i) => {
-					images.push("http://localhost/stimuli/" + this.props.stimulus_dir + "/" + JSON.parse(item.stimulus));
+					let stimulus;
+					try{
+						stimulus = JSON.parse(item.stimulus);
+					}
+					catch(e)
+					{
+						stimulus = item.stimulus;
+					}
+					if(!images.find(x => x.includes(stimulus)))
+					{
+						images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus);
+					}
 				});
 			}
 			if(this.slideshow)
 			{
 				this.props.slideshow.forEach((item, i) => {
-					images.push("http://localhost/stimuli/cpf/" + JSON.parse(item.stimulus));
+					const stimulus = JSON.parse(item.stimulus);
+					if(!images.find(x => x.includes(stimulus)))
+					{
+						images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus);
+					}
 				});
 			}
-			this.loadImageAssets(images);
+			this.setState((prevState, props) => {
+				return {size: images.length}
+			}, () => {this.loadImageAssets(images);});
+
 		}
 	}
 
 	loadImageAssets(image_urls)
 	{
-		//let base64_encoded_images = [];
 		image_urls.forEach( img_url => {
-			console.log('Loading to cache image ', img_url);
 			this.loadImageAsset(img_url);
-			//base64_encoded_images.push(result);
 		});
-		//return base64_encoded_images;
 	};
 
 	async loadImageAsset(asset_url) {
 		try
 		{
 			const response = await axios.get(asset_url, {responseType: 'arraybuffer'});
-			console.log('loaded image ', response);
 			const base64_encoded_img = this.getBase64EncodedImg(response);
-			//const image = new Image();
-			//image.src = base64_encoded_img;
 			this.assets.push({'url': asset_url, 'data': base64_encoded_img});
-			//return response;
 		}
 		catch (error)
 		{
 			console.error('error loading ', asset_url, ' details: ', error);
 			this.assets.push({'url': asset_url});
-			//return asset_url;
 		}
 		const loaded = this.state.loaded + 1;
 		this.setState((prevState, props) => {
@@ -84,27 +101,27 @@ export default class AssetLoader extends React.Component
 	}
 
 	checkAssetsLoaded(){
-		const len = (this.props.practice_trials ? this.props.practice_trials.length : 0) + this.props.test_trials.length + (this.props.slideshow ? this.props.slideshow.length : 0);
-		if(this.state.loaded >= len){
+		if(this.state.loaded >= this.state.size){
 			this.props.onAssetsLoadComplete(this.assets);
 		}
 	}
 
 	getBase64EncodedImg(response) {
-		console.log('encoding response ', response);
 		const prefix = "data:" + response.headers["content-type"] + ";base64,";
 		const base64_encoded_img = prefix + Buffer.from(response.data, 'binary').toString('base64');
-		console.log('encoded img is ', base64_encoded_img);
 		return base64_encoded_img;
 	}
 
 	render()
 	{
-		const len = (this.props.practice_trials ? this.props.practice_trials.length : 0) + this.props.test_trials.length + (this.props.slideshow ? this.props.slideshow.length : 0);
-		const percent_loaded = this.props.images ? Math.round((this.state.loaded / len)*100) : 100;
+		let percent_loaded = "...";
+		if(this.state.size > 0)
+		{
+			percent_loaded = Math.round((this.state.loaded / this.state.size)*100) + "";
+		}
 		return (
 			<div className="container center">
-			<h2 className="center--horizontal text--center">Loading ... {percent_loaded} % </h2>
+			<h2 className="center--horizontal text--center">Loading {percent_loaded} % </h2>
 			</div>
 		);
 	}

@@ -33,25 +33,40 @@ export class TapHandednessTrial extends React.Component{
 
     return (
       <>
-      <div className="page">
 
-      <div className="instructions top container">
+      <div className="instructions text--left top">
       {this.props.instructions.map((item, index) => {
         if(!item.includes("HANDEDNESS") && index < this.props.instructions.length - 3){
-          return <div key={index + 100}><p>{item}</p><br/></div>
+          return <div key={index + 100}><p>{item}</p><br/><br/></div>
         }
       })}
       </div>
 
-      </div>
 
-      <div className="position--bottom-abosolute">
-      <div className="button-like text--center">{this.props.instructions[this.props.instructions.length - 3] || 'Use the mouse to select your writing hand.'}</div>
-      <div className="inline">
-      <div className="button handedness-button left" onClick={this.onLeftButtonClick}>{this.props.instructions[this.props.instructions.length -2].replace("<HANDEDNESS>", "")}</div>
-      <div className="button handedness-button right" onClick={this.onRightButtonClick}>{this.props.instructions[this.props.instructions.length -1].replace("<HANDEDNESS>", "")}</div>
-      </div>
 
+      <div className="handedness-trial-buttons-postion">
+
+
+      <table className="buttons-table">
+       <tbody>
+        <tr>
+         <td colSpan={3}>
+         <p className="button-like text--center">{this.props.instructions[this.props.instructions.length - 3] || 'Use the mouse to select your writing hand.'}</p>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div className="button handedness-button left" onClick={this.onLeftButtonClick}>{this.props.instructions[this.props.instructions.length -2].replace("<HANDEDNESS>", "")}</div>
+         </td>
+         <td>
+          <div><p> </p></div>
+         </td>
+         <td>
+           <div className="button handedness-button right" onClick={this.onRightButtonClick}>{this.props.instructions[this.props.instructions.length -1].replace("<HANDEDNESS>", "")}</div>
+         </td>
+        </tr>
+       </tbody>
+      </table>
       </div>
       </>
     );

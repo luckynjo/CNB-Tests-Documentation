@@ -5,7 +5,9 @@ import { useState, useEffect } from 'react';
 //import AudioPlayer from '../AudioPlayer.js';
 import {ContinueButton} from '../components/ContinueButton.js';
 import upenn_shield_dark from '../assets/upenn_shield_dark.png';
+import upenn_shield from '../assets/upenn_shield.png';
 import logotype_dark from '../assets/logotype_white.png';
+import logotype_light from '../assets/logotype_light.png';
 const AudioPlayer = props => {
 
 }
@@ -36,10 +38,10 @@ export default function TitlePage(props)
     <div className={props.container_style || 'page'}>
       <div className="section--header">
         <div>
-          <img src={upenn_shield_dark}></img>
+          <img src={props.theme == "light" ? upenn_shield : upenn_shield_dark}></img>
         </div>
         <div className="right">
-          <img src={logotype_dark} className="right"></img>
+          <img src={props.theme == "light" ? logotype_light : logotype_dark} className="right"></img>
           {title}
         </div>
       </div>
@@ -65,7 +67,7 @@ export default function TitlePage(props)
         <td><p className="small text--center test-form">{props.description}</p></td>
         <td><ContinueButton text={props.continue_button_text} classList={buttonInvisibility} onClick={() => props.onClick()}/></td>
         <td><p className="small text--center test-name">{props.test}</p></td></tr>
-        <tr><td colSpan="3"><p className="copyright text--center">{props.citation || 'Copyright University of Pennsylvania 2022'}</p></td></tr>
+        <tr><td colSpan="3"><p className="copyright text--center">{props.citation || 'Copyright (c) 2005-2022 University of Pennsylvania  All Rights Reserved'}</p></td></tr>
         </tbody>
       </table>
       </div>

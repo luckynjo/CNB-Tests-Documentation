@@ -155,14 +155,14 @@ export default class CPT extends React.Component{
     if(feedback)
     {
       return <div>
-      {feedback.section_title.match(FALSE_POSITIVE_REGEX) && <CPTFalsePositiveInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} continue_button_text={this.continue_button_text} />}
-      {feedback.section_title.match(FALSE_NEGATIVE_REGEX) && <CPTFalseNegativeInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} continue_button_text={this.continue_button_text}/>}
+      {feedback.section_title.match(FALSE_POSITIVE_REGEX) && <CPTFalsePositiveInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text} />}
+      {feedback.section_title.match(FALSE_NEGATIVE_REGEX) && <CPTFalseNegativeInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text}/>}
       </div>
     }
     else if(index === 0)
     {
       /// Also set the text for continue, go back etc.
-      return <div className="container center"><AssetLoader stimulus_dir="cpt" practice_trials={this.props.practice_trials} test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} /></div>
+      return <div className="container center"><AssetLoader base_url={this.props.base_url} stimulus_dir="cpt" practice_trials={this.props.practice_trials} test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} /></div>
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
@@ -170,7 +170,7 @@ export default class CPT extends React.Component{
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
-      return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text}/>
+      return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(TEST_INSTRUCTIONS_REGEX))
     {
@@ -190,11 +190,11 @@ export default class CPT extends React.Component{
     }
     else if(section_title.match(PRACTICE_REGEX))
     {
-      return <CPTTrials images={this.images} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
+      return <CPTTrials base_url={this.props.base_url} images={this.images} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <CPTTrials images={this.images} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete}/>
+      return <CPTTrials base_url={this.props.base_url} images={this.images} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete}/>
     }
     else
     {

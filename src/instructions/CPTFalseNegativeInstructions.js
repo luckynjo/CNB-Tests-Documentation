@@ -13,7 +13,7 @@ import {useEffect, useState} from 'react';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const CPTFalseNegativeInstructions = props => {
-  const {instructions, onContinue, continueText, ...rest} = props;
+  const {instructions, onContinue, spacebar_text, ...rest} = props;
 
   let [pressed, setPressed] = useState(false);
 
@@ -52,7 +52,7 @@ export const CPTFalseNegativeInstructions = props => {
   return (
     <>
     <div className="page center">
-    <div className = "instructions text--left center">
+    <div className = "instructions text--left top">
 
       {instructions.map((instruction, index) => {
         if(index < 3)
@@ -61,26 +61,30 @@ export const CPTFalseNegativeInstructions = props => {
         }
       })}
       <br/>
-      <table>
+      <br/>
+      <div>
+      <table className="center--horizontal">
       <tbody>
       <tr><td>
       <img className="center-prac-image img--prac" src={pracNum1} />
       </td></tr>
       <tr><td>
+      <br/>
       <p className="text--center green">{instructions[3]}</p>
       </td></tr>
       </tbody>
       </table>
+      </div>
 
     </div>
 
-    <div className="position-bottom--absolute">
+    <div className="position-bottom--absolute-with-keyboard">
 
-    <table className="keyboard-response-table">
+    <table className="keyboard-table">
     <tbody>
     <tr>
 
-    <td colSpan={2}><p className="center--horizontal text--center">{continueText || 'PRESS THE SPACEBAR TO CONTINUE'}</p></td>
+    <td colSpan={2}><p className="center--horizontal text--center">{spacebar_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p></td>
     <td><div><img src={keyboard} alt="Keyboard image" className="center--horizontal keyboard--continue"/></div></td>
     </tr>
     </tbody>

@@ -10,7 +10,7 @@ import {TAPHandPositionInstructions} from '../instructions/TAPHandPositionInstru
 import SubmitPage from '../components/SubmitPage.js';
 import motor_praxis_banner from '../assets/tap/banner.png';
 
-const HAND_POSITION_DEMO_INSTRUCTIONS_REGEX = /Hand[_ ]Position[_ ]Demo[_ ]Instructions/g;
+const HAND_POSITION_DEMO_INSTRUCTIONS_REGEX = /Demo[_ ]Instructions/g;
 const INSTRUCTIONS_REGEX = /Instructions/ig;
 const BEGIN_PAGE_REGEX = /Begin[ _](Test|Practice)/ig;
 const PRACTICE_REGEX = /Practice$/ig
@@ -31,13 +31,17 @@ export default class TAP extends React.Component{
       practice: false,
       responses: [],
       assessment_complete: false,
-      skipped: 0
+      skipped: 0,
+      starttime: new Date()
     }
 
     const content = JSON.parse(this.props.timeline[0].content);
+    console.log('The 0 timeline object content is ', content);
     this.continue_button_text = content[0] || 'CLICK HERE TO CONTINUE';
     this.back_button_text = content[1] || 'GO BACK';
     this.spacebar_text = content[2] || 'Press the spacebar to continue';
+    this.go_text = content[2] || "GO!";
+    this.stop_text = content[3] || "STOP!";
 
     this.next = this.next.bind(this);
     this.back = this.back.bind(this);
@@ -45,7 +49,7 @@ export default class TAP extends React.Component{
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
   }
 
-  componentDidMount()
+  /***componentDidMount()
   {
     // Setup static default text
     const content = JSON.parse(this.props.timeline[0].content);
@@ -53,7 +57,7 @@ export default class TAP extends React.Component{
     this.back_text = content[1] || "GO BACK";
     this.go_text = content[2] || "GO!";
     this.stop_text = content[3] || "STOP!";
-  }
+  }*/
 
   back()
   {
@@ -158,7 +162,7 @@ export default class TAP extends React.Component{
 
     if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={motor_praxis_banner} onClick={this.next} {...this.props.test}/>
+      return <TitlePage banner={motor_praxis_banner} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} onClick={this.next} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
@@ -178,7 +182,7 @@ export default class TAP extends React.Component{
     }
     else if(section_title.match(COUNTDOWN_REGEX))
     {
-      return <TapCountdownInstructions instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
+      return <TapCountdownInstructions spacebar_text={this.spacebar_text} instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {

@@ -10,11 +10,11 @@ export const SimpleInstructions = props => {
 
   return (
     <>
-    <div className = "instructions">
+    <div className = "instructions text--left top">
       {instructions.map((instruction, index) => {
         if(instruction !== continue_button_text && instruction !== back_button_text)
         {
-          return <p key={index*10 + 5}>{instruction}</p>
+          return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
         }
       })}
     </div>

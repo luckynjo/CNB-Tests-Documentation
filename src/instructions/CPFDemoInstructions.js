@@ -6,18 +6,22 @@ import {Row} from '../layouts/Row.js';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const CPFDemoInstructions = props => {
-  const {instructions, onGoBack, onContinue} = props;
-  console.log('les instructions ', instructions);
+  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text} = props;
   return (
-    <div className = "instructions">
+    <>
+    <div className = "instructions text--left top">
 
      <p>{instructions[0]}</p>
-     {instructions.map((item, index) => {
-       if(index >0 && index < 5)
-       {
-         return (<p key={index + 50}>{item}</p>)
-       }
-     })}
+     <br/>
+     <p>
+     <p>{instructions[1]}</p>
+     <p>{instructions[2]}</p>
+     </p>
+     <br/>
+     <p>
+     <p>{instructions[3]}</p>
+     <p>{instructions[4]}</p>
+     </p>
 
      <div className='memory-buttons--other center--horizontal inline'>
      {instructions.map((item, index) => {
@@ -28,17 +32,19 @@ export const CPFDemoInstructions = props => {
      })}
      </div>
 
-     <div className="position-bottom--absolute">
-     <table className="buttons-table">
-     <tbody>
-     <tr>
-     <td><div><GoBackButton onClick={onGoBack}/></div></td>
-     <td><ContinueButton onClick={onContinue}/></td>
-     <td><div></div></td>
-     </tr>
-     </tbody>
-     </table>
-     </div>
     </div>
+
+    <div className="position-bottom--absolute">
+    <table className="buttons-table">
+    <tbody>
+    <tr>
+    <td><div><GoBackButton text={back_button_text} onClick={onGoBack}/></div></td>
+    <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
+    <td><div></div></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </>
   )
 }

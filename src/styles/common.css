@@ -38,8 +38,10 @@ img.keyboard--continue{
   width: auto;
 }
 div.instructions{
-min-width: 700px;
+min-width: 765px;
+max-width: 780px;
 }
+
 div.inline{
 display:flex;
 justify-content: space-between;
@@ -89,8 +91,11 @@ min-width: 690px;
 }
 div.section--footer
 {
-    position: relative;
-    display: flex;
+  position: absolute;
+  top: 520px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 div.section--footer table{
@@ -129,13 +134,18 @@ height:380px;
    background: #000000;
    color:#FFFFFF;
 }
+.light p{
+color:#003366;
+}
+.dark p{
+color:#FFFFFF;
+}
 
 p,span{
   margin: 0;
 width:100%;
 font-size:18pt;
-}
-p, h1, h2, h3, h4, table, tr, td{
+padding-bottom: 8px;
 }
 
 .stimulus-text--large, .tap--stimuli, .stimulus--cpw, .tap--stimuli, .stimulus--cpw div.col h1{
@@ -186,10 +196,19 @@ float:right;
 .position-bottom--absolute, .position--bottom-abosolute
 {
 position:absolute;
-bottom: 15px;
+top: 550px;
 min-height: 32px;
 width:800px;
 }
+
+.position-bottom--absolute-with-keyboard
+{
+position:absolute;
+top: 485px;
+min-height: 32px;
+width:800px;
+}
+
 
 .fullWidth{
 width:100%;
@@ -330,7 +349,7 @@ body{
 }
 div.instructions.top{
   position: absolute;
-  top:40px;
+  top:32px;
   left:50%;
   transform: translateX(-50%);
 }
@@ -345,7 +364,13 @@ div.instructions.top{
   -ms-user-select: none;
   user-select: none;
 }
-
-.buttons-table tbody tr td{
+.buttons-table, .keyboard-table{
+  width: 100%;
+}
+.buttons-table tbody tr td, .keyboard-table tbody tr td{
   width: 33%;
+}
+
+.continue-button, .back-button{
+  border: 1px solid #FFFFFF;
 }

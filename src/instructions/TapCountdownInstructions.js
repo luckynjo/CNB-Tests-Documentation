@@ -8,12 +8,12 @@ import keyboard_pic from '../assets/keyboard.png';
 */
 
 export const TapCountdownInstructions = props => {
-  const {instructions, onContinue, handedness, trial, ...rest} = props;
+  const {instructions, onContinue, handedness, trial, spacebar_text, ...rest} = props;
   let [remainingTime, setRemainingTime] = useState(5);
   let [pressed, setPressed] = useState(false);
   let [view, setView] = useState("instructions");
   const parsed_handedness = JSON.parse(handedness);
-  console.log('Thee handedness be ', parsed_handedness);
+  console.log('Continue text be ', spacebar_text);
 
   function keyDown(e)
   {
@@ -66,38 +66,39 @@ export const TapCountdownInstructions = props => {
 
   return view === "instructions" ?
   (
-    <div className = "page center">
+    <>
+
      <div className="instructions text--center center">
       <div className="fullWidth">
       <p>{instructions[0].replace("<TRIAL_NUMBER>", trial)}</p>
+      <br/>
       {instructions.map((item, index) => {
         if(item.includes(parsed_handedness))
         {
-          return <p>{"** " + item.replace(parsed_handedness, "") + " **"}</p>
+          return <p key={index + 101}>{"** " + item.replace(parsed_handedness, "") + " **"}</p>
         }
       })}
+      <br/>
       <p>{instructions[3]}</p>
       </div>
      </div>
 
-     <div className="position-bottom--absolute">
-      <table className="spacebar-response--table center--horizontal">
+     <div className="position-bottom--absolute-with-keyboard">
+      <table className="keyboard-table">
        <tbody>
-        <tr className="flex fit-content center--horizontal">
-         <td>
-          <p className="center--horizontal text--center">PRESS THE SPACEBAR TO CONTINUE</p>
+        <tr>
+         <td colSpan={2}>
+          <p className="text--center">{spacebar_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p>
          </td>
          <td>
-          <img src={keyboard_pic} className="keyboard--continue" alt="Keyboard image" />
-         </td>
-         <td>
-          <div><p>&nbsp;</p></div>
+          <img src={keyboard_pic} className="keyboard--continue left" alt="Keyboard image" />
          </td>
         </tr>
+        <tr><td></td><td></td><td></td></tr>
        </tbody>
       </table>
      </div>
-    </div>
+    </>
   )
   :
   <div className = "page center">

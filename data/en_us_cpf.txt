@@ -19,7 +19,7 @@ Page 3: Begin Slideshow
 BEGIN PRESENTATION
 
 Page 4: Slideshow
-No text
+<slideshow>
 
 Page 5: Demo Instructions
 Now you will see more faces. Some are new, others you have already seen. Decide whether you have seen each face before.
