@@ -20,13 +20,13 @@ export const CPTNumberInstructions = props => {
           return <p key={index*10 + 5}>{instruction}</p>
         }
       })}
-      <div className='flex medium--box'>
+      <div className='flex medium--box center--horizontal'>
        <img src={inst1} alt="inst1" className='center--horizontal img--demo'/>
       <img src={inst2} alt="inst2" className= 'center--horizontal img--demo' />
       <img src={inst3} alt="inst3" className= 'center--horizontal img--demo'/>
       </div>
       <br/>
-      <div className= 'flex medium--box'>
+      <div className= 'flex medium--box center--horizontal'>
       <p className= 'red text--center'>{instructions[3] ||"DON'T PRESS"}</p>
       <p className= 'red text--center'>{instructions[4] ||"DON'T PRESS"}</p>
       <p className= 'green text--center'>{instructions[5] ||"DO PRESS"}</p>

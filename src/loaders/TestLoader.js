@@ -27,8 +27,8 @@ export const TestLoader = props =>
 | nl_NL-spcptn90-4.00-ff |
 | spcptn90-4.00-ff       |
 */
-    axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'spllt-a-1.00-ff', 'language': 'en_US'})
-    //axios.get(base_url + 'webcnp.pl?op=get_next_test_json')
+    //axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'spllt-a-1.00-ff', 'language': 'en_US'})
+    axios.get(base_url + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
           //console.log("Response be ", response.data.timeline);

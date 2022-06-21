@@ -37,9 +37,9 @@ export const TwoBackInstructions = props => {
         <td><img src={green_arrow} className="center--horizontal" alt="Arrow"/></td>
       </tr>
       <tr className="demo--2back">
-        <td>  <img src={Kr} className="stimulus--small right" alt="Press"/> </td>
+        <td>  <img src={Kr} className="stimulus--small center--horizontal" alt="Press"/> </td>
         <td>  <img src={Vr} className="stimulus--small center--horizontal" alt="Press"/> </td>
-        <td>  <img src={Kr} className="stimulus--small left" alt="Press"/> </td>
+        <td>  <img src={Kr} className="stimulus--small center--horizontal" alt="Press"/> </td>
       </tr>
 
       <tr>
