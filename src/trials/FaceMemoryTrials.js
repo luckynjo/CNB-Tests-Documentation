@@ -61,7 +61,7 @@ export class FaceMemoryTrials extends React.Component{
     {
       return this.findAssetFile(clean_url);
     }
-    else return "http://localhost/stimuli/cpf/" + clean_url;
+    else return this.props.base_url + "stimuli/cpf/" + clean_url;
   }
 
   findAssetFile(url)
@@ -86,7 +86,7 @@ export class FaceMemoryTrials extends React.Component{
         continue;
       }
     }
-    return file || "http://localhost/stimuli/cpf/" + url;
+    return file || this.props.base_url + "stimuli/cpf/" + url;
   }
 
   render()

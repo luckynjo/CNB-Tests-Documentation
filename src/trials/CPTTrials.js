@@ -261,7 +261,7 @@ export class CPTTrials extends React.Component
       const questions = this.state.questions;
       const index = this.state.index;
       const trial = this.props.trials[questions[index]];
-      console.log('Recording response for question ', trial.question_number);
+      //console.log('Recording response for question ', trial.question_number);
       let responses = this.state.responses;
       responses.push(new CNBResponse(trial.question_number, 0, ""));
       this.setState((prevState, props) => {
@@ -325,7 +325,7 @@ export class CPTTrials extends React.Component
     {
       return this.findAssetFile(clean_url);
     }
-    else return "http://localhost/stimuli/cpt/" + clean_url;
+    else return this.props.base_url + "stimuli/cpt/" + clean_url;
   }
 
   findAssetFile(url)
@@ -353,7 +353,7 @@ export class CPTTrials extends React.Component
         continue;
       }
     }
-    return file || "http://localhost/stimuli/cpt/" + url;
+    return file || this.props.base_url + "stimuli/cpt/" + url;
   }
 
   render()

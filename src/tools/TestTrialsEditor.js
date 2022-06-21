@@ -3,7 +3,8 @@ import axios from 'axios';
 const FormData = require('form-data');
 //const fs = require('fs');
 
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//c//onst BASE_URL = "http://localhost/";
 const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "he_IL", "text": "Hebrew"}, {"option": "bg_BG", "text": "Bulgarian"},
 {"option": "nl_NL", "text": "Dutch (Netherlands)"}, {"option": "ar_EG", "text": "Arabic (Egypt)"}, {"option": "zh_CN", "text": "Simplified Chinese"},
 {"option": "po_BR", "text": "What is po_BR language?"}, {"option": "de_DE", "text": "German"}, {"option": "es_ES", "text": "Spanish (Spain)"},
@@ -47,7 +48,7 @@ export class TestTrialsEditor extends React.Component
   {
     // view_trials
     const id = this.props.id;
-    axios.post(BASE_URL + 'tests.pl', {'op': 'view_trials', 'id': id})
+    axios.post(this.props.base_url + 'tests.pl', {'op': 'view_trials', 'id': id})
     .then(response => {
       //console.log('response ', JSON.parse(response.data.section_text[0].content));
       console.log('response ', response.data);
@@ -75,7 +76,7 @@ export class TestTrialsEditor extends React.Component
     data.append('id', this.props.id);
     data.append('file', file);
     console.log('sending file ', data);
-    axios.post(BASE_URL + "tests.pl", data)
+    axios.post(this.props.base_url + "tests.pl", data)
     .then(response => {
       console.log("Response is ", response);
       this.viewTrials();

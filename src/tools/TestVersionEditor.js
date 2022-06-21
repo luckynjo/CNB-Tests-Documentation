@@ -14,8 +14,8 @@ import axios from 'axios';
 
 // Add comment box for admin notes.
 // Save the file as well affter adding translations to database.
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
-
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "http://localhost/";
 export class TestVersionEditor extends React.Component
 {
   constructor(props)
@@ -53,7 +53,7 @@ export class TestVersionEditor extends React.Component
   {
     if(this.props.id)
     {
-      axios.post(BASE_URL + 'tests.pl', {'op': 'timeline', 'id': this.props.id})
+      axios.post(this.props.base_url + 'tests.pl', {'op': 'timeline', 'id': this.props.id})
       .then(response => {
         console.log('response ', response.data.timeline);
         this.setState((prevState, props) => {
@@ -110,7 +110,7 @@ export class TestVersionEditor extends React.Component
     const action = this.state.id ? "update" : "save";
 
     console.log('saving /updating test ', this.state.short_name, ' via api');
-    axios.post(BASE_URL + 'tests.pl', {'op':  action, 'id': this.state.id, short_name: this.state.short_name, title: this.state.title,
+    axios.post(this.props.base_url + 'tests.pl', {'op':  action, 'id': this.state.id, short_name: this.state.short_name, title: this.state.title,
     version_major: this.state.version_major, version_minor: this.state.version_minor, 'form': this.state.form})
     .then(response => {
       console.log('saved ', response);

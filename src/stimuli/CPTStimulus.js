@@ -10,8 +10,6 @@ export default class CPTStimulus
 		this.image.src = base64_encoded_img;
 		this.image.style.height = "350px";
 		this.image.style.width = "auto";
-
-		console.log('CPT stim image is ', base64_encoded_img);
 	}
 
 	draw(ctx)

@@ -35,17 +35,20 @@ export const CPTCountdownInstructions = props => {
     <>
     <div className = "page center">
 
-    <div className="instructions text--left top">
+    <div className="instructions text--left cpt-count-down">
     <p className="get-ready--text text--center">{instructions[0]}</p>
+    <br/>
     <p className="instructions-text--medium text--center">{instructions[1]}</p>
+    <br/>
     <p className="stimulus-text--large text--center">{remainingTime > 0 ? remainingTime : ""}</p>
     </div>
     </div>
-    <div className="position-bottom--absolute">
-    <table>
+    <div className="position-bottom--absolute-with-keyboard">
+    <table className="keyboard-table">
     <tbody>
     <tr>
-    <td colSpan={2}><p className="text--center">{instructions[2] || 'Use the spacebar to respond'}</p></td>
+    <td><div></div></td>
+    <td><p className="text--center">{instructions[2] || 'Use the spacebar to respond'}</p></td>
     <td><div><Image img_url={keyboard_pic} classList="keyboard--continue left"/></div></td>
     </tr>
     </tbody>

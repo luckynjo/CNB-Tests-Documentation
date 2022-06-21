@@ -11,10 +11,6 @@ img.keyboard--continue{
   width: auto;
 }
 
-div.instructions{
-  min-width: 700px;
-}
-
 span.text-hint{
   float:right;
   text-align:right;
@@ -29,9 +25,14 @@ img.keyboard--hint{
   background-color: #009900;
   color:#FFFFFF;
   border: 2px solid white;
-  margin: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  /**margin: 16px;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 8px;*/
+  width: 100%;
+
 }
 
 .handedness-button {
@@ -73,10 +74,6 @@ img.keyboard--hint{
   height:450px;
 }
 
-.button-like{
-  margin: 8px;
-}
-
 div.position--bottom-abosolute > div.inline{
   margin: 16px;
 }
@@ -103,4 +100,12 @@ table.spacebar-response--table.center--horizontal
 img.keyboard--continue{
   width: 132px;
   height: auto;
+}
+
+div.handedness-trial-buttons-postion{
+  position: absolute;
+  width:95%;
+top: 450px;
+left: 50%;
+transform: translateX(-50%);
 }

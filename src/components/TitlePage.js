@@ -65,7 +65,7 @@ export default function TitlePage(props)
         <td><p className="small text--center test-form">{props.description}</p></td>
         <td><ContinueButton text={props.continue_button_text} classList={buttonInvisibility} onClick={() => props.onClick()}/></td>
         <td><p className="small text--center test-name">{props.test}</p></td></tr>
-        <tr><td colSpan="3"><p className="copyright text--center">{props.citation || 'Copyright University of Pennsylvania 2022'}</p></td></tr>
+        <tr><td colSpan="3"><p className="copyright text--center">{props.citation || 'Copyright (c) 2005-2022 University of Pennsylvania  All Rights Reserved'}</p></td></tr>
         </tbody>
       </table>
       </div>
