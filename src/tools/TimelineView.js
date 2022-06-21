@@ -3,8 +3,8 @@ import axios from 'axios';
 import {TimelineSection} from './TimelineSection.js';
 //const fs = require('fs');
 
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
-
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "http://localhost/";
 /****
 This class manages the editing of timeline sections.
 Given a section, and a language, use this class to edit section text.
@@ -31,7 +31,7 @@ export class TimelineView extends React.Component
 
   viewTimeline()
   {
-    axios.post(BASE_URL + 'tests.pl', {'op': 'timeline', 'id': this.props.id})
+    axios.post(this.props.base_url + 'tests.pl', {'op': 'timeline', 'id': this.props.id})
     .then(response => {
       console.log('response ', response.data.timeline);
       this.setData(response.data);
@@ -63,7 +63,7 @@ export class TimelineView extends React.Component
     data.append('id', this.props.id);
     data.append('file', file);
     console.log('sending file ', data);
-    axios.post(BASE_URL + "tests.pl", data)
+    axios.post(this.props.base_url + "tests.pl", data)
     .then(response => {
       console.log("Response is ", response)
     })
@@ -83,7 +83,7 @@ export class TimelineView extends React.Component
       <>
       {timeline.map((item, index) => {
         return <div>
-        <h4>{item.section_title.replaceAll('_', ' ')}</h4><TimelineSection language="en_US" {...item} />
+        <h4>{item.section_title.replaceAll('_', ' ')}</h4><TimelineSection base_url={this.props.base_url} language="en_US" {...item} />
         </div>
       })}
       </>

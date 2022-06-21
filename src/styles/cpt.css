@@ -33,15 +33,11 @@ img.keyboard--hint{
 height:86px;
 }
 
-p,span{
+/***p,span{
   margin: 0;
 width:100%;
 font-size:18pt;
-}
-p, h1, h2, h3, h4, table, tr, td{
-}
-
-
+}*/
 
 .fullWidth{
 width:100%;
@@ -59,6 +55,7 @@ img.img--demo
   height:120px;
       margin-left: 64px;
 }
+
 img.img--demo2{
   width:auto;
   height:108px;
@@ -73,6 +70,7 @@ img.img-test-demo
 
 div.medium--box{
   width: 600px;
+  padding-top: 8px;
 }
 
 p.instruct2--text{
@@ -98,6 +96,7 @@ padding: 40px 0;
   padding-top: 16px;
   width:700px;
 }
+
 div.incorrect-response--multiple div{
   width: 140px;
   padding:0px;
@@ -123,4 +122,12 @@ img.center-prac-image{
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.cpt-count-down
+{
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
 }

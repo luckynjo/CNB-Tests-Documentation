@@ -92,7 +92,7 @@ export default class CPF extends React.Component
     if(index === 0)
     {
       return <div className="container center">
-      <AssetLoader stimulus_dir="cpf" test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
+      <AssetLoader base_url={this.props.base_url} stimulus_dir="cpf" test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
       </div>
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
@@ -113,11 +113,11 @@ export default class CPF extends React.Component
     }
     else if(section_title.match(SLIDESHOW_REGEX))
     {
-      return <div className="container center"><ImageSlideshow trials={this.props.slideshow} images={this.faces}  onSlideShowComplete={this.next}/></div>
+      return <div className="container center"><ImageSlideshow base_url={this.props.base_url} trials={this.props.slideshow} images={this.faces}  onSlideShowComplete={this.next}/></div>
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <div className="container"><FaceMemoryTrials buttons={JSON.parse(timeline_object.content)} trials={this.props.test_trials} images={this.faces} onTrialsComplete={this.onTrialsComplete}/></div>
+      return <div className="container"><FaceMemoryTrials base_url={this.props.base_url} buttons={JSON.parse(timeline_object.content)} trials={this.props.test_trials} images={this.faces} onTrialsComplete={this.onTrialsComplete}/></div>
     }
     else
     {

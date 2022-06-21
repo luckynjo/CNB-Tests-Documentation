@@ -1,0 +1,76 @@
+.word{
+  font-size: 20pt;
+  text-align: left;
+  font-weight: normal;
+}
+
+.word.active{
+  color: yellow;
+  font-size: 20.2pt;
+  font-weight: bold;
+}
+
+table.words{
+  width: 500px;
+}
+
+table.words td{
+  height: 40px;
+  width: 180px;
+}
+
+.pllt-response-button{
+  background: #2C87E2;
+  color: white;
+  border: solid 2px white;
+  height: 40px;
+  width: 192px;
+  text-align: center;
+      line-height: 40px;
+  margin-top: 4px;
+  margin-right: 20px;
+  font-size: 14pt;
+  font-weight: normal;
+}
+
+.pllt-response-button.wide{
+  height: 160px;
+  line-height: 160px;
+  margin-right: 0px;
+}
+
+.pllt-response-button:hover{
+  background: #114679;
+}
+
+
+.response-messages
+{
+  width: 700px;
+  height: 60px;
+  margin: 8px;
+}
+
+.response-messages td{
+  width: 33%;
+}
+
+.response-messages p, .active{
+  color: yellow;
+}
+
+.response-message{
+  font-size: 16pt;
+  font-weight: normal;
+}
+
+.response-message-count{
+  font-size: 36pt;
+  height: 48px;
+}
+
+.responses-bottom .pllt-response-button.wide{
+  line-height: 1;
+  /**height: 20px;
+  padding: 70px 0;*/
+}

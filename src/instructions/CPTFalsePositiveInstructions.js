@@ -61,6 +61,8 @@ export const CPTFalsePositiveInstructions = props => {
         }
       })}
 
+      <br/>
+      <div className="center--horizontal">
       <div className="inline incorrect-response--multiple">
       <div><img className="center-prac-image img--prac" src={pracNum2} /></div>
       <div><img className="center-prac-image img--prac" src={pracNum3} /></div>
@@ -76,14 +78,15 @@ export const CPTFalsePositiveInstructions = props => {
       <div><p className="red text--center">{instructions[6] || "DON'T PRESS"}</p></div>
       <div><p className="green text--center">{instructions[7] || "DO PRESS"}</p></div>
       </div>
+      </div>
 
 
     </div>
 
-    <div className="position-bottom--absolute">
+    <div className="position-bottom--absolute-with-keyboard">
 
 
-    <table className="keyboard-response-table">
+    <table className="keyboard-table">
     <tbody>
     <tr>
 

@@ -162,7 +162,7 @@ export default class CPT extends React.Component{
     else if(index === 0)
     {
       /// Also set the text for continue, go back etc.
-      return <div className="container center"><AssetLoader stimulus_dir="cpt" practice_trials={this.props.practice_trials} test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} /></div>
+      return <div className="container center"><AssetLoader base_url={this.props.base_url} stimulus_dir="cpt" practice_trials={this.props.practice_trials} test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} /></div>
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
@@ -190,11 +190,11 @@ export default class CPT extends React.Component{
     }
     else if(section_title.match(PRACTICE_REGEX))
     {
-      return <CPTTrials images={this.images} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
+      return <CPTTrials base_url={this.props.base_url} images={this.images} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <CPTTrials images={this.images} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete}/>
+      return <CPTTrials base_url={this.props.base_url} images={this.images} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete}/>
     }
     else
     {
