@@ -14,7 +14,7 @@ export const PLLTInstructions = props => {
       {instructions.map((instruction, index) => {
         if(instruction !== continue_button_text && instruction !== back_button_text)
         {
-          return <div key={index*10 + 5}><p className="text--center">{instruction}</p><br/></div>
+          return <div key={index*10 + 5}><span className="text--center">{instruction}</span><br/></div>
         }
       })}
     </div>

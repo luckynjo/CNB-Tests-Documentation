@@ -59,11 +59,11 @@ export default class NbackTask extends React.Component{
   onAssetsLoadComplete(images)
   {
     this.images = images;
-    console.log('Loaded les images ', images);
-    //this.next();
-    this.setState((prevState, props) => {
+    //console.log('Loaded les images ', images);
+    this.next();
+    /***this.setState((prevState, props) => {
       return {index: 10};
-    });
+    });*/
   }
 
   next()
