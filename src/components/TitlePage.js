@@ -5,7 +5,9 @@ import { useState, useEffect } from 'react';
 //import AudioPlayer from '../AudioPlayer.js';
 import {ContinueButton} from '../components/ContinueButton.js';
 import upenn_shield_dark from '../assets/upenn_shield_dark.png';
+import upenn_shield from '../assets/upenn_shield.png';
 import logotype_dark from '../assets/logotype_white.png';
+import logotype_light from '../assets/logotype_light.png';
 const AudioPlayer = props => {
 
 }
@@ -36,10 +38,10 @@ export default function TitlePage(props)
     <div className={props.container_style || 'page'}>
       <div className="section--header">
         <div>
-          <img src={upenn_shield_dark}></img>
+          <img src={props.theme == "light" ? upenn_shield : upenn_shield_dark}></img>
         </div>
         <div className="right">
-          <img src={logotype_dark} className="right"></img>
+          <img src={props.theme == "light" ? logotype_light : logotype_dark} className="right"></img>
           {title}
         </div>
       </div>

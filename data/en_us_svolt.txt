@@ -1,0 +1,44 @@
+test: svolt
+version: 3.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+Visual Object Learning Test
+Immediate Memory Short
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+You will see some figures. Try to remember the whole figure.
+Later, you will pick out these shapes from a larger group of shapes.
+
+Page 3: Begin Practice
+BEGIN PRESENTATION
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Now you will see more shapes. Some are new, others you have already seen.
+Decide whether you have seen each shape before.
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
+Click DEFINITELY YES if you are SURE you HAVE seen it.
+Click PROBABLY YES if you THINK you HAVE seen it.
+Click PROBABLY NO if you THINK you HAVE NOT seen it.
+Click DEFINITELY NO if you are SURE you HAVE NOT seen it.
+
+Page 6: Begin Test
+BEGIN TEST
+
+Page 7: Test
+<trials>
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO

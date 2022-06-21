@@ -3,8 +3,8 @@ import axios from 'axios';
 
 
 
-//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
-//const BASE_URL = "http://localhost/";
+const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "http://localhost";
 /***
  Loads test data from the server.
 */
@@ -18,17 +18,8 @@ export const TestLoader = props =>
     //axios.get('http://localhost/webcnp.pl?op=get_next_test_json')
     // sctap-2.00-ff
     // spcptn90-4.00-ff
-    /***
-    mpraxis-2.06-ff
-    cpf-2.05-ff
-    sfnb2-2.00-ff
-    spllt-a-1.00-ff
-    | fr_CA-spcptn90-4.00-ff |
-| nl_NL-spcptn90-4.00-ff |
-| spcptn90-4.00-ff       |
-*/
-    //axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'spllt-a-1.00-ff', 'language': 'en_US'})
-    axios.get(base_url + 'webcnp.pl?op=get_next_test_json')
+    axios.post(BASE_URL + 'tests.pl', {'op': 'administer', 'test': 'svolt-3.00-ff', 'language': 'en_US'})
+    //axios.get(BASE_URL + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
           //console.log("Response be ", response.data.timeline);
