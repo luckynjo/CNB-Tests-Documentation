@@ -60,23 +60,27 @@ export const CPTFalseNegativeInstructions = props => {
           return <p key={index*10 + 5}>{instruction}</p>
         }
       })}
-
-      <table>
+      <br/>
+      <br/>
+      <div>
+      <table className="center--horizontal">
       <tbody>
       <tr><td>
       <img className="center-prac-image img--prac" src={pracNum1} />
       </td></tr>
       <tr><td>
+      <br/>
       <p className="text--center green">{instructions[3]}</p>
       </td></tr>
       </tbody>
       </table>
+      </div>
 
     </div>
 
-    <div className="position-bottom--absolute">
+    <div className="position-bottom--absolute-with-keyboard">
 
-    <table className="keyboard-response-table">
+    <table className="keyboard-table">
     <tbody>
     <tr>
 

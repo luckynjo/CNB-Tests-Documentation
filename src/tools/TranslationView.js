@@ -4,14 +4,15 @@ import {TimelineSection} from './TimelineSection.js';
 //const fs = require('fs');
 
 
-const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "http://localhost/";
 const LANGUAGES = [{"option": "", "text":"Please select language (defaults to English)"}, {"option": "he_IL", "text": "Hebrew"}, {"option": "bg_BG", "text": "Bulgarian"},
 {"option": "nl_NL", "text": "Dutch (Netherlands)"}, {"option": "ar_EG", "text": "Arabic (Egypt)"}, {"option": "zh_CN", "text": "Simplified Chinese"},
 {"option": "it_IT", "text": "Italian"}, {"option": "po_BR", "text": "What is po_BR language?"}, {"option": "de_DE", "text": "German"}, {"option": "es_ES", "text": "Spanish (Spain)"},
 {"option": "fr_CA", "text": "French (Canada)"}, {"option": "pt_BR", "text": "Portuguese (Brazil)"}, {"option": "es_MX", "text": "Spanish (Mexico)"},
 {"option": "hi_MK", "text": "What is hi_MK language?"}, {"option": "ja_JA", "text": "Japanese"}, {"option": "ru_MK", "text": "What language is ru_MK"},
 {"option": "xh_SA", "text": "IsiXhosa"}, {"option": "tn_BW", "text": "Setswana (Botswana)"}, {"option": "pt_MZ", "text": "What is pt_MZ language?"},
-{"option": "zn_CN", "text": "What is zn_CN language?"}];
+{"option": "zn_CN", "text": "What is zn_CN language?"}, {"option": "kr_KR", "text": "Korean"}];
 
 /****
 This class manages the editing of timeline sections.
@@ -43,7 +44,7 @@ export class TranslationView extends React.Component
 
   viewTimeline()
   {
-    axios.post(BASE_URL + 'tests.pl', {'op': 'timeline', 'id': this.props.id})
+    axios.post(this.props.base_url + 'tests.pl', {'op': 'timeline', 'id': this.props.id})
     .then(response => {
       console.log('response ', response.data.timeline);
       this.setData(response.data);
@@ -60,7 +61,7 @@ export class TranslationView extends React.Component
 
   viewTranslation()
   {
-    axios.post(BASE_URL + 'tests.pl', {'op': 'timeline', 'id': this.props.id, 'language': this.state.language})
+    axios.post(this.props.base_url + 'tests.pl', {'op': 'timeline', 'id': this.props.id, 'language': this.state.language})
     .then(response => {
       console.log('translation response ', response.data.timeline);
       this.setTranslationData(response.data);
@@ -111,7 +112,7 @@ export class TranslationView extends React.Component
     data.append('language', this.state.language);
     data.append('file', file);
     console.log('sending file ', data);
-    axios.post(BASE_URL + "translate.pl", data)
+    axios.post(this.props.base_url + "translate.pl", data)
     .then(response => {
       console.log("Response is ", response);
       this.viewTranslation();

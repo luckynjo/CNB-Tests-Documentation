@@ -12,9 +12,9 @@ export default class NBackStimulus
 		{
 			this.stimulus_type = "image";
 			this.stimulus = new Image();
-			this.image.src = base64_encoded_img;
-			this.image.style.height = "350px";
-			this.image.style.width = "auto";
+			this.stimulus.src = stimulus;
+			this.stimulus.style.height = "350px";
+			this.stimulus.style.width = "auto";
 		}
 		else
 		{
@@ -27,9 +27,9 @@ export default class NBackStimulus
 		if(this.stimulus_type === "image")
 		{
 			const destH = 350;
-			const ratio = destH / this.image.height;
-			const destW = Math.round(ratio*this.image.width);
-			ctx.drawImage(this.image, (800 - this.image.width)/2, (600 - this.image.height)/2, this.image.width, this.image.height);
+			const ratio = destH / this.stimulus.height;
+			const destW = Math.round(ratio*this.stimulus.width);
+			ctx.drawImage(this.stimulus, (800 - this.stimulus.width)/2, (600 - this.stimulus.height)/2, this.stimulus.width, this.stimulus.height);
 		}
 		else
 		{

@@ -14,7 +14,8 @@ This class manages the editing of timeline sections.
 Given a section, and a language, use this class to edit section text.
 Containing onbjects must implement updateLanguage which is called whenever the section language changes.
 */
-const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "http://localhost/";
 export class TestVersionsEditor extends React.Component
 {
   constructor(props)
@@ -47,7 +48,7 @@ export class TestVersionsEditor extends React.Component
 
   viewTestVersions()
   {
-    axios.post(BASE_URL + 'tests.pl', {'op': 'vtv'})
+    axios.post(this.props.base_url + 'tests.pl', {'op': 'vtv'})
     .then(response => {
       //console.log('response ', JSON.parse(response.data.section_text[0].content));
       //let content = response.data.section_data.length > 0 ? JSON.parse(response.data.section_data[0].content) : new Array();
@@ -116,7 +117,9 @@ export class TestVersionsEditor extends React.Component
     const data = this.state.data;
 ////{current_view === "translate" && <TaskTranslator id={content.id} />}
     const menu = data ? data.map((test_version, index) => {
-      return <li key={index + 200} className="menu-item" onClick={(e) => this.onTestVersionSelected(e, test_version.id)}><a href="#">{test_version.title}</a></li>
+      return (<li key={index + 200} className="menu-item" onClick={(e) => this.onTestVersionSelected(e, test_version.id)}>
+      <a href="#">{test_version.title + (test_version.test_form ? " - " + test_version.test_form.toUpperCase() + " Form" : "")}</a>
+      </li>)
     }) : null;
     const content = this.state.selected_test_version;
     const current_view  = this.state.current_view;
@@ -152,11 +155,11 @@ export class TestVersionsEditor extends React.Component
 
       <div className="test_version-editor">
         {!current_view && <p>Please select a test version to get started.</p>}
-        {current_view === "test" && content && <TestVersionEditor {...content} key={Math.round(1000*Math.random())}/>}
-        {current_view === "timeline" && <TimelineView id={content.id} />}
+        {current_view === "test" && content && <TestVersionEditor base_url={this.props.base_url} {...content} key={Math.round(1000*Math.random())}/>}
+        {current_view === "timeline" && <TimelineView base_url={this.props.base_url} id={content.id} />}
 
-        {current_view === "translate" && content && <TranslationView id={content.id} />}
-        {current_view === "trials" && content && <TestTrialsEditor id={content.id} />}
+        {current_view === "translate" && content && <TranslationView base_url={this.props.base_url} id={content.id} />}
+        {current_view === "trials" && content && <TestTrialsEditor base_url={this.props.base_url} id={content.id} />}
         </div>
       </div>
 

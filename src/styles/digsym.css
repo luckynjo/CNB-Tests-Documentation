@@ -1,0 +1,176 @@
+.digsym-trial-banner {
+  position: absolute;
+  top: 118px;
+  left: 220px;
+}
+
+.digsym-stimulus-symbol {
+  position: absolute;
+  top: 233px;
+  left: 380px;
+}
+
+.digsym-stimulus-digit {
+  position: absolute;
+  top: 275px;
+  left: 380px;
+}
+
+.digsym-stimulus-button {
+  position: absolute;
+  width: 190px;
+  border: 1px solid #FFFFFF;
+  padding: 4px;
+}
+
+.digsym-stimulus-button:hover {
+  cursor: pointer;
+}
+.digsym-stimulus-button p {
+  margin: 0;
+  padding: 0;
+  font-size: 33px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.digsym-stimulus-button-same {
+  top: 400px;
+  left: 163px;
+}
+
+.digsym-stimulus-button-different {
+  top: 400px;
+  left: 443px;
+}
+
+.digsym-memory-instructions {
+  position: absolute;
+  top: 118px;
+  width: 100%;
+  text-align: center;
+}
+
+.digsym-memory-symbol {
+  position: absolute;
+  top: 240px;
+  left: 380px;
+}
+
+.digsym-memory-digit-container {
+  position: absolute;
+  top: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.digsym-memory-digit {
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+
+/***.instructions {
+  width: 100%;
+  padding: 0 30px;
+}*/
+
+.instructions-image-centered {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.instructions-paragraph {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.instructions-paragraph-first {
+  margin-top: -24px;
+}
+
+.instructions-button-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+}
+.instructions-button-wrapper {
+  flex: 1;
+}
+
+
+.fill {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.digsym-response-buttons
+{
+  position: absolute;
+  top: 400px;
+  min-height: 32px;
+  width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.digsym-button {
+  min-width: 196px;
+  padding: 2px;
+  text-align: center;
+  font-size: 20px;
+  border: solid 2px white;
+  background: transparent;
+  color: #FFFFFF;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+div.instructions.digsym
+{
+  width: 760px;
+  padding: 20px;
+}
+
+div.instructions.digsym p{
+  font-size: 20px;
+}
+
+div.digsym-response-buttons-demo{
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 16px;
+  text-align: center;
+}
+
+div.instructions.digsym p.instructions-button {
+  display: inline-block;
+  width: 190px;
+  max-width: 256px;
+  margin: 0 auto;
+  padding: 2px;
+  border: 1px solid #FFFFFF;
+  font-size: 33px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.button.digsym-button p{
+  font-size: 33px;
+  font-weight: normal;
+}
+
+.button.digsym-button p{
+  padding: 2px;
+}

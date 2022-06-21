@@ -14,7 +14,8 @@ import axios from 'axios';
 // Each section has components
 
 //const SECTION_TYPES = [{"option": "", "text": "Select section to add then press +"}, {"option": "Title_Page", "text": "Test title page."}, {"option": "Simple_Instructions", "text": "Simple instructions in text format."}, {"option": "Complex_Instructions", "text":"Complex instructions with tables or lists."}, {"option": "Header_Text", "text": "Header text like 'Begin Test'"}, {"option": "Practice", "text": "Practice text."}, {"option": "Test", "text": "Test text"}];
-const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "http://localhost/";
 const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "he_IL", "text": "Henrew"}, {"option": "bg_BG", "text": "Bulgarian"},
 {"option": "it_IT", "text": "Italian"}, {"option": "nl_NL", "text": "Dutch"},
 {"option": "ar_EG", "text": "Arabic (Egypt)"}, {"option": "zh_CN", "text": "Simplified Chinese"}, {"option": "po_BR", "text": "Portuguese"}, {"option": "de_DE"}, {"option": "es_ES"}, {"option": "fr_CA"}, {"option": "pt_BR"}, {"option": "es_MX"}, {"option": "hi_MK"}, {"option": "ja_JA"}, {"option": "ru_MK"}, {"option": "xh_SA"}, {"option": "tn_BW"}, {"option": "pt_MZ"}, {"option": "zn_CN"}];
@@ -48,7 +49,7 @@ export default class TaskTranslator extends React.Component
 
   loadTimeline()
   {
-    axios.post(BASE_URL + 'timeline.pl', {'op': 'view', 'id': this.props.id})
+    axios.post(this.props.base_url + 'timeline.pl', {'op': 'view', 'id': this.props.id})
     .then(response => {
       console.log('response ', response.data.timeline);
       this.setState((prevState, props) => {
@@ -77,7 +78,7 @@ export default class TaskTranslator extends React.Component
   viewTimelineSection(section)
   {
     console.log('loading section ', section, ' via api');
-    axios.post(BASE_URL + 'translate.pl', {'op': 'view', 'id': section.id, 'language': 'en_US'})
+    axios.post(this.props.base_url + 'translate.pl', {'op': 'view', 'id': section.id, 'language': 'en_US'})
     .then(response => {
       const content = response.data.section_data[0];
       this.setState((prevState, props) => {
@@ -127,11 +128,11 @@ export default class TaskTranslator extends React.Component
 
     <div className="timeline-sections container">
     <div className="task-editor section-editor">
-    {section_data && <TimelineSection language="en_US" {...section_data} key={this.state.section.id}/>}
+    {section_data && <TimelineSection base_url={this.props.base_url} language="en_US" {...section_data} key={this.state.section.id}/>}
     </div>
 
     <div className="task-editor section-editor">
-    <div>{section_data && <TimelineSectionEditor updateLanguage={(e) => this.updateLanguage(e)} language={this.state.language} count={count} {...this.state.section} key={this.state.section.id + 100} />}</div>
+    <div>{section_data && <TimelineSectionEditor base_url={this.props.base_url} updateLanguage={(e) => this.updateLanguage(e)} language={this.state.language} count={count} {...this.state.section} key={this.state.section.id + 100} />}</div>
     </div>
 
     </div>

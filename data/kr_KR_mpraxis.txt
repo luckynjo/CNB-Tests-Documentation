@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.06
+language: kr_KR
+
+Page 0: Common
+계속하려면 이곳을 클릭하십시오
+돌아가기
+
+Page 1: Title
+운동 실행 검사
+계속하려면 이곳을 클릭하십시오
+
+Page 2: Instructions
+이 검사는 마우스를 제어할 수 있는 능력을 평가합니다.
+녹색 상자가 한 번에 하나씩 보일 것입니다. 마우스를 움직여서 각 상자 위에 갖다 대고 한 번 클릭하십시오.
+
+Page 3: Begin Practice
+연습 시작
+
+Page 4: Practice
+계속하려면 녹색 상자를 클릭하십시오
+
+Page 5: Instructions
+이제 5초 내에 각 상자를 클릭하십시오 각 상자가 사라지기 전에 클릭하십시오.
+
+Page 6: Begin Test
+검사 시작
+
+Page 7: Test
+계속하려면 녹색 상자를 클릭하십시

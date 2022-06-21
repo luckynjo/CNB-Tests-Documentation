@@ -55,7 +55,7 @@ DON'T PRESS
 DON'T PRESS
 DO PRESS
 
-Page 5: Number Test Instructions
+Page 6: Number Test Instructions
 Great!
 Remember: Press the spacebar when you see a NUMBER.
 In the test, you will see different numbers than you saw in the practice.
@@ -63,22 +63,22 @@ Here are some examples:
 CLICK HERE TO CONTINUE
 GO BACK
 
-Page 6: Instructions
+Page 7: Instructions
 The test will begin now.
 During the test, you will NOT be told if your responses are CORRECT or INCORRECT.
 CLICK HERE TO CONTINUE
 GO BACK
 
-Page 7: Begin Test
+Page 8: Begin Test
 BEGIN TEST
 CLICK HERE TO CONTINUE
 GO BACK
 
-Page 8: Countdown
+Page 9: Countdown
 Get Ready!
 The test will begin in:
 Use the spacebar to respond.
 
-Page 9: Test
+Page 10: Test
 <number_test>
 Use the spacebar to respond.

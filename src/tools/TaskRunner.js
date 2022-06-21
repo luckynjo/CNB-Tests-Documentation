@@ -5,6 +5,9 @@ import CPT from '../tasks/CPT.js';
 import TAP from '../tasks/TAP.js';
 import CPF from '../tasks/CPF.js';
 import SVOLT from '../tasks/SVOLT.js';
+import NbackTask from '../tasks/NbackTask.js';
+import Digsym from '../tasks/Digsym.js';
+import PLLT from '../tasks/PLLT.js';
 import {TestLoader} from '../loaders/TestLoader.js';
 
 export default class TaskRunner extends React.Component
@@ -28,14 +31,15 @@ export default class TaskRunner extends React.Component
   onTaskLoaded(data)
   {
     const timeline = data.timeline;
-    console.log('Loaded timeline ', timeline);
+    //console.log('Loaded timeline ', timeline);
     const test = data.test;
-    console.log('Loaded test ', test);
-    const trials = data.practice_trials;
+    //console.log('Loaded test ', test);
+    const practice_trials = data.practice_trials;
     const test_trials = data.test_trials;
-    console.log('Loaded trials ', trials);
+    //console.log('Loaded practice_trials ', practice_trials);
+    //console.log('Loaded test_trials ', test_trials);
     this.setState((prevState, props) => {
-      return {task: "timeline", test: test, timeline: timeline, practice_trials: trials, test_trials: test_trials, slideshow: data.slideshow}
+      return {task: "timeline", test: test, timeline: timeline, practice_trials: practice_trials, test_trials: test_trials, slideshow: data.slideshow}
     });
   }
 
@@ -55,30 +59,48 @@ export default class TaskRunner extends React.Component
 
     if(task === "")
     {
-      return <TestLoader onLoad={(e) => {this.onTaskLoaded(e);}} onError={(e) => {this.onTaskLoadError(e);}} />
+      return <TestLoader base_url={this.props.base_url} onLoad={(e) => {this.onTaskLoaded(e);}} onError={(e) => {this.onTaskLoadError(e);}} />
     }
     else if(task === "timeline" && test.test.includes("praxis"))
     {
       return <div className="container-8-by-6  dark frame">
-      <MotorPraxisTask timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      <MotorPraxisTask base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline" && test.test.includes("cpt"))
     {
       return <div className="container-8-by-6  dark frame">
-      <CPT timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      <CPT base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline" && test.test.includes("tap"))
     {
       return <div className="container-8-by-6  dark frame">
-      <TAP timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      <TAP base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline" && test.test.includes("cpf"))
     {
       return <div className="container-8-by-6  dark frame">
-      <CPF timeline={timeline} test={test} slideshow={this.state.slideshow} test_trials={this.state.test_trials} />
+      <CPF base_url={this.props.base_url} timeline={timeline} test={test} slideshow={this.state.slideshow} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("sfnb"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <NbackTask base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("digsym"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <Digsym base_url={this.props.base_url} timeline={timeline} test={test} slideshow={this.state.slideshow} test_trials={this.state.test_trials} practice_trials={this.state.practice_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("pllt"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <PLLT base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline" && test.test.includes("svolt"))

@@ -10,7 +10,7 @@ const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
 */
 export const TestLoader = props =>
 {
-  const {onLoad, onError, ...rest} = props;
+  const {base_url, onLoad, onError, ...rest} = props;
   let [loaded, setLoaded] = useState(0);
   let [message, setMessage] = useState("Loading test ...");
 
@@ -22,19 +22,18 @@ export const TestLoader = props =>
     //axios.get(BASE_URL + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
-          console.log("Response be ", response.data.timeline);
+          //console.log("Response be ", response.data.timeline);
           if(response.data.timeline.length > 0)
           {
             setLoaded(100); onLoad(response.data);
           }
           else
           {
-            setMessage("Failed to load test. Please contact the CNB team.");
+            setMessage("Failed to load test because no test data exists. Please contact the CNB team.");
           }
 
           })
          .catch((e) => {
-            //console.log('Had error ', e);onError(e);
             console.log(e);
             setMessage("There was an error loading the test. Please contact the CNB team.");
           });

@@ -62,7 +62,7 @@ export class TaskTimelineEditor extends React.Component
 
   loadTimeline()
   {
-    axios.post(BASE_URL + 'timeline.pl', {'op': 'view', 'id': 1})
+    axios.post(this.props.base_url + 'timeline.pl', {'op': 'view', 'id': 1})
     .then(response => {
       console.log('response ', response.data.timeline);
       this.setState((prevState, props) => {
@@ -75,7 +75,7 @@ export class TaskTimelineEditor extends React.Component
   saveTimeline()
   {
     const timeline = this.state.sections;
-    axios.post(BASE_URL + 'timeline.pl', {'op': 'save', 'id': 1, 'timeline':timeline})
+    axios.post(this.props.base_url + 'timeline.pl', {'op': 'save', 'id': 1, 'timeline':timeline})
     .then(response => {console.log('response ', response)})
     .catch(error => {console.log('Error ', error)});
   }
@@ -126,7 +126,7 @@ export class TaskTimelineEditor extends React.Component
     const section_id = 6;
 
     console.log('updating section via api');
-    axios.post(BASE_URL + 'timeline.pl', {'op': 'ust', 'id': id, 'language': 'en_US', 'sid': section_id, "text": data})
+    axios.post(this.props.base_url + 'timeline.pl', {'op': 'ust', 'id': id, 'language': 'en_US', 'sid': section_id, "text": data})
     .then(response => {
       console.log('update response ', response);
     })
@@ -136,7 +136,7 @@ export class TaskTimelineEditor extends React.Component
   viewTimelineSection(section)
   {
     console.log('loading section ', section, ' via api');
-    axios.post(BASE_URL + 'timeline.pl', {'op': 'vst', 'id': section.id, 'language': 'en_US', 'section_number': section.section_number})
+    axios.post(this.props.base_url + 'timeline.pl', {'op': 'vst', 'id': section.id, 'language': 'en_US', 'section_number': section.section_number})
     .then(response => {
       console.log('response ', response.data.section_text[0]);
       this.setState((prevState, props) => {

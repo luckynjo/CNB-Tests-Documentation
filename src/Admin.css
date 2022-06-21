@@ -269,22 +269,14 @@ textarea{
 
 
 
-/***
 
-Admin layout style.
-*/
 html {
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
   display: block;
-/*   display: grid;
-  grid-template-columns: min-content 1fr;
-  font-family: system-ui, sans-serif;
 
-  this breaks position sticky in Firefox */
-  /* overflow-x: hidden; */
   font-size: 16pt;
 }
 
@@ -317,10 +309,6 @@ body {
 header {
      font-weight: 600;
      display: block;
-
-     /**transform-origin: 0 0;
-     transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
-     transition-delay: var(--delay-out);*/
      border-radius: 4px;
      padding: 1em 1.52em;
      span {
@@ -406,4 +394,8 @@ table.translation-view td h4 {
 .language-select{
   padding: 4px;
   background-color: #fffa;
+}
+
+.admin-area, div.admin-area p{
+  font-weight: normal;
 }

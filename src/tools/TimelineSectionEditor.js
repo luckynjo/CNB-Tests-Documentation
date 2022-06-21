@@ -11,7 +11,8 @@ const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "
 {"option": "xh_SA", "text": "IsiXhosa"}, {"option": "tn_BW", "text": "Setswana (Botswana)"}, {"option": "pt_MZ", "text": "What is pt_MZ language?"},
 {"option": "zn_CN", "text": "What is zn_CN language?"}];
 
-const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "http://localhost/";
 /****
 This class manages the editing of timeline sections.
 Given a section, and a language, use this class to edit section text.
@@ -55,7 +56,7 @@ export class TimelineSectionEditor extends React.Component
     }
     this.props.updateLanguage(language);
     const id = this.props.id;
-    axios.post(BASE_URL + 'translate.pl', {'op': 'view', 'id': id, 'language': language})
+    axios.post(this.props.base_url + 'translate.pl', {'op': 'view', 'id': id, 'language': language})
     .then(response => {
       //console.log('response ', JSON.parse(response.data.section_text[0].content));
       //let content = response.data.section_data.length > 0 ? JSON.parse(response.data.section_data[0].content) : new Array();
@@ -87,7 +88,7 @@ export class TimelineSectionEditor extends React.Component
     const id = this.props.id;
     const language = this.props.language;
     const translation = this.state.data;
-    axios.post(BASE_URL + 'translate.pl', {'op': 'save', 'id': id, 'language': language, 'section_number': this.props.section_number, "translation": translation})
+    axios.post(this.props.base_url + 'translate.pl', {'op': 'save', 'id': id, 'language': language, 'section_number': this.props.section_number, "translation": translation})
     .then(response => {
       console.log('response ', response.data);
     })
@@ -129,7 +130,7 @@ export class TimelineSectionEditor extends React.Component
     data.append('language', this.state.language);
     data.append('file', file);
     console.log('sending file ', data);
-    axios.post(BASE_URL + "translate.pl", data)
+    axios.post(this.props.base_url + "translate.pl", data)
     .then(response => {
       console.log("Response is ", response);
       //this.viewSectionTranslation();
