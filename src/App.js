@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-//import {TestVersionsEditor} from './tools/TestVersionsEditor.js';
+import {TestVersionsEditor} from './tools/TestVersionsEditor.js';
 import TaskRunner from './tools/TaskRunner.js';
 
 
@@ -16,10 +16,11 @@ function App(){
 	</Routes>
 </BrowserRouter>
 )*/
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
-//const BASE_URL = "http://localhost/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+const BASE_URL = "http://localhost/";
 return (
-	<TestVersionsEditor />
+	<TaskRunner base_url={BASE_URL}/>
+	//<TestVersionsEditor base_url={BASE_URL}/>
 )
 }
 

@@ -16,7 +16,6 @@ const AudioPlayer = props => {
 export default function TitlePage(props)
 {
   document.title = props.title;
-
   let audioPlayer = null;
   let buttonInvisibility  = '';
 
@@ -27,12 +26,11 @@ export default function TitlePage(props)
   }
 
   // Specifically for PVT, remove copyright sign from test title.
-  let title = (<p className={'test-header text--right right'}>{props.title} &copy;</p>);
+  let title = (<p className={'test-header text--right right'}>{props.title.split(" - ")[0]} &copy;</p>);
   if(props.copyrightTitle === 0)
   {
-    title = (<p className={'test-header text--right right'}>{props.title}</p>);
+    title = (<p className={'test-header text--right right'}>{props.title.split(" - ")[0]}</p>);
   }
-
 
   return (
     <div className={props.container_style || 'page'}>
