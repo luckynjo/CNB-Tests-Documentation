@@ -3,12 +3,12 @@ import CNBResponse from './CNBResponse.js';
 
 /***
 
-Handler for all CPF trials, regardless of form.
+Handler for all ER40 trials, regardless of form.
 Takes in trials and test as react prop parameters.
-TO DO: Reaplce cpf here stimuli/cpf/ with test.stimulus_folder.
+TO DO: Reaplce er40 here stimuli/er40/ with test.stimulus_folder.
 
 */
-export class ShapeMemoryTrials extends React.Component{
+export class ER40Trials extends React.Component{
 
   constructor(props)
   {
@@ -23,6 +23,10 @@ export class ShapeMemoryTrials extends React.Component{
     // Method bindings
     this.onClick = this.onClick.bind(this);
     this.findImage = this.findImage.bind(this);
+    this.nextTrial = this.nextTrial.bind(this);
+    this.findAssetFile = this.findAssetFile.bind(this);
+    this.findAssetFileInArray = this.findAssetFileInArray.bind(this);
+
   }
 
   onClick(evt, response)
@@ -61,7 +65,7 @@ export class ShapeMemoryTrials extends React.Component{
     {
       return this.findAssetFile(clean_url);
     }
-    else return this.props.base_url + "stimuli/svolt/" + clean_url;
+    else return this.props.base_url + "stimuli/er40/" + clean_url;
   }
 
   findAssetFile(url)
@@ -86,29 +90,45 @@ export class ShapeMemoryTrials extends React.Component{
         continue;
       }
     }
-    return file || this.props.base_url + "stimuli/svolt/" + url;
+    return file || this.props.base_url + "stimuli/er40/" + url;
   }
 
   render()
   {
     const stimulus = this.state.stimulus;
     const buttons = this.props.buttons.map((item, index) => {
-      if(index > 0){
-        return (<button className="button memory-button"/* "button cpf-button" */ key={index + 155} onClick={(e) => this.onClick(e, index + 1)}>{item}</button>)
-      }
+      return (<button className="button er40--response-button" key={index + 155} onClick={(e) => this.onClick(e, index + 1)}>{item}</button>)
     })
 
     return (
-      <div className="container">
-
-      <div>
-       <img className="stimulus--volt center" src={stimulus} />
-      </div>
-
-      <div className='inline memory-buttons--test'>
-      {buttons}
-      </div>
-
+      <div className="page test">
+        <table className="er40--table">
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <div>
+                  <p></p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className="stimulus">
+                  <div className="stimulus--container">
+                    <div className="stimulus--er40">
+                      <img src={stimulus} />
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div className="responses">
+                  {buttons}
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }

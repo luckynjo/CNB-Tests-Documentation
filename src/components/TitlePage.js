@@ -34,7 +34,6 @@ export default function TitlePage(props)
     title = (<p className={'test-header text--right right'}>{props.content[0] || props.title}</p>);
   }
 
-
   return (
     <div className={props.container_style || 'page'}>
       <div className="section--header">

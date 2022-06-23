@@ -131,7 +131,7 @@ export default class SVOLT extends React.Component {
     if(index === 0)
     {
       return <div className="container center">
-      <AssetLoader base_url={this.props.base_url} stimulus_dir="svolt" test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
+      <AssetLoader base_url={this.props.base_url} stimulus_dir="svolt" test_trials={this.props.test_trials} practice_trials={this.props.practice_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
       </div>
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
@@ -152,11 +152,11 @@ export default class SVOLT extends React.Component {
     }
     else if(section_title.match(SLIDESHOW_REGEX))
     {
-      return <div className="container center"><ImageSlideshow trials={this.props.slideshow} images={this.shapes} classList={"svolt"} onSlideShowComplete={this.next}/></div>
+      return <div className="container center"><ImageSlideshow base_url={this.props.base_url} trials={this.props.slideshow} images={this.shapes} classList={"svolt"} onSlideShowComplete={this.next}/></div>
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <div className="container"><ShapeMemoryTrials buttons={JSON.parse(timeline_object.content)} trials={this.props.test_trials} images={this.shapes} onTrialsComplete={this.onTrialsComplete}/></div>
+      return <div className="container"><ShapeMemoryTrials base_url={this.props.base_url} buttons={JSON.parse(timeline_object.content)} trials={this.props.test_trials} images={this.shapes} onTrialsComplete={this.onTrialsComplete}/></div>
     }
     else
     {

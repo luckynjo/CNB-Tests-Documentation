@@ -1,0 +1,164 @@
+
+.light
+{
+   background: #FFFFFF;
+   color:#000000;
+}
+p{
+padding: 8px;
+}
+.dark{
+   background: #000000;
+   color:#003366;
+}
+span.blue{
+color: #003366;
+}
+
+
+.stimulus--er40{
+/**width:66%;*/
+}
+.stimulus--er40 div.col{
+background: black;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.stimulus--er40  div.col img{
+height:350px;
+width:auto;
+}
+
+.response--er40{
+width:32%;
+height:500px;
+margin-top:20px;
+}
+.stimulus--er40 > img{
+  height: 350px;
+}
+
+#message{
+font-size:20px;
+font-weight:bold;
+margin-left: 65px;
+margin-top:8px;
+}
+
+
+
+.er40--response-button{
+   background:#003366;
+   color:white;
+   width:249px;
+   height:60px;
+   line-height: 60px;
+   font-size:24px;
+   text-align:center;
+   font-weight:bold;
+   font-family:Helvetica;
+   margin-bottom:32px;
+}
+
+.er40--image-placeholder
+{
+position:relative;
+   background:black;
+width:400px;
+height:515px;
+}
+.er40--spacer{
+margin-top: 50px;
+}
+
+.er40--image-placeholder img
+{
+   height:350px;
+   width:auto;
+}
+.er40--image-placeholder.test{
+   position:relative;
+   background:black;
+   width:400px;
+   height:520px;
+   margin-left:65px;
+   margin-right:35px;
+}
+
+p, span{
+  color: #000000;
+}
+
+div.practice{
+  display: flex;
+}
+
+div.stimulus{
+  width: 440px;
+  height: 500px;
+  background: black;
+  background-color: black;
+  margin-top: -32px;
+}
+
+div.stimulus, div.responses{
+  margin-left: 32px;
+}
+
+p.feedback{
+  font-size: 23px;
+  color: #993333;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 24px;
+  height:45px;
+}
+
+div.stimulus div.stimulus--container{
+  display: flex;
+justify-content: center;
+align-items: center;
+height: 450px;
+
+}
+
+div.stimulus div.continue--container
+{    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.stimulus div img{
+  display: block;
+}
+
+.instructions--top{
+  top: 200px;
+}
+
+.instructions p{
+  font-size: 30px;
+}
+
+div.page.test table{
+    margin-top: 32px;
+}
+
+div.page.test div.responses{
+  margin-top: 28px;
+}
+
+div.stimulus--er40 img
+{
+  height: 350px;
+  width: auto;
+      margin-top: 32px;
+      margin-left: 2px;
+margin-right: 2px;
+}
+
+.er40--table {
+  width: 80%;
+  margin-left: 0px;
+  margin-top: 0px;
+}
