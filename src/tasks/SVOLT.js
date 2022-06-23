@@ -34,11 +34,43 @@ export default class SVOLT extends React.Component {
 
     this.shapes = []; // SVOLT has shapes
     this.next = this.next.bind(this);
+    this.back = this.back.bind(this);
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
+    this.skipListener = this.skipListener.bind(this);
   }
+
+  componentWillUnmount()
+  {
+    window.removeEventListener("keydown", this.skipListener, false);
+  }
+
+  /***
+  * Handler for overral key presses.
+  * Specifically checks for skip command.
+  * TO DO: Add beep for invalid key presses.
+  */
+  skipListener(e)
+  {
+    // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+    if((e.metaKey || e.ctrlKey) && e.keyCode === 190)
+    {
+      console.log("skip task", new Date());
+      e.stopPropagation();
+      this.skipTest();
+    }
+  }
+
+  skipTest()
+  {
+    this.setState((prevState, props) => {
+      return {assessment_complete: true, skipped: 1};
+    });
+  }
+
 
   onAssetsLoadComplete(images)
   {
+    window.addEventListener("keydown", this.skipListener, false);
     this.shapes = images;
     this.next();
   }
@@ -48,6 +80,22 @@ export default class SVOLT extends React.Component {
     this.setState((prevState, props) => {
       return {assessment_complete: true, responses: responses};
     });
+  }
+
+  canGoBack()
+  {
+    return this.state.index > 1;
+  }
+
+  back()
+  {
+    const next = this.state.index - 1;
+    if(next > 0)
+    {
+      this.setState((prevState, props) => {
+        return {index: next};
+      });
+    }
   }
 
   next()
@@ -88,7 +136,7 @@ export default class SVOLT extends React.Component {
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={svolt_banner} banner_width={136} theme={"light"} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
+      return <TitlePage banner={svolt_banner} content={JSON.parse(timeline_object.content)} banner_width={136} theme={"light"} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
@@ -100,7 +148,7 @@ export default class SVOLT extends React.Component {
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
-      return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+      return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} hideGoBack={this.canGoBack()} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
     }
     else if(section_title.match(SLIDESHOW_REGEX))
     {

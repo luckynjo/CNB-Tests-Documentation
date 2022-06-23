@@ -31,26 +31,27 @@ export const DigsymInstructions = props => {
 
     <img className="instructions-image-centered" src={test_form === "a" ? digsym_a_banner : digsym_b_banner} />
      <p>{instructions_str.join(" ")}</p>
+     <br/>
 
      <p>{other_instructions_str.join(" ")}</p>
+     <br/>
 
      <div className="inline instructions-button-row">
 
        <div className="inline instructions-button-wrapper"><p className="instructions-button">{same_text}</p></div>
        <div className="inline instructions-button-wrapper"><p className="instructions-button">{different_text}</p></div>
      </div>
-
-     <div className="position-bottom--absolute">
-     <table className="buttons-table">
-     <tbody>
-     <tr>
-     <td><div><GoBackButton text={back_button_text} onClick={onGoBack}/></div></td>
-     <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
-     <td><div></div></td>
-     </tr>
-     </tbody>
-     </table>
-     </div>
+    </div>
+    <div className="position-bottom--absolute">
+    <table className="buttons-table">
+    <tbody>
+    <tr>
+    <td><div></div></td>
+    <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
+    <td><div></div></td>
+    </tr>
+    </tbody>
+    </table>
     </div>
     </div>
      :
@@ -61,7 +62,7 @@ export const DigsymInstructions = props => {
        <table className="buttons-table">
        <tbody>
        <tr>
-       <td><div><GoBackButton text={back_button_text} onClick={onGoBack}/></div></td>
+       <td><div></div></td>
        <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
        <td><div></div></td>
        </tr>

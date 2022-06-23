@@ -26,7 +26,7 @@ export default class TaskRunner extends React.Component
     }
     this.timeline = [];
     this.test_info = null;
-    document.body.classList.add('light');
+    document.body.classList.add('dark');
   }
 
   onTaskLoaded(data)

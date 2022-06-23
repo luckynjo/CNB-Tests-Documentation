@@ -48,12 +48,42 @@ export default class CPT extends React.Component{
     this.continue_button_text = content[0] || 'CLICK HERE TO CONTINUE';
     this.back_button_text = content[1] || 'GO BACK';
     this.spacebar_text = content[2] || 'Press the spacebar to continue';
+    this.skipListener = this.skipListener.bind(this);
+  }
+
+  componentWillUnmount()
+  {
+    window.removeEventListener("keydown", this.skipListener, false);
   }
 
   onAssetsLoadComplete(images)
   {
+    window.addEventListener("keydown", this.skipListener, false);
     this.images = images;
     this.next();
+  }
+
+  /***
+  * Handler for overral key presses.
+  * Specifically checks for skip command.
+  * TO DO: Add beep for invalid key presses.
+  */
+  skipListener(e)
+  {
+    // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+    if((e.metaKey || e.ctrlKey) && e.keyCode === 190)
+    {
+      console.log("skip task", new Date());
+      e.stopPropagation();
+      this.skipTest();
+    }
+  }
+
+  skipTest()
+  {
+    this.setState((prevState, props) => {
+      return {assessment_complete: true, skipped: 1};
+    });
   }
 
   canGoBack()
@@ -62,15 +92,29 @@ export default class CPT extends React.Component{
     return index > 0;
   }
 
-  back()
+  back(e, goTo)
   {
-    const index = this.state.index - 1;
-    if(index > 0)
+    let index = this.state.index - 1;
+    if(goTo)
     {
-      this.setState((prevState, props) => {
-        return {index: index};
-      });
+      let found = false;
+      while(!found && index > 1)
+      {
+        if(this.props.timeline[index].section_title.match(goTo))
+        {
+          found = true;
+          continue;
+        }
+        else
+        {
+          index = index - 1;
+        }
+      }
     }
+
+    this.setState((prevState, props) => {
+      return {index: index};
+    });
   }
 
   next()
@@ -166,7 +210,7 @@ export default class CPT extends React.Component{
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={motor_praxis_banner} onClick={this.next} continue_button_text={this.continue_button_text} {...this.props.test}/>
+      return <TitlePage banner={motor_praxis_banner} content={JSON.parse(timeline_object.content)} onClick={this.next} continue_button_text={this.continue_button_text} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
@@ -174,7 +218,7 @@ export default class CPT extends React.Component{
     }
     else if(section_title.match(TEST_INSTRUCTIONS_REGEX))
     {
-      return <CPTNumberTestInstructions  instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text}/>
+      return <CPTNumberTestInstructions  instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={(e) => this.back(e, BEGIN_PAGE_REGEX)} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.includes("Number_Instructions"))
     {

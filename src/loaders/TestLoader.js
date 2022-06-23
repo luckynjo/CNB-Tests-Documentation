@@ -3,8 +3,9 @@ import axios from 'axios';
 
 
 
-const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
-//const BASE_URL = "http://localhost";
+//const BASE_URL = "http://localhost/";
+const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "http://localhost/";
 /***
  Loads test data from the server.
 */
@@ -18,13 +19,23 @@ export const TestLoader = props =>
     //axios.get('http://localhost/webcnp.pl?op=get_next_test_json')
     // sctap-2.00-ff
     // spcptn90-4.00-ff
-    axios.post(BASE_URL + 'tests.pl', {'op': 'administer', 'test': 'k-er40-d-3.60-ff', 'language': 'en_US'})
-    //axios.get(BASE_URL + 'webcnp.pl?op=get_next_test_json')
+    // svolt-3.00-ff
+    //cpf-2.05-ff
+    // digsym-a-2.00-ff
+    // sfnb2-3.00-ff
+    //spllt-a-1.00-ff
+    //axios.post(BASE_URL + 'tests.pl', {'op': 'administer', 'test': 'svolt-3.00-ff', 'language': 'en_US'})
+    axios.get(BASE_URL + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
           //console.log("Response be ", response.data.timeline);
           if(response.data.timeline.length > 0)
           {
+            if(response.data.test.test.includes('volt') || response.data.test.test.includes('er40'))
+            {
+              document.body.classList.remove('dark');
+              document.body.classList.add('light');
+            }
             setLoaded(100); onLoad(response.data);
           }
           else

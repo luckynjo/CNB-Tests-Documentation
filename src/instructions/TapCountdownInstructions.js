@@ -8,8 +8,8 @@ import keyboard_pic from '../assets/keyboard.png';
 */
 
 export const TapCountdownInstructions = props => {
-  const {instructions, onContinue, handedness, trial, spacebar_text, ...rest} = props;
-  let [remainingTime, setRemainingTime] = useState(5);
+  const {instructions, onContinue, handedness, trial, spacebar_text, practice, ...rest} = props;
+  let [remainingTime, setRemainingTime] = useState(practice ? 3 : 7);
   let [pressed, setPressed] = useState(false);
   let [view, setView] = useState("instructions");
   const parsed_handedness = JSON.parse(handedness);

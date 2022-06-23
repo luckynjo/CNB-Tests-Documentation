@@ -69,6 +69,10 @@
   cursor: pointer;
 }
 
+.digsym-memory-digit:active{
+  transform: translateY(1px);
+}
+
 
 /***.instructions {
   width: 100%;

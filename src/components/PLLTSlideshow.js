@@ -10,7 +10,8 @@ export class PLLTSlideshow extends React.Component{
     this.state = {
       trial: 0,
       stimulus: stimulus,
-      trialTime: new Date()
+      trialTime: new Date(),
+      active: false
     };
     this.words = words;
     this.intervalid = -1;
@@ -28,7 +29,7 @@ export class PLLTSlideshow extends React.Component{
 
   start()
   {
-    this.intervalid = setTimeout(() => {this.update();}, 64);
+    this.intervalid = setTimeout(() => {this.update();}, 32);
   }
 
   update()
@@ -37,13 +38,19 @@ export class PLLTSlideshow extends React.Component{
     const duration = (new Date()) - starttime;
     // Show next trial
     // By default all our slideshows are 5 seconds long.
-    if(duration >= 1000)
+    if(duration >= 1000 && !this.state.active)
+    {
+      this.setState((prevState, props) => {
+        return {active: true, trialTime: new Date()};
+      }, this.start);
+    }
+    else if(duration >= 1000)
     {
       this.next();
     }
     else
     {
-      this.intervalid = setTimeout(() => {this.update();}, 64);
+      this.intervalid = setTimeout(() => {this.update();}, 32);
     }
   }
 
@@ -83,8 +90,8 @@ export class PLLTSlideshow extends React.Component{
 
     const rendered_words = wordsLeft.map((word, index) =>
     <tr key={index}>
-    <td className="left"><p className={wordsLeft[index] === stimulus ? "word active" : "word"}>{wordsLeft[index]}</p></td>
-    <td className="right"><p className={wordsRight[index] === stimulus ? "word active" : "word"}>{wordsRight[index]}</p></td>
+    <td className="left"><p className={wordsLeft[index] === stimulus && this.state.active ? "word active" : "word"}>{wordsLeft[index]}</p></td>
+    <td className="right"><p className={wordsRight[index] === stimulus && this.state.active  ? "word active" : "word"}>{wordsRight[index]}</p></td>
     </tr>)
 
     return(

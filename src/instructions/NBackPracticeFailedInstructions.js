@@ -30,6 +30,14 @@ Instructions renders text / images / html content that is defined in a test and 
 </tr>
 </tbody>
 </table>
+
+
+<div className="inline flex center--horizontal">
+  {practice_type.includes("0") && <img src={Xr} className="stimulus--small center--horizontal"  alt="X"/>}
+  {practice_type.includes("1") && <><img src={Vr} className="stimulus--small center--horizontal"  alt="M"/> <img src={Vr} className="stimulus--small center--horizontal"  alt="M"/></>}
+  {practice_type.includes("2") && <><img src={Kr} className="stimulus--small center--horizontal"  alt="M"/> <img src={Vr} className="stimulus--small center--horizontal"  alt="M"/><img src={Kr} className="stimulus--small center--horizontal"  alt="M"/></>}
+</div>
+
 */
 export const NBackPracticeFailedInstructions = props => {
   const {instructions, onContinue, spacebar_text, practice_type, ...rest} = props;
@@ -78,11 +86,7 @@ export const NBackPracticeFailedInstructions = props => {
         return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
       })}
 
-      <div className="inline flex center--horizontal">
-        {practice_type.includes("0") && <img src={Xr} className="stimulus--small center--horizontal"  alt="X"/>}
-        {practice_type.includes("1") && <><img src={Vr} className="stimulus--small center--horizontal"  alt="M"/> <img src={Vr} className="stimulus--small center--horizontal"  alt="M"/></>}
-        {practice_type.includes("2") && <><img src={Kr} className="stimulus--small center--horizontal"  alt="M"/> <img src={Vr} className="stimulus--small center--horizontal"  alt="M"/><img src={Kr} className="stimulus--small center--horizontal"  alt="M"/></>}
-      </div>
+
 
       <br/>
       <p className="text--center green">{instructions[3]}</p>

@@ -38,6 +38,40 @@ export default class PLLT extends React.Component{
     this.slideshowWords = this.slideshowWords.bind(this);
     this.trialWords = this.trialWords.bind(this);
     document.body.classList.add('dark');
+    this.skipListener = this.skipListener.bind(this);
+  }
+
+  componentWillUnmount()
+  {
+    window.removeEventListener("keydown", this.skipListener, false);
+  }
+
+  componentDidMount()
+  {
+    window.addEventListener("keydown", this.skipListener, false);
+  }
+
+  /***
+  * Handler for overral key presses.
+  * Specifically checks for skip command.
+  * TO DO: Add beep for invalid key presses.
+  */
+  skipListener(e)
+  {
+    // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+    if((e.metaKey || e.ctrlKey) && e.keyCode === 190)
+    {
+      console.log("skip task", new Date());
+      e.stopPropagation();
+      this.skipTest();
+    }
+  }
+
+  skipTest()
+  {
+    this.setState((prevState, props) => {
+      return {assessment_complete: true, skipped: 1};
+    });
   }
 
   // Record practice responses, also override existing practice responses.
@@ -113,7 +147,7 @@ export default class PLLT extends React.Component{
 
     if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={banner} onClick={this.next} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} {...this.props.test}/>
+      return <TitlePage banner={banner} content={JSON.parse(timeline_object.content)} onClick={this.next} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} {...this.props.test}/>
     }
 		else if(section_title.match(INSTRUCTIONS_REGEX))
 		{

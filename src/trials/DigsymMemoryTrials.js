@@ -43,7 +43,7 @@ export class DigsymMemoryTrials extends React.Component{
 
 
     this.digit_buttons = DIGITS.map((digit, index) => {
-      return <img key={'digit' + index} className="button digsym-memory-digit" src={this.findImage(digit)} onClick={(e) => this.onClick(e, index + 1)}/>
+      return <img key={'digit' + index} className="digsym-memory-digit" src={this.findImage(digit)} onClick={(e) => this.onClick(e, index + 1)}/>
     });
 
 

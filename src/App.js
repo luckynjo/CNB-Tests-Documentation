@@ -20,7 +20,6 @@ function App(){
 const BASE_URL = "http://localhost/";
 return (
 	<TaskRunner base_url={BASE_URL}/>
-	//<TestVersionsEditor base_url={BASE_URL}/>
 )
 }
 

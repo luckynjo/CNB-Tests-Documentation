@@ -31,6 +31,7 @@ table.words td{
   margin-right: 20px;
   font-size: 14pt;
   font-weight: normal;
+  cursor: pointer;
 }
 
 .pllt-response-button.wide{

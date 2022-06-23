@@ -9,7 +9,8 @@ export const SVOLTDemoInstructions = props => {
   const {instructions, onGoBack, onContinue, continue_button_text, back_button_text} = props;
   console.log('les instructions ', instructions);
   return (
-    <div className = "instructions">
+    <>
+    <div className = "instructions text--left top">
 
      <p>{instructions[0]}</p>
      {instructions.map((item, index) => {
@@ -36,18 +37,18 @@ export const SVOLTDemoInstructions = props => {
          return (<p key={index + 50}>{item}</p>)
        }
      })}
-
-     <div className="position-bottom--absolute">
-     <table className="buttons-table">
-     <tbody>
-     <tr>
-     <td><div><GoBackButton text={back_button_text} onClick={onGoBack}/></div></td>
-     <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
-     <td><div></div></td>
-     </tr>
-     </tbody>
-     </table>
-     </div>
     </div>
+    <div className="position-bottom--absolute">
+    <table className="buttons-table">
+    <tbody>
+    <tr>
+    <td><div></div></td>
+    <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
+    <td><div></div></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </>
   )
 }

@@ -15,21 +15,23 @@ const AudioPlayer = props => {
 /*** Main page of current CNB tests. Contains test title, banner, continue button and other test information */
 export default function TitlePage(props)
 {
-  document.title = props.title;
+  document.title = props.content[0] || props.title;
+
+  console.log('Conten be ', props.content);
   let audioPlayer = null;
   let buttonInvisibility  = '';
 
   if(props.audio)
   {
     audioPlayer = <AudioPlayer audio={props.audio} callback={enableButtons} isTitle={true}/>
-    buttonInvisibility = 'invisible';
+    buttonInvisibility = buttonInvisibility + ' invisible';
   }
 
   // Specifically for PVT, remove copyright sign from test title.
-  let title = (<p className={'test-header text--right right'}>{props.title.split(" - ")[0]} &copy;</p>);
+  let title = (<p className={'test-header text--right right'}>{props.content[0] || props.title} &copy;</p>);
   if(props.copyrightTitle === 0)
   {
-    title = (<p className={'test-header text--right right'}>{props.title.split(" - ")[0]}</p>);
+    title = (<p className={'test-header text--right right'}>{props.content[0] || props.title}</p>);
   }
 
   return (
@@ -62,7 +64,7 @@ export default function TitlePage(props)
       {audioPlayer}
       <div className="section--footer">
        <table><tbody><tr>
-        <td><p className="small text--center test-form">{props.description}</p></td>
+        <td><p className="small text--center test-form">{props.content[1] !== props.continue_button_text && props.content[1]}</p></td>
         <td><ContinueButton text={props.continue_button_text} classList={buttonInvisibility} onClick={() => props.onClick()}/></td>
         <td><p className="small text--center test-name">{props.test}</p></td></tr>
         <tr><td colSpan="3"><p className="copyright text--center">{props.citation || 'Copyright (c) 2005-2022 University of Pennsylvania  All Rights Reserved'}</p></td></tr>
