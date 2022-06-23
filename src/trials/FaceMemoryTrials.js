@@ -37,7 +37,7 @@ export class FaceMemoryTrials extends React.Component{
   {
     const next_trial = this.state.trial + 1;
     const trial_count = this.props.trials.length;
-
+    console.log('Next trial be ', next_trial);
     // Continue task.
     if(next_trial < trial_count)
     {

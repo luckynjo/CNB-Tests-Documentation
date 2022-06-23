@@ -525,3 +525,7 @@ div.during-the-demo p{
   font-size: 16px;
   font-size: 2vmin;
 }
+
+div.boxed button.back-button{
+  transform: translateX(-50%);
+}

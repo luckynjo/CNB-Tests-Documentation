@@ -57,7 +57,7 @@ export const CPTFalseNegativeInstructions = props => {
       {instructions.map((instruction, index) => {
         if(index < 3)
         {
-          return <p key={index*10 + 5}>{instruction}</p>
+          return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
         }
       })}
       <br/>
@@ -85,7 +85,12 @@ export const CPTFalseNegativeInstructions = props => {
     <tr>
 
     <td colSpan={2}><p className="center--horizontal text--center">{spacebar_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p></td>
-    <td><div><img src={keyboard} alt="Keyboard image" className="center--horizontal keyboard--continue"/></div></td>
+    <td><div><img src={keyboard} alt="Keyboard image" className="keyboard--continue"/></div></td>
+    </tr>
+    <tr>
+    <td><div></div></td>
+    <td><div></div></td>
+    <td><div></div></td>
     </tr>
     </tbody>
     </table>

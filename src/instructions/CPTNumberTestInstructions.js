@@ -12,7 +12,7 @@ import num6 from '../assets/cpt/num6.png';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const CPTNumberTestInstructions = props => {
-  const {instructions, onGoBack, onContinue, continue_button_text} = props;
+  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text} = props;
   return (
     <>
     <div className = "instructions  text--left top">
@@ -39,7 +39,7 @@ export const CPTNumberTestInstructions = props => {
     <table className="buttons-table">
     <tbody>
     <tr>
-    <td><div></div></td>
+    <td><div><GoBackButton text={back_button_text} onClick={onGoBack}/></div></td>
     <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
     <td><div></div></td>
     </tr>

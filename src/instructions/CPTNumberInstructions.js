@@ -17,7 +17,7 @@ export const CPTNumberInstructions = props => {
       {instructions.map((instruction, index) => {
         if(index < 3)
         {
-          return <p key={index*10 + 5}>{instruction}</p>
+          return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
         }
       })}
       <div className='flex medium--box center--horizontal'>

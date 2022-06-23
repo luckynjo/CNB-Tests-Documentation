@@ -21,8 +21,10 @@ Defines generic as well as test specific instructions that are used in building 
 
 ## Loaders
 Defines components that are used to load data from a database, specifically for CNB tasks when running on webcnp or surveys.
+
 ### AssetLoader
 Use this component for tasks that need to preload images such as CPF, VOLT, FNBm CPT etc.
+
 ### TestLoader
 This is the main component responsible for loading a task when it is administered on webcnp, currently does not support surveys.
 For local testing, you can change it to point to tests.pl
