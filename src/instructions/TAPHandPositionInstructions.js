@@ -30,7 +30,7 @@ export const TAPHandPositionInstructions = props => {
     <table className="buttons-table">
     <tbody>
     <tr>
-    <td><div></div></td>
+    <td><div><GoBackButton text={back_button_text} onClick={onGoBack}/></div></td>
     <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
     <td><div></div></td>
     </tr>

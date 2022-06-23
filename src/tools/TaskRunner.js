@@ -25,7 +25,7 @@ export default class TaskRunner extends React.Component
     }
     this.timeline = [];
     this.test_info = null;
-    document.body.classList.add('light');
+    document.body.classList.add('dark');
   }
 
   onTaskLoaded(data)
@@ -105,8 +105,8 @@ export default class TaskRunner extends React.Component
     }
     else if(task === "timeline" && test.test.includes("svolt"))
     {
-      return <div className="container-8-by-6  light frame">
-      <SVOLT timeline={timeline} test={test} slideshow={this.state.slideshow} test_trials={this.state.test_trials} />
+      return <div className="container-8-by-6 light frame">
+      <SVOLT base_url={this.props.base_url}  timeline={timeline} test={test} slideshow={this.state.slideshow} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline")

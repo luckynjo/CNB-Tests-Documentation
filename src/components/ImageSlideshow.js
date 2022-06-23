@@ -57,7 +57,7 @@ export class ImageSlideshow extends React.Component{
       this.next();
     }
     else {
-      this.intervalid = setTimeout(() => {this.update();}, 256);
+      this.intervalid = setTimeout(() => {this.update();}, 128);
     }
   }
 

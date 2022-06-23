@@ -49,12 +49,54 @@ export default class Digsym extends React.Component
 
     this.digit_symbols = [];
     this.next = this.next.bind(this);
+    this.back = this.back.bind(this);
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
+    this.skipListener = this.skipListener.bind(this);
+  }
+
+  componentWillUnmount()
+  {
+    window.removeEventListener("keydown", this.skipListener, false);
+  }
+
+  /***
+  * Handler for overral key presses.
+  * Specifically checks for skip command.
+  * TO DO: Add beep for invalid key presses.
+  */
+  skipListener(e)
+  {
+    // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+    if((e.metaKey || e.ctrlKey) && e.keyCode === 190)
+    {
+      console.log("skip task", new Date());
+      e.stopPropagation();
+      this.skipTest();
+    }
+  }
+
+  skipTest()
+  {
+    this.setState((prevState, props) => {
+      return {assessment_complete: true, skipped: 1};
+    });
+  }
+
+  back()
+  {
+    const next = this.state.index - 1;
+    if(next > 0)
+    {
+      this.setState((prevState, props) => {
+        return {index: next};
+      });
+    }
   }
 
   // Store the task images once they have been loaded by the AssetLoader.
   onAssetsLoadComplete(images)
   {
+    window.addEventListener("keydown", this.skipListener, false);
     this.digit_symbols = images;
     this.next();
   }
@@ -122,7 +164,7 @@ export default class Digsym extends React.Component
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={digsym_a_banner} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
+      return <TitlePage banner={digsym_a_banner} content={JSON.parse(timeline_object.content)} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
@@ -130,7 +172,7 @@ export default class Digsym extends React.Component
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
-      return <DigsymInstructions test_form={this.test_form} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <DigsymInstructions test_form={this.test_form} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {

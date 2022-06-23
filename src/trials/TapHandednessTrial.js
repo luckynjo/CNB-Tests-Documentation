@@ -52,6 +52,7 @@ export class TapHandednessTrial extends React.Component{
         <tr>
          <td colSpan={3}>
          <p className="button-like text--center">{this.props.instructions[this.props.instructions.length - 3] || 'Use the mouse to select your writing hand.'}</p>
+         <br/>
          </td>
         </tr>
         <tr>

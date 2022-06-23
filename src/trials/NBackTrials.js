@@ -210,11 +210,11 @@ export default class NBackTrials extends React.Component
     }
 
     this.correct = this.correct + 1;
-    if(this.correct === 3)
+    /**if(this.correct === 3)
     {
       this.stop();
       this.props.onPracticeComplete();
-    }
+    }*/
   }
 
 
@@ -310,7 +310,14 @@ export default class NBackTrials extends React.Component
     }
     else
     {
-      this.props.onTrialsComplete(this.state.responses);
+      if(this.props.practice)
+      {
+        this.props.onPracticeComplete();
+      }
+      else
+      {
+        this.props.onTrialsComplete(this.state.responses);
+      }
     }
   }
 

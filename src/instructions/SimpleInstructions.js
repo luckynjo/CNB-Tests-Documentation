@@ -14,7 +14,15 @@ export const SimpleInstructions = props => {
       {instructions.map((instruction, index) => {
         if(instruction !== continue_button_text && instruction !== back_button_text)
         {
-          return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
+          if(instruction.includes("GO!"))
+          {
+            const text_arr = instruction.split("GO!");
+            return <p><span>{text_arr[0]}</span><span className="green">GO!</span><span>{text_arr[1]}</span></p>
+          }
+          else
+          {
+            return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
+          }
         }
       })}
     </div>

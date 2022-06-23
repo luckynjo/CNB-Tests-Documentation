@@ -47,17 +47,50 @@ export default class TAP extends React.Component{
     this.back = this.back.bind(this);
     this.onPracticeComplete = this.onPracticeComplete.bind(this);
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
+    this.skipListener = this.skipListener.bind(this);
+    this.backToHandednessTrial = this.backToHandednessTrial.bind(this);
   }
 
-  /***componentDidMount()
+  componentWillUnmount()
   {
-    // Setup static default text
-    const content = JSON.parse(this.props.timeline[0].content);
-    this.continue_text = content[0] || "CLICK HERE TO CONTINUE";
-    this.back_text = content[1] || "GO BACK";
-    this.go_text = content[2] || "GO!";
-    this.stop_text = content[3] || "STOP!";
-  }*/
+    window.removeEventListener("keydown", this.skipListener, false);
+  }
+
+  componentDidMount()
+  {
+    window.addEventListener("keydown", this.skipListener, false);
+  }
+
+  /***
+  * Handler for overral key presses.
+  * Specifically checks for skip command.
+  * TO DO: Add beep for invalid key presses.
+  */
+  skipListener(e)
+  {
+    // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+    if((e.metaKey || e.ctrlKey) && e.keyCode === 190)
+    {
+      console.log("skip task", new Date());
+      e.stopPropagation();
+      this.skipTest();
+    }
+  }
+
+  skipTest()
+  {
+    this.setState((prevState, props) => {
+      return {assessment_complete: true, skipped: 1};
+    });
+  }
+
+  backToHandednessTrial()
+  {
+    const next = this.state.index - 1;
+    this.setState((prevState, props) => {
+      return {index: next, test_trial: 0, responses: []};
+    });
+  }
 
   back()
   {
@@ -66,13 +99,17 @@ export default class TAP extends React.Component{
     {
       const timeline_object = this.props.timeline[next + 1];
       const section_title = timeline_object.section_title;
+      let restart_practice = false;
+      let practice_trial = this.state.practice_trial;
       // The begin test page goes back to begin practice page.
       if(section_title.match(BEGIN_PAGE_REGEX) && section_title.match(TEST_REGEX))
       {
         next = next - 2;
+        practice_trial = 0;
+        restart_practice = true;
       }
       this.setState((prevState, props) => {
-        return {index: next};
+        return {index: next, practice_trial: practice_trial, practice: true};
       });
     }
   }
@@ -162,7 +199,7 @@ export default class TAP extends React.Component{
 
     if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={motor_praxis_banner} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} onClick={this.next} {...this.props.test}/>
+      return <TitlePage banner={motor_praxis_banner} content={JSON.parse(timeline_object.content)} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} onClick={this.next} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
@@ -174,7 +211,7 @@ export default class TAP extends React.Component{
     }
     else if(section_title.match(HAND_POSITION_DEMO_INSTRUCTIONS_REGEX))
     {
-      return <TAPHandPositionInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <TAPHandPositionInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.backToHandednessTrial} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
@@ -182,7 +219,7 @@ export default class TAP extends React.Component{
     }
     else if(section_title.match(COUNTDOWN_REGEX))
     {
-      return <TapCountdownInstructions spacebar_text={this.spacebar_text} instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
+      return <TapCountdownInstructions practice={this.state.practice} spacebar_text={this.spacebar_text} instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {

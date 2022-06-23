@@ -54,10 +54,40 @@ export default class NbackTask extends React.Component{
     this.finishDemo = this.finishDemo.bind(this);
     this.onPracticeComplete = this.onPracticeComplete.bind(this);
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
+    this.skipListener = this.skipListener.bind(this);
+  }
+
+  componentWillUnmount()
+  {
+    window.removeEventListener("keydown", this.skipListener, false);
+  }
+
+  /***
+  * Handler for overral key presses.
+  * Specifically checks for skip command.
+  * TO DO: Add beep for invalid key presses.
+  */
+  skipListener(e)
+  {
+    // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+    if((e.metaKey || e.ctrlKey) && e.keyCode === 190)
+    {
+      console.log("skip task", new Date());
+      e.stopPropagation();
+      this.skipTest();
+    }
+  }
+
+  skipTest()
+  {
+    this.setState((prevState, props) => {
+      return {assessment_complete: true, skipped: 1};
+    });
   }
 
   onAssetsLoadComplete(images)
   {
+    window.addEventListener("keydown", this.skipListener, false);
     this.images = images;
     //console.log('Loaded les images ', images);
     this.next();
@@ -86,7 +116,8 @@ export default class NbackTask extends React.Component{
   canGoBack()
   {
     const index = this.state.index - 1;
-    return index > 1;
+    return index > 1 && !this.props.timeline[index].section_title.includes('Demo');;
+
   }
 
   back()
@@ -133,37 +164,45 @@ export default class NbackTask extends React.Component{
 
   onPracticeFailed(reason, practice_type)
   {
-    console.log('Practice failed because ', reason, ' for practice type ', practice_type);
-    let index = this.state.index;
-    let found = false;
-    while(!found && index < this.props.timeline.length)
+    const practice_failed_count = this.state.practice_failed_count + 1;
+    if(practice_failed_count >= 3)
     {
-      const timeline_object = this.props.timeline[index];
-      const section_title = timeline_object.section_title;
-      console.log('Checking feedback from ', section_title);
-      if(section_title.includes(reason))
-      {
-        found = true;
-        console.log('Feedback found as ', section_title);
-        continue;
-      }
-      else
-      {
-        index = index + 1;
-      }
+      this.onPracticeComplete();
     }
-
-    // feedback has been found, now we render the feedback.
-
-    if(found)
+    else
     {
-      // TO DO: End task after 4 failed practices!
-      const practice_failed_count = this.state.practice_failed_count + 1;
-      const feedback = this.props.timeline[index];
-      console.log('Feedback is ', feedback, ' rerenderinf');
-      this.setState((prevState, props) => {
-        return {feedback: feedback, "practice_type": practice_type, practice_failed_count: practice_failed_count}
-      });
+      console.log('Practice failed because ', reason, ' for practice type ', practice_type);
+      let index = this.state.index;
+      let found = false;
+      while(!found && index < this.props.timeline.length)
+      {
+        const timeline_object = this.props.timeline[index];
+        const section_title = timeline_object.section_title;
+        console.log('Checking feedback from ', section_title);
+        if(section_title.includes(reason))
+        {
+          found = true;
+          console.log('Feedback found as ', section_title);
+          continue;
+        }
+        else
+        {
+          index = index + 1;
+        }
+      }
+
+      // feedback has been found, now we render the feedback.
+
+      if(found)
+      {
+        // TO DO: End task after 4 failed practices!
+
+        const feedback = this.props.timeline[index];
+        console.log('Feedback is ', feedback, ' rerenderinf');
+        this.setState((prevState, props) => {
+          return {feedback: feedback, "practice_type": practice_type, practice_failed_count: practice_failed_count}
+        });
+      }
     }
   }
 
@@ -206,6 +245,7 @@ export default class NbackTask extends React.Component{
     {
       console.log('Constructing 1 back object');
       const demo_content_timeline_object = this.props.timeline[index + 3];
+      const demo_settings = JSON.parse(demo_content_timeline_object.content);
       //const welcome_timeline_object = ;
       //console.log('Welcome object ', welcome_timeline_object);
       const section_1 = JSON.parse(this.props.timeline[index + 4].content);
@@ -215,10 +255,11 @@ export default class NbackTask extends React.Component{
       const base_url = this.props.base_url;
       console.log('sections ', section_1, ' ', section_2, ' ', section_3, ' ', section_4);
       const demo_object = {
-        arrowTitle: 'Image',
-        firstArrow: '1st Image',
-        lastArrow: 'Last Image',
-        press: 'PRESS',
+        arrowTitle: (demo_settings[0].split(' '))[1] || 'Image',
+        firstArrow: demo_settings[0] || '1st Image',
+        lastArrow: demo_settings[1] || 'Last Image',
+        press: demo_settings[2] || 'PRESS',
+        quit: demo_settings[3] || ('Skip ' + (practice_type.includes("1") ? '1-Back' : '2-Back') + ' Movie'),
         pressArrow: green_arrow,
         nbackArrow: practice_type.includes("1") ? arrow_head : twoback_arrow,
         arrow: arrow,
@@ -280,7 +321,7 @@ export default class NbackTask extends React.Component{
     const feedback = this.state.feedback;
     if(this.state.demo)
     {
-      return <LNBDemo onContinue={this.finishDemo} skipPractice={this.finishDemo} content={this.demo} />
+      return <LNBDemo base_url={this.props.base_url} onContinue={this.finishDemo} skipPractice={this.finishDemo} content={this.demo} images={this.images}/>
     }
     else if(feedback)
     {
@@ -293,7 +334,7 @@ export default class NbackTask extends React.Component{
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={motor_praxis_banner} onClick={this.next} {...this.props.test}/>
+      return <TitlePage content={JSON.parse(timeline_object.content)} banner={motor_praxis_banner} onClick={this.next} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {

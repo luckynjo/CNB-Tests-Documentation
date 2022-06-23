@@ -176,7 +176,7 @@ export default class LNBDemo extends React.Component
 				{
 					if(item.match(IMG_REGEX))
 					{
-						return <td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || arrow_head} alt="1 Back Arrow" className="arrow_head right"/><img className={"image-demo " + highlight} src={"http://localhost/stimuli/flnb/" + item} alt={item}/></td>
+						return <td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || arrow_head} alt="1 Back Arrow" className="arrow_head right"/><img className={"image-demo " + highlight} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/></td>
 					}
 					else
 					{
@@ -187,7 +187,7 @@ export default class LNBDemo extends React.Component
 				{
 					if(item.match(IMG_REGEX))
 					{
-						return <td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || twoback_arrow} alt="2 Back Arrow" className="twoback_arrow_head"/><img className={"image-demo " + highlight} src={"http://localhost/stimuli/flnb/" + item} alt={item}/></td>
+						return <td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || twoback_arrow} alt="2 Back Arrow" className="twoback_arrow_head"/><img className={"image-demo " + highlight} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/></td>
 					}
 					else
 					{
@@ -198,7 +198,7 @@ export default class LNBDemo extends React.Component
 				{
 					if(item.match(IMG_REGEX))
 					{
-						return <td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || threeback_arrow} alt="3 Back Arrow" className="threeback_arrow_head"/><img className={"image-demo " + highlight} src={"http://localhost/stimuli/flnb/" + item} alt={item}/></td>
+						return <td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || threeback_arrow} alt="3 Back Arrow" className="threeback_arrow_head"/><img className={"image-demo " + highlight} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/></td>
 					}
 					else
 					{
@@ -210,7 +210,7 @@ export default class LNBDemo extends React.Component
 			{
 				if(item.match(IMG_REGEX))
 				{
-					return <td className="col" key={tracker + index + 1}><img className={"image-demo " + highlight} src={"http://localhost/stimuli/flnb/" + item} alt={item}/></td>
+					return <td className="col" key={tracker + index + 1}><img className={"image-demo " + highlight} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/></td>
 				}
 				else
 				{
@@ -370,7 +370,7 @@ export default class LNBDemo extends React.Component
 			{
 				if(item.match(IMG_REGEX))
 				{
-					return <td className="col" key={tracker + index + 1}><img className={"image-demo letter--hint"} src={"http://localhost/stimuli/flnb/" + item} alt={item}/></td>
+					return <td className="col" key={tracker + index + 1}><img className={"image-demo letter--hint"} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/></td>
 				}
 				else
 				{
@@ -459,7 +459,7 @@ export default class LNBDemo extends React.Component
 		);
 	}
 
-	///// 			{this.state.item.match(IMG_REGEX) ?  <img className="demo-image center--horizontal" src={"http://localhost/stimuli/flnb/" + this.state.item} alt="Demo" /> : <p className="stimulus-text--medium stimulus-text--demo">{this.state.item}</p>}
+	///// 			{this.state.item.match(IMG_REGEX) ?  <img className="demo-image center--horizontal" src={this.props.base_url + "stimuli/flnb/" + this.state.item} alt="Demo" /> : <p className="stimulus-text--medium stimulus-text--demo">{this.state.item}</p>}
 
 	renderInsideWindowDemo()
 	{
@@ -596,7 +596,7 @@ export default class LNBDemo extends React.Component
 					let it = <p className={"text--center " + highlight}>{item}</p>;
 					if(item.match(IMG_REGEX))
 					{
-						it = <img className={"image-demo " + highlight} src={"http://localhost/stimuli/flnb/" + item} alt={item}/>
+						it = <img className={"image-demo " + highlight} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/>
 					}
 					return (<td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || arrow_head} alt="1 Back Arrow" className="arrow_head right"/>
 					{it}
@@ -607,7 +607,7 @@ export default class LNBDemo extends React.Component
 					let it = <p className={"text--center " + highlight}>{item}</p>
 					if(item.match(IMG_REGEX))
 					{
-						it = <img className={"image-demo " + highlight} src={"http://localhost/stimuli/flnb/" + item} alt={item}/>
+						it = <img className={"image-demo " + highlight} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/>
 					}
 					return <td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || twoback_arrow} alt="2 Back Arrow" className="twoback_arrow_head"/>{it}
 					</td>
@@ -617,7 +617,7 @@ export default class LNBDemo extends React.Component
 					let it = <p className={"text--center " + highlight}>{item}</p>
 					if(item.match(IMG_REGEX))
 					{
-						it = <img className={"image-demo " + highlight} src={"http://localhost/stimuli/flnb/" + item} alt={item}/>
+						it = <img className={"image-demo " + highlight} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/>
 					}
 					return <td className="col" key={tracker + index + 1}><img src={this.props.content.nbackArrow || threeback_arrow} alt="3 Back Arrow" className="threeback_arrow_head"/>{it}
 					</td>
@@ -627,7 +627,7 @@ export default class LNBDemo extends React.Component
 			{
 				if(item.match(IMG_REGEX))
 				{
-					return <td className="col" key={tracker + index + 1}><img className={"image-demo " + highlight} src={"http://localhost/stimuli/flnb/" + item} alt={item}/></td>
+					return <td className="col" key={tracker + index + 1}><img className={"image-demo " + highlight} src={this.props.base_url + "stimuli/flnb/" + item} alt={item}/></td>
 				}
 				else
 				{
