@@ -82,7 +82,7 @@ export default class PLLT extends React.Component{
 		let current_responses = this.state.responses;
     const updated_responses = current_responses.concat(responses);
 		this.setState((prevState, props) => {
-			return {responses: updated_responses, next_trial: next_trial}
+			return {responses: updated_responses, trial: next_trial}
 		}, this.next);
   }
 
@@ -159,7 +159,7 @@ export default class PLLT extends React.Component{
 		}
     else if(section_title.match(TEST_REGEX))
     {
-      return <PLLTTrials trials={[this.props.test_trials[this.state.trial]]} words={this.trialWords(JSON.parse(timeline_object.content))} next_trial_button_text={this.next_trial_button_text} other_button_text={this.other_button_text} onTrialsComplete={(e) => this.onTrialsComplete(e)} />
+      return <PLLTTrials trials={this.props.test_trials} trial={this.state.trial} words={this.trialWords(JSON.parse(timeline_object.content))} next_trial_button_text={this.next_trial_button_text} other_button_text={this.other_button_text} onTrialsComplete={(e) => this.onTrialsComplete(e)} />
     }
 		else
 		{

@@ -15,13 +15,17 @@ export const DigsymInstructions = props => {
   const instructions_str = updated_instructions.map((item, index) => {
     if(item && index < size - 2)
     {
-      return item;
+
+
     }
   });
   const other_instructions_str = updated_instructions.map((item, index) => {
       if(item && index >= size - 2)
       {
-        return item;
+        if(item !== same_text && item !== different_text)
+        {
+          return item;
+        }
       }
     });
   return (
@@ -57,7 +61,13 @@ export const DigsymInstructions = props => {
      :
      <div className="page full">
        <div className = "instructions digsym text--left">
-       {instructions.map((instruction, index) => {return <p key={index + instruction.length}>{instruction}</p>})}
+       {instructions.map((instruction, index) => {
+         if(instruction !== same_text && instruction !== different_text)
+         {
+           return <div key={index + instruction.length}><p>{instruction}</p><br/></div>
+         }
+
+       })}
        <div className="position-bottom--absolute">
        <table className="buttons-table">
        <tbody>

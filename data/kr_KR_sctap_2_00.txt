@@ -1,0 +1,63 @@
+test: sctap
+version: 2.00
+language: kr_KR
+
+test: sctap
+version: 2.00
+language: Korean
+
+Page 0: Common
+계속하려면 이곳을 클릭하십시오.
+돌아가기
+시작! 정지
+<WH> 글씨 쓰는 손 을 사용하십시오
+<NWH> 글씨 쓰지 않는 손 을 사용하십시오
+
+Page 1: Title
+간이 컴퓨터 손가락 두드리기 검사
+간이 형식
+계속하려면 이곳을 클릭하십시오.
+
+Page 2: Handedness Trial
+이 검사는 손가락 속도를 평가합니다.
+최대한 빨리 스페이스 바를 두드리십시오.
+매 시도 후 손을 바꿉니다.
+글씨 쓰는 손이 어느 쪽 손인지 마우스를 사용하여 선택하십시오.
+<HANDEDNESS> 왼손잡이
+<HANDEDNESS> 오른손잡이
+
+Page 3: Demo Instructions
+아래에 나와 있는 위치에 손을 두십시오.
+
+Page 4: Instructions
+연습해 보겠습니다.
+“시작”이 표시되면, 최대한 빨리 스페이스 바를 두드리십시오.
+방금 배운 손 위치를 유지해야 합니다. 손 전체나 팔을 움직여서 두드리면 안 됩니다. 손가락만 움직여야 합니다. 
+
+Page 5: Begin Practice
+연습 시작 
+
+Page 6: Countdown
+연습 시도 <TRIAL_NUMBER> 
+<WH> 글씨 쓰는 손 을 사용하십시오
+<NWH> 글씨 쓰지 않는 손 을 사용하십시오
+스페이스 바를 누를 때 올바른 손 위치를 사용하십시오
+
+Page 7: Practice
+시작!
+정지!
+
+Page 8: Begin Test
+검사 시작
+
+Page 9: Countdown
+실제 시도 <TRIAL_NUMBER>
+<WH> 글씨 쓰는 손 을 사용하십시오
+<NWH> 글씨 쓰는 손이 아닌 손 을  사용하십시오
+The trial will begin in:
+seconds.
+스페이스 바를 누를 때 올바른 손 위치를 사용하십시오
+
+Page 8: Test
+시작!
+정지!

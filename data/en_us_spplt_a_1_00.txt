@@ -1,4 +1,4 @@
-test: spllt
+test: spllt-a
 version: 1.00
 language: en_US
 

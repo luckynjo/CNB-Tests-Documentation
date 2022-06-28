@@ -4,14 +4,14 @@ import axios from 'axios';
 
 
 //const BASE_URL = "http://localhost/";
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
 //const BASE_URL = "http://localhost/";
 /***
  Loads test data from the server.
 */
 export const TestLoader = props =>
 {
-  const {base_url, onLoad, onError, ...rest} = props;
+  const {base_url, assessment_url, onLoad, onError, ...rest} = props;
   let [loaded, setLoaded] = useState(0);
   let [message, setMessage] = useState("Loading test ...");
 
@@ -24,8 +24,10 @@ export const TestLoader = props =>
     // digsym-a-2.00-ff
     // sfnb2-3.00-ff
     //spllt-a-1.00-ff
-    //axios.post(BASE_URL + 'tests.pl', {'op': 'administer', 'test': 'svolt-3.00-ff', 'language': 'en_US'})
-    axios.get(BASE_URL + 'webcnp.pl?op=get_next_test_json')
+    // k-er40-d-3.60-ff
+    // svolt-3.00-ff
+    //axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'k-er40-d-3.60-ff', 'language': 'en_US'})
+    axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
           //console.log("Response be ", response.data.timeline);

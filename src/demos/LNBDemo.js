@@ -281,8 +281,8 @@ export default class LNBDemo extends React.Component
 			<table className="buttons-table">
 			<tbody>
 			<tr>
-			<td><div><GoBackButton onClick={this.back}/></div></td>
-			<td><ContinueButton  onClick={this.props.onContinue}/></td>
+			<td><div><GoBackButton text={this.props.content.back_button_text} onClick={this.props.onContinue}/></div></td>
+			<td><ContinueButton  text={this.props.continue_button_text} onClick={this.props.onContinue}/></td>
 			<td><div></div></td>
 			</tr>
 			</tbody>
@@ -655,7 +655,7 @@ export default class LNBDemo extends React.Component
 			<tbody>
 			<tr>
 			<td className="demo-text--container">
-			<p className="text--center--vertically during-the-demo--text">{this.props.content.window.message || 'What you will see during the test is inside this window.'}</p>
+			<p className="text--center--vertically during-the-demo--text">{this.props.content.window[0] || 'What you will see during the test is inside this window.'}</p>
 			</td>
 			<td className="box--container">
 			<div className="box center--horizontal">

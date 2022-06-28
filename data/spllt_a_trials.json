@@ -1,7 +1,7 @@
 {
   "trials": [
-{"question_number": 1 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":{},"trial_type": "test", "trial_section": "<trials>"},
-{"question_number": 2 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":{},"trial_type": "test", "trial_section": "<trials>"},
-{"question_number": 3 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":{},"trial_type": "test", "trial_section": "<trials>"}
+{"question_number": 1 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":["LION", "HORSE", "TIGER", "COW", "TENT", "HOTEL", "CAVE", "HUT", "EMERALD", "SAPPHIRE", "OPAL", "PEARL", "TEACHER", "DENTIST", "ENGINEER", "PROFESSOR"],"trial_type": "test", "trial_section": "<trials>"},
+{"question_number": 2 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":["LION", "HORSE", "TIGER", "COW", "TENT", "HOTEL", "CAVE", "HUT", "EMERALD", "SAPPHIRE", "OPAL", "PEARL", "TEACHER", "DENTIST", "ENGINEER", "PROFESSOR"],"trial_type": "test", "trial_section": "<trials>"},
+{"question_number": 3 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":["LION", "HORSE", "TIGER", "COW", "TENT", "HOTEL", "CAVE", "HUT", "EMERALD", "SAPPHIRE", "OPAL", "PEARL", "TEACHER", "DENTIST", "ENGINEER", "PROFESSOR"],"trial_type": "test", "trial_section": "<trials>"}
 ]
 }

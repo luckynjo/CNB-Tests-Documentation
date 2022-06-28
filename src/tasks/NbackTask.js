@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/flnb.css';
 //import {NBackTrials} from '../trials/NBackTrials.js';
 import {SimpleKeyboardInstructions} from '../instructions/SimpleKeyboardInstructions.js';
+import {NBackWelcomeInstructions} from '../instructions/NBackWelcomeInstructions.js';
 import AssetLoader from '../loaders/AssetLoader.js';import TitlePage from '../components/TitlePage.js';
 import {SimpleInstructions} from '../instructions/SimpleInstructions.js';
 import {ZeroBackInstructions} from '../instructions/ZeroBackInstructions.js';
@@ -55,6 +56,11 @@ export default class NbackTask extends React.Component{
     this.onPracticeComplete = this.onPracticeComplete.bind(this);
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
     this.skipListener = this.skipListener.bind(this);
+
+    const content = JSON.parse(this.props.timeline[0].content);
+    this.continue_button_text = content[0] || 'CLICK HERE TO CONTINUE';
+    this.back_button_text = content[1] || 'GO BACK';
+    this.spacebar_text = content[2] || 'Press the spacebar to continue';
   }
 
   componentWillUnmount()
@@ -150,7 +156,7 @@ export default class NbackTask extends React.Component{
       }
     }
     this.setState((prevState, props) => {
-      return {index: index};
+      return {index: index, practice_failed_count: 0, feedback: null, practice_type: null};
     });
   }
 
@@ -252,14 +258,16 @@ export default class NbackTask extends React.Component{
       const section_2 = JSON.parse(this.props.timeline[index + 5].content);
       const section_3 = JSON.parse(this.props.timeline[index + 6].content);
       const section_4 = JSON.parse(this.props.timeline[index + 7].content);
+      const back_button_text = this.back_button_text;
       const base_url = this.props.base_url;
       console.log('sections ', section_1, ' ', section_2, ' ', section_3, ' ', section_4);
       const demo_object = {
-        arrowTitle: (demo_settings[0].split(' '))[1] || 'Image',
+        arrowTitle: 'Image',
         firstArrow: demo_settings[0] || '1st Image',
         lastArrow: demo_settings[1] || 'Last Image',
         press: demo_settings[2] || 'PRESS',
-        quit: demo_settings[3] || ('Skip ' + (practice_type.includes("1") ? '1-Back' : '2-Back') + ' Movie'),
+        quit: back_button_text,
+        //quit: demo_settings[3] || ('Skip ' + (practice_type.includes("1") ? '1-Back' : '2-Back') + ' Movie'),
         pressArrow: green_arrow,
         nbackArrow: practice_type.includes("1") ? arrow_head : twoback_arrow,
         arrow: arrow,
@@ -269,7 +277,6 @@ export default class NbackTask extends React.Component{
         items: practice_type.includes("1") ? ["Br.png", "Cr.png", "Fr.png", "Gr.png", "Gr.png", "Tr.png", "Mr.png", "Mr.png", "Lr.png", "Nr.png"] : [ "Br.png", "Gr.png", "Fr.png", "Gr.png", "Mr.png", "Tr.png", "Mr.png", "Lr.png", "Mr.png", "Cr.png"],
         answers:practice_type.includes("1") ?[ 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0] : [ 0,  0,   0,   1,   0,   0,   1 ,  0,   1,  0],
         next: 'continue',
-        quit: 'GO BACK',
         welcome: section_1,
         duringTheDemo: section_2,
         window: section_3,
@@ -321,24 +328,28 @@ export default class NbackTask extends React.Component{
     const feedback = this.state.feedback;
     if(this.state.demo)
     {
-      return <LNBDemo base_url={this.props.base_url} onContinue={this.finishDemo} skipPractice={this.finishDemo} content={this.demo} images={this.images}/>
+      return <LNBDemo base_url={this.props.base_url} onContinue={this.finishDemo} skipPractice={this.finishDemo} content={this.demo} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(feedback)
     {
-      return <NBackPracticeFailedInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} practice_type={this.state.practice_type} />
+      return <NBackPracticeFailedInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} practice_type={this.state.practice_type} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
     }
     else if(index === 0)
     {
       /// Also set the text for continue, go back etc.
       return <div className="container center"><AssetLoader base_url={this.props.base_url} stimulus_dir="flnb" practice_trials={this.props.practice_trials} test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} /></div>
     }
+    else if(index === 2)
+    {
+      return <NBackWelcomeInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next}  continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+    }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage content={JSON.parse(timeline_object.content)} banner={motor_praxis_banner} onClick={this.next} {...this.props.test}/>
+      return <TitlePage content={JSON.parse(timeline_object.content)} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} banner={motor_praxis_banner} onClick={this.next} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
-      return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back}/>
+      return <BeginPage title={JSON.parse(timeline_object.content)[0]} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} onContinue={this.next} onGoBack={this.back}/>
     }
     else if(section_title.match(ZEROBACK_INSTRUCTIONS_REGEX))
     {

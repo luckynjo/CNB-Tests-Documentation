@@ -1,0 +1,50 @@
+test: k-er40
+version: 3.60
+language: kr_KR
+
+Page 0: Common
+계속하려면 이곳을 클릭하십시오.
+돌아가기
+
+Page 1: Title
+Penn 정서 인식 검사
+ER40 양식 D
+계속하려면 이곳을 클릭하십시오.
+
+Page 2: Instructions
+이 검사에서 몇 가지 얼굴이 나타납니다.  각 얼굴을 주의 깊게 살펴보고 그 사람이 느끼고 있는 감정이 무엇인지 판단해 보십시오.
+그 사람이 느끼고 있는 감정을 가장 잘 설명하는 단어를 클릭하십시오.
+
+Page 3: Instructions
+그 사람이 아무런 감정도 나타내지 않고 있다면, “감정 없음”을 클릭하십시오.
+연습용 얼굴로 한 번 해 보겠습니다…
+
+Page 4: Begin Practice
+연습 시작
+
+Page 5: Practice
+이 얼굴에 나타난 감정이 무엇입니까?
+행복함
+슬픔
+화남
+공포
+감정 없음
+
+Page 5.1: Feedback Correct
+하셨습니다!
+
+Page 5.2: Feedback Incorrect
+틀렸습니다. 다시 시도하십시오.
+
+Page 6: Instructions
+이제 검사를 시작하겠습니다.  각 얼굴을 주의 깊게 살펴보셔야 합니다.  최대한 빠르고 정확하게 응답하십시오.
+
+Page 7: Begin Test
+검사 시작
+
+Page 8: Test
+행복함
+슬픔
+화남
+공포
+감정 없음

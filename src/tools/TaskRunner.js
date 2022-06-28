@@ -60,7 +60,7 @@ export default class TaskRunner extends React.Component
 
     if(task === "")
     {
-      return <TestLoader base_url={this.props.base_url} onLoad={(e) => {this.onTaskLoaded(e);}} onError={(e) => {this.onTaskLoadError(e);}} />
+      return <TestLoader base_url={this.props.base_url} assessment_url={this.props.assessment_url} onLoad={(e) => {this.onTaskLoaded(e);}} onError={(e) => {this.onTaskLoadError(e);}} />
     }
     else if(task === "timeline" && test.test.includes("praxis"))
     {
