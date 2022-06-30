@@ -251,7 +251,7 @@ export default class LNBDemo extends React.Component
 			<td>
 			 <div className="boxed">
 			  <p>{this.props.content.quitMessage || 'Skip training movie and return to practice'}</p>
-				<GoBackButton classList="center--horizontal" onClick={this.props.skipPractice} text={this.props.content.quit || "GO BACK"}/>
+				<GoBackButton classList="center--horizontal" onClick={this.props.skipPractice} text={this.props.back_button_text || "GO BACK"}/>
 			 </div>
 			</td>
 			<td><ContinueButton text={this.props.continue_button_text} onClick={this.next}/></td>
@@ -281,7 +281,7 @@ export default class LNBDemo extends React.Component
 			<table className="buttons-table">
 			<tbody>
 			<tr>
-			<td><div><GoBackButton text={this.props.content.back_button_text} onClick={this.props.onContinue}/></div></td>
+			<td><div><GoBackButton text={this.props.back_button_text} onClick={this.props.onContinue}/></div></td>
 			<td><ContinueButton  text={this.props.continue_button_text} onClick={this.props.onContinue}/></td>
 			<td><div></div></td>
 			</tr>

@@ -48,11 +48,11 @@ export const TapTestCountdownInstructions = props => {
         }
       })}
       <br/>
-      <p className="text--center">The trial will begin in:</p>
+      <p className="text--center">{instructions[3] || 'The trial will begin in:'}</p>
       <br/>
       <p className="text--center">{remainingTime}</p>
       <br/>
-      <p className="text--center">seconds</p>
+      <p className="text--center">{instructions[4] || 'seconds'}</p>
 
       </div>
      </div>

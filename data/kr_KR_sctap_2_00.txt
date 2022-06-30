@@ -2,10 +2,6 @@ test: sctap
 version: 2.00
 language: kr_KR
 
-test: sctap
-version: 2.00
-language: Korean
-
 Page 0: Common
 계속하려면 이곳을 클릭하십시오.
 돌아가기
@@ -54,8 +50,8 @@ Page 9: Countdown
 실제 시도 <TRIAL_NUMBER>
 <WH> 글씨 쓰는 손 을 사용하십시오
 <NWH> 글씨 쓰는 손이 아닌 손 을  사용하십시오
-The trial will begin in:
-seconds.
+이 실제 시도는:
+초 후에 시작됩니다.
 스페이스 바를 누를 때 올바른 손 위치를 사용하십시오
 
 Page 8: Test

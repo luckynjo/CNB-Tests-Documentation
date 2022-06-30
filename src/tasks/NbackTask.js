@@ -267,6 +267,7 @@ export default class NbackTask extends React.Component{
         lastArrow: demo_settings[1] || 'Last Image',
         press: demo_settings[2] || 'PRESS',
         quit: back_button_text,
+        quitMessage: demo_settings[4] || 'Skip training movie and return to practice',
         //quit: demo_settings[3] || ('Skip ' + (practice_type.includes("1") ? '1-Back' : '2-Back') + ' Movie'),
         pressArrow: green_arrow,
         nbackArrow: practice_type.includes("1") ? arrow_head : twoback_arrow,
