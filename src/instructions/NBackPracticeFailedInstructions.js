@@ -91,6 +91,9 @@ export const NBackPracticeFailedInstructions = props => {
       <br/>
       <p className="text--center green">{instructions[3]}</p>
 
+      <div className="inline flex center--horizontal">
+        {practice_type.includes("0") && <img src={Xr} className="stimulus--small center--horizontal"  alt="X"/>}
+      </div>
 
     </div>
 

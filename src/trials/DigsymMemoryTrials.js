@@ -16,7 +16,7 @@ const TRUE_POSITIVE = 'tp';
 const FALSE_POSITIVE = 'fp';
 const TRUE_NEGATIVE = 'tn';
 const FALSE_NEGATIVE = 'fn';
-const DIGITS = ["dig1.png", "dig2.png", "dig3.png", "dig4.png", "dig5.png", "dig6.png", "dig6.png", "dig7.png", "dig8.png", "dig9.png"];
+const DIGITS = ["dig1.png", "dig2.png", "dig3.png", "dig4.png", "dig5.png", "dig6.png", "dig7.png", "dig8.png", "dig9.png"];
 export class DigsymMemoryTrials extends React.Component{
 
   constructor(props)

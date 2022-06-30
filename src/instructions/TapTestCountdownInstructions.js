@@ -7,32 +7,11 @@ import keyboard_pic from '../assets/keyboard.png';
  Function to display countdown timer for CPT task.
 */
 
-export const TapCountdownInstructions = props => {
+export const TapTestCountdownInstructions = props => {
   const {instructions, onContinue, handedness, trial, spacebar_text, practice, ...rest} = props;
-  let [remainingTime, setRemainingTime] = useState(3);
-  let [pressed, setPressed] = useState(false);
-  let [view, setView] = useState("instructions");
+  let [remainingTime, setRemainingTime] = useState(7);
   const parsed_handedness = JSON.parse(handedness);
   console.log('Continue text be ', spacebar_text);
-
-  function keyDown(e)
-  {
-    e.preventDefault();
-    console.log('Key down is ', e.keyCode);
-    if(e.keyCode === 32)
-    {
-      setPressed(true);
-      document.removeEventListener('keydown', keyDown);
-      document.removeEventListener('keyup', keyUp);
-    }
-  }
-
-  function keyUp(e)
-  {
-    e.preventDefault();
-    console.log('Key up is ', e.keyCode);
-    //setPressed(false);
-  }
 
   const countdown = time => {
     const next = time - 1;
@@ -47,24 +26,14 @@ export const TapCountdownInstructions = props => {
   }
 
   useEffect(() => {
-    if(view === "instructions")
-    {
-      document.addEventListener('keydown', keyDown, false);
-      document.addEventListener('keyup', keyUp, false);
-    }
-    if(pressed)
-    {
-      setView("countDown");
-      countdown(remainingTime);
-    }
+
+          countdown(remainingTime);
 
     return () => {
-      document.removeEventListener('keydown', keyDown);
-      document.removeEventListener('keyup', keyUp);
     }
-  }, [view, remainingTime, pressed]);
+  }, [remainingTime]);
 
-  return view === "instructions" ?
+  return remainingTime >= 4 ?
   (
     <>
 
@@ -79,7 +48,12 @@ export const TapCountdownInstructions = props => {
         }
       })}
       <br/>
-      <p>{instructions[3]}</p>
+      <p className="text--center">{instructions[3] || 'The trial will begin in:'}</p>
+      <br/>
+      <p className="text--center">{remainingTime}</p>
+      <br/>
+      <p className="text--center">{instructions[4] || 'seconds'}</p>
+
       </div>
      </div>
 
@@ -88,7 +62,7 @@ export const TapCountdownInstructions = props => {
        <tbody>
         <tr>
          <td colSpan={2}>
-          <p className="text--center">{spacebar_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p>
+          <p className="text--center">{instructions[3]}</p>
          </td>
          <td>
           <img src={keyboard_pic} className="keyboard--continue left" alt="Keyboard image" />

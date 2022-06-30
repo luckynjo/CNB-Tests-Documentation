@@ -74,6 +74,7 @@ Page 11: 1-Back Demo
 Last Image
 PRESS
 Skip 1-Back Movie
+Skip training movie and return to practice
 
 Page 11.1: 1-Back Demo Section 1
 We're going to try a new way of looking at the task.
@@ -122,6 +123,7 @@ Page 16: 2-Back Demo
 Last Image
 PRESS
 Skip 2-Back Movie
+Skip training movie and return to practice
 
 Page 16.1: 2-Back Demo Section 1
 We're going to try a different way of looking at the task.

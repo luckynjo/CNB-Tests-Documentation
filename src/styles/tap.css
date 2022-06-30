@@ -78,14 +78,14 @@ div.position--bottom-abosolute > div.inline{
   margin: 16px;
 }
 
-p.stop{
+div.dark p.stop{
   color: #FF0000;
   font-size: 72px;
   font-weight: bold;
   text-align: center;
 }
 
-p.go{
+div.dark p.go{
   color:#00FF00;
   font-size: 72px;
   font-weight: bold;

@@ -43,7 +43,7 @@ export class ER40PracticeTrial extends React.Component{
     //const questions = this.state.questions;
     const index = this.state.index;
     const trial = this.props.trials[this.state.trial];
-    if(trial.correct_response !== response)
+    if(3 !== response)
     {
       //this.stop();
       //window.removeEventListener("keydown", this.keyDown, false);
@@ -123,17 +123,22 @@ export class ER40PracticeTrial extends React.Component{
     const practiceInstruction = this.props.buttons[0];
     const buttons = this.props.buttons.map((item, index) => {
       if(index > 0){
-        return (<button className="button er40--response-button" key={index + 155} onClick={(e) => this.onPracticeResponse(e, item)}>{item}</button>)
+        return (<button className="button er40--response-button" key={index + 155} onClick={(e) => this.onPracticeResponse(e, index)}>{item}</button>)
       }
     })
 
     return (
       <div className="container">
-        <p>{this.state.feedback ? this.state.feedback : practiceInstruction}</p>
 
-        <div className="page practice">
+
+
           <table className="er40--table">
             <tbody>
+            <tr>
+            <td colSpan={2}>
+            <p className={"er40--feedback" + (this.state.feedback ? " red" : "")}>{this.state.feedback ? this.state.feedback : practiceInstruction}</p>
+            </td>
+            </tr>
 
               <tr>
                 <td>
@@ -141,36 +146,22 @@ export class ER40PracticeTrial extends React.Component{
                     <div className="stimulus--container">
                       <div className="stimulus--er40">
                         <img src={stimulus} />
-                        {
-                          this.state.feedback == this.props.feedback_correct &&
-                          (<div className="continue--container">
-                          <table className="buttons-table">
-                          <tbody>
-                          <tr>
-                          <td><div></div></td>
-                          <td><ContinueButton text={this.props.continue_button_text} onClick={this.props.onPracticeComplete}/></td>
-                          <td><div></div></td>
-                          </tr>
-                          </tbody>
-                          </table>
-                          </div>)
-                        }
+                        <br/>
+                        {this.state.feedback == this.props.feedback_correct && <ContinueButton text={this.props.continue_button_text} onClick={this.props.onPracticeComplete}/>}
                       </div>
                     </div>
                   </div>
                 </td>
                 <td>
-                  {!(this.state.feedback == this.props.feedback_correct) &&
-                  <div className="responses">
-                    {buttons}
-                  </div>
-                }
+                <div className="responses">
+                  {!(this.state.feedback == this.props.feedback_correct) && buttons}
+                </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
+
     );
   }
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CNBResponse from './CNBResponse.js';
+import {Randomizer} from '../utils/Randomizer.js';
 
 /***
 
@@ -13,9 +14,12 @@ export class ER40Trials extends React.Component{
   constructor(props)
   {
     super(props);
-    const stimulus = this.findImage(this.props.trials[0].stimulus);
+    const trials = props.trials;
+    const questions = Randomizer(trials, 1, true);
+    const stimulus = this.findImage(this.props.trials[questions[0]].stimulus);
     this.state = {
       trial: 0,
+      questions: questions,
       stimulus: stimulus,
       responses: [],
       trialTime: new Date()
@@ -31,9 +35,12 @@ export class ER40Trials extends React.Component{
 
   onClick(evt, response)
   {
+    const trial = this.state.trial;
+    const questions = this.state.questions;
+    const question = this.props.trials[questions[trial]];
     let responses = this.state.responses;
     const duration = (new Date()) - this.state.trialTime;
-    responses.push(new CNBResponse(this.state.trial + 1, response, duration));
+    responses.push(new CNBResponse(question.question_number, response, duration));
     this.nextTrial(responses);
   }
 
@@ -45,7 +52,8 @@ export class ER40Trials extends React.Component{
     // Continue task.
     if(next_trial < trial_count)
     {
-      const stimulus = this.findImage(this.props.trials[next_trial].stimulus);
+      const questions = this.state.questions;
+      const stimulus = this.findImage(this.props.trials[questions[next_trial]].stimulus);
       this.setState((prevState, props) => {
         return {trial: next_trial, stimulus: stimulus, trialTime: new Date(), responses: responses};
       });
@@ -101,16 +109,9 @@ export class ER40Trials extends React.Component{
     })
 
     return (
-      <div className="page test">
+      <div className="page center">
         <table className="er40--table">
           <tbody>
-            <tr>
-              <td colspan="2">
-                <div>
-                  <p></p>
-                </div>
-              </td>
-            </tr>
             <tr>
               <td>
                 <div className="stimulus">
