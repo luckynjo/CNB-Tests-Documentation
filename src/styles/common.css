@@ -143,6 +143,10 @@ div.dark{
 div.light p{
 color:#003366;
 }
+
+div.light p.red{
+  color: red;
+}
 div.dark p{
 color:#FFFFFF;
 }

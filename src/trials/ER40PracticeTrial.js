@@ -136,7 +136,7 @@ export class ER40PracticeTrial extends React.Component{
             <tbody>
             <tr>
             <td colSpan={2}>
-            <p className="er40--feedback">{this.state.feedback ? this.state.feedback : practiceInstruction}</p>
+            <p className={"er40--feedback" + (this.state.feedback ? " red" : "")}>{this.state.feedback ? this.state.feedback : practiceInstruction}</p>
             </td>
             </tr>
 

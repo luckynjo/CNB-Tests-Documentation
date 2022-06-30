@@ -259,6 +259,7 @@ export default class NbackTask extends React.Component{
       const section_3 = JSON.parse(this.props.timeline[index + 6].content);
       const section_4 = JSON.parse(this.props.timeline[index + 7].content);
       const back_button_text = this.back_button_text;
+      const verbose_title = JSON.parse(this.props.timeline[index - 1].content)[0];
       const base_url = this.props.base_url;
       console.log('sections ', section_1, ' ', section_2, ' ', section_3, ' ', section_4);
       const demo_object = {
@@ -273,7 +274,7 @@ export default class NbackTask extends React.Component{
         nbackArrow: practice_type.includes("1") ? arrow_head : twoback_arrow,
         arrow: arrow,
         title: practice_type.includes("1") ? '1-BACK' : '2-BACK',
-        verbose_title: practice_type.includes("1") ? '1-BACK' : '2-BACK',
+        verbose_title: verbose_title ? verbose_title : (practice_type.includes("1") ? '1-BACK' : '2-BACK'),
         base_url: base_url,
         items: practice_type.includes("1") ? ["Br.png", "Cr.png", "Fr.png", "Gr.png", "Gr.png", "Tr.png", "Mr.png", "Mr.png", "Lr.png", "Nr.png"] : [ "Br.png", "Gr.png", "Fr.png", "Gr.png", "Mr.png", "Tr.png", "Mr.png", "Lr.png", "Mr.png", "Cr.png"],
         answers:practice_type.includes("1") ?[ 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0] : [ 0,  0,   0,   1,   0,   0,   1 ,  0,   1,  0],
