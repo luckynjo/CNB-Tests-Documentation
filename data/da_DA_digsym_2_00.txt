@@ -34,7 +34,7 @@ FORSKELLIG
 Page 6: Begin Test
 START TEST
 
-Page 7:Test
+Page 7: Matching Test
 <matching>
 SAMME
 FORSKELLIG
@@ -43,7 +43,7 @@ Page 8: Instructions
 På den næste side skal du klikke på det tal, der var parret med hvert symbol.
 Prøv at være så præcis og så hurtig som du kan.
 
-Page 9:Test
+Page 9: Memory Test
 <memory>
 Hvilket tal hørte til dette symbol?
 Klik på det tal, der blev sat sammen med dette symbol.

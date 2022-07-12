@@ -6,7 +6,7 @@ import {TimelineSection} from './TimelineSection.js';
 
 //const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
 //const BASE_URL = "http://localhost/";
-const LANGUAGES = [{"option": "", "text":"Please select language (defaults to English)"}, {"option": "he_IL", "text": "Hebrew"}, {"option": "bg_BG", "text": "Bulgarian"},
+const LANGUAGES = [{"option": "", "text":"Please select language (defaults to English)"},  {"option": "da_DA", "text": "Danish"}, {"option": "he_IL", "text": "Hebrew"}, {"option": "bg_BG", "text": "Bulgarian"},
 {"option": "nl_NL", "text": "Dutch (Netherlands)"}, {"option": "ar_EG", "text": "Arabic (Egypt)"}, {"option": "zh_CN", "text": "Simplified Chinese"},
 {"option": "it_IT", "text": "Italian"}, {"option": "po_BR", "text": "What is po_BR language?"}, {"option": "de_DE", "text": "German"}, {"option": "es_ES", "text": "Spanish (Spain)"},
 {"option": "fr_CA", "text": "French (Canada)"}, {"option": "pt_BR", "text": "Portuguese (Brazil)"}, {"option": "es_MX", "text": "Spanish (Mexico)"},
