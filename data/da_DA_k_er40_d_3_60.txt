@@ -1,0 +1,51 @@
+test: k-er40
+version: 3.60
+language: da_DA
+
+Page 0: Common
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+
+Page 1: Title
+Penn Emotion Recognition Test
+ER40-formular D
+KLIK HER FOR AT FORTSÆTTE
+
+Page 2: Instructions
+I denne test vil du se nogle ansigter.  Se omhyggeligt på hvert ansigt, og prøv at finde ud af, hvad personen føler.
+Klik på ordet, der bedst beskriver, hvad personen føler.
+
+Page 3: Instructions
+Hvis personen ikke viser nogen følelser, skal du trykke på "Ingen følelse."
+Lad os prøve et øvelsesansigt ...
+
+Page 4: Begin Practice
+START ØVELSE
+
+Page 5: Practice
+Hvilken følelse viser dette ansigt?
+GLAD
+TRIST
+VRED
+FRYGT
+INGEN FØLELSE
+
+Page 5.1: Feedback Correct
+Flot klaret!
+
+Page 5.2: Feedback Incorrect
+Det var ikke helt rigtigt. Prøv igen.
+
+Page 6: Instructions
+Testen starter nu. Husk at kigge omhyggeligt på hvert ansigt.
+Vær så hurtig og nøjagtig som muligt.
+
+Page 7: Begin Test
+START TEST
+
+Page 8: Test
+GLAD
+TRIST
+VRED
+FRYGT
+INGEN FØLELSE

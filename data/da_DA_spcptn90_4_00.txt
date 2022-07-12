@@ -1,0 +1,84 @@
+test: spcptn90
+version: 2.00
+language: da_DA
+
+Page 0: Common
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+Tryk på mellemrumstasten for at fortsætte.
+
+Page 1: Title
+Short Penn Continuous Performance Test
+Tal
+KLIK HER FOR AT FORTSÆTTE
+
+Page 2: Number Instructions
+I denne test vil du se linjer på skærmen.
+Når linjerne udgør et helt TAL, skal du hurtigt trykke på mellemrumstasten.
+For eksempel:
+TRYK IKKE
+TRYK IKKE
+TRYK
+Lad os øve det.
+KLIK HER FOR AT FORTSÆTTE
+
+Page 3: Begin Practice
+START TALØVELSE
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+
+Page 4: Countdown
+Klar!
+Øvelsen starter om:
+Brug mellemrumstasten til at svare.
+
+Page 5: Practice
+<number_practice>
+Tryk på mellemrumstasten for at fortsætte.
+
+Page 5.1: Feedback Correct
+KORREKT!
+
+Page 5.2: Feedback False Negative
+Det var IKKE KORREKT.
+Du så et helt tal, men trykkede ikke på mellemrumstasten.
+Tryk på mellemrumstasten, når du ser et helt TAL.
+TRYK
+
+Page 5.3: Feedback False Positive
+Det var IKKE KORREKT.
+Du så ikke et helt tal.
+Tryk KUN på mellemrumstasten, når du ser et helt TAL.
+TRYK IKKE
+TRYK IKKE
+TRYK IKKE
+TRYK IKKE
+TRYK
+
+Page 5: Number Test Instructions
+Fantastisk!
+Husk: Tryk på mellemrumstasten, når du ser et TAL.
+I testen vil du se andre tal end dem, du så i øvelsen.
+Her er nogle eksempler:
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+
+Page 6: Instructions
+Testen starter nu.
+Under testen får du IKKE at vide, om dine svar er KORREKTE eller IKKE KORREKTE.
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+
+Page 7: Begin Test
+START TEST
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+
+Page 8: Countdown
+Klar!
+Øvelsen starter om:
+Brug mellemrumstasten til at svare.
+
+Page 9: Test
+<number_test>
+Brug mellemrumstasten til at svare.
