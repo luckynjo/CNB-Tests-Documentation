@@ -4,18 +4,19 @@ img.slideshow-image
   height: 350px;
 }
 
-div.memory-buttons--other
+.memory-buttons--other
 {
-  min-width:600px;
-  max-width: 700px;
+  /***min-width:600px;
+  max-width: 700px;*/
   padding-top:36px;
   padding-bottom: 16px;
 }
 
-div.memory-buttons--test
+.memory-buttons--test
 {
-  min-width:600px;
+  /****min-width:600px;
   max-width: 800px;
+  min-width: 690px;*/
   height:80px;
   position:absolute;
   bottom: 16px;
