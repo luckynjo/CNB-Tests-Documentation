@@ -1,0 +1,44 @@
+Test: svolt
+Version: 3.00
+language: da_DA
+
+Page 0: Common
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+
+Page 1: Title
+Visual Object Learning Test
+Kort hukommelse
+KLIK HER FOR AT FORTSÆTTE
+
+Page 2: Instructions
+Du vil se nogle figurer. Prøv at huske hele figuren.
+Senere skal du udvælge disse figurer fra en større gruppe figurer.
+
+Page 3: Begin Practice
+START PRÆSENTATION
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Nu vil du se flere former. Nogle er nye, andre har du allerede set.
+Find ud af, om du har set den enkelte form før.
+HELT SIKKERT JA
+SANDSYNLIGVIS JA
+SANSYNLIGVIS NEJ
+HELT SIKKERT NEJ
+Klik på HELT SIKKERT JA, hvis du er SIKKER på, at du HAR set den før.
+Klik på SANDSYNLIGVIS JA, hvis du TROR, du HAR set den før.
+Klik på SANDSYNLIGVIS NEJ, hvis du TROR, du IKKE HAR set den før.
+Klik på HELT SIKKERT NEJ, hvis du er SIKKER på, at du IKKE HAR set den før.
+
+Page 6: Begin Test
+START TEST
+
+Page 7: Test
+<trials>
+HELT SIKKERT JA
+SANDSYNLIGVIS JA
+SANSYNLIGVIS NEJ
+HELT SIKKERT NEJ
