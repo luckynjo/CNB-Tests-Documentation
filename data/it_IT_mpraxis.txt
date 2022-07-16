@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.05
+language: it_IT
+
+Page 0: Common
+FAI CLIC QUI PER CONTINUARE 
+VAI INDIETRO
+
+Page 1: Title
+Test della prassi motoria
+FAI CLIC QUI PER CONTINUARE
+
+Page 2: Instructions
+Questo è un test della tua abilità nel controllo del mouse.
+Vedrai alcune caselle verdi, una alla volta. Muovi il cursore del mouse su ciascuna casella e fai clic su di essa UNA VOLTA SOLA.
+
+Page 3: Begin Practice
+INIZIA A ESERCITARTI
+
+Page 4: Practice
+Fai clic sulla casella verde per continuare.
+
+Page 5: Instructions
+Questa volta avrai 5 secondi per fare clic su ciascuna casella. Prova a fare clic su ciascuna casella prima che scompaia.
+
+Page 6: Begin Test
+INIZIA IL TEST
+
+Page 7: Test
+Fai clic sulla casella verde per continuare.
