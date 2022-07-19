@@ -1,0 +1,89 @@
+test: spllt-a
+version: 1.00
+language: da_DA
+
+Page 0: Common
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+ANDET
+FORTSÆT TIL NÆSTE FORSØG
+
+Page 1: Title
+Kort Penn Liste-Indlærings-test
+Kort form
+KLIK HER FOR AT FORTSÆTTE
+
+
+Page 2: Instructions
+(Instruktioner 1)
+
+(Til test-administrator: Vend nu computerskærmen væk fra deltagerens synsfelt. Deltageren må ikke kunne se computerskærmen igennem hele denne test. Læs instruktionerne nedenfor op for deltageren. Læs herefter ordene i listen højt, i takt med at ordene bliver markerede med gult.)
+
+Jeg vil nu læse op en liste med ord. Hør godt efter, for når jeg er færdig med at læse, vil jeg have dig til at genfortælle så mange af ordene som muligt. Rækkefølgen spiller ingen rolle – bare sig så mange du kan huske. Her kommer listen:
+
+(Vær parat til at læse listen med ord)
+
+
+Page 3: Slideshow
+<slideshow>
+LØVE
+SMARAGD
+TELT
+LÆRER
+SAFIR
+TANDLÆGE
+HOTEL
+HEST
+INGENIØR
+OPAL
+TIGER
+HULE
+PROFESSOR
+PERLE
+KO
+HYTTE
+
+Page 4: Test
+<trials>
+LØVE
+HEST
+TIGER
+KO
+TELT
+HOTEL
+HULE
+HYTTE
+SMARAGD
+SAFIR
+OPAL
+PERLE
+LÆRER
+TANDLÆGE
+INGENIØR
+PROFESSOR
+
+Page 5: Instructions
+(Instruktioner 2)
+
+Jeg vil nu gentage listen med ord. Igen vil jeg gerne have dig til at sige så mange af ordene som du kan huske, i hvilken som helst rækkefølge, inklusive de ord, du allerede har fortalt mig. Her kommer listen:
+
+(Vær parat til at læse listen med ord.)
+
+Page 6: Slideshow
+<slideshow>
+
+Page 7: Test
+<trials>
+
+Page 8: Instructions
+(Instruktioner 3)
+
+Jeg vil nu gentage listen med ord. Igen vil jeg gerne have dig til at sige så mange af ordene som du kan huske, i hvilken som helst rækkefølge, inklusive de ord, du allerede har fortalt mig. Her kommer listen:
+
+(Vær parat til at læse listen med ord.)
+
+Page 9: Slideshow
+<slideshow>
+
+Page 10: Test
+<trials>

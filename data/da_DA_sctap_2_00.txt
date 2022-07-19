@@ -1,0 +1,58 @@
+test: sctap
+version: 2.00
+language: da_DA
+
+Page 0: Common
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+TRYK PÅ MELLEMRUMSTASTEN FOR AT FORTSÆTTE
+<WH> HÅND, DU SKRIVER MED
+<NWH> HÅND, DU IKKE SKRIVER MED
+
+Page 1: Title
+Short Computerized Finger-Tapping Task
+Kort form
+KLIK HER FOR AT FORTSÆTTE
+
+Page 2: Handedness trial
+Dette er en test af din fingerhastighed.
+Tryk på mellemrumstasten, så hurtigt du kan.
+Du skal skifte hænder efter hver test.
+Brug musen til at vælge den hånd, du skriver med.
+<HANDEDNESS> Venstrehåndet
+<HANDEDNESS> Højrehåndet
+
+Page 3: Demo Instructions
+Hold din hånd i den position, du ser nedenfor.
+
+Page 4: Instructions
+Lad os øve.
+Når du ser "START", skal du trykke på mellemrumstasten, så hurtigt du kan.
+Husk at bruge den håndposition, du lige har lært. BRUG IKKE HELE DIN HÅND ELLER ARM TIL AT TRYKKE MED - kun din finger.
+
+Page 5: Begin Practice
+START ØVELSE
+
+Page 6: Countdown
+PRATISK TEST <TRIAL_NUMBER> BRUG DEN
+<WH> HÅND, DU SKRIVER MED
+<NWH> HÅND, DU IKKE SKRIVER MED
+
+Page 7: Practice
+START!
+STOP
+
+Page 8: Begin Test
+START TEST
+
+Page 9: Countdown
+TEST <TRIAL_NUMBER>BRUG DEN
+<WH>HÅND, DU SKRIVER MED
+<NWH>HÅND, DU IKKE SKRIVER MED
+Denne test starter om
+sekunder
+BRUG DEN KORREKTE HÅNDPOSITION, NÅR DU TRYKKER PÅ MELLEMRUMSTASTEN
+
+Page 8: Test
+START!
+STOP!

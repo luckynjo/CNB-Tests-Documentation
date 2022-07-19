@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.05
+language: da_DA
+
+Page 0: Common
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+
+Page 1: Title
+Test af motoriske handlinger (praxis)
+KLIK HER FOR AT FORTSÆTTE
+
+Page 2: Instructions
+Dette er en test af din evne til at styre musen.
+Du vil se nogle grønne felter, ét ad gangen. Flyt musemarkøren hen over hvert felt, og klik på den ÉN gang.
+
+Page 3: Begin Practice
+START ØVELSE
+
+Page 4: Practice
+Klik på det grønne felt for at fortsætte
+
+Page 5: Instructions
+Denne gang har du 5 sekunder til at klikke på hvert felt. Prøv at klikke på hvert felt, før det forsvinder.
+
+Page 6: Begin Test
+START TEST
+
+Page 7: Test
+Klik på det grønne felt for at fortsætte
