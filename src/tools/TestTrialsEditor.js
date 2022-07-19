@@ -105,9 +105,9 @@ export class TestTrialsEditor extends React.Component
       {data.map((trial, index) => {
         return <tr key={index + 200}>
         <td>{trial.question_number}</td>
-        <td>{trial.stimulus}</td>
-        <td>{trial.trial_type}</td>
-        <td>{trial.responses}</td>
+        <td><p>{trial.stimulus}</p></td>
+        <td><p>{trial.trial_type}</p></td>
+        <td><p>{trial.responses}</p></td>
         </tr>
       })}
       </tbody>

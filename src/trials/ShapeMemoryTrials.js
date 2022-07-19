@@ -94,7 +94,7 @@ export class ShapeMemoryTrials extends React.Component{
     const stimulus = this.state.stimulus;
     const buttons = this.props.buttons.map((item, index) => {
       if(index > 0){
-        return (<td key={index}><button className="button volt-button"/* "button cpf-button" */ key={index + 155} onClick={(e) => this.onClick(e, index)}>{item}</button></td>)
+        return (<td key={index}><button className="volt-button"/* "button cpf-button" */ key={index + 155} onClick={(e) => this.onClick(e, index)}>{item}</button></td>)
       }
     })
 

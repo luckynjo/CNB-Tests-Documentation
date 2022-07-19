@@ -26,7 +26,7 @@ export const SVOLTDemoInstructions = props => {
      {instructions.map((item, index) => {
        if(index > 1 && index < 6)
        {
-         return (<td key={index}><button className="volt-button" /*"button cpf-button"*/ key={index + 55}>{item}</button></td>)
+         return (<td key={index}><button className="volt-button demo" /*"button cpf-button"*/ key={index + 55}>{item}</button></td>)
        }
      })}
      </tr>

@@ -169,7 +169,8 @@ color:#003366;
 color:#FFFFFF;
 }
 .title{
-  font-size:54pt;
+  font-size:42pt;
+  /***font-size:6vmin;*/
   font-weight:bold;
   width:90%;
   text-align:center;
