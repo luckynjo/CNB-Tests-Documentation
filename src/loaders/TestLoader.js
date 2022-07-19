@@ -26,7 +26,7 @@ export const TestLoader = props =>
     //spllt-a-1.00-ff
     // k-er40-d-3.60-ff
     // svolt-3.00-ff
-    //axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'k-er40-d-3.60-ff', 'language': 'en_US'})
+    //axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'it_IT_sfnb2-2.00-ff', 'language': 'it_IT'})
     axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);

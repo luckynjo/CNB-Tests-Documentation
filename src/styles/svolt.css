@@ -25,14 +25,29 @@ font-size: 24pt;
 font-weight: bold;
 padding:8px;
 min-height:80px;
-min-width:132px;
+width:168px;
 font-size: 20px;
-font-size: 2vmin;
+font-size: 1.9vmin;
 text-align:center;
 /***line-height: 32px;*/
 margin-left: 8px;
 margin-right: 8px;
+opacity: 0.9;
+cursor: pointer;
 }
+
+.volt-button:active{
+  opacity: 1;
+transform: translateY(1px);
+}
+
+.volt-button.demo, .volt-button.demo:active{
+  cursor: not-allowed;
+  opacity: 0.9;
+  transform: translateY(0px);
+}
+
+
 
 /***.pvrt--response-button{
 color: #FFFFFF;
