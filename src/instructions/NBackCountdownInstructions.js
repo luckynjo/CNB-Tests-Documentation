@@ -32,9 +32,9 @@ export const NBackCountdownInstructions = props => {
     <>
     <div className = "page">
     <div className="instructions text--left top">
-    <p className="stimulus-text--medium text--center">{instructions[0]}</p>
+    <p className="nback-header-instructions text--center">{instructions[0]}</p>
     <br/>
-    <p className="instructions-text--medium text--center">{instructions[1]}</p>
+    <p className="text--center">{instructions[1]}</p>
     <br/>
 
     <div className="inline flex center--horizontal">

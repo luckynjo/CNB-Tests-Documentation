@@ -16,9 +16,9 @@ import axios from 'axios';
 //const SECTION_TYPES = [{"option": "", "text": "Select section to add then press +"}, {"option": "Title_Page", "text": "Test title page."}, {"option": "Simple_Instructions", "text": "Simple instructions in text format."}, {"option": "Complex_Instructions", "text":"Complex instructions with tables or lists."}, {"option": "Header_Text", "text": "Header text like 'Begin Test'"}, {"option": "Practice", "text": "Practice text."}, {"option": "Test", "text": "Test text"}];
 //const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
 //const BASE_URL = "http://localhost/";
-const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "he_IL", "text": "Henrew"}, {"option": "bg_BG", "text": "Bulgarian"},
+/*****const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "he_IL", "text": "Henrew"}, {"option": "bg_BG", "text": "Bulgarian"},
 {"option": "it_IT", "text": "Italian"}, {"option": "nl_NL", "text": "Dutch"},
-{"option": "ar_EG", "text": "Arabic (Egypt)"}, {"option": "zh_CN", "text": "Simplified Chinese"}, {"option": "po_BR", "text": "Portuguese"}, {"option": "de_DE"}, {"option": "es_ES"}, {"option": "fr_CA"}, {"option": "pt_BR"}, {"option": "es_MX"}, {"option": "hi_MK"}, {"option": "ja_JA"}, {"option": "ru_MK"}, {"option": "xh_SA"}, {"option": "tn_BW"}, {"option": "pt_MZ"}, {"option": "zn_CN"}];
+{"option": "ar_EG", "text": "Arabic (Egypt)"}, {"option": "zh_CN", "text": "Simplified Chinese"}, {"option": "po_BR", "text": "Portuguese"}, {"option": "de_DE"}, {"option": "es_ES"}, {"option": "fr_CA"}, {"option": "pt_BR"}, {"option": "es_MX"}, {"option": "hi_MK"}, {"option": "ja_JA"}, {"option": "ru_MK"}, {"option": "xh_SA"}, {"option": "tn_BW"}, {"option": "pt_MZ"}, {"option": "zn_CN"}];*/
 export default class TaskTranslator extends React.Component
 {
   constructor(props)
@@ -27,11 +27,12 @@ export default class TaskTranslator extends React.Component
     this.state = {
       original_sections: props.sections || [],
       sections: props.sections || [],
+      languages: null,
       section: null,
       section_data: null,
       language: null
     }
-
+    this.loadLanguages = this.loadLanguages.bind(this);
     this.onSectionClick = this.onSectionClick.bind(this);
     this.loadTimeline = this.loadTimeline.bind(this);
     this.viewTimelineSection = this.viewTimelineSection.bind(this);
@@ -47,6 +48,18 @@ export default class TaskTranslator extends React.Component
   {
   }
 
+  loadLanguages()
+  {
+    axios.post(this.props.base_url + 'languages.pl', {'op': 'view'})
+    .then(response => {
+      console.log('response ', response.data.timeline);
+      this.setState((prevState, props) => {
+        return {languages: response.data.languages}
+      });
+    })
+    .catch(error => {console.log('Error ', error)});
+  }
+
   loadTimeline()
   {
     axios.post(this.props.base_url + 'timeline.pl', {'op': 'view', 'id': this.props.id})
@@ -54,7 +67,7 @@ export default class TaskTranslator extends React.Component
       console.log('response ', response.data.timeline);
       this.setState((prevState, props) => {
         return {sections: response.data.timeline, original_sections: response.data.timeline}
-      });
+      }, this.loadLanguages);
     })
     .catch(error => {console.log('Error ', error)});
   }
