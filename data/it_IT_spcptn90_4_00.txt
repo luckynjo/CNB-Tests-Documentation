@@ -1,0 +1,84 @@
+test: spcptn90
+version: 1.00
+language: it_IT
+
+Page 0: Common
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+Premi la barra spaziatrice per continuare.
+
+Page 1: Title
+Short Penn: Test delle prestazioni continue
+Numero
+FAI CLIC QUI PER CONTINUARE
+
+Page 2: Number Instructions
+In questo test vedrai alcune linee sullo schermo.
+Ogni volta che le linee formano un NUMERO completo, premi velocemente la barra spaziatrice.
+Per esempio:
+NON PREMERLA
+NON PREMERLA
+PREMILA
+Inizia a esercitarti.
+FAI CLIC QUI PER CONTINUARE
+
+Page 3: Begin Practice
+INIZIA L’ESERCITAZIONE SUI NUMERI
+FAI CLIC QUI PER CONTINUARE 
+VAI INDIETRO
+
+Page 4: Countdown
+Preparati! 
+L’esercitazione inizierà fra:
+Usa la barra spaziatrice per rispondere
+
+Page 5: Practice
+<number_practice>
+Premi la barra spaziatrice per continuare.
+
+Page 5.1: Feedback Correct
+CORRETTO! 
+
+Page 5.2: Feedback False Negative
+Quella risposta è SBAGLIATA.
+Hai visto un numero completo, ma non hai premuto la barra spaziatrice.
+Premi la barra spaziatrice ogni volta che vedi un NUMERO completo.
+PREMILA
+
+Page 5.3: Feedback False Positive
+Quella risposta è SBAGLIATA.
+Non hai visto un numero completo.
+Premi la barra spaziatrice SOLO quando vedi un NUMERO completo.
+NON PREMERLA
+NON PREMERLA
+NON PREMERLA
+NON PREMERLA
+PREMILA
+
+Page 5: Number Test Instructions
+Benissimo!
+Ricordati: premi la barra spaziatrice quando vedi un NUMERO.
+Nel test, vedrai numeri diversi da quelli visti durante l’esercitazione.
+Ecco alcuni esempi:
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+
+Page 6: Instructions
+Ora inizierà il test.
+Durante il test, NON ti sarà detto se le tue risposte sono CORRETTE o SBAGLIATE.
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+
+Page 7: Begin Test
+INIZIA IL TEST
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+
+Page 8: Countdown
+Preparati!
+ L’esercitazione inizierà fra:
+Usa la barra spaziatrice per rispondere
+
+Page 9: Test
+<number_test>
+Usa la barra spaziatrice per rispondere

@@ -1,0 +1,51 @@
+test: k-er40
+version: 3.60
+language: it_IT
+
+Page 0: Common
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+
+Page 1: Title
+Penn: Test di riconoscimento delle emozioni
+ER40 modulo D
+FAI CLIC QUI PER CONTINUARE
+
+Page 2: Instructions
+In questo test vedrai alcuni volti.  Guarda con attenzione ciascun volto e prova a decidere quale sensazione la persona sta provando.
+Fai clic sulla parola che descrive meglio la sensazione che la persona prova.
+
+Page 3: Instructions
+Se la persona non mostra alcuna sensazione, fai clic su “Nessuna sensazione”.
+Proviamo un volto a scopo di esercitazione...
+
+Page 4: Begin Practice
+INIZIA A ESERCITARTI
+
+Page 5: Practice
+Questo volto che sensazione mostra?
+FELICITÀ
+TRISTEZZA
+RABBIA
+PAURA
+NESSUNA SENSAZIONE
+
+Page 5.1: Feedback Correct
+Ottimo!
+
+Page 5.2: Feedback Incorrect
+Questo non è corretto. Riprova.
+
+Page 6: Instructions
+Ora inizierà il test.  Ricordati di guardare ogni volto con attenzione.
+Procedi quanto più velocemente e accuratamente puoi.
+
+Page 7: Begin Test
+INIZIA IL TEST
+
+Page 8: Test
+FELICITÀ
+TRISTEZZA
+RABBIA
+PAURA
+NESSUNA SENSAZIONE
