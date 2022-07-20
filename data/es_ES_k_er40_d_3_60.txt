@@ -1,0 +1,50 @@
+test: k-er40
+version: 3.60
+language: es_ES
+
+Page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+
+Page 1: Title
+Prueba de reconocimiento de emociones de Penn
+ER40 Formulario D
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Instructions
+En esta prueba verá algunas caras. Observe atentamente cada rostro y trate de decidir qué siente esa persona.
+Haga clic en la palabra que mejor describa cómo se siente esa persona.
+
+Page 3: Instructions
+Si la persona no muestra ningún sentimiento, haga clic en «Sin sentimiento».
+Probemos con una cara de práctica...
+
+Page 4: Begin Practice
+COMENZAR LA PRÁCTICA
+
+Page 5: Practice
+¿Qué sentimiento muestra esta cara?
+FELIZ
+TRISTE
+ENFADADO
+MIEDO
+SIN SENTIMIENTO
+
+Page 5.1: Feedback Correct
+¡Estupendo trabajo!
+
+Page 5.2: Feedback Incorrect
+Eso no es del todo correcto. Por favor, inténtelo de nuevo.
+
+Page 6: Instructions
+La prueba comenzará ahora. Recuerde que debe mirar cada cara con atención. Sea tan rápido y preciso como pueda.
+
+Page 7: Begin Test
+COMENZAR LA PRUEBA
+
+Page 8: Test
+FELIZ
+TRISTE
+ENFADADO
+MIEDO
+SIN SENTIMIENTO

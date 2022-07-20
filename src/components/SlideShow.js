@@ -1,10 +1,11 @@
 import React from 'react';
-import Paragraph from './Paragraph.js';
+import {Paragraph} from './Paragraph.js';
 
 export default class Slideshow extends React.Component{
   constructor(props)
   {
     super(props);
+    console.log(props);
     const word = this.props.words[0];
     this.state = {
       trial: 0,
@@ -65,6 +66,7 @@ export default class Slideshow extends React.Component{
     }
     else
     {
+      console.log("here");
       this.props.onSlideShowComplete();
     }
   }

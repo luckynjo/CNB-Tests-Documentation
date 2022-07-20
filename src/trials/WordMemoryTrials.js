@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Paragraph from './Paragraph.js';
+import {Paragraph} from '../components/Paragraph.js';
 
 export class WordMemoryTrials extends React.Component{
 

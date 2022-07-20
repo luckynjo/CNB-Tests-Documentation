@@ -1,0 +1,195 @@
+test: sfnb2
+version: 3.00
+language: es_ES
+
+Page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+Pulse la barra espaciadora para continuar.
+
+Page 1: Title
+Fractal-n-back abreviado
+Formulario abreviado
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Instructions
+Verá una imagen en la pantalla cada vez.
+Para cada imagen, decida si pulsar o no la barra espaciadora.
+Hay tres partes con reglas diferentes:
+0-BACK
+1-BACK
+2-BACK
+Practicaremos las tres partes.
+
+Page 3: 0-Back Instructions
+Primero practicaremos el 0-BACK.
+Pulse la barra espaciadora siempre que vea la siguiente imagen:
+¿Alguna pregunta?
+
+Page 4: Begin Practice
+COMENZAR LA PRÁCTICA DEL 0-BACK
+
+Page 5: 0-Back Countdown
+0-BACK
+Pulse la barra espaciadora cuando vea esta imagen:
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+Eso no es correcto.
+Pulse la barra espaciadora cada vez que vea esta imagen.
+
+Page 6.2: Feedback False Positive
+Eso no es correcto.
+Pulse la barra espaciadora únicamente cuando vea esta imagen.
+
+Page 7: 1-Back Instructions
+Ahora practicaremos el 1-BACK.
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que la imagen inmediatamente anterior.
+Por ejemplo:
+PULSE
+¿Alguna pregunta?
+
+Page 8: Begin Practice
+COMENZAR LA PRÁCTICA DEL 1-BACK
+
+Page 9: 1-Back Countdown
+1-BACK
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que la anterior.
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+Eso no es correcto.
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que la anterior.
+
+Page 10.2: Feedback False Positive
+Eso no es correcto.
+Pulse la barra espaciadora sólo cuando la imagen que vea sea la misma que la anterior.
+
+Page 11: 1-Back Demo
+Primera imagen
+Última imagen
+PULSE
+SALTAR PELÍCULA 1-BACK
+Saltar la película de entrenamiento y volver a la práctica
+
+Page 11.1: 1-Back Demo Section 1
+Vamos a probar una nueva forma de ver la tarea.
+Supongamos que la lista de imágenes que aparece a continuación es la secuencia de las imágenes que verá en esta prueba.
+Siempre que la imagen actual sea la misma que la que la inmediatamente anterior, deberá pulsar la barra espaciadora.
+
+Page 11.2: 1-Back Demo Section 2
+Durante la demostración, las imágenes aparecerán en la ventana igual que aparecen durante la prueba. Puede seguir la secuencia de imágenes que se mostrarán observando la lista que aparece en la parte superior de la pantalla. La imagen actual tendrá un recuadro alrededor.
+
+Page 11.3: 1-Back Demo Section 3
+Lo que verá durante la prueba está dentro de esta ventana.
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que la anterior.
+
+Page 11.4: 1-Back Demo Section 4
+Ahora intentaremos de nuevo la práctica del 1-BACK.
+Al igual que la primera vez que intentó la práctica, no tendrá la lista en la parte superior de la pantalla para recordar las imágenes anteriores.
+Recuerde, hay que pulsar la barra espaciadora cuando la imagen en la pantalla sea la misma que la anterior.
+¿Tiene alguna pregunta?
+
+Page 12: 2-Back Instructions
+Ahora practicaremos el 2-BACK.
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que se le mostró justo antes de la anterior.
+Por ejemplo:
+PULSE
+
+Page 13: Begin Practice
+COMENZAR LA PRÁCTICA DEL 2-BACK
+
+Page 14: 2-Back Countdown
+2-BACK
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que se le mostró justo antes de la anterior.
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+Eso no es correcto.
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que se mostró justo antes de la anterior.
+
+Page 15.2: Feedback False Positive
+Eso no es correcto.
+Sólo pulse la barra espaciadora cuando la imagen que vea sea la misma que se mostró justo antes de la anterior.
+
+Page 16: 2-Back Demo
+Primera imagen
+Última imagen
+PULSE
+SALTAR PELÍCULA 2-BACK
+Saltar la película de entrenamiento y volver a la práctica
+
+Page 16.1: 2-Back Demo Section 1
+Vamos a intentar una nueva forma de ver la tarea.
+Supongamos que la lista de imágenes que aparece a continuación es el orden de las imágenes que verá durante el 2-BACK.
+Siempre que la imagen actual sea la misma que la imagen que aparece dos pasos antes, deberá pulsar la barra espaciadora.
+
+Page 16.2: 2-Back Demo Section 2
+Durante la demostración, las imágenes aparecerán en la ventana igual que aparecen durante la prueba. Puede seguir la secuencia de imágenes que se mostrarán observando la lista que aparece en la parte superior de la pantalla. La imagen actual tendrá un recuadro alrededor.
+
+Page 16.3: 2-Back Demo Section 3
+Lo que verá durante la prueba está dentro de esta ventana.
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que se mostró justo antes de la anterior.
+
+Page 16.4: 2-Back Demo Section 4
+Ahora intentaremos de nuevo la práctica del 2-BACK.
+Al igual que la primera vez que intentó la práctica, no tendrá la lista en la parte superior de la pantalla para recordar las imágenes anteriores.
+Recuerde que debe pulsar la barra espaciadora cuando la imagen en la pantalla sea la misma que la que apareció dos pasos antes.
+¿Tiene alguna pregunta?
+
+Page 17: Instructions
+Ha completado correctamente la práctica.
+Ahora comenzaremos la prueba.
+Durante la prueba, realizará las tareas 0-BACK, 1-BACK- y 2-BACK varias veces.
+¿Tiene alguna pregunta antes de que comience la prueba?
+
+Page 18: Begin Test
+COMENZAR LA PRUEBA
+
+Page 19: 0-Back Countdown
+0-BACK
+Pulse la barra espaciadora cuando vea esta imagen:
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+1-BACK
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que la anterior.
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+2-BACK
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que se le mostró justo antes de la anterior.
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+1-BACK
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que la anterior.
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+2-BACK
+Pulse la barra espaciadora cuando la imagen que vea sea la misma que se le mostró justo antes de la anterior.
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+0-BACK
+Pulse la barra espaciadora cuando vea esta imagen:
+
+Page 30: 0-Back Test
+<0_back_2>

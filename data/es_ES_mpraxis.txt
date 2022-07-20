@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.06
+language: es_ES
+
+Page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+
+Page 1: Title
+Prueba de ejercicios de motricidad
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Instructions
+Esto es una prueba de su habilidad para controlar el ratón.
+Verá unos recuadros verdes, uno cada vez. Mueva el cursor del ratón sobre cada recuadro y haga clic en él UNA VEZ.
+
+Page 3: Begin Practice
+COMENZAR LA PRÁCTICA
+
+Page 4: Practice
+Haga clic en el recuadro verde para continuar
+
+Page 5: Instructions
+Esta vez tendrá 5 segundos para hacer clic en cada recuadro. Intente hacer clic en cada recuadro antes de que desaparezca.
+
+Page 6: Begin Test
+COMENZAR LA PRUEBA
+
+Page 7: Test
+Haga clic en el recuadro verde para continuar

@@ -1,6 +1,6 @@
 import logo from './logo.svg';
-import {TestVersionsEditor} from './tools/TestVersionsEditor.js';
-//import TaskRunner from './tools/TaskRunner.js';
+//import {TestVersionsEditor} from './tools/TestVersionsEditor.js';
+import TaskRunner from './tools/TaskRunner.js';
 
 
 import ReactDOM from "react-dom/client";
@@ -17,11 +17,11 @@ function App(){
 </BrowserRouter>
 )*/
 //const BASE_URL = "https://webcnp.med.upenn.edu/surveys/";
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
 const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/surveys/survey.pl";
-//const BASE_URL = "http://localhost/";
+const BASE_URL = "http://localhost/";
 return (
-	<TestVersionsEditor base_url={BASE_URL} assessment_url={ASSESSMENT_URL}/>
+	<TaskRunner base_url={BASE_URL} assessment_url={ASSESSMENT_URL}/>
 )
 }
 
