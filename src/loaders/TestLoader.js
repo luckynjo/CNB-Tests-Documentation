@@ -30,7 +30,6 @@ export const TestLoader = props =>
     axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
-          //console.log("Response be ", response.data.timeline);
           if(response.data.timeline.length > 0)
           {
             if(response.data.test.test.includes('volt') || response.data.test.test.includes('er40'))

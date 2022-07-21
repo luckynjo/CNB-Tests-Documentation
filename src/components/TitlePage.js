@@ -17,7 +17,6 @@ export default function TitlePage(props)
 {
   document.title = props.content[0] || props.title;
 
-  console.log('Conten be ', props.content);
   let audioPlayer = null;
   let buttonInvisibility  = '';
 

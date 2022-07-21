@@ -1,0 +1,103 @@
+test: k-cpw
+version: 3.01
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
+
+Page 1: Title
+Penn Word Memory Test
+Immediate Memory
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+Now I will show you some words. Look carefully at each one and try to remember it.
+Later, you will pick out these words from a new group of words.
+
+Page 3: Begin Slideshow
+BEGIN PRESENTATION
+
+Page 4: Slideshow
+<slideshow>
+NIGHT
+TOWER
+RING
+FLAG
+UMBRELLA
+CHEESE
+CHERRY
+LAP
+NURSE
+HOBBY
+BRICK
+BOX
+STATION
+BLOOM
+VOLUME
+JOKE
+POCKET
+FORK
+HONEY
+PACKAGE
+
+Page 5: Demo Instructions
+Now you will see more words. Some are new, others you have already seen. Decide whether you have seen each word before.
+Click DEFINITELY YES if you are SURE you HAVE seen it.
+Click PROBABLY YES if you THINK you HAVE seen it.
+Click PROBABLY NO if you THINK you HAVE NOT seen it.
+Click DEFINITELY NO if you are SURE you HAVE NOT seen it.
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
+
+Page 6: Begin Test
+BEGIN TEST
+
+Page 7: Test
+<trials>
+POCKET
+SMILE
+NIGHT
+GRAVY
+UMBRELLA
+SCALE
+FROG
+LAUNDRY
+BOX
+CHERRY
+MAYOR
+RING
+BLOOM
+COTTON
+BLOOD
+FLAG
+TOWER
+HATE
+HONEY
+BIRD
+CHEESE
+LAP
+SWORD
+BRICK
+NURSE
+PAINTING
+VILLAGE
+SLEEVE
+JOKE
+SAW
+FORK
+PACKAGE
+SOAP
+LEMON
+NATION
+HOBBY
+EGG
+KITTEN
+VOLUME
+STATION

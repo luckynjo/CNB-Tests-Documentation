@@ -1,0 +1,58 @@
+test: sctap
+version: 2.00
+language: es_ES
+
+Page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+PULSE LA BARRA ESPACIADORA PARA CONTINUAR
+<WH> MANO CON LA QUE ESCRIBE
+<NWH> MANO CON LA QUE NO ESCRIBE
+
+Page 1: Title
+Tarea breve de digitación computarizada
+Formulario abreviado
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Handedness trial
+Esta es una prueba de la velocidad de sus dedos.
+Toque la barra espaciadora tan rápido como pueda.
+Cambiará de mano después de cada prueba.
+Utilice el ratón para seleccionar la mano con la que escribe
+<HANDEDNESS>> Zurdo
+<HANDEDNESS>> Diestro
+
+Page 3: Demo Instructions
+Mantenga la mano en la posición que ve a continuación.
+
+Page 4: Instructions
+Vamos a practicar.
+Cuando vea «ADELANTE» pulse la barra espaciadora tan rápido como pueda.
+Recuerde utilizar la posición de la mano que acaba de aprender. NO UTILICE TODA LA MANO O EL BRAZO PARA PULSAR – sólo el dedo
+
+Page 5: Begin Practice
+COMENZAR LA PRÁCTICA
+
+Page 6: Countdown
+PRUEBA DE PRÁCTICA <TRIAL_NUMBER> UTILICE LA
+<WH> MANO CON LA QUE ESCRIBE
+<NWH> MANO CON LA QUE NO ESCRIBE
+
+Page 7: Practice
+¡ADELANTE!
+ALTO
+
+Page 8: Begin Test
+COMENZAR LA PRUEBA
+
+Page 9: Countdown
+PRUEBA <TRIAL_NUMBER> UTILICE LA
+<WH> MANO CON LA QUE ESCRIBE
+<NWH> MANO CON LA QUE NO ESCRIBE
+Este ensayo comenzará en:
+segundos.
+UTILICE LA POSICIÓN CORRECTA DE LA MANO AL PULSAR LA BARRA ESPACIADORA
+
+Page 8: Test
+¡ADELANTE!
+ALTO

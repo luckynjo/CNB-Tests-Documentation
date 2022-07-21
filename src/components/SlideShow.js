@@ -1,5 +1,5 @@
 import React from 'react';
-import Paragraph from './Paragraph.js';
+import {Paragraph} from './Paragraph.js';
 
 export default class Slideshow extends React.Component{
   constructor(props)
@@ -73,7 +73,7 @@ export default class Slideshow extends React.Component{
   {
     const word = this.state.word;
     return (
-      <Paragraph text={word} classList="stimulus-text--medium text-center" />
+        <Paragraph text={word} classList="stimulus-text--medium text-center" />
     );
   }
 }
