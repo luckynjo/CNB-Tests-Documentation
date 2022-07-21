@@ -167,3 +167,7 @@ p.er40--feedback{
   color:#993333;
   padding-left: 32px;
 }
+
+.stimulus--er40 button.continue-button{
+  position: relative;
+}
