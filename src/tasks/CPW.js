@@ -1,6 +1,8 @@
 import React from 'react';
+import '../styles/cpw.css';
 import {WordMemoryTrials} from '../trials/WordMemoryTrials.js';
 import {SimpleInstructions} from '../instructions/SimpleInstructions.js';
+import {CPWSimpleInstructions} from '../instructions/CPWSimpleInstructions.js';
 import Slideshow from '../components/SlideShow.js';
 import TitlePage from '../components/TitlePage.js';
 import {BeginPage} from '../components/BeginPage.js';
@@ -34,6 +36,7 @@ export default class CPW extends React.Component
     const content = JSON.parse(this.props.timeline[0].content);
     this.continue_button_text = content[0];
     this.back_button_text = content[1];
+    this.words_buttons_text = content.slice(2);
 
     this.next = this.next.bind(this);
     this.back = this.back.bind(this);
@@ -145,17 +148,31 @@ export default class CPW extends React.Component
     {
       return <TitlePage banner={wordIcon} content={JSON.parse(timeline_object.content)} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
     }
+    else if(section_title.match(BEGIN_PAGE_REGEX))
+    {
+      return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+    }
+    else if(section_title.match(DEMO_INSTRUCTIONS_REGEX))
+    {
+      console.log("Inside Demo Instruc");
+      return <CPWSimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+    }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
+      console.log("Inside SimpleInstructions");
       return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
     }
     else if(section_title.match(SLIDESHOW_REGEX))
     {
-      return <Slideshow words={this.props.slideshow.map(item => item.stimulus)}  onSlideShowComplete={this.next}/>
+      return <div className="container center"><Slideshow words={this.props.slideshow.map(item => JSON.parse(item.stimulus))}  onSlideShowComplete={this.next}/></div>
+    }
+    else if(section_title.match(TEST_REGEX))
+    {
+      return <WordMemoryTrials base_url={this.props.base_url} buttons={this.words_buttons_text} trials={this.props.test_trials} onTrialsComplete={this.next}/>
     }
     else
     {
-      return <WordMemoryTrials trials={this.trials} onTrialsComplete={this.next}/>
+      return <div className="container center"><p>Unkown CPW section {section_title}</p></div>
     }
   }
 }
