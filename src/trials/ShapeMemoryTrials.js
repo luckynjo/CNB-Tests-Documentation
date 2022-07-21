@@ -94,22 +94,28 @@ export class ShapeMemoryTrials extends React.Component{
     const stimulus = this.state.stimulus;
     const buttons = this.props.buttons.map((item, index) => {
       if(index > 0){
-        return (<button className="button memory-button"/* "button cpf-button" */ key={index + 155} onClick={(e) => this.onClick(e, index + 1)}>{item}</button>)
+        return (<td key={index}><button className="volt-button"/* "button cpf-button" */ key={index + 155} onClick={(e) => this.onClick(e, index)}>{item}</button></td>)
       }
     })
 
     return (
-      <div className="container">
+      <>
 
-      <div>
        <img className="stimulus--volt center" src={stimulus} />
-      </div>
 
-      <div className='inline memory-buttons--test'>
+      <table className='inline memory-buttons--test'>
+      <tr>
       {buttons}
-      </div>
+      </tr>
+      <tr>
+      <td><div></div></td>
+      <td><div></div></td>
+      <td><div></div></td>
+      <td><div></div></td>
+      </tr>
+      </table>
 
-      </div>
+      </>
     );
   }
 }
