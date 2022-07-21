@@ -1,6 +1,7 @@
 body{
   font-family: Arial, Helvetica;
   font-weight: bold;
+  background: #000000;
 }
 .button{
   font-weight: bold;
@@ -128,20 +129,25 @@ height:380px;
 .App {
   text-align: center;
 }
-.light
+div.light
 {
    background: #FFFFFF;
    color:#000000;
 }
 
-.dark{
+div.dark{
    background: #000000;
    color:#FFFFFF;
 }
-.light p{
+
+div.light p{
 color:#003366;
 }
-.dark p{
+
+div.light p.red{
+  color: red;
+}
+div.dark p{
 color:#FFFFFF;
 }
 
@@ -163,7 +169,8 @@ color:#003366;
 color:#FFFFFF;
 }
 .title{
-  font-size:54pt;
+  font-size:42pt;
+  /***font-size:6vmin;*/
   font-weight:bold;
   width:90%;
   text-align:center;
@@ -237,6 +244,9 @@ transform: translateY(1px);
 {
     min-width: 236px;
     height: 32px;
+    z-index: 10;
+    position: absolute;
+    bottom: 2px;
     background-color: #009900;
     line-height:32px;
     text-align:center;
@@ -245,6 +255,10 @@ transform: translateY(1px);
     font-family: Helvetica;
     font-weight: bold;
 
+}
+
+.section--footer table tbody tr td button.continue-button{
+  bottom: 38px;
 }
 
 .back-button{

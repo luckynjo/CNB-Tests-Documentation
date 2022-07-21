@@ -175,6 +175,48 @@ else
     print JSON::XS->new->encode(\%test_info);
     exit;
   }
+  elsif($action eq "view_tests")
+  {
+    my $id = $data->{id};
+    print STDERR "Action is view tests, so viewing for test_version_id $id ...\n";
+    my $tests = get_test_version_tests($id);
+    #my $trials = get_test_version_trials($id);
+    my %test_info = (
+       tests => $tests
+    );
+
+    print $cgi->header('application/json');
+    print JSON::XS->new->encode(\%test_info);
+    exit;
+  }
+  elsif($action eq "view_possible_tests")
+  {
+    my $short_name = $data->{short_name};
+    print STDERR "Action is view tests, so viewing for test_version_id $short_name ...\n";
+    my $tests = get_possible_test_version_tests($short_name);
+    #my $trials = get_test_version_trials($id);
+    my %test_info = (
+       tests => $tests
+    );
+
+    print $cgi->header('application/json');
+    print JSON::XS->new->encode(\%test_info);
+    exit;
+  }
+  elsif($action eq "remove_test_version_test")
+  {
+    my $test = $data->{test};
+    print STDERR "Action is remove_test_version_test, so removing $test ...\n";
+    my $message = remove_test_version_test($test);
+    #my $trials = get_test_version_trials($id);
+    my %test_info = (
+       message => $message
+    );
+
+    print $cgi->header('application/json');
+    print JSON::XS->new->encode(\%test_info);
+    exit;
+  }
   elsif($action eq "view_trials")
   {
     print STDERR "Action is view trials, so viewing ...\n";
@@ -247,25 +289,7 @@ else
   }
   else
   {
-    my $test = get_test("mpraxis-2.06-ff");
-    my $test_documents = get_test_documents();
-    my @timeline_array = ();
-
-    for my $section(@$test_documents)
-    {
-      my $k = get_test_documents_text($section);
-      push(@timeline_array, get_test_documents_text($section));
-    }
-
-
-    my %test_info = (
-       test => $test,
-       timeline => \@timeline_array
-    );
-
-    print $cgi->header('application/json');
-    print JSON::XS->new->encode(\%test_info);
-    exit;
+    on_error(\%invalid_request);
   }
 }
 
@@ -376,6 +400,87 @@ sub save_test_version_trials
   }
 
   $query->finish;
+}
+
+sub get_possible_test_version_tests
+{
+  my $test_version_short_name = shift;
+  print STDERR "get_possible_test_version_tests\n";
+  my $stmt = "SELECT * FROM tests WHERE test LIKE ?";
+  my @variable_bindings = ($test_version_short_name . "%");
+  my $query = $dbh->prepare($stmt);
+  if($query->errstr())
+  {
+      print STDERR "DB error during prepare statement ".$query->errstr()."\n";
+  }
+
+  $query->execute($test_version_short_name . '%');
+  if($query->errstr())
+  {
+      print STDERR "DB error during execute statement ".$query->errstr()."\n";
+  }
+  my @tests = ();
+  #my $section;
+  while(my $test = $query->fetchrow_hashref)
+  {
+    print STDERR "Found like test " . $test->{test} . "\n";
+    push(@tests, $test);
+  }
+  $query->finish;
+  return \@tests;
+}
+
+sub remove_test_version_test
+{
+  my $test = shift;
+  my $stmt = "UPDATE tests SET parent_test=NULL WHERE test = ?";
+  my @variable_bindings = ($test);
+  my $query = $dbh->prepare($stmt);
+  if($query->errstr())
+  {
+      print STDERR "DB error during prepare statement ".$query->errstr()."\n";
+      return "Error preparing query.";
+  }
+
+  $query->execute(@variable_bindings);
+  if($query->errstr())
+  {
+      print STDERR "DB error during execute statement ".$query->errstr()."\n";
+      return "Error executing query.";
+  }
+  $query->finish;
+  return "Test removed successfully.";
+}
+
+sub get_test_version_tests
+{
+  my $test_version_id = shift;
+  my $trial_type = shift;
+  my $stmt = "SELECT * FROM tests WHERE parent_test = ? ORDER BY test, lang";
+  my @variable_bindings = ($test_version_id);
+  my $query = $dbh->prepare($stmt);
+  if($query->errstr())
+  {
+      print STDERR "DB error during prepare statement ".$query->errstr()."\n";
+  }
+
+  $query->execute(@variable_bindings);
+  if($query->errstr())
+  {
+      print STDERR "DB error during execute statement ".$query->errstr()."\n";
+  }
+  my @tests = ();
+  #my $section;
+  while(my $test = $query->fetchrow_hashref)
+  {
+    print STDERR "Found test " . $test->{test} . "\n";
+    # Decode JSON content especially for non-latin languages that use different characters.
+    #$trial->{stimulus} = decode('UTF-8', $trial->{stimulus});
+    #$trial->{responses} = decode('UTF-8', $trial->{responses});
+    push(@tests, $test);
+  }
+  $query->finish;
+  return \@tests;
 }
 
 sub get_test_version_trials

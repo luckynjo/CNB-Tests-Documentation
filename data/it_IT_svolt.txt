@@ -1,0 +1,44 @@
+test: svolt
+version: 3.00
+language: it_IT
+
+Page 0: Common
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+
+Page 1: Title
+Test di apprendimento visivo di oggetti
+Memoria a breve termine
+FAI CLIC QUI PER CONTINUARE
+
+Page 2: Instructions
+Vedrai alcune forme. Cerca di ricordare l’intera figura.
+Successivamente, dovrai selezionare queste forme da un gruppo di forme più grande.
+
+Page 3: Begin Practice
+INIZIA LA PRESENTAZIONE
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Ora vedrai ulteriori forme. Alcune sono nuove, altre le hai già viste.
+Decidi se hai già visto ciascuna delle forme.
+CERTAMENTE SÌ
+PROBABILMENTE SÌ
+PROBABILMENTE NO
+CERTAMENTE NO
+Fai clic su CERTAMENTE SÌ se hai la CERTEZZA di AVERLA vista.
+Fai clic su PROBABILMENTE SÌ se PENSI di AVERLA vista.
+Fai clic su PROBABILMENTE NO se PENSI di NON AVERLA vista.
+Fai clic su CERTAMENTE NO se hai la CERTEZZA di NON AVERLA vista.
+
+Page 6: Begin Test
+INIZIA IL TEST
+
+Page 7: Test
+<trials>
+CERTAMENTE SÌ
+PROBABILMENTE SÌ
+PROBABILMENTE NO
+CERTAMENTE NO

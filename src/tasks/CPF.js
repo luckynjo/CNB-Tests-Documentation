@@ -160,7 +160,7 @@ export default class CPF extends React.Component
     }
     else if(section_title.match(SLIDESHOW_REGEX))
     {
-      return <div className="container center"><ImageSlideshow base_url={this.props.base_url} trials={this.props.slideshow} images={this.faces}  onSlideShowComplete={this.next}/></div>
+      return <div className="container center"><ImageSlideshow base_url={this.props.base_url} stimulus_dir="cpf" trials={this.props.slideshow} images={this.faces}  onSlideShowComplete={this.next}/></div>
     }
     else if(section_title.match(TEST_REGEX))
     {

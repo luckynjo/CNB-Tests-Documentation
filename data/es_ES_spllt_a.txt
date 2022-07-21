@@ -1,0 +1,87 @@
+test: spllt-a
+version: 1.00
+language: es_ES
+
+Page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+OTROS
+PASAR AL SIGUIENTE ENSAYO
+
+Page 1: Title
+Prueba corta de aprendizaje de lista de Penn
+Formulario abreviado
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Instructions
+(Instrucciones 1)
+
+(Al administrador de la prueba: Aleje ahora el ordenador de la vista del participante. Durante toda esta prueba, el participante no debe poder ver la pantalla del ordenador. Lea las instrucciones que aparecen a continuación, al participante y, después,lea las palabras de las listas en voz alta mientras el resaltador amarillo pasa por encima de cada una)..
+
+Voy a leer una lista de palabras. Escuche con atención, porque cuando termine de leerla, quiero que me diga todos los elementos que pueda. No importa en qué orden estén, sólo dígame todos los que pueda. Esta es la lista:
+
+(Prepárese para leer la lista de palabras)
+
+Page 3: Slideshow
+<slideshow>
+LEÓN
+ESMERALDA
+TIENDA DE CAMPAÑA
+MAESTRO
+ZAFIRO
+DENTISTA
+HOTEL
+CABALLO
+INGENIERO
+ÓPAlO
+TIGRE
+CUEVA
+PROFESOR
+PERLA
+VACA
+CHOZA
+
+Page 4: Test
+<trials>
+LEÓN
+CABALLO
+TIGRE
+TIENDA DE CAMPAÑA
+VACA
+HOTEL
+CUEVA
+CHOZA
+ESMERALDA
+ZAFIRO
+ÓPALO
+PERLA
+MAESTRO
+DENTISTA
+INGENIERO
+PROFESOR
+
+Page 5: Instructions
+(Instrucciones 2)
+
+Voy a repetir la lista de palabras. De nuevo, quiero que repita todos los elementos que pueda, en cualquier orden, incluyendo las palabras que ya me haya dicho. Esta es la lista:
+
+(Prepárese para leer la lista de palabras)
+
+Page 6: Slideshow
+<slideshow>
+
+Page 7: Test
+<trials>
+
+Page 8: Instructions
+(Instrucciones 3)
+
+Voy a repetir la lista de palabras. De nuevo, quiero que repita todos los elementos que pueda, en cualquier orden, incluyendo las palabras que ya me haya dicho. Esta es la lista:
+
+(Prepárese para leer la lista de palabras)
+
+Page 9: Slideshow
+<slideshow>
+
+Page 10: Test
+<trials>

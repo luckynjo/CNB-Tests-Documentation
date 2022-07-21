@@ -5,11 +5,12 @@ export class PLLTTrials extends React.Component{
   constructor(props)
 	{
 		super(props);
-    const stimulus = props.trials[0];
+    const trial = props.trial;
+    const stimulus = props.trials[trial];
     this.state = {
       responseCount: 0,
       responses: [],
-      trial: 0,
+      trial: trial,
       stimulus: stimulus
     }
     this.renderResponses = this.renderResponses.bind(this);
@@ -81,6 +82,11 @@ export class PLLTTrials extends React.Component{
     const count = responses.length;
     const wordsLeft = responses && responses.slice(0, count/2) || [];
     const wordsRight = responses && responses.slice(count/2) || [];
+    console.log('Given ', this.state.stimulus.stimulus);
+    console.log('Parsed ', JSON.parse(this.state.stimulus.stimulus));
+    const response_values = JSON.parse(this.state.stimulus.stimulus);
+    const responsesLeft = response_values.slice(0, count/2) || [];
+    const responsesRight = response_values.slice(count/2) || [];
     const className = ' ';
     let active = false;
     let activeCount = active ? active.length : -1;
@@ -96,10 +102,10 @@ export class PLLTTrials extends React.Component{
     const words = wordsLeft.map((word, index) =>
     <tr key={index}>
     <td>
-    <button className={"pllt-response-button " + activeClass(wordsLeft[index])} onClick={(e) => this.onResponse(e, wordsLeft[index].trim())}>{"** " + wordsLeft[index] + " **"}</button>
+    <button className={"pllt-response-button " + activeClass(wordsLeft[index])} onClick={(e) => this.onResponse(e, responsesLeft[index].trim())}>{"** " + wordsLeft[index] + " **"}</button>
     </td>
     <td>
-    <button className={"pllt-response-button " + activeClass(wordsRight[index])} onClick={(e) => this.onResponse(e, wordsRight[index].trim())}>{"** " + wordsRight[index] + " **"}</button>
+    <button className={"pllt-response-button " + activeClass(wordsRight[index])} onClick={(e) => this.onResponse(e, responsesRight[index].trim())}>{"** " + wordsRight[index] + " **"}</button>
     </td>
     {index === 0 &&
       (

@@ -1,0 +1,196 @@
+test: sfnb2
+version: 3.00
+language: da_DA
+
+Page 0: Common
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+Tryk på mellemrumstasten for at fortsætte.
+
+Page 1: Title
+Short Fractal-N-Back
+Kort form
+KLIK HER FOR AT FORTSÆTTE
+
+Page 2: Instructions
+Du vil se ét billede på skærmen ad gangen.
+For hvert billede skal du beslutte, om du vil trykke på mellemrumstasten eller ej.
+Der er tre dele med forskellige regler:
+0-TILBAGE
+1-TILBAGE
+2-TILBAGE
+Vi vil øve alle tre dele.
+
+Page 3: 0-Back Instructions
+Vi øver først 0-TILBAGE.
+Tryk på mellemrumstasten, når du ser følgende billede:
+Har du spørgsmål?
+
+Page 4: Begin Practice
+START ØVELSEN 0-TILBAGE
+
+Page 5: 0-Back Countdown
+0-TILBAGE
+Tryk på mellemrumstasten, når du ser dette billede:
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+Det er ikke korrekt.
+Tryk på mellemrumstasten, hver gang du ser dette billede:
+
+Page 6.2: Feedback False Positive
+Det er ikke korrekt.
+Tryk kun på mellemrumstasten, når du ser dette billede:
+
+Page 7: 1-Back Instructions
+Vi vil nu øve 1-TILBAGE.
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som billedet, der kom lige før det.
+For eksempel:
+TRYK
+Har du spørgsmål?
+
+Page 8: Begin Practice
+START ØVELSEN 1-TILBAGE
+
+Page 9: 1-Back Countdown
+1-TILBAGE
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som det forrige billede.
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+Det er ikke korrekt.
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som det forrige billede.
+
+Page 10.2: Feedback False Positive
+Det er ikke korrekt.
+Tryk kun på mellemrumstasten, når det billede, du ser, er det samme som det forrige billede.
+
+Page 11: 1-Back Demo
+Første billede
+Sidste billede
+TRYK
+SPRING VIDEOEN 1-TILBAGE OVER
+Spring øvelsesvideoen over, og vend tilbage til øvelsen
+
+
+Page 11.1: 1-Back Demo Section 1
+Vi vil nu prøve en ny måde at se opgaven på.
+Lad os antage, at nedenstående liste over billeder er rækkefølgen af de billeder, du vil se i denne test.
+Når det aktuelle billede er det samme som det billede, der kommer lige før det, skal du trykke på mellemrumstasten.
+
+Page 11.2: 1-Back Demo Section 2
+Under demonstrationen vil billeder blive vist i vinduet ligesom under testen. Du kan følge rækkefølgen af billeder, der vil blive vist, ved at se på listen øverst på skærmen. Det aktuelle billede vil have et felt omkring sig.
+
+Page 11.3: 1-Back Demo Section 3
+Det, du vil se under testen, er inden for dette vindue.
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som det forrige billede.
+
+Page 11.4: 1-Back Demo Section 4
+Nu vil vi prøve øvelsen 1-TILBAGE igen.
+Som den første gang, du lavede øvelsen, vil du ikke have listen øverst på skærmen for at minde dig om de forrige billeder.
+Husk at trykke på mellemrumstasten, når billedet på skærmen er det samme som det forrige billede.
+Har du nogen spørgsmål?
+
+Page 12: 2-Back Instructions
+Vi vil nu øve 2-TILBAGE.
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som dét før det forrige billede.
+For eksempel:
+TRYK
+
+Page 13: Begin Practice
+START ØVELSEN 2-TILBAGE
+
+Page 14: 2-Back Countdown
+2-TILBAGE
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som dét før det forrige billede.
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+Det er ikke korrekt.
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som dét før det forrige billede.
+
+Page 15.2: Feedback False Positive
+Det er ikke korrekt.
+Tryk kun på mellemrumstasten, når det billede, du ser, er det samme som dét før det forrige billede.
+
+Page 16: 2-Back Demo
+Første billede
+Sidste billede
+TRYK
+SPRING VIDEOEN 2-TILBAGE OVER
+Spring øvelsesvideoen over, og vend tilbage til øvelsen
+
+Page 16.1: 2-Back Demo Section 1
+Vi vil nu prøve en ny måde at se opgaven på.
+Lad os antage, at nedenstående liste over billeder er rækkefølgen af de billeder, du vil se under 2-TILBAGE.
+Når det aktuelle billede er det samme som det billede, der kom to før det, skal du trykke på mellemrumstasten.
+
+Page 16.2: 2-Back Demo Section 2
+Under demonstrationen vil billeder blive vist i vinduet ligesom under testen. Du kan følge rækkefølgen af billeder, der vil blive vist, ved at se på listen øverst på skærmen. Det aktuelle billede vil have et felt omkring sig.
+
+Page 16.3: 2-Back Demo Section 3
+Det, du vil se under testen, er inden for dette vindue.
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som dét før det forrige billede.
+
+Page 16.4: 2-Back Demo Section 4
+Vi vil nu prøve øvelsen 2-TILBAGE igen.
+Som den første gang, du lavede øvelsen, vil du ikke have listen øverst på skærmen for at minde dig om de forrige billeder.
+Husk at trykke på mellemrumstasten, når billedet på skærmen er det samme som det billede, der kom to før det.
+Har du nogen spørgsmål?
+
+Page 17: Instructions
+Du har gennemført øvelsen på korrekt vis.
+Vi starter nu testen.
+Under testen skal du udføre opgaverne 0-TILBAGE, 1-TILBAGE- og 2-TILBAGE flere gange.
+Har du nogen spørgsmål, før testen starter?
+
+Page 18: Begin Test
+START TEST
+
+Page 19: 0-Back Countdown
+0-TILBAGE
+Tryk på mellemrumstasten, når du ser dette billede:
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+1-TILBAGE
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som det forrige billede.
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+2-TILBAGE
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som dét før det forrige billede.
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+1-TILBAGE
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som det forrige billede.
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+2-TILBAGE
+Tryk på mellemrumstasten, når det billede, du ser, er det samme som dét før det forrige billede.
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+0-TILBAGE
+Tryk på mellemrumstasten, når du ser dette billede:
+
+Page 30: 0-Back Test
+<0_back_2>

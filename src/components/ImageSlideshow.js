@@ -1,6 +1,5 @@
 import React from 'react';
 
-const BASE_URL = "http://localhost/"; // "https://penncnp-dev.pmacs.upenn.edu/";
 
 export class ImageSlideshow extends React.Component{
   constructor(props)
@@ -94,7 +93,7 @@ export class ImageSlideshow extends React.Component{
     {
       return this.findAssetFile(clean_url);
     }
-    else return BASE_URL + "stimuli/svolt/" + clean_url;
+    else return this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + clean_url;
   }
 
   findAssetFile(url)
@@ -119,7 +118,7 @@ export class ImageSlideshow extends React.Component{
         continue;
       }
     }
-    return file || BASE_URL + "stimuli/svolt/" + url;
+    return file || this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + url;
   }
 
   render()

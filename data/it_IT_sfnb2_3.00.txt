@@ -1,0 +1,197 @@
+test: sfnb2
+version: 3.00
+language: it_IT
+
+Page 0: Common
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+Premi la barra spaziatrice per continuare.
+
+Page 1: Title
+Frattale e posizioni precedenti – breve
+Modulo breve
+FAI CLIC QUI PER CONTINUAR
+
+Page 2: Instructions
+Vedrai sullo schermo un’immagine alla volta.
+Per ciascuna immagine, decidi se premere o no la barra spaziatrice.
+Vi sono tre parti con regole diverse:
+NESSUNA POSIZIONE PRECEDENTE
+1 POSIZIONE PRECEDENTE
+2 POSIZIONI PRECEDENTI
+Ti eserciterai in tutte e tre le parti.
+
+Page 3: 0-Back Instructions
+La prima esercitazione riguarda NESSUNA POSIZIONE PRECEDENTE.
+Premi la barra spaziatrice ogni volta che vedi la seguente immagine:
+Domande?
+
+Page 4: Begin Practice
+INIZIA L’ESERCITAZIONE SU NESSUNA POSIZIONE PRECEDENTE
+
+Page 5: 0-Back Countdown
+NESSUNA POSIZIONE PRECEDENTE
+Premi la barra spaziatrice quando vedi questa immagine:
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+La risposta è sbagliata.
+Premi la barra spaziatrice ogni volta che vedi questa immagine:
+
+Page 6.2: Feedback False Positive
+La risposta è sbagliata.
+Premi la barra spaziatrice solo quando vedi questa immagine.
+
+Page 7: 1-Back Instructions
+Ora proverai di nuovo l’esercitazione 1 POSIZIONE PRECEDENTE.
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella immediatamente precedente.
+Per esempio:
+PREMI
+Domande?
+
+Page 8: Begin Practice
+INIZIA L’ESERCITAZIONE SU 1 POSIZIONE PRECEDENTE
+
+Page 9: 1-Back Countdown
+1 POSIZIONE PRECEDENTE
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella precedente
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+La risposta è sbagliata.
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella precedente.
+
+Page 10.2: Feedback False Positive
+La risposta è sbagliata.
+Premi la barra spaziatrice solo quando l’immagine che vedi è identica a quella precedente
+
+Page 11: 1-Back Demo
+Prima immagine
+Ultima immagine
+PREMI
+SALTA IL VIDEO 1 POSIZIONE PRECEDENTE
+Salta il video di addestramento e ritorna all’esercitazione
+
+Page 11.1: 1-Back Demo Section 1
+Proveremo ora un nuovo modo per fare la prova.
+Supponiamo che l’elenco di immagini qui sotto corrisponda alla sequenza delle immagini che vedrai in questo test.
+Ogni volta che l’immagine attuale è identica a quella che la precede immediatamente, devi premere la barra spaziatrice.
+
+Page 11.2: 1-Back Demo Section 2
+Durante la dimostrazione, le immagini compariranno nella finestra esattamente come nel test.  Puoi seguire la sequenza di immagini che saranno mostrate guardando l’elenco in cima allo schermo.  L’immagine attuale sarà racchiusa da un riquadro.
+
+Page 11.3: 1-Back Demo Section 3
+Quello che vedrai durante il test è all’interno di questa finestra.
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella precedente.
+
+Page 11.4: 1-Back Demo Section 4
+Ora proverai di nuovo l’esercitazione 1 POSIZIONE PRECEDENTE.
+Come la prima volta che hai provato l’esercitazione, non ci sarà l’elenco in cima allo schermo per ricordarti le immagini precedenti.
+Ricordati di premere la barra spaziatrice quando l’immagine sullo schermo è identica a quella precedente.
+Domande?
+
+Page 12: 2-Back Instructions
+Ora ti eserciterai su 2 POSIZIONI PRECEDENTI.
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella prima dell’immagine precedente.
+Per esempio:
+PREMI
+
+Page 13: Begin Practice
+INIZIA L’ESERCITAZIONE SU 2 POSIZIONI PRECEDENTI
+
+Page 14: 2-Back Countdown
+2 POSIZIONI PRECEDENTI
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella prima dell’immagine precedente.
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+La risposta è sbagliata.
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella prima dell’immagine precedente.
+
+Page 15.2: Feedback False Positive
+La risposta è sbagliata.
+Premi la barra spaziatrice solo quando l’immagine che vedi è identica a quella prima dell’immagine precedente.
+
+Page 16: 2-Back Demo
+Prima immagine
+Ultima immagine
+PREMI
+SALTA IL VIDEO 2 POSIZIONI PRECEDENTI
+Salta il video di addestramento e ritorna all’esercitazione
+
+
+Page 16.1: 2-Back Demo Section 1
+Proveremo ora un nuovo modo per fare la prova.
+Supponiamo che l’elenco di immagini qui sotto corrisponda all’ordine delle immagini che vedrai durante 2 POSIZIONI PRECEDENTI.
+Ogni volta che l’immagine attuale è identica a quella che si trova due posizioni prima di essa, devi premere la barra spaziatrice.
+
+Page 16.2: 2-Back Demo Section 2
+Durante la dimostrazione, le immagini compariranno nella finestra esattamente come nel test. Puoi seguire la sequenza di immagini che saranno mostrate guardando l’elenco in cima allo schermo. L’immagine attuale sarà racchiusa da un riquadro.
+
+
+Page 16.3: 2-Back Demo Section 3
+Quello che vedrai durante il test è all’interno di questa finestra.
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella prima dell’immagine precedente.
+
+Page 16.4: 2-Back Demo Section 4
+Ora ti eserciterai su 2 POSIZIONI PRECEDENTI.
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella prima dell’immagine precedente. Per esempio:
+Ricordati di premere la barra spaziatrice quando l’immagine sullo schermo è identica a quella precedente.
+Domande?
+
+Page 17: Instructions
+Hai completato correttamente l’esercitazione.
+Ora inizierai il test.
+Durante il test affronterai ripetutamente le prove NESSUNA POSIZIONE PRECEDENTE, 1 POSIZIONE PRECEDENTE e 2 POSIZIONI PRECEDENTI.
+Domande prima di iniziare il test?
+
+Page 18: Begin Test
+INIZIA IL TEST
+
+Page 19: 0-Back Countdown
+NESSUNA POSIZIONE PRECEDENTE
+Premi la barra spaziatrice quando vedi questa immagine:
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+1 POSIZIONE PRECEDENTE
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella precedente.
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+2 POSIZIONI PRECEDENTI
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella prima dell’immagine precedente.
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+1 POSIZIONE PRECEDENTE
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella precedente.
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+2 POSIZIONI PRECEDENTI
+Premi la barra spaziatrice quando l’immagine che vedi è identica a quella prima dell’immagine precedente.
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+NESSUNA POSIZIONE PRECEDENTE
+Premi la barra spaziatrice quando vedi questa immagine:
+
+Page 30: 0-Back Test
+<0_back_2>

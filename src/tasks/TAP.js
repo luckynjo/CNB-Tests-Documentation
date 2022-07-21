@@ -6,6 +6,7 @@ import TitlePage from '../components/TitlePage.js';
 import {BeginPage} from '../components/BeginPage.js';
 import {SimpleInstructions} from '../instructions/SimpleInstructions.js';
 import {TapCountdownInstructions} from '../instructions/TapCountdownInstructions.js';
+import {TapTestCountdownInstructions} from '../instructions/TapTestCountdownInstructions.js';
 import {TAPHandPositionInstructions} from '../instructions/TAPHandPositionInstructions.js';
 import SubmitPage from '../components/SubmitPage.js';
 import motor_praxis_banner from '../assets/tap/banner.png';
@@ -217,9 +218,14 @@ export default class TAP extends React.Component{
     {
       return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
+    else if(section_title.match(COUNTDOWN_REGEX) && this.state.practice)
+    {
+
+      return <TapCountdownInstructions practice={this.state.practice} spacebar_text={this.spacebar_text} instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
+    }
     else if(section_title.match(COUNTDOWN_REGEX))
     {
-      return <TapCountdownInstructions practice={this.state.practice} spacebar_text={this.spacebar_text} instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
+      return <TapTestCountdownInstructions spacebar_text={this.spacebar_text} instructions={JSON.parse(timeline_object.content)} trial={this.state.practice ? this.state.practice_trial + 1 : this.state.test_trial} handedness={this.state.practice ? this.props.practice_trials[this.state.practice_trial].stimulus : this.props.test_trials[this.state.test_trial].stimulus} onContinue={this.next}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {

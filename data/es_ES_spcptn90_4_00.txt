@@ -1,0 +1,84 @@
+test: spcptn90
+version: 1.00
+language: es_ES
+
+page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+Pulse la barra espaciadora para continuar.
+
+Page 1: Title
+Prueba abreviada de rendimiento continuo de Penn
+Número
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Number Instructions
+En esta prueba verá líneas en la pantalla.
+Cada vez que las líneas formen un NÚMERO completo, pulse rápidamente la barra espaciadora.
+Por ejemplo:
+NO PULSE
+NO PULSE
+PULSE
+Practiquemos.
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 3: Begin Practice
+COMENZAR LA PRÁCTICA DE LOS NÚMEROS
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+
+Page 4: Countdown
+¡Prepárese!
+La práctica comenzará en:
+Utilice la barra espaciadora para responder
+
+Page 5: Practice
+<number_practice>
+Pulse la barra espaciadora para continuar.
+
+Page 5.1: Feedback Correct
+CORRECTO!
+
+Page 5.2: Feedback False Negative
+Eso ha sido INCORRECTO.
+Ha visto un número completo, pero no ha pulsado la barra espaciadora.
+Pulse la barra espaciadora cada vez que vea un NÚMERO completo.
+PULSE
+
+Page 5.3: Feedback False Positive
+Eso ha sido INCORRECTO.
+No ha visto un número completo.
+Pulse la barra espaciadora SÓLO cuando vea un NÚMERO completo.
+NO PULSE
+NO PULSE
+NO PULSE
+NO PULSE
+PULSE
+
+Page 5: Number Test Instructions
+¡Genial!
+Recuerde: Pulse la barra espaciadora cuando vea un NÚMERO.
+En la prueba, verá números diferentes a los que vio en la práctica.
+Aquí hay algunos ejemplos:
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+
+Page 6: Instructions
+La prueba comenzará ahora.
+Durante la prueba, NO le diremos si sus respuestas son CORRECTAS o INCORRECTAS.
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+
+Page 7: Begin Test
+COMENZAR LA PRUEBA
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+
+Page 8: Countdown
+¡Prepárese!
+La prueba comenzará en:
+Utilice la barra espaciadora para responder.
+
+Page 9: Test
+<number_test>
+Utilice la barra espaciadora para responder.

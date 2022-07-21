@@ -43,13 +43,45 @@ export default class ER40 extends React.Component {
 
     this.faces = []; // ER40 has faces
     this.next = this.next.bind(this);
+    this.back = this.back.bind(this);
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
     this.onPracticeFeedback = this.onPracticeFeedback.bind(this);
     this.onPracticeComplete = this.onPracticeComplete.bind(this);
+    this.skipListener = this.skipListener.bind(this);
   }
 
+  componentWillUnmount()
+  {
+    window.removeEventListener("keydown", this.skipListener, false);
+  }
+
+  /***
+  * Handler for overral key presses.
+  * Specifically checks for skip command.
+  * TO DO: Add beep for invalid key presses.
+  */
+  skipListener(e)
+  {
+    // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+    if((e.metaKey || e.ctrlKey) && e.keyCode === 190)
+    {
+      console.log("skip task", new Date());
+      e.stopPropagation();
+      this.skipTest();
+    }
+  }
+
+  skipTest()
+  {
+    this.setState((prevState, props) => {
+      return {assessment_complete: true, skipped: 1};
+    });
+  }
+
+  // Store the task images once they have been loaded by the AssetLoader.
   onAssetsLoadComplete(images)
   {
+    window.addEventListener("keydown", this.skipListener, false);
     this.faces = images;
     console.log(this.faces);
     this.next();
@@ -121,6 +153,36 @@ export default class ER40 extends React.Component {
     }
   }
 
+  back()
+  {
+    let next = this.state.index - 1;
+    let found = false;
+
+    while(!found && next > 1)
+    {
+      const title = this.props.timeline[next].section_title;
+      if(title.includes("Instructions") || title.match(BEGIN_PAGE_REGEX))
+      {
+        found = true;
+        continue;
+      }
+      else{
+        next = next - 1;
+      }
+    }
+
+    this.setState((prevState, props) => {
+      return {index: next};
+    });
+  }
+
+  canGoBack()
+  {
+    const prev = this.state.index - 1;
+    const title = this.props.timeline[prev].section_title;
+    return prev > 1 && (title.includes("Instructions") || title.match("Feedback"));
+  }
+
   render()
   {
 
@@ -149,7 +211,7 @@ export default class ER40 extends React.Component {
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={er40_banner} banner_width={312} theme={"light"} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test} description={"Form D"} />
+      return <TitlePage banner={er40_banner} content={JSON.parse(timeline_object.content)} banner_width={312} theme={"light"} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test} description={"Form D"} />
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
@@ -161,7 +223,7 @@ export default class ER40 extends React.Component {
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
-      return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+      return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
     }
     else if(section_title.match(SLIDESHOW_REGEX))
     {
@@ -177,7 +239,7 @@ export default class ER40 extends React.Component {
       console.log(this.faces);
       const feedback_correct = JSON.parse(this.props.timeline[this.state.index+1].content)[0];
       const feedback_incorrect = JSON.parse(this.props.timeline[this.state.index+2].content)[0];
-      return <div className="container"><ER40PracticeTrial base_url={this.props.base_url} buttons={JSON.parse(timeline_object.content)} trials={this.props.practice_trials} feedback_correct={feedback_correct} feedback_incorrect={feedback_incorrect} images={this.faces} onPracticeComplete={this.onPracticeComplete}/></div>
+      return <div className="container"><ER40PracticeTrial base_url={this.props.base_url} buttons={JSON.parse(timeline_object.content)} trials={this.props.practice_trials} feedback_correct={feedback_correct} feedback_incorrect={feedback_incorrect} images={this.faces} continue_button_text={this.continue_button_text} onPracticeComplete={this.onPracticeComplete}/></div>
     }
     else
     {

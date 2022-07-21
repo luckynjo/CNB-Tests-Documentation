@@ -61,7 +61,6 @@ export const CPTFalseNegativeInstructions = props => {
         }
       })}
       <br/>
-      <br/>
       <div>
       <table className="center--horizontal">
       <tbody>
