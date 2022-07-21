@@ -17,10 +17,10 @@ function App(){
 </BrowserRouter>
 )*/
 //const BASE_URL = "http://localhost/";
-//const BASE_URL = "https://webcnp.med.upenn.edu/surveys/";
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
-//const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/surveys/survey.pl";
-const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/webcnp.pl";
+const BASE_URL = "https://webcnp.med.upenn.edu/surveys/";
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
+const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/surveys/survey.pl";
+//const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/webcnp.pl";
 //const ASSESSMENT_URL = "http://localhost/webcnp.pl";
 //const BASE_URL = "http://localhost/";
 return (
