@@ -39,11 +39,3 @@ margin-top:8px;
 h1{
   font-size: 72px;
 }
-
-div.instructions.top{
-  top: 48px;
-position: fixed;
-left: 50%;
-transform: translateX(-50%);
-min-width: 700px;
-}

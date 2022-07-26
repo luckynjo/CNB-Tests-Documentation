@@ -21,13 +21,14 @@ div.memory-buttons--test{
 color: #FFFFFF;
 background:#003366;
 border-radius:16px;
-font-size: 24pt;
+font-size: 20px;
 font-weight: bold;
 padding:8px;
 min-height:80px;
 width:168px;
 font-size: 20px;
 font-size: 1.9vmin;
+overflow-wrap: break-word;
 text-align:center;
 /***line-height: 32px;*/
 margin-left: 8px;
