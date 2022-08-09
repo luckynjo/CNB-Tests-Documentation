@@ -16,7 +16,7 @@ HAGA CLIC AQUÍ PARA CONTINUAR
 Page 2: Instructions
 (Instrucciones 1)
 
-(Al administrador de la prueba: Aleje ahora el ordenador de la vista del participante. Durante toda esta prueba, el participante no debe poder ver la pantalla del ordenador. Lea las instrucciones que aparecen a continuación, al participante y, después,lea las palabras de las listas en voz alta mientras el resaltador amarillo pasa por encima de cada una)..
+(Al administrador de la prueba: Aleje ahora el ordenador de la vista del participante. Durante toda esta prueba, el participante no debe poder ver la pantalla del ordenador. Lea las instrucciones que aparecen a continuación, al participante y, después,lea las palabras de las listas en voz alta mientras el resaltador amarillo pasa por encima de cada una.)
 
 Voy a leer una lista de palabras. Escuche con atención, porque cuando termine de leerla, quiero que me diga todos los elementos que pueda. No importa en qué orden estén, sólo dígame todos los que pueda. Esta es la lista:
 
@@ -26,39 +26,39 @@ Page 3: Slideshow
 <slideshow>
 LEÓN
 ESMERALDA
-TIENDA DE CAMPAÑA
-MAESTRO
+PISO
+PROFESOR
 ZAFIRO
 DENTISTA
 HOTEL
 CABALLO
 INGENIERO
-ÓPAlO
+RUBI
 TIGRE
 CUEVA
-PROFESOR
+ARQUITECTO
 PERLA
 VACA
-CHOZA
+CABAÑA
 
 Page 4: Test
 <trials>
 LEÓN
-CABALLO
-TIGRE
-TIENDA DE CAMPAÑA
-VACA
-HOTEL
-CUEVA
-CHOZA
 ESMERALDA
-ZAFIRO
-ÓPALO
-PERLA
-MAESTRO
-DENTISTA
-INGENIERO
+PISO
 PROFESOR
+ZAFIRO
+DENTISTA
+HOTEL
+CABALLO
+INGENIERO
+RUBI
+TIGRE
+CUEVA
+ARQUITECTO
+PERLA
+VACA
+CABAÑA
 
 Page 5: Instructions
 (Instrucciones 2)
