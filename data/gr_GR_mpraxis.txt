@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.05
+language: gr_GR
+
+Page 0: Common
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+
+Page 1: Title
+Motor Praxis Test
+HIER KLICKEN, UM FORTZUFAHREN
+
+Page 2: Instructions
+Dies ist ein Test Ihrer Fähigkeit, die Maus zu kontrollieren.
+Sie werden einige grüne Kästchen sehen, eines nach dem anderen. Bewegen Sie den Mauszeiger über jedes Kästchen und klicken Sie es EINMAL an.
+
+Page 3: Begin Practice
+ÜBUNG BEGINNEN
+
+Page 4: Practice
+Klicken Sie auf das grüne Kästchen, um fortzufahren.
+
+Page 5: Instructions
+Diesmal haben Sie 5 Sekunden Zeit, um auf jedes Kästchen zu klicken. Versuchen Sie, auf jedes Kästchen zu klicken, bevor es ausgeblendet wird.
+
+Page 6: Begin Test
+TEST BEGINNEN
+
+Page 7: Test
+Klicken Sie auf das grüne Kästchen, um fortzufahren.
