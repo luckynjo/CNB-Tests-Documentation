@@ -1,6 +1,6 @@
 test: mpraxis
 version: 2.05
-language: gr_GR
+language: de_DE
 
 Page 0: Common
 HIER KLICKEN, UM FORTZUFAHREN
