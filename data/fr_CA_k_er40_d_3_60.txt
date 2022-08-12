@@ -1,0 +1,51 @@
+test: k-er40
+version: 3.60
+language: fr_CA
+
+Page 0: Common
+CLIQUE ICI POUR CONTINUER
+RETOUR À LA PAGE PRÉCÉDENTE
+
+Page 1: Title
+Test de reconnaissance émotionnelle Penn
+ER40 Formulaire D
+CLIQUE ICI POUR CONTINUER
+
+Page 2: Instructions
+Dans ce test, tu verras des visages. Regarde attentivement chaque visage et essaie de décider ce que la personne ressent.
+Clique sur le mot qui décrit le mieux ce que la personne ressent.
+
+Page 3: Instructions
+Si la personne ne montre pas de sentiments, clique sur « Aucun sentiment ».
+Essayons un visage pour nous exercer…
+
+Page 4: Begin Practice
+COMMENCE À T’EXERCER
+
+Page 5: Practice
+Quel sentiment vois-tu sur ce visage?
+BONHEUR
+TRISTESSE
+COLÈRE
+PEUR
+AUCUN SENTIMENT
+
+Page 5.1: Feedback Correct
+Excellent travail!
+
+Page 5.2: Feedback Incorrect
+Ce n'est pas tout à fait exact. Essaie encore.
+
+Page 6: Instructions
+Le test va commencer maintenant. N’oublie pas de regarder chaque visage attentivement.
+Sois aussi rapide et précis(e) que possible.
+
+Page 7: Begin Test
+COMMENCE LE TEST
+
+Page 8: Test
+BONHEUR
+TRISTESSE
+COLÈRE
+PEUR
+AUCUN SENTIMENT

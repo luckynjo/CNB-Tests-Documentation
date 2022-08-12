@@ -1,0 +1,195 @@
+test: sfnb2
+version: 3.00
+language: fr_CA
+
+Page 0: Common
+CLIQUE ICI POUR CONTINUER
+RETOUR À LA PAGE PRÉCÉDENTE
+Appuie sur la barre d’espacement pour continuer.
+
+Page 1: Title
+Test fractal N-Précédent court
+Formulaire court
+CLIQUE ICI POUR CONTINUER
+
+Page 2: Instructions
+Tu vas voir une image à la fois à l’écran.
+Pour chaque image, décide si tu dois appuyer ou non sur la barre d’espacement.
+Il y a trois parties avec des règles différentes pour chacune:
+0-PRÉCÉDENTE
+1-PRÉCÉDENTE
+2-PRÉCÉDENTE
+Nous allons nous exercer aux trois parties.
+
+Page 3: 0-Back Instructions
+Nous allons d’abord nous exercer à la partie 0-PRÉCÉDENTE.
+Appuie sur la barre d’espacement chaque fois que tu vois l’image suivante:
+As-tu des questions?
+
+Page 4: Begin Practice
+COMMENCE À T’EXERCER À LA PARTIE 0-PRÉCÉDENTE.
+
+Page 5: 0-Back Countdown
+0-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand tu vois cette image :
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+C’était incorrect.
+Appuie sur la barre d’espacement à chaque fois que tu vois cette image:
+
+Page 6.2: Feedback False Positive
+C’était incorrect.
+Appuie sur la barre d’espacement seulement quand tu vois cette image:
+
+Page 7: 1-Back Instructions
+Nous allons maintenant nous exercer à la partie 1-PRÉCÉDENTE.
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que celle qui est apparue juste avant.
+Par exemple:
+APPUIE
+As-tu des questions?
+
+Page 8: Begin Practice
+COMMENCE À T’EXERCER À LA PARTIE 1-PRÉCÉDENTE
+
+Page 9: 1-Back Countdown
+1-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que l’image précédente.
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+C’était incorrect.
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que l’image précédente.
+
+Page 10.2: Feedback False Positive
+C’était incorrect.
+Appuie sur la barre d’espacement seulement quand l’image que tu vois est la même que l’image précédente.
+
+Page 11: 1-Back Demo
+Première image
+Dernière image
+APPUIE
+SAUTE LA VIDÉO SUR LA PARTIE 1-PRÉCÉDENTE
+Saute la vidéo de formation et retourne à l’exercice.
+
+Page 11.1: 1-Back Demo Section 1
+On va essayer de faire cette tâche d’une autre manière.
+Supposons que la liste d’images ci-dessous représente la séquence des images que tu vas voir pendant le test.
+Chaque fois que l’image actuelle est la même que celle qui est apparue juste avant, tu dois appuyer sur la barre d’espacement.
+
+Page 11.2: 1-Back Demo Section 2
+Pendant la démonstration, les images vont apparaître dans la fenêtre exactement comme elles le feront durant le test. Tu peux suivre la séquence des images qui vont être montrées en regardant la liste en haut de l’écran. L'image actuelle sera entourée d'un cadre.
+
+Page 11.3: 1-Back Demo Section 3
+Ce que tu vas voir pendant le test se trouvera à l’intérieur de cette fenêtre
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que l’image précédente.
+
+Page 11.4: 1-Back Demo Section 4
+Nous allons maintenant essayer de nouveau l’exercice1-PRÉCÉDENTE.
+Tout comme le premier exercice que tu as fait, tu n’auras pas la liste en haut de l’écran pour te souvenir des images précédentes.
+Rappelle-toi d’appuyer sur la barre d’espacement lorsque l’image sur l’écran est la même que celle juste avant.
+Est-ce que tu as des questions?
+
+Page 12: 2-Back Instructions
+Nous allons maintenant nous exercer à la partie 2-PRÉCÉDENTE.
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que celle avant l’image précédente.
+Par exemple:
+APPUIE
+
+Page 13: Begin Practice
+COMMENCE À T’EXERCER À LA PARTIE 2-PRÉCÉDENTE
+
+Page 14: 2-Back Countdown
+2-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que celle avant l’image précédente.
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+C’était incorrect.
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que celle avant l’image précédente.
+
+Page 15.2: Feedback False Positive
+C’était incorrect.
+Appuie sur la barre d’espacement seulement quand l’image que tu vois est la même que celle avant l’image précédente.
+
+Page 16: 2-Back Demo
+Première image
+Dernière image
+APPUIE
+SAUTE LA VIDÉO SUR LA PARTIE 2-PRÉCÉDENTE
+Saute la vidéo de formation et retourne à l’exercice.
+
+Page 16.1: 2-Back Demo Section 1
+On va essayer de faire cette tâche d’une autre manière.
+Supposons que la liste d’images ci-dessous représente l’ordre des images que tu vas voir pendant la partie 2-PRÉCÉDENTE.
+Chaque fois que l’image actuelle est la même que celle qui est apparue deux images avant, tu dois appuyer sur la barre d’espacement.
+
+Page 16.2: 2-Back Demo Section 2
+Pendant la démonstration, les images vont apparaître dans la fenêtre exactement comme elles le feront durant le test. Tu peux suivre la séquence des images qui vont être montrées en regardant la liste en haut de l’écran. L'image actuelle sera entourée d'un cadre.
+
+Page 16.3: 2-Back Demo Section 3
+Ce que tu vas voir pendant le test se trouvera à l’intérieur de cette fenêtre.
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que celle avant l’image précédente.
+
+Page 16.4: 2-Back Demo Section 4
+Nous allons maintenant essayer de nouveau l’exercice 2-PRÉCÉDENTE.
+Tout comme le premier exercice que tu as fait, tu n’auras pas la liste en haut de l’écran pour te souvenir des images précédentes.
+N’oublie pas d’appuyer sur la barre d’espacement lorsque l’image sur l’écran est la même que celle qui est apparue deux images avant.
+Est-ce que tu as des questions?
+
+Page 17: Instructions
+Tu as correctement terminé l’exercice.
+Nous allons maintenant passer au test.
+Pendant le test, tu feras les tâches 0-PRÉCÉDENTE, 1-PRÉCÉDENTE et 2-PRÉCÉDENTE plusieurs fois.
+As-tu des questions avant de commencer le test?
+
+Page 18: Begin Test
+COMMENCE LE TEST
+
+Page 19: 0-Back Countdown
+0-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand tu vois cette image:
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+1-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que l’image précédente.
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+2-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que celle avant l’image précédente.
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+1-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que l’image précédente.
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+2-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand l’image que tu vois est la même que celle avant l’image précédente.
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+0-PRÉCÉDENTE
+Appuie sur la barre d’espacement quand tu vois cette image:
+
+Page 30: 0-Back Test
+<0_back_2>

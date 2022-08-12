@@ -3,13 +3,13 @@ import axios from 'axios';
 const FormData = require('form-data');
 //const fs = require('fs');
 
-const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "he_IL", "text": "Hebrew"}, {"option": "bg_BG", "text": "Bulgarian"},
+/****const LANGUAGES = [{"option": "", "text":"Please select language"}, {"option": "he_IL", "text": "Hebrew"}, {"option": "bg_BG", "text": "Bulgarian"},
 {"option": "nl_NL", "text": "Dutch (Netherlands)"}, {"option": "ar_EG", "text": "Arabic (Egypt)"}, {"option": "zh_CN", "text": "Simplified Chinese"},
 {"option": "it_IT", "text": "Italian"}, {"option": "po_BR", "text": "What is po_BR language?"}, {"option": "de_DE", "text": "German"}, {"option": "es_ES", "text": "Spanish (Spain)"},
 {"option": "fr_CA", "text": "French (Canada)"}, {"option": "pt_BR", "text": "Portuguese (Brazil)"}, {"option": "es_MX", "text": "Spanish (Mexico)"},
 {"option": "hi_MK", "text": "What is hi_MK language?"}, {"option": "ja_JA", "text": "Japanese"}, {"option": "ru_MK", "text": "What language is ru_MK"},
 {"option": "xh_SA", "text": "IsiXhosa"}, {"option": "tn_BW", "text": "Setswana (Botswana)"}, {"option": "pt_MZ", "text": "What is pt_MZ language?"},
-{"option": "zn_CN", "text": "What is zn_CN language?"}];
+{"option": "zn_CN", "text": "What is zn_CN language?"}];*/
 
 //const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
 //const BASE_URL = "http://localhost/";
@@ -25,9 +25,11 @@ export class TimelineSectionEditor extends React.Component
     super(props);
     this.state = {
       data: null,
-      language: props.language || null
+      language: props.language || null,
+      languages: null
     }
 
+    this.loadLanguages = this.loadLanguages.bind(this);
     this.viewSectionTranslation = this.viewSectionTranslation.bind(this);
     this.onTranslate = this.onTranslate.bind(this);
     this.saveSectionTranslation = this.saveSectionTranslation.bind(this);
@@ -38,6 +40,7 @@ export class TimelineSectionEditor extends React.Component
   componentDidMount()
   {
     this.viewSectionTranslation();
+    this.loadLanguages();
   }
 
   componentWillUnmount()
@@ -45,6 +48,18 @@ export class TimelineSectionEditor extends React.Component
     this.state = {
       data:null
     };
+  }
+
+  loadLanguages()
+  {
+    axios.post(this.props.base_url + 'languages.pl', {'op': 'view'})
+    .then(response => {
+      console.log('response ', response.data.languages);
+      this.setState((prevState, props) => {
+        return {languages: response.data.languages}
+      });
+    })
+    .catch(error => {console.log('Error ', error)});
   }
 
   viewSectionTranslation()
@@ -56,7 +71,7 @@ export class TimelineSectionEditor extends React.Component
     }
     this.props.updateLanguage(language);
     const id = this.props.id;
-    axios.post(this.props.base_url + 'translate.pl', {'op': 'view', 'id': id, 'language': language})
+    axios.post(this.props.base_url + 'translate.pl', {'op': 'view', 'id': id, 'language': language ? language : 'en_US'})
     .then(response => {
       //console.log('response ', JSON.parse(response.data.section_text[0].content));
       //let content = response.data.section_data.length > 0 ? JSON.parse(response.data.section_data[0].content) : new Array();
@@ -144,9 +159,14 @@ export class TimelineSectionEditor extends React.Component
   {
     const data = this.state.data;
     const selected_language = this.state.language ? this.state.language : "";
-    const langue_selection = LANGUAGES.map((language, index) => {
-      return <option key={language.option} value={language.option}>{language.text}</option>
-    });
+    let langue_selection = [];
+    if(this.state.languages)
+    {
+      langue_selection = this.state.languages.map((language, index) => {
+        return <option key={language.iso_code} value={language.title}>{language.text + ' ' + language.iso_code}</option>
+      });
+    }
+
     return data ?
     (
       <>

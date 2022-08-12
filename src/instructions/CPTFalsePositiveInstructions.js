@@ -61,7 +61,6 @@ export const CPTFalsePositiveInstructions = props => {
         }
       })}
 
-      <br/>
       <div className="center--horizontal">
       <div className="inline incorrect-response--multiple">
       <div><img className="center-prac-image img--prac" src={pracNum2} /></div>

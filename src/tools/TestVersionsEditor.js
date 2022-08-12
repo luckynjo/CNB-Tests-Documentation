@@ -5,6 +5,7 @@ import axios from 'axios';
 import {TestVersionEditor} from './TestVersionEditor.js';
 import {TimelineView} from './TimelineView.js';
 import {TranslationView} from './TranslationView.js';
+import {TestVersionTestsView} from './TestVersionTestsView.js';
 import TaskTranslator from './TaskTranslator.js';
 import {TestTrialsEditor} from './TestTrialsEditor.js';
 const FormData = require('form-data');
@@ -31,6 +32,7 @@ export class TestVersionsEditor extends React.Component
     this.loadTimeline = this.loadTimeline.bind(this);
     this.newTestVersion = this.newTestVersion.bind(this);
     this.loadTrials = this.loadTrials.bind(this);
+    this.loadTests = this.loadTests.bind(this);
   }
 
   componentDidMount()
@@ -41,9 +43,9 @@ export class TestVersionsEditor extends React.Component
 
   componentWillUnmount()
   {
-    this.state = {
+    /***this.state = {
       data:null
-    };
+    };*/
   }
 
   viewTestVersions()
@@ -97,6 +99,13 @@ export class TestVersionsEditor extends React.Component
     });
   }
 
+  loadTests(event)
+  {
+    this.setState((prevState, props) => {
+      return {current_view: "tests"}
+    });
+  }
+
   loadTranslator(event)
   {
     this.setState((prevState, props) => {
@@ -118,7 +127,7 @@ export class TestVersionsEditor extends React.Component
 ////{current_view === "translate" && <TaskTranslator id={content.id} />}
     const menu = data ? data.map((test_version, index) => {
       return (<li key={index + 200} className="menu-item" onClick={(e) => this.onTestVersionSelected(e, test_version.id)}>
-      <a href="#">{test_version.title + (test_version.test_form ? " - " + test_version.test_form.toUpperCase() + " Form" : "")}</a>
+      <a href="#">{test_version.short_name.toUpperCase()}</a>
       </li>)
     }) : null;
     const content = this.state.selected_test_version;
@@ -137,6 +146,7 @@ export class TestVersionsEditor extends React.Component
       <header>Test Versions Admin {content && ' : ' + content.title}</header>
       <div className="submenu">
       <button onClick={this.newTestVersion}>New test version</button>
+      <button onClick={(e) => this.loadTests(e)}>Tests</button>
       <button onClick={(e) => this.loadTrials(e)}>Trials</button>
       <button onClick={(e) => this.loadTimeline(e)}>Timeline</button>
       <button onClick={(e) => this.loadTranslator(e)}>Translations</button>
@@ -157,7 +167,7 @@ export class TestVersionsEditor extends React.Component
         {!current_view && <p>Please select a test version to get started.</p>}
         {current_view === "test" && content && <TestVersionEditor base_url={this.props.base_url} {...content} key={Math.round(1000*Math.random())}/>}
         {current_view === "timeline" && <TimelineView base_url={this.props.base_url} id={content.id} />}
-
+        {current_view === "tests" && <TestVersionTestsView base_url={this.props.base_url} id={content.id} short_name={content.short_name}/>}
         {current_view === "translate" && content && <TranslationView base_url={this.props.base_url} id={content.id} />}
         {current_view === "trials" && content && <TestTrialsEditor base_url={this.props.base_url} id={content.id} />}
         </div>

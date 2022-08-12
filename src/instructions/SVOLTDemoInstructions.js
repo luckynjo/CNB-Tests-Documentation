@@ -21,14 +21,22 @@ export const SVOLTDemoInstructions = props => {
      })}
      <br/>
 
-     <div className='memory-buttons--other center--horizontal inline'>
+     <table className='memory-buttons--other center--horizontal'>
+     <tr>
      {instructions.map((item, index) => {
        if(index > 1 && index < 6)
        {
-         return (<button className="memory-button" /*"button cpf-button"*/ key={index + 55}>{item}</button>)
+         return (<td key={index}><button className="volt-button demo" /*"button cpf-button"*/ key={index + 55}>{item}</button></td>)
        }
      })}
-     </div>
+     </tr>
+     <tr>
+     <td><div></div></td>
+     <td><div></div></td>
+     <td><div></div></td>
+     <td><div></div></td>
+     </tr>
+     </table>
      <br/>
 
      {instructions.map((item, index) => {

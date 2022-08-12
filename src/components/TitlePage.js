@@ -63,7 +63,7 @@ export default function TitlePage(props)
       {audioPlayer}
       <div className="section--footer">
        <table><tbody><tr>
-        <td><p className="small text--center test-form">{props.content[1] !== props.continue_button_text && props.content[1]}</p></td>
+        <td><p className="small text--center test-form">{props.content[1].trim() !== props.continue_button_text.trim() && props.content[1]}</p></td>
         <td><ContinueButton text={props.continue_button_text} classList={buttonInvisibility} onClick={() => props.onClick()}/></td>
         <td><p className="small text--center test-name">{props.test}</p></td></tr>
         <tr><td colSpan="3"><p className="copyright text--center">{props.citation || 'Copyright (c) 2005-2022 University of Pennsylvania  All Rights Reserved'}</p></td></tr>

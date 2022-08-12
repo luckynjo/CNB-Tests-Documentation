@@ -1,93 +1,70 @@
 import React, { useState, useEffect } from 'react';
 import {Paragraph} from '../components/Paragraph.js';
+import CNBResponse from './CNBResponse.js';
 
 export class WordMemoryTrials extends React.Component{
 
   constructor(props)
   {
     super(props);
-    const stimulus = this.props.trials[0];
+    const stimulus = JSON.parse(this.props.trials[0].stimulus);
     this.state = {
       trial: 0,
-      stimulus: stimulus,
+      word: stimulus,
+      responses: [],
+      trialTime: new Date()
     };
     this.intervalid = -1;
     this.trialTime = new Date();
     // Method bindings
     this.onClick = this.onClick.bind(this);
-    this.responses = [];
+    this.nextTrial = this.nextTrial.bind(this);
   }
 
-  componentDidMount()
+  onClick(evt, response)
   {
-    this.start();
+    let responses = this.state.responses;
+    const duration = (new Date()) - this.state.trialTime;
+    responses.push(new CNBResponse(this.state.trial + 1, response, duration));
+    this.nextTrial(responses);
   }
 
-  componentWillUnmount()
-  {
-    this.stop();
-  }
-
-  start()
-  {
-    this.trialTime = new Date();
-    this.intervalid = setTimeout(() => {this.update();}, 34);
-  }
-
-  update()
-  {
-    const duration = (new Date()) - this.trialTime;
-    //console.log(this.state.trial, ', ', duration)
-    // Show next trial
-    if(duration >= 10000)
-    {
-      this.nextTrial();
-    }
-    else {
-      this.intervalid = setTimeout(() => {this.update();}, 34);
-    }
-  }
-
-  stop()
-  {
-    clearTimeout(this.intervalid);
-    this.intervalid = null;
-    this.trialTime = null;
-  }
-
-  onClick(valid_response)
-  {
-    if(!valid_response)
-    {
-      return ;
-    }
-    this.nextTrial();
-  }
-
-  nextTrial()
+  nextTrial(responses)
   {
     const next_trial = this.state.trial + 1;
     const trial_count = this.props.trials.length;
     const rt = new Date() - this.trialTime;
-    this.stop();
     if(next_trial < trial_count)
     {
-      const stimulus = this.props.trials[next_trial];;
+      const stimulus = JSON.parse(this.props.trials[next_trial].stimulus);
       this.setState((prevState, props) => {
-        return {trial: next_trial, stimulus: stimulus};
+        return {trial: next_trial, word: stimulus};
       }, this.start);
     }
     else
     {
-      this.props.onTrialsComplete({responses: this.responses});
+      this.props.onTrialsComplete(responses);
     }
   }
 
   render()
   {
     const word = this.state.word;
+    const buttons = this.props.buttons.map((item, index) => {
+      return (<button className="button memory-button" key={index + 155} onClick={(e) => this.onClick(e, index + 1)}>{item}</button>)
+    })
     return (
-      <Paragraph text={word} classList="stimulus-text--medium text-center" />
+      <div className="container">
+
+      <div className="stimulus--cpw center">
+       <Paragraph text={word} classList="stimulus-text--medium text-center" />
+      </div>
+
+      <div className='inline memory-buttons--test'>
+      {buttons}
+      </div>
+
+      </div>
     );
   }
 }

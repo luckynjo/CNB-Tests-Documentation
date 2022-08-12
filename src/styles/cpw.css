@@ -1,0 +1,41 @@
+.stimulus--cpw, .stimulus--cpw div.col h1, h1{
+font-size:72px;
+}
+
+div.memory-buttons--other
+{
+  width: 700px;
+  padding-top:16px;
+  padding-bottom: 16px;
+}
+
+div.memory-buttons--test{
+  width:600px;
+  position:absolute;
+  bottom: 64px;
+  left: 50%;
+  -ms-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
+}
+.memory-button{
+min-height:80px;
+width:132px;
+text-align: center;
+border-radius: inherit;
+padding: 8px;
+font-size: 20px;
+border: solid 2px white;
+background: transparent;
+color: #FFFFFF;
+}
+
+#message{
+font-size:20px;
+font-weight:bold;
+margin-left: 65px;
+margin-top:8px;
+}
+
+h1{
+  font-size: 72px;
+}

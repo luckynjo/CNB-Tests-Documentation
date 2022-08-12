@@ -5,7 +5,6 @@ export default class Slideshow extends React.Component{
   constructor(props)
   {
     super(props);
-    console.log(props);
     const word = this.props.words[0];
     this.state = {
       trial: 0,
@@ -66,7 +65,6 @@ export default class Slideshow extends React.Component{
     }
     else
     {
-      console.log("here");
       this.props.onSlideShowComplete();
     }
   }
@@ -75,7 +73,7 @@ export default class Slideshow extends React.Component{
   {
     const word = this.state.word;
     return (
-      <Paragraph text={word} classList="stimulus-text--medium text-center" />
+        <Paragraph text={word} classList="stimulus-text--medium text-center" />
     );
   }
 }

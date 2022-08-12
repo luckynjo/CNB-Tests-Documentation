@@ -47,6 +47,7 @@ if($cgi->param('file'))
   {
     my $line = $_;
     $line =~ s/\n//;
+    $line =~ s/ $//;
     print STDERR "Given line " . $line . "\n";
     if(!$line =~ /^\s*$/)
     {
@@ -138,6 +139,7 @@ if($cgi->param('file'))
       else
       {
         $title = $line;
+        $title =~ s/ $//;
         $title =~ s/ /_/g;
         $section = get_test_document($title, $test_version->{id}, $section_number);
         if(!$section)

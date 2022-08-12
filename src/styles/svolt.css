@@ -3,13 +3,13 @@ opacity:1;
 }
 
 div.memory-buttons--other{
-  width:650px;
+  /****width:650px;*/
   padding-top:16px;
   padding-bottom: 16px;
 }
 
 div.memory-buttons--test{
-  width:650px;
+  /***width:650px;*/
   /***position:absolute;
   bottom: 48px;
   left: 50%;
@@ -17,21 +17,38 @@ div.memory-buttons--test{
   transform: translate(-50%, -5%);*/
 }
 
-.memory-button{
+.volt-button{
 color: #FFFFFF;
 background:#003366;
 border-radius:16px;
-font-size: 24pt;
 font-weight: bold;
 padding:8px;
 min-height:80px;
-width:132px;
-font-size: 20px;
+width:168px;
+font-size: 16px;
+/***font-size: 1.6vmin;*/
 text-align:center;
-line-height: 32px;
+/***line-height: 32px;*/
+margin-left: 6px;
+margin-right: 6px;
+opacity: 0.9;
+cursor: pointer;
 }
 
-.pvrt--response-button{
+.volt-button:active{
+  opacity: 1;
+transform: translateY(1px);
+}
+
+.volt-button.demo, .volt-button.demo:active{
+  cursor: not-allowed;
+  opacity: 0.9;
+  transform: translateY(0px);
+}
+
+
+
+/***.pvrt--response-button{
 color: #FFFFFF;
 background:#003366;
     min-width: 350px;
@@ -40,7 +57,7 @@ border-radius:16px;
     font-size: 24pt;
     font-weight: bold;
 margin:8px;
-}
+}*/
 
 
 .feedback{
