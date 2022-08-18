@@ -37,7 +37,6 @@ export default class TAP extends React.Component{
     }
 
     const content = JSON.parse(this.props.timeline[0].content);
-    console.log('The 0 timeline object content is ', content);
     this.continue_button_text = content[0] || 'CLICK HERE TO CONTINUE';
     this.back_button_text = content[1] || 'GO BACK';
     this.spacebar_text = content[2] || 'Press the spacebar to continue';

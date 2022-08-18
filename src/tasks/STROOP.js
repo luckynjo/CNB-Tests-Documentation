@@ -41,12 +41,20 @@ export default class STROOP extends React.Component {
     this.continue_button_text = content[0];
     this.back_button_text = content[1];
 
-    this.faces = []; // ER40 has faces
+    //this.faces = [];
     this.next = this.next.bind(this);
     this.back = this.back.bind(this);
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
     this.onPracticeFeedback = this.onPracticeFeedback.bind(this);
     this.onPracticeComplete = this.onPracticeComplete.bind(this);
+    this.skipListener = this.skipListener.bind(this);
+    this.skipTest = this.skipTest.bind(this);
+    this.onAssetsLoadComplete = this.onAssetsLoadComplete.bind(this);
+  }
+
+  componentDidMount()
+  {
+    window.addEventListener("keydown", this.skipListener, false);
   }
 
   componentWillUnmount()
@@ -56,9 +64,31 @@ export default class STROOP extends React.Component {
 
   onAssetsLoadComplete(images)
   {
-    this.faces = images;
+    window.addEventListener("keydown", this.skipListener, false);
+    //this.faces = images;
     this.next();
   }
+
+
+  skipListener(e)
+  {
+    // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+    if((e.metaKey || e.ctrlKey) && e.keyCode === 190)
+    {
+      console.log("skip task", new Date());
+      e.stopPropagation();
+      this.skipTest();
+    }
+  }
+
+
+  skipTest()
+  {
+    this.setState((prevState, props) => {
+      return {assessment_complete: true, skipped: 1};
+    });
+  }
+
 
   onPracticeFeedback(reason){
     let index = this.state.index;
@@ -202,7 +232,7 @@ export default class STROOP extends React.Component {
     }
     else
     {
-      return <div className="container center"><p>Unkown ESTROOP section {section_title}</p></div>
+      return <div className="container center"><p>Unkown STROOP section {section_title}</p></div>
     }
   }
 }
