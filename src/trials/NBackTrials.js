@@ -361,7 +361,7 @@ export default class NBackTrials extends React.Component
         continue;
       }
     }
-    return file || this.props.base_url + "stimuli/cpt/" + url;
+    return file || this.props.base_url + "stimuli/flnb/" + url;
   }
 
   render()

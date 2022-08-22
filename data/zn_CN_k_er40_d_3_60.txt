@@ -1,0 +1,51 @@
+test: k-er40
+version: 3.60
+language: zn_CN
+
+Page 0: Common
+点击此处继续
+返回
+
+Page 1: Title
+Penn情绪识别测验
+ER40格式D
+点击此处继续
+
+Page 2: Instructions
+在这项测验中，您会看到一些面孔。请仔细观察每个面孔，试着判断对方的感受。
+点击最适当地描述这个人感受的词。
+
+Page 3: Instructions
+如果这个人没有表现出任何感受，请点击“没有感受”。
+让我们试试判断一张面孔……
+
+Page 4: Begin Practice
+开始练习
+
+Page 5: Practice
+这张面孔显示了什么感受？
+快乐
+伤心
+生气
+恐惧
+没有感受
+
+Page 5.1: Feedback Correct
+很好！
+
+Page 5.2: Feedback Incorrect
+这不太对。请再试一次。
+
+Page 6: Instructions
+1测验现在开始。请记住仔细查看每张面孔。
+要尽可能快速准确地回答。
+
+Page 7: Begin Test
+开始测验
+
+Page 8: Test
+快乐
+伤心
+生气
+恐惧
+没有感受

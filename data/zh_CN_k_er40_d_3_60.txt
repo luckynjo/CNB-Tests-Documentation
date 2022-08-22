@@ -1,0 +1,51 @@
+test: k-er40
+version: 3.60
+language: zh_CN
+
+Page 0: Common
+點擊這裡繼續
+返回
+
+Page 1: Title
+賓大情感識別測試
+ER40 表格 D
+點擊這裡繼續
+
+Page 2: Instructions
+在這個測試中，你會看到一些面孔。仔細觀察每張臉，試著判斷這個人的内心情感。
+點擊最能恰當描述此人内心情感的詞.
+
+Page 3: Instructions
+點擊最能恰當描述此人内心情感的詞
+讓我們試練習判斷一張臉...
+
+Page 4: Begin Practice
+開始練習
+
+Page 5: Practice
+這張臉顯示的是什麼内心情感？
+快樂
+傷心
+憤怒
+恐懼
+沒有情感
+
+Page 5.1: Feedback Correct
+很好!
+
+Page 5.2: Feedback Incorrect
+這不大準確。請再試一次。
+
+Page 6: Instructions
+測試現在開始。記住要仔細觀察每一張臉。
+做得要盡可能快而準。
+
+Page 7: Begin Test
+開始測試
+
+Page 8: Test
+快樂
+傷心
+憤怒
+恐懼
+沒有情感

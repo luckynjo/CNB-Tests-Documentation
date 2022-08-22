@@ -399,3 +399,8 @@ div.instructions.top{
 .continue-button, .back-button{
   border: 1px solid #FFFFFF;
 }
+
+
+.section--footer table tbody tr td button.continue-button{
+  bottom: 66px;
+}

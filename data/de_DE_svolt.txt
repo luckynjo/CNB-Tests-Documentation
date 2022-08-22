@@ -1,0 +1,44 @@
+test: svolt
+version: 3.00
+language: de_DE
+
+Page 0: Common
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+
+Page 1: Title
+Visual Object Learning Test
+Unmittelbare Erinnerung (kurz)
+HIER KLICKEN, UM FORTZUFAHREN
+
+Page 2: Instructions
+Sie werden einige Figuren sehen. Versuchen Sie, sich die ganze Figur zu merken.
+Später werden Sie diese Figuren aus einer größeren Gruppe von Figuren heraussuchen.
+
+Page 3: Begin Practice
+PRÄSENTATION BEGINNEN
+
+Page 4: SLideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Jetzt sehen Sie weitere Figuren. Einige sind neu, andere haben Sie bereits gesehen.
+Entscheiden Sie, ob Sie jede Figur schon einmal gesehen haben.
+DEFINITIV JA
+WAHRSCHEINLICH JA
+WAHRSCHEINLICH NEIN
+DEFINITIV NEIN
+Klicken Sie auf DEFINITIV JA, wenn Sie sich SICHER sind, dass Sie sie gesehen HABEN.
+Klicken Sie auf WAHRSCHEINLICH JA, wenn Sie DENKEN, dass Sie sie gesehen HABEN.
+Klicken Sie auf WAHRSCHEINLICH NEIN, wenn Sie DENKEN, dass Sie sie NICHT gesehen HABEN.
+Klicken Sie auf DEFINITIV NEIN, wenn Sie sich SICHER sind, dass Sie sie NICHT gesehen
+
+Page 6: Begin Test
+TEST BEGINNEN
+
+Page 7: Test
+<trials>
+DEFINITIV JA
+WAHRSCHEINLICH JA
+WAHRSCHEINLICH NEIN
+DEFINITIV NEIN

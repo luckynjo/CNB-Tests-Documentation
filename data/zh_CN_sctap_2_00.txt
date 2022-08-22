@@ -1,0 +1,58 @@
+test: sctap
+version: 2.00
+language: zh_CN
+
+Page 0: Common
+點擊這裡繼續
+返回
+按空格鍵繼續
+<WH> 寫字的那邊手
+<NWH> 不用來寫字的那邊手
+
+Page 1: Title
+簡短版電腦化手指敲擊任務
+簡短版
+點擊這裡繼續
+
+Page 2: Handedness Trial
+這是對你手指速度的測試。
+盡可能快地敲擊空格鍵。
+做完一輪測驗後，你將換到另一隻手。
+使用滑鼠來選擇你寫字的那一邊手。
+<HANDEDNESS> 左撇子
+<HANDEDNESS> 右撇子
+
+Page 3: Demo Instructions
+將你的手保持在如下所示的姿勢。
+
+Page 4: Instructions
+我們來練習一下。
+當你看到“開始”時，以最快的速度敲擊空格鍵。
+記得使用你剛學會的手勢。不要用你的整只手或手臂來敲擊——只用你的手指
+
+Page 5: Begin Practice
+開始練習
+
+Page 6: Countdown
+練習測驗 <TRIAL_NUMBER> 使用你的
+<WH> 寫字的那邊手
+<NWH> 不用來寫字的那邊手
+
+Page 7: Practice
+開始!
+停止!
+
+Page 8: Begin Test
+開始測試
+
+Page 9: Countdown
+測驗 <TRIAL_NUMBER> 使用你的
+<WH> 寫字的那邊手
+<NWH> 不用來寫字的手
+這項測驗將於:
+秒內開始.
+當你按鍵盤時，請利用正確的手部姿勢
+
+Page 8: Test
+開始!
+停止!

@@ -3,7 +3,7 @@ import '../styles/cpw.css';
 import {WordMemoryTrials} from '../trials/WordMemoryTrials.js';
 import {SimpleInstructions} from '../instructions/SimpleInstructions.js';
 import {CPWSimpleInstructions} from '../instructions/CPWSimpleInstructions.js';
-import Slideshow from '../components/SlideShow.js';
+import CPWSlideshow from '../components/CPWSlideshow.js';
 import TitlePage from '../components/TitlePage.js';
 import {BeginPage} from '../components/BeginPage.js';
 import AssetLoader from '../loaders/AssetLoader.js';
@@ -154,21 +154,19 @@ export default class CPW extends React.Component
     }
     else if(section_title.match(DEMO_INSTRUCTIONS_REGEX))
     {
-      console.log("Inside Demo Instruc");
       return <CPWSimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
-      console.log("Inside SimpleInstructions");
       return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
     }
     else if(section_title.match(SLIDESHOW_REGEX))
     {
-      return <div className="container center"><Slideshow words={this.props.slideshow.map(item => JSON.parse(item.stimulus))}  onSlideShowComplete={this.next}/></div>
+      return <div className="container center"><CPWSlideshow instructions={JSON.parse(timeline_object.content)} words={this.props.slideshow.map(item => JSON.parse(item.stimulus))}  onSlideShowComplete={this.next}/></div>
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <WordMemoryTrials base_url={this.props.base_url} buttons={this.words_buttons_text} trials={this.props.test_trials} onTrialsComplete={this.next}/>
+      return <WordMemoryTrials base_url={this.props.base_url} instructions={JSON.parse(timeline_object.content)} buttons={this.words_buttons_text} trials={this.props.test_trials} onTrialsComplete={this.next}/>
     }
     else
     {

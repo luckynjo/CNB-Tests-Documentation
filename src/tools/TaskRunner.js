@@ -10,6 +10,7 @@ import NbackTask from '../tasks/NbackTask.js';
 import Digsym from '../tasks/Digsym.js';
 import CPW from '../tasks/CPW.js';
 import PLLT from '../tasks/PLLT.js';
+import STROOP from '../tasks/STROOP.js';
 import {TestLoader} from '../loaders/TestLoader.js';
 
 export default class TaskRunner extends React.Component
@@ -121,6 +122,12 @@ export default class TaskRunner extends React.Component
     {
       return <div className="container-8-by-6  dark frame">
       <CPW base_url={this.props.base_url} timeline={timeline} test={test} slideshow={this.state.slideshow} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("stroop"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <STROOP base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline")

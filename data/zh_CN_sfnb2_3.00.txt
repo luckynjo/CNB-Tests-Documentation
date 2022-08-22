@@ -1,0 +1,194 @@
+test: sfnb2
+version: 3.00
+language: zh_CN
+
+Page 0: Common
+點擊這裡繼續
+返回
+按空格鍵繼續。
+
+Page 1: Title
+簡短版分形-往回-N測試
+簡短版
+點擊這裡繼續
+
+Page 2: Instructions
+你將在屏幕上一次看到一張圖像。
+對於每張圖像，決定是否按空格鍵。
+有三個測試部分，每個部分有不同的規則：
+往回-0
+往回-1
+往回-2
+我們將把三個部分都練習。
+
+Page 3: 0-Back Instructions
+首先我們將練習往回-0的部分。
+每當你看到以下圖像時，請按下空格鍵：
+有什麼問題嗎？
+
+Page 4: Begin Practice
+開始做往回-0的練習
+
+Page 5: 0-Back Countdown
+往回-0
+當你看到這張圖像時，請按下空格鍵：
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+這不對。
+你每次看到這張圖像時都要按空格鍵：
+
+Page 6.2: Feedback False Positive
+這不對。
+只有當你看到這張圖像時才按空格鍵：
+
+Page 7: 1-Back Instructions
+現在我們來做往回-1的練習
+當你看到的圖像與在它之前的一張圖像相同時，就按空格鍵。
+例如：
+按鍵
+有什麼問題嗎？
+
+Page 8: Begin Practice
+開始做往回-1的練習
+
+Page 9: 1-Back Countdown
+往回-1
+當你看到的圖像與前一張圖像相同時，就按空格鍵。
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+這不對。
+當你看到的圖像與前一張的圖像相同時，就按空格鍵。
+
+Page 10.2: Feedback False Positive
+這不對。只有當你看到的圖像與前一張圖像相同時才按空格鍵。
+
+Page 11: 1-Back Demo
+第一張圖像
+最後一張圖像
+按鍵
+跳過關於往回-1的視頻
+跳過訓練視頻，回到練習中
+
+Page 11.1: 1-Back Demo Section 1
+我們現在嘗試以一種新的方式來看待這項任務。
+讓我們假設，你在此測試中所看到的圖像順序就如下面的圖像列表所顯示的一樣。
+每當當前的圖像與就在它之前的一張 圖像相同時，你應該按空格鍵。
+
+Page 11.2: 1-Back Demo Section 2
+在演示過程中，圖像將會出現在視窗中，如測試中一樣。你可以通過看屏幕上方的列表 來了解將要顯示圖像的順序。當前顯示的圖像由一個方框框住。
+
+Page 11.3: 1-Back Demo Section 3
+在測試期間，你所看到的內容就出現在這個視窗內.
+當你看到的圖像與前一張的圖像相同時，就按空格鍵。
+
+Page 11.4: 1-Back Demo Section 4
+現在我們將再試做往回-1的練習。
+跟你第一次嘗試這個練習時一樣，將不會有屏幕頂部的清單來提醒你之前出現過的圖像。
+當屏幕上的圖像與前一張圖像相同時，記得按空格鍵。
+你有什麼問題嗎？
+
+Page 12: 2-Back Instructions
+現在我們將做往回-2的練習。
+當你看到的圖像與上上張圖像相同時，就按空格鍵。
+例如：
+按鍵
+
+Page 13: Begin Practice
+開始往回-2的練習
+
+Page 14: 2-Back Countdown
+往回-2
+當你看到的圖像與上上張圖像相同時，就按空格鍵。
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+這不對。
+當你看到的圖像與上上張圖像相同時，就按空格鍵。
+
+Page 15.2: Feedback False Positive
+這不對。
+只有當你看到的圖像與上上張圖像相同時，才按空格鍵。
+
+Page 16: 2-Back Demo
+第一張圖像
+最後一張圖像
+按鍵
+跳過關於往回-2的視頻
+跳過訓練視頻，回到練習中
+
+Page 16.1: 2-Back Demo Section 1
+我們現在嘗試以一種新的方式來看待這項任務。
+讓我們假設，你在做往回-2中將看到的圖像順序，跟下面圖像列表所示一致
+每次看見當前圖像與上上張相同時，你就應該按空格鍵。
+
+Page 16.2: 2-Back Demo Section 2
+在演示過程中，圖像將會出現在視窗中，跟在測試中一樣。你可以通過看屏幕上方的清 單來瞭解將要顯示的圖像的順序。當前顯示的圖像由一個方框框住。
+
+Page 16.3: 2-Back Demo Section 3
+在測試期間，你所看到的內容將出現在這個視窗內
+當你看到的圖像與上上張圖像相同時，請按空格鍵。
+
+Page 16.4: 2-Back Demo Section 4
+現在我們將再次嘗試做往回-2練習。
+跟你第一次嘗試這個練習時一樣，將不會有屏幕頂部的清單來提醒你之前出現過的圖像。
+當屏幕上的圖像與上上張圖像相同時，記得按空格鍵。
+你有什麼問題嗎？
+
+Page 17: Instructions
+你已經正確地完成了練習。
+現在我們將開始測試。
+在測試期間，你將完成幾輪往回-0、往回-1和往回-2的任務。
+在測試開始前，你有什麼問題嗎？
+
+Page 18: Begin Test
+開始測試
+
+Page 19: 0-Back Countdown
+往回-0
+當你看到這張圖像時，就按空格鍵：
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+往回-1
+當你看到的圖像與前一張圖像相同時，就按空格鍵
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+往回-2
+當你看到的圖像與上上張圖像相同時，就按空格鍵。
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+往回-1
+當你看到的圖像與前一張圖像相同時，就按空格鍵
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+往回-2
+當你看到的圖像與上上張圖像相同時，就按空格鍵。
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+往回-0
+當你看到這張圖像時，就按空格鍵：
+
+Page 30: 0-Back Test
+<0_back_2>

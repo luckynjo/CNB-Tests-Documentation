@@ -139,7 +139,6 @@ export default class NbackTask extends React.Component{
 
   onPracticeComplete()
   {
-    console.log('Practe complete');
     let index = this.state.index;
     let found = false;
     while(!found && index < this.props.timeline.length)
@@ -177,18 +176,15 @@ export default class NbackTask extends React.Component{
     }
     else
     {
-      console.log('Practice failed because ', reason, ' for practice type ', practice_type);
       let index = this.state.index;
       let found = false;
       while(!found && index < this.props.timeline.length)
       {
         const timeline_object = this.props.timeline[index];
         const section_title = timeline_object.section_title;
-        console.log('Checking feedback from ', section_title);
         if(section_title.includes(reason))
         {
           found = true;
-          console.log('Feedback found as ', section_title);
           continue;
         }
         else
@@ -204,7 +200,6 @@ export default class NbackTask extends React.Component{
         // TO DO: End task after 4 failed practices!
 
         const feedback = this.props.timeline[index];
-        console.log('Feedback is ', feedback, ' rerenderinf');
         this.setState((prevState, props) => {
           return {feedback: feedback, "practice_type": practice_type, practice_failed_count: practice_failed_count}
         });
@@ -214,7 +209,6 @@ export default class NbackTask extends React.Component{
 
   finishDemo()
   {
-    console.log('Finished demo');
     let index = this.state.index;
     let found = false;
     while(!found && index > 0)
@@ -245,11 +239,9 @@ export default class NbackTask extends React.Component{
     // Show demo for NBack.
     const index = this.state.index;
     const timeline_object = this.props.timeline[index];
-    console.log('Currently given ', timeline_object);
     const practice_type = this.state.practice_type;
     if(practice_type.includes("1") || practice_type.includes("2"))
     {
-      console.log('Constructing 1 back object');
       const demo_content_timeline_object = this.props.timeline[index + 3];
       const demo_settings = JSON.parse(demo_content_timeline_object.content);
       //const welcome_timeline_object = ;
@@ -261,7 +253,6 @@ export default class NbackTask extends React.Component{
       const back_button_text = this.back_button_text;
       const verbose_title = JSON.parse(this.props.timeline[index - 1].content)[0];
       const base_url = this.props.base_url;
-      console.log('sections ', section_1, ' ', section_2, ' ', section_3, ' ', section_4);
       const demo_object = {
         arrowTitle: 'Image',
         firstArrow: demo_settings[0] || '1st Image',

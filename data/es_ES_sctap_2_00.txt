@@ -19,8 +19,8 @@ Esta es una prueba de la velocidad de sus dedos.
 Toque la barra espaciadora tan rápido como pueda.
 Cambiará de mano después de cada prueba.
 Utilice el ratón para seleccionar la mano con la que escribe
-<HANDEDNESS>> Zurdo
-<HANDEDNESS>> Diestro
+<HANDEDNESS> Zurdo
+<HANDEDNESS> Diestro
 
 Page 3: Demo Instructions
 Mantenga la mano en la posición que ve a continuación.
