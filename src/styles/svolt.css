@@ -64,23 +64,6 @@ margin:8px;
 text-align:center;
 }
 
-#message{
-font-size:20px;
-font-weight:bold;
-margin-left: 65px;
-margin-top:8px;
-}
-
-
-
-div.top{
-  margin: 0;
-  position: absolute;
-  top: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 32px;
-}
 
 .stimulus--volt{
   margin: 0;
