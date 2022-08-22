@@ -28,23 +28,3 @@ border: solid 2px white;
 background: transparent;
 color: #FFFFFF;
 }
-
-.stimulus--cpw, .stimulus--cpw div.col h1, h1{
-font-size:72px;
-}
-
-div.memory-buttons--other
-{
-  width: 740px;
-  padding-top:16px;
-  padding-bottom: 16px;
-}
-
-div.memory-buttons--test{
-  width:740px;
-  position:absolute;
-  bottom: 64px;
-  left: 50%;
-  -ms-transform: translate(-50%, -5%);
-  transform: translate(-50%, -5%);
-}

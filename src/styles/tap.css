@@ -68,11 +68,6 @@ img.keyboard--hint{
   margin-top:8px;
 }
 
-.instructions--left{
-  text-align: left;
-  margin: 16px;
-  height:450px;
-}
 
 div.position--bottom-abosolute > div.inline{
   margin: 16px;
