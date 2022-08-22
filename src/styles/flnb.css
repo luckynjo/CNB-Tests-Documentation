@@ -313,6 +313,7 @@ height: 104px;
 padding-left: 4px;
 padding-right: 4px;
 padding-top: 4px;
+width: 240px;
 }
 
 .box{
@@ -523,6 +524,7 @@ div.stimulus-image-demo-container{
   width:380px;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-left: 38px;
 }
 
 div.during-the-demo p{
@@ -537,4 +539,8 @@ div.boxed button.back-button{
 p.nback-header-instructions{
   font-size: 40pt;
   font-size: 4.8vmin;
+}
+
+p.instructions-text--small {
+  font-size: 18px;
 }

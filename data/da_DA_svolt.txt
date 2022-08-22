@@ -1,5 +1,5 @@
-Test: svolt
-Version: 3.00
+test: svolt
+version: 3.00
 language: da_DA
 
 Page 0: Common
@@ -26,7 +26,7 @@ Nu vil du se flere former. Nogle er nye, andre har du allerede set.
 Find ud af, om du har set den enkelte form før.
 HELT SIKKERT JA
 SANDSYNLIGVIS JA
-SANSYNLIGVIS NEJ
+SANDSYNLIGVIS NEJ
 HELT SIKKERT NEJ
 Klik på HELT SIKKERT JA, hvis du er SIKKER på, at du HAR set den før.
 Klik på SANDSYNLIGVIS JA, hvis du TROR, du HAR set den før.
@@ -40,5 +40,5 @@ Page 7: Test
 <trials>
 HELT SIKKERT JA
 SANDSYNLIGVIS JA
-SANSYNLIGVIS NEJ
+SANDSYNLIGVIS NEJ
 HELT SIKKERT NEJ

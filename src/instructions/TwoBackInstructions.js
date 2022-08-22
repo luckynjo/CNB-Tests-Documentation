@@ -17,14 +17,14 @@ export const TwoBackInstructions = props => {
       <table>
       <tbody>
       <tr>
-      <td colSpan={3}><p className="instructions-text--medium">{instructions[0]}</p><br/></td>
+      <td colSpan={3}><p className="instructions-text--small">{instructions[0]}</p></td>
       </tr>
 
       <tr>
-      <td  colSpan={3}><p className='instructions-text--medium'>{instructions[1]}</p></td>
+      <td  colSpan={3}><p className='instructions-text--small'>{instructions[1]}</p></td>
       </tr>
       <tr>
-       <td  colSpan={3}><p className='instructions-text--medium'>{instructions[2]}</p></td>
+       <td  colSpan={3}><p className='instructions-text--small'>{instructions[2]}</p></td>
       </tr>
       <tr className="demo--2back">
       <td><span> </span></td>

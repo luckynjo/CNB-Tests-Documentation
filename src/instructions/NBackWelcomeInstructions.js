@@ -16,7 +16,7 @@ export const NBackWelcomeInstructions = props => {
       {top_instructions.map((instruction, index) => {
         if(instruction !== continue_button_text && instruction !== back_button_text)
         {
-          return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
+          return <div key={index*10 + 5}><p className="instructions-text--small">{instruction}</p><br/></div>
         }
       })}
       <table className="center--horizontal">
@@ -24,7 +24,7 @@ export const NBackWelcomeInstructions = props => {
       {nback_text.map((instruction, index) => {
         if(instruction !== continue_button_text && instruction !== back_button_text)
         {
-          return <tr key={index*10 + 5}><td><p className="text--left">{instruction}</p></td></tr>
+          return <tr key={index*10 + 5}><td><p className="text--left instructions-text--small">{instruction}</p></td></tr>
         }
       })}
       </tbody>
@@ -33,7 +33,7 @@ export const NBackWelcomeInstructions = props => {
       {instructions_rest.map((instruction, index) => {
         if(instruction !== continue_button_text && instruction !== back_button_text)
         {
-          return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
+          return <div key={index*10 + 5}><p className="instructions-text--small">{instruction}</p><br/></div>
         }
       })}
 
