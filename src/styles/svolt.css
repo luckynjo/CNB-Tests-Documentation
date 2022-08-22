@@ -94,3 +94,7 @@ img.slideshow-image.svolt {
   width: 136px;
   height: auto;
 }
+
+p.volt--instructions {
+    font-size: 18px;
+}
