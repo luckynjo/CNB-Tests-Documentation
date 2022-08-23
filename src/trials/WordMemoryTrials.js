@@ -60,7 +60,7 @@ export class WordMemoryTrials extends React.Component{
        <Paragraph text={word} classList="stimulus-text--medium text-center" />
       </div>
 
-      <div className='inline memory-buttons--test'>
+      <div className='cpw-buttons--inline cpw-buttons--test'>
       {buttons}
       </div>
 
