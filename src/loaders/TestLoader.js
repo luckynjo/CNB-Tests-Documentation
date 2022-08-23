@@ -32,7 +32,7 @@ export const TestLoader = props =>
           //  setLoaded(100); onLoad(response.data);
           if(response.data.timeline.length > 0)
           {
-            if(response.data.test.test.includes('volt') || response.data.test.test.includes('er40') || response.data.test.test.includes('stroop'))
+            if(response.data.test.test.includes('volt') || response.data.test.test.includes('stroop'))
             {
               document.body.classList.remove('dark');
               document.body.classList.add('light');
