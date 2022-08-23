@@ -55,7 +55,7 @@ N'APPUIE PAS
 N'APPUIE PAS
 APPUIE
 
-Page 6: Number Test Instructions
+Page 5: Number Test Instructions
 Bravo!
 N'oublie pas: Appuie sur la barre d'espacement chaque fois que tu vois un CHIFFRE.
 Dans le test, tu verras des chiffres différents de ceux que tu as vus dans l'essai.
@@ -63,22 +63,22 @@ Voici quelques exemples:
 CLIQUE ICI POUR CONTINUER
 RETOUR
 
-Page 7: Instructions
+Page 6: Instructions
 Le test va maintenant commencer.
 Pendant le test, on ne te dira pas si tes réponses sont correctes ou incorrectes.
 CLIQUE ICI POUR CONTINUER
 RETOUR
 
-Page 8: Begin Test
+Page 7: Begin Test
 COMMENCE LE TEST
 CLIQUE ICI POUR CONTINUER
 RETOUR
 
-Page 9: Countdown
+Page 8: Countdown
 Sois prêt!
 L'essai commence dans:
 Utilise la barre d'espacement pour répondre.
 
-Page 10: Test
+Page 9: Test
 <number_test>
 Utilise la barre d'espacement pour répondre.
