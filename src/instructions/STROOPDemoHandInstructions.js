@@ -7,8 +7,8 @@ export const STROOPDemoHandInstructions = props => {
   const {instructions, onGoBack, onContinue, continue_button_text, back_button_text, hideGoBack} = props;
   return (
     <>
-    <div className="flex container">
-      <div className="instructions--left container">
+    <div className="flex stroop--container">
+      <div className="instructions--left stroop--container">
         {instructions.map((instruction, index) => {
           if(index < instructions.length-2)
           {
