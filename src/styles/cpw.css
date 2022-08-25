@@ -17,6 +17,12 @@ transform: translateX(-50%);
 min-width: 700px;
 }
 
+.cpw-buttons--inline{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 0px;
+}
+
 .cpw-button{
 min-height:80px;
 width:140px;
@@ -27,4 +33,13 @@ font-size: 20px;
 border: solid 2px white;
 background: transparent;
 color: #FFFFFF;
+}
+
+.cpw-buttons--test{
+  height: 80px;
+  width: 740px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translate(-50%, -5%);
 }

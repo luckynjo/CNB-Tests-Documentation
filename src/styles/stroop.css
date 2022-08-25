@@ -114,3 +114,9 @@ p.begin-test-instructions{
   font-size: 18pt;
   font-weight: bold;
 }
+
+.stroop--container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
