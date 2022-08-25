@@ -62,7 +62,7 @@ export const TapTestCountdownInstructions = props => {
        <tbody>
         <tr>
          <td colSpan={2}>
-          <p className="text--center">{instructions[3]}</p>
+          <p className="text--center">{instructions[5] || 'USE THE CORRECT HAND POSITION WHEN PRESSING THE SPACEBAR'}</p>
          </td>
          <td>
           <img src={keyboard_pic} className="keyboard--continue left" alt="Keyboard image" />
