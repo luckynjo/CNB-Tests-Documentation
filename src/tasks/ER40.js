@@ -206,7 +206,7 @@ export default class ER40 extends React.Component {
     {
       const feedback_correct = JSON.parse(this.props.timeline[this.state.index+1].content)[0];
       const feedback_incorrect = JSON.parse(this.props.timeline[this.state.index+2].content)[0];
-      return <div className="container"><ER40PracticeTrial base_url={this.props.base_url} buttons={JSON.parse(timeline_object.content)} trials={this.props.practice_trials} feedback_correct={feedback_correct} feedback_incorrect={feedback_incorrect} images={this.faces} onPracticeComplete={this.onPracticeComplete}/></div>
+      return <div className="container"><ER40PracticeTrial base_url={this.props.base_url} continue_button_text={this.continue_button_text} buttons={JSON.parse(timeline_object.content)} trials={this.props.practice_trials} feedback_correct={feedback_correct} feedback_incorrect={feedback_incorrect} images={this.faces} onPracticeComplete={this.onPracticeComplete}/></div>
     }
     else
     {

@@ -14,7 +14,7 @@ export const TwoBackInstructions = props => {
     <div className="page center">
     <div className = "instructions text--left top">
 
-      <table>
+      <table className="flnb--table">
       <tbody>
       <tr>
       <td colSpan={3}><p className="instructions-text--small">{instructions[0]}</p></td>

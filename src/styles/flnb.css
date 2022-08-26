@@ -544,3 +544,7 @@ p.nback-header-instructions{
 p.instructions-text--small {
   font-size: 18px;
 }
+
+.flnb--table{
+  min-width: 700px;
+}
