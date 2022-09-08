@@ -43,6 +43,8 @@ export default class ER40 extends React.Component {
 
     this.faces = []; // ER40 has faces
     this.next = this.next.bind(this);
+    this.back = this.back.bind(this);
+    this.canGoBack = this.canGoBack.bind(this);
     this.onTrialsComplete = this.onTrialsComplete.bind(this);
     this.onPracticeFeedback = this.onPracticeFeedback.bind(this);
     this.onPracticeComplete = this.onPracticeComplete.bind(this);
@@ -134,6 +136,27 @@ export default class ER40 extends React.Component {
     });
   }
 
+  canGoBack()
+  {
+    return this.state.index > 1;
+  }
+
+  back()
+  {
+    let next;
+    if(this.state.index < 6){
+      next = this.state.index - 2;
+    } else {
+      next = this.state.index - 1;
+    }
+    if(next > 0)
+    {
+      this.setState((prevState, props) => {
+        return {index: next};
+      });
+    }
+  }
+
 
   next()
   {
@@ -191,7 +214,7 @@ export default class ER40 extends React.Component {
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
-      return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+      return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} hideGoBack={this.canGoBack()} back_button_text={this.back_button_text} />
     }
     else if(section_title.match(SLIDESHOW_REGEX))
     {
