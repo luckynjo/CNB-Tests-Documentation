@@ -18,7 +18,7 @@ Page 2: Instructions
 
 (All’amministratore del test: girare ora il computer in modo che il partecipante non possa vederne lo schermo. Per questo test, il partecipante non deve essere in grado di vedere lo schermo del computer. Leggere al partecipante le istruzioni seguenti, poi leggere ad alta voce le parole degli elenchi mentre vengono evidenziate in giallo una dopo l’altra).
 
-Leggerò un elenco di parole. Ascolta con attenzione, perché al termine devi cercare di ripetere quante più parole possibili. L’ordine delle parole non importa – ripeti quante più parole puoi. Ecco l’elenco:
+Leggerò un elenco di parole. Ascolta con attenzione, perché al termine dovrai cercare di ripetere quante più parole possibili. L’ordine delle parole non importa – ripeti quante più parole puoi. Ecco l’elenco:
 
 (Tenersi pronti a leggere l’elenco di parole)
 
@@ -44,21 +44,21 @@ CAPANNA
 Page 4: Test
 <trials>
 LEONE
-SMERALDO
-TENDA
-INSEGNANTE
-ZAFFIRO
-DENTISTA
-ALBERGO
 CAVALLO
-INGEGNERE
-OPALE
 TIGRE
-CAVA
-PROFESSORE
-PERLA
 MUCCA
+SMERALDO
+ZAFFIRO
+OPALE
+PERLA
+TENDA
+ALBERGO
+CAVA
 CAPANNA
+INSEGNANTE
+DENTISTA
+INGEGNERE
+PROFESSORE
 
 Page 5: Instructions
 (Istruzioni 2)

@@ -4,7 +4,7 @@ language: fr_CA
 
 Page 0: Common
 CLIQUE ICI POUR CONTINUER
-RETOUR À LA PAGE PRÉCÉDENTE
+RETOUR
 
 Page 1: Title
 Test d’apprentissage d’objet visuel

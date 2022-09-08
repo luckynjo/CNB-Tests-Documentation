@@ -45,7 +45,7 @@ La risposta è sbagliata.
 Premi la barra spaziatrice solo quando vedi questa immagine.
 
 Page 7: 1-Back Instructions
-Ora proverai di nuovo l’esercitazione 1 POSIZIONE PRECEDENTE.
+Ora proverai l’esercitazione 1 POSIZIONE PRECEDENTE.
 Premi la barra spaziatrice quando l’immagine che vedi è identica a quella immediatamente precedente.
 Per esempio:
 PREMI
@@ -125,7 +125,6 @@ PREMI
 SALTA IL VIDEO 2 POSIZIONI PRECEDENTI
 Salta il video di addestramento e ritorna all’esercitazione
 
-
 Page 16.1: 2-Back Demo Section 1
 Proveremo ora un nuovo modo per fare la prova.
 Supponiamo che l’elenco di immagini qui sotto corrisponda all’ordine delle immagini che vedrai durante 2 POSIZIONI PRECEDENTI.
@@ -133,7 +132,6 @@ Ogni volta che l’immagine attuale è identica a quella che si trova due posizi
 
 Page 16.2: 2-Back Demo Section 2
 Durante la dimostrazione, le immagini compariranno nella finestra esattamente come nel test. Puoi seguire la sequenza di immagini che saranno mostrate guardando l’elenco in cima allo schermo. L’immagine attuale sarà racchiusa da un riquadro.
-
 
 Page 16.3: 2-Back Demo Section 3
 Quello che vedrai durante il test è all’interno di questa finestra.
