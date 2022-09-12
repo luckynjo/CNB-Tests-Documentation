@@ -15,7 +15,7 @@ Modulo breve
 FAI CLIC QUI PER CONTINUARE
 
 Page 2: Handedness Trial
-Questo è un testo della velocità delle tue dita.
+Questo è un test della velocità delle tue dita.
 Premi e rilascia la barra spaziatrice alla massima velocità possibile.
 Dopo ogni prova cambierai mano.
 Usa il mouse per selezionare la mano che digiterà.
@@ -28,10 +28,10 @@ Tieni la mano nella posizione mostrata sotto.
 Page 4: Instructions
 Inizia a esercitarti.
 Quando vedi il segnale “VIA!” premi e rilascia la barra spaziatrice alla massima velocità possibile.
-Ricordati di usare la posizione della mano che hai appena appreso. NON USARE L’INTERA MANO O IL BRACCIO PER TOCCARE LA BARRA SPAZIATRICE – solo il dito. 
+Ricordati di usare la posizione della mano che hai appena appreso. NON USARE L’INTERA MANO O IL BRACCIO PER PREMERE LA BARRA SPAZIATRICE – solo il dito.
 
 Page 5: Begin Practice
-INIZIA A ESERCITARTI 
+INIZIA A ESERCITARTI
 
 Page 6: Countdown
 ESERCITAZIONE 1 – USA LA
@@ -52,7 +52,6 @@ PROVA <TRIAL_NUMBER> / USA LA
 Questa prova inizierà fra:
 secondi.
 USA LA POSIZIONE CORRETTA DELLA MANO PER PREMERE LA BARRA SPAZIATRICE
-
 
 Page 8: Test
 VIA!
