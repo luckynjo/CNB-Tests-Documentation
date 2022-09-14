@@ -1,0 +1,87 @@
+test: spllt-d
+version: 1.00
+language: it_IT
+
+Page 0: Common
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+ALTRO
+PASSA ALLA PROVA SUCCESSIVA
+
+Page 1: Title
+Short Penn: Test di apprendimento di elenchi
+Modulo breve
+FAI CLIC QUI PER CONTINUARE
+
+Page 2: Instructions
+(Istruzioni 1)
+
+(All’amministratore del test: girare ora il computer in modo che il partecipante non possa vederne lo schermo. Per questo test, il partecipante non deve essere in grado di vedere lo schermo del computer. Leggere al partecipante le istruzioni seguenti, poi leggere ad alta voce le parole degli elenchi mentre vengono evidenziate in giallo una dopo l’altra).
+
+Leggerò un elenco di parole. Ascolta con attenzione, perchè al suo termine dovrai cercare di ripeterne quante più parole possibili. L’ordine delle parole non importa – ripeti quante più parole puoi. Ecco l’elenco:
+
+(Tenersi pronti a leggere l’elenco di parole)
+
+Page 3: Slideshow
+<slideshow>
+PANTALONI
+COCCINELLA
+VALLE
+NARCISO
+RAGNO
+GAROFANO
+CANYON
+GONNA
+GIGLIO
+COLEOTTERO
+SCARPA
+SCOGLIERA
+ORCHIDEA
+FORMICA
+CAPPELLO
+MONTAGNA
+
+Page 4: Test
+<trials>
+PANTALONI
+GONNA
+SCARPA
+CAPPELLO
+COCCINELLA
+RAGNO
+COLEOTTERO
+FORMICA
+VALLE
+CANYON
+SCOGLIERA
+MONTAGNA
+NARCISO
+GAROFANO
+GIGLIO
+ORCHIDEA
+
+Page 5: Instructions
+(Istruzioni 2)
+
+Ora ripeterò l’elenco di parole. Cerca di nuovo di ripetere quante più parole puoi, in qualunque ordine, comprese parole che potresti già aver ripetuto.  Ecco l’elenco:
+
+(Tenersi pronti a leggere l’elenco di parole)
+
+Page 6: Slideshow
+<slideshow>
+
+Page 7: Test
+<trials>
+
+Page 8: Instructions
+(Istruzioni 3)
+
+Ora ripeterò l’elenco di parole. Cerca di nuovo di ripetere quante più parole puoi, in qualunque ordine, comprese parole che potresti già aver ripetuto. Ecco l’elenco:
+
+(Tenersi pronti a leggere l’elenco di parole)
+
+Page 9: Slideshow
+<slideshow>
+
+Page 10: Test
+<trials>

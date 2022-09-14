@@ -1,4 +1,4 @@
-test: spllt-b
+test: spllt-d
 version: 1.00
 language: en_US
 
@@ -24,41 +24,41 @@ Be ready to read the list of words.
 
 Page 3: Slideshow
 <slideshow>
-TRUMPET
-COAL
-SUGAR
-LETTUCE
-KEROSENE
-BEAN
-GARLIC
-VIOLIN
-POTATO
-WOOD
-CLARINET
-VANILLA
-CORN
-GASOLINE
-FLUTE
-CINNAMON
+PANTS
+LADYBUG
+VALLEY
+DAFFODIL
+SPIDER
+CARNATION
+CANYON
+SKIRT
+LILY
+BEETLE
+SHOE
+CLIFF
+ORCHID
+ANT
+HAT
+MOUNTAIN
 
 Page 4: Test
 <trials>
-TRUMPET
-VIOLIN
-CLARINET
-FLUTE
-SUGAR
-GARLIC
-VANILLA
-CINNAMON
-COAL
-KEROSENE
-WOOD
-GASOLINE
-LETTUCE
-BEAN
-POTATO
-CORN
+PANTS
+SKIRT
+SHOE
+HAT
+LADYBUG
+SPIDER
+BEETLE
+ANT
+VALLEY
+CANYON
+CLIFF
+MOUNTAIN
+DAFFODIL
+CARNATION
+LILY
+ORCHID
 
 Page 5: Instructions
 Instructions 2
@@ -68,7 +68,7 @@ I'm going to repeat the list of words. Again, I want you to say back as many of 
 Be ready to read the list of words.
 
 Page 6: Slideshow
-<Slideshow>
+<slideshow>
 
 Page 7: Test
 <trials>
