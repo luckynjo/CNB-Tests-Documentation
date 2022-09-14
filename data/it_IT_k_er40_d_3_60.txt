@@ -12,23 +12,23 @@ ER40 modulo D
 FAI CLIC QUI PER CONTINUARE
 
 Page 2: Instructions
-In questo test vedrai alcuni volti.  Guarda con attenzione ciascun volto e prova a decidere quale sensazione la persona sta provando.
-Fai clic sulla parola che descrive meglio la sensazione che la persona prova.
+In questo test vedrai alcuni volti. Guarda con attenzione ciascun volto e prova a decidere quale emozione la persona sta provando.
+Fai clic sulla parola che descrive meglio l'emozione che la persona sta provando.
 
 Page 3: Instructions
-Se la persona non mostra alcuna sensazione, fai clic su “Nessuna sensazione”.
+Se la persona non mostra alcuna emozione, fai clic su “Nessuna emozione”.
 Proviamo un volto a scopo di esercitazione...
 
 Page 4: Begin Practice
 INIZIA A ESERCITARTI
 
 Page 5: Practice
-Questo volto che sensazione mostra?
+Questo volto che emozione mostra?
 FELICITÀ
 TRISTEZZA
 RABBIA
 PAURA
-NESSUNA SENSAZIONE
+NESSUNA EMOZIONE
 
 Page 5.1: Feedback Correct
 Ottimo!
@@ -48,4 +48,4 @@ FELICITÀ
 TRISTEZZA
 RABBIA
 PAURA
-NESSUNA SENSAZIONE
+NESSUNA EMOZIONE

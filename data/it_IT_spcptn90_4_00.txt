@@ -28,7 +28,7 @@ FAI CLIC QUI PER CONTINUARE 
 VAI INDIETRO
 
 Page 4: Countdown
-Preparati! 
+Preparati!
 L’esercitazione inizierà fra:
 Usa la barra spaziatrice per rispondere
 
@@ -76,7 +76,7 @@ VAI INDIETRO
 
 Page 8: Countdown
 Preparati!
- L’esercitazione inizierà fra:
+L’esercitazione inizierà fra:
 Usa la barra spaziatrice per rispondere
 
 Page 9: Test

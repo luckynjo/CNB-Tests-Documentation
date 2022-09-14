@@ -1,0 +1,195 @@
+test: sfnb2
+version: 3.00
+language: de_DE
+
+Page 0: Common
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+Drücken Sie die Leertaste, um fortzufahren.
+
+Page 1: Title
+Fractal-N-Back (kurz)
+Kurzform
+HIER KLICKEN, UM FORTZUFAHREN
+
+Page 2: Instructions
+Sie sehen jeweils ein Bild auf dem Bildschirm.
+Entscheiden Sie bei jedem Bild, ob Sie die Leertaste drücken wollen oder nicht.
+Es gibt drei Teile mit unterschiedlichen Regeln:
+0-ZURÜCK
+1-ZURÜCK
+2-ZURÜCK
+Wir üben alle drei Teile.
+
+Page 3: 0-Back Instructions
+Zuerst üben wir 0-ZURÜCK.
+Drücken Sie jedes Mal die Leertaste, wenn Sie das folgende Bild sehen:
+Haben Sie Fragen?
+
+Page 4: Begin Practice
+0-ZURÜCK-ÜBUNG BEGINNEN
+
+Page 5: 0-Back Countdown
+0-ZURÜCK
+Drücken Sie die Leertaste, wenn Sie dieses Bild sehen:
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+Das ist falsch.
+Drücken Sie die Leertaste jedes Mal, wenn Sie dieses Bild sehen:
+
+Page 6.2: Feedback False Positive
+Das ist falsch.
+Drücken Sie die Leertaste nur, wenn Sie dieses Bild sehen:
+
+Page 7: 1-Back Instructions
+Jetzt üben wir 1-ZURÜCK.
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das Bild, das Sie unmittelbar davor gesehen haben.
+Zum Beispiel:
+DRÜCKEN
+Haben Sie Fragen?
+
+Page 8: Begin Practice
+1-ZURÜCK-ÜBUNG BEGINNEN
+
+Page 9: 1-Back Countdown
+1-ZURÜCK
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das vorherige Bild.
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+Das ist falsch.
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das vorherige Bild.
+
+Page 10.2: Feedback False Positive
+Das ist falsch.
+Drücken Sie die Leertaste nur, wenn das Bild, das Sie sehen, dasselbe ist wie das vorherige Bild
+
+Page 11: 1-Back Demo
+Erstes Bild
+Letztes Bild
+DRÜCKEN
+1-ZURÜCK-VIDEO ÜBERSPRINGEN
+Schulungsvideo überspringen und zur Übung zurückkehren
+
+Page 11.1: 1-Back Demo Section 1
+Wir werden versuchen, die Aufgabe auf eine neue Weise zu betrachten.
+Nehmen wir einmal an, dass die Liste der unten stehenden Bilder die Reihenfolge der Bilder ist, die Sie in diesem Test sehen werden.
+Immer, wenn das aktuelle Bild mit dem unmittelbar davor erscheinenden Bild identisch ist, müssen Sie die Leertaste drücken.
+
+Page 11.2: 1-Back Demo Section 2
+Während der Demonstration erscheinen Bilder im Fenster genauso wie während des Tests. Sie können die Abfolge der angezeigten Bilder verfolgen, indem Sie die Liste oben auf dem Bildschirm beobachten. Das aktuelle Bild wird von einem Rahmen umgeben .
+
+Page 11.3: 1-Back Demo Section 3
+Was Sie während des Tests sehen, wird in diesem Fenster angezeigt.
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das vorherige Bild.
+
+Page 11.4: 1-Back Demo Section 4
+Jetzt machen wir die 1-ZURÜCK-Übung noch einmal.
+Wie beim ersten Mal fehlt auch bei diesem Übungsdurchgang die Liste am oberen Rand des Bildschirms, die Sie an die vorherigen Bilder erinnert.
+Denken Sie daran, die Leertaste zu drücken, wenn das Bild auf dem Bildschirm dasselbe ist wie das vorherige Bild.
+Haben Sie noch Fragen?
+
+Page 12: 2-Back Instructions
+Jetzt üben wir 2-ZURÜCK.
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das Bild vor dem vorherigen Bild.
+Zum Beispiel:
+DRÜCKEN
+
+Page 13: Begin Practice
+2-ZURÜCK-ÜBUNG BEGINNEN
+
+Page 14: 2-Back Countdown
+2-ZURÜCK
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das Bild vor dem vorherigen Bild.
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+Das ist falsch.
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das Bild vor dem vorherigen Bild.
+
+Page 15.2: Feedback False Positive
+Das ist falsch.
+Drücken Sie die Leertaste nur, wenn das Bild, das Sie sehen, dasselbe ist wie das Bild vor dem vorherigen Bild.
+
+Page 16: 2-Back Demo
+Erstes Bild
+Letztes Bild
+DRÜCKEN
+2-ZURÜCK-VIDEO ÜBERSPRINGEN
+Schulungsvideo überspringen und zur Übung zurückkehren
+
+Page 16.1: 2-Back Demo Section 1
+Wir werden versuchen, die Aufgabe auf eine neue Weise zu betrachten.
+Nehmen wir einmal an, dass die Liste der unten stehenden Bilder die Reihenfolge der Bilder ist, die Sie während 2-ZURÜCK sehen werden.
+Immer, wenn das aktuelle Bild mit dem Bild identisch ist, das zwei Bilder davor erscheint, müssen Sie die Leertaste drücken.
+
+Page 16.2: 2-Back Demo Section 2
+Während der Demonstration erscheinen Bilder im Fenster genauso wie während des Tests. Sie können die Abfolge der angezeigten Bilder verfolgen, indem Sie die Liste oben auf dem Bildschirm beobachten. Das aktuelle Bild wird von einem Rahmen umgeben.
+
+Page 16.3: 2-Back Demo Section 3
+Was Sie während des Tests sehen, wird in diesem Fenster angezeigt.
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das Bild vor dem vorherigen Bild.
+
+Page 16.4: 2-Back Demo Section 4
+Jetzt machen wir die 2-ZURÜCK-Übung noch einmal.
+Wie beim ersten Mal fehlt auch bei diesem Übungsdurchgang die Liste am oberen Rand des Bildschirms, die Sie an die vorherigen Bilder erinnert.
+Denken Sie daran, die Leertaste zu drücken, wenn das Bild auf dem Bildschirm mit dem Bild identisch ist, das zwei Bilder davor erschienen ist.
+Haben Sie noch Fragen?
+
+Page 17: Instructions
+Sie haben die Übung korrekt abgeschlossen.
+Jetzt beginnen wir mit dem Test.
+Während des Tests absolvieren Sie die Aufgaben 0-ZURÜCK, 1-ZURÜCK und 2-ZURÜCK mehrmals.
+Haben Sie vor Beginn des Tests noch Fragen?
+
+Page 18: Begin Test
+TEST BEGINNEN
+
+Page 19: 0-Back Countdown
+0-ZURÜCK
+Drücken Sie die Leertaste, wenn Sie dieses Bild sehen:
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+1-ZURÜCK
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das vorherige Bild.
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+2-ZURÜCK
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das Bild vor dem vorherigen Bild.
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+1-ZURÜCK
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das vorherige Bild.
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+2-ZURÜCK
+Drücken Sie die Leertaste, wenn das Bild, das Sie sehen, dasselbe ist wie das Bild vor dem vorherigen Bild.
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+0-ZURÜCK
+Drücken Sie die Leertaste, wenn Sie dieses Bild sehen:
+
+Page 30: 0-Back Test
+<0_back_2>

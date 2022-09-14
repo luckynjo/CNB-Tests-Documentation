@@ -258,10 +258,10 @@ export class DigsymMatchingTrials extends React.Component{
 
        <div className="digsym-response-buttons flex inline">
        <button className='button digsym-button' onClick={(e) => this.onClick(e, SAME)}>
-        <p>{this.props.same_text}</p>
+        {this.props.same_text}
        </button>
        <button className='button digsym-button' onClick={(e) => this.onClick(e, DIFF)}>
-        <p>{this.props.different_text}</p>
+        {this.props.different_text}
        </button>
        </div>
 

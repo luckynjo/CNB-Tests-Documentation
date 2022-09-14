@@ -1,5 +1,5 @@
 test: mpraxis
-version: 2.06
+version: 2.05
 language: fr_CA
 
 Page 0: Common
@@ -15,17 +15,16 @@ Ce test évalue ta capacité à contrôler la souris.
 Tu verras des cases vertes, une à la fois. Déplace le curseur de ta souris par-dessus chaque case et clique dessus UNE SEULE FOIS.
 
 Page 3: Begin Practice
-COMMENCE LA PRATIQUE
+COMMENCE À T’EXERCER
 
 Page 4: Practice
-Clique sur la case verte.
+Clique sur la case verte pour continuer
 
 Page 5: Instructions
-Cette fois-ci, tu auras cinq secondes pour cliquer sur chaque case.
-Essaie de cliquer sur la case avant qu'elle disparaisse.
+Cette fois-ci, tu auras 5 secondes pour cliquer sur chaque case. Essaie de cliquer sur la case avant qu’elle disparaisse.
 
 Page 6: Begin Test
 COMMENCE LE TEST
 
 Page 7: Test
-Clique sur la case verte.
+Clique sur la case verte pour continuer

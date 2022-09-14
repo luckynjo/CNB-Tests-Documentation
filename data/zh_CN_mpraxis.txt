@@ -3,29 +3,28 @@ version: 2.05
 language: zh_CN
 
 Page 0: Common
-請按此繼續
+點擊這裡繼續
 返回
 
 Page 1: Title
-Motor praxis 測試
-請按此繼續
+運動計劃能力測試
+點擊這裡繼續
 
 Page 2: Instructions
-我們想測試你控制滑鼠的能力。
-你會看見一些綠色框，每一次一個。 將滑鼠移動到綠色框，然後點擊一次。
+這是測試你控制滑鼠的能力。
+你會看到一些綠色方框，一次一個。將你的滑鼠指針移到每個方框上，並點擊它一次。
 
 Page 3: Begin Practice
 開始練習
 
 Page 4: Practice
-點擊綠色框
+點擊綠色方框繼續
 
 Page 5: Instructions
-這次你有5秒時間點擊每個框。
-盡你所能在框消失之前點擊它。
+這一次，你將有5秒的時間來點擊每個方框。爭取在每個方框消失之前點擊它。
 
 Page 6: Begin Test
 開始測試
 
 Page 7: Test
-點擊綠色框
+點擊綠色方框繼續

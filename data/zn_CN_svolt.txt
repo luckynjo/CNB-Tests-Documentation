@@ -1,0 +1,44 @@
+test: svolt
+version: 3.00
+language: zn_CN
+
+Page 0: Common
+点击此处继续
+返回
+
+Page 1: Title
+视觉对象学习测验
+即刻记忆
+点击此处继续
+
+Page 2: Instructions
+您会看到一些图形。请努力记住整个图形。
+稍后，您将需要从一大组形状中挑选出这些形状。
+
+Page 3: Begin Practice
+开始演示
+
+page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+现在您会看到更多的形状。有些是新的，有些您已经看到过的。
+决定您先前是否曾看到过每个形状。
+绝对看到过
+很可能看到过
+很可能没看到过
+绝对没看到过
+如果您确定已经看到过，请点击“绝对看到过”。
+如果您认为已经看到过，请点击“很可能看到过”。
+如果您认为没有看到过，请点击“很可能没看到过”。
+如果您确定没有看到过，请点击“绝对没看到过”。
+
+Page 6: Begin Test
+开始测验
+
+Page 7: Test
+<trials>
+绝对看到过
+很可能看到过
+很可能没看到过
+绝对没看到过

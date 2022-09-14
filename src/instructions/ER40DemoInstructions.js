@@ -7,7 +7,6 @@ Instructions renders text / images / html content that is defined in a test and 
 */
 export const ER40DemoInstructions = props => {
   const {instructions, onGoBack, onContinue, continue_button_text, back_button_text} = props;
-  console.log('les instructions ', instructions);
   return (
     <div className = "instructions">
 

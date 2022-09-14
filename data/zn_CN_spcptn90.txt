@@ -1,0 +1,84 @@
+test: spcptn90
+version: 2.00
+language: zn_CN
+
+Page 0: Common
+点击此处继续
+返回
+按空格键继续。
+
+Page 1: Title
+宾夕法尼亚大学简短连续操作测验
+数字
+点击此处继续
+
+Page 2: Number Instructions
+在此项测验中，您将在屏幕上看到一些线条。
+每当这些线条组成一个完整的数字时，快速按一下空格键。
+例如：
+不要按
+不要按
+请按
+让我们来练习。
+点击此处继续
+
+Page 3: Begin Practice
+开始数字练习
+点击此处继续
+返回
+
+Page 4: Countdown
+做好准备！
+练习将在倒计时结束时开始：
+使用空格键回答
+
+Page 5: Practice
+<number_practice>
+按空格键继续。
+
+Page 5.1: Feedback Correct
+正确
+
+Page 5.2: Feedback False Negative
+这不正确。
+您看到了一个完整的数字，但没有按空格键。
+每当您看到完整的数字时，请按空格键。
+请按
+
+Page 5.3: Feedback False Positive
+这不正确。
+您没有看到完整的数字。
+请只在看到完整的数字时按空格键。
+不要按
+不要按
+不要按
+不要按
+请按
+
+Page 5: Number Test Instructions
+很好！
+请记住：看到数字时按空格键。
+在测验中，您会看到与在练习中所见的不同数字。
+以下是一些例子：
+点击此处继续
+返回
+
+Page 6: Instructions
+测验现在开始。
+在测验期间，您不会得知您的回答是正确的还是不正确的。
+点击此处继续
+返回
+
+Page 7: Begin Test
+开始测验
+点击此处继续
+返回
+
+Page 8: Countdown
+做好准备！
+练习将在倒计时结束时开始：
+使用空格键回答
+
+Page 9: Test
+<number_test>
+使用空格键回答

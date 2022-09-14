@@ -8,13 +8,13 @@ VOLVER
 
 Page 1: Title
 Prueba de símbolos y dígitos
-Símbolos y dígitos -Formulario A
+Símbolos y dígitos - Formulario A
 HAGA CLIC AQUÍ PARA CONTINUAR
 
 Page 2: Instructions
 En la parte superior de la pantalla hay dos filas de casillas. Cada casilla de la fila superior tiene un diseño único en su interior. Cada casilla de la fila inferior tiene un número único en su interior. Observe que cada casilla con un diseño en su interior puede ser emparejada con una casilla con un número en su interior. Durante esta prueba, aparecerá un nuevo par de casillas en el centro de la pantalla. Su tarea consiste en decidir si el diseño y el número de este nuevo par coinciden con uno de los pares que ve arriba.
 
-Si el nuevo par coincide con uno de los pares anteriores, pulse el botón «IGUAL».3.	Si el nuevo par no coincide con uno de los pares anteriores, pulse el botón «DIFERENTE».
+Si el nuevo par coincide con uno de los pares anteriores, pulse el botón «IGUAL». Si el nuevo par no coincide con uno de los pares anteriores, pulse el botón «DIFERENTE».
 
 Page 3: Begin Practice
 COMENZAR LA PRÁCTICA
