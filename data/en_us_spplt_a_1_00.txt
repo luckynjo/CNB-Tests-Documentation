@@ -14,13 +14,13 @@ Short form
 CLICK HERE TO CONTINUE
 
 Page 2: Instructions
-Instructions 1
+(Instructions 1)
 
-To the test administrator: Turn the computer away from the participant's view now. For this entire test, the participant should not be able to see the computer screen. Read the instructions below to the participant, then read the words in the lists aloud as the yellow highlighting passes over each one.
+(To the test administrator: Turn the computer away from the participant's view now. For this entire test, the participant should not be able to see the computer screen. Read the instructions below to the participant, then read the words in the lists aloud as the yellow highlighting passes over each one.)
 
 I'm going to read a list of words. Listen carefully, because when I'm done, I want you to say back as many of the items as you can. It doesn't matter what order they're in -- just tell me as many as you can. Here is the list:
 
-Be ready to read the list of words.
+(Be ready to read the list of words.)
 
 Page 3: Slideshow
 <slideshow>
@@ -61,11 +61,11 @@ ENGINEER
 PROFESSOR
 
 Page 5: Instructions
-Instructions 2
+(Instructions 2)
 
 I'm going to repeat the list of words. Again, I want you to say back as many of the items as you can, in any order, including words you may have already told me. Here is the list:
 
-Be ready to read the list of words.
+(Be ready to read the list of words.)
 
 Page 6: Slideshow
 <slideshow>
@@ -74,11 +74,11 @@ Page 7: Test
 <trials>
 
 Page 8: Instructions
-Instructions 3
+(Instructions 3)
 
 I'm going to repeat the list of words. Again, I want you to say back as many of the items as you can, in any order, including words you may have already told me. Here is the list:
 
-Be ready to read the list of words.
+(Be ready to read the list of words.)
 
 Page 9: Slideshow
 <slideshow>

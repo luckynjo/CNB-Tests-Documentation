@@ -1,0 +1,7 @@
+{
+  "trials": [
+{"question_number": 1 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":["TRUMPET", "VIOLIN", "CLARINET", "FLUTE", "SUGAR", "GARLIC", "VANILLA", "CINNAMON", "COAL", "KEROSENE", "WOOD", "GASOLINE", "LETTUCE", "BEAN", "POTATO", "CORN"],"trial_type": "test", "trial_section": "<trials>"},
+{"question_number": 2 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":["TRUMPET", "VIOLIN", "CLARINET", "FLUTE", "SUGAR", "GARLIC", "VANILLA", "CINNAMON", "COAL", "KEROSENE", "WOOD", "GASOLINE", "LETTUCE", "BEAN", "POTATO", "CORN"],"trial_type": "test", "trial_section": "<trials>"},
+{"question_number": 3 , "responses":[{"type": "counter", "maximum_word_response_count": 25}], "stimulus":["TRUMPET", "VIOLIN", "CLARINET", "FLUTE", "SUGAR", "GARLIC", "VANILLA", "CINNAMON", "COAL", "KEROSENE", "WOOD", "GASOLINE", "LETTUCE", "BEAN", "POTATO", "CORN"],"trial_type": "test", "trial_section": "<trials>"}
+]
+}

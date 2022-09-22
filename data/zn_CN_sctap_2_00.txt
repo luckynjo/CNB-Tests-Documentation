@@ -19,8 +19,8 @@ Page 2: Handedness trial
 请尽可能快地敲击空格键。
 每次试验后您将换手。
 使用鼠标选择您的书写惯用手。
-<Handedness> 左手
-<Handedness> 右手
+<HANDEDNESS> 左手
+<HANDEDNESS> 右手
 
 Page 3: Demo Instructions
 将手放在您在下面看到的位置。
@@ -34,7 +34,7 @@ Page 5: Begin Practice
 开始练习
 
 Page 6: Countdown
-练习试验 <TRIAL NUMBER> 使用您的
+练习试验 <TRIAL_NUMBER> 使用您的
 <WH> 书写惯用手
 <NWH> 非书写惯用手
 
@@ -46,7 +46,7 @@ Page 8: Begin Test
 开始测验
 
 Page 9: Countdown
-试验 <TRIAL NUMBER> 使用您的
+试验 <TRIAL_NUMBER> 使用您的
 <WH> 书写惯用手
 <NWH> 非书写惯用手
 试验将在倒计时结束时开始
