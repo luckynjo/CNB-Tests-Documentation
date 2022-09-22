@@ -1,0 +1,344 @@
+test: slnb2
+version: 2.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Press the space bar to continue.
+
+Page 1: Title
+Short Letter-N-Back
+Short B-Form
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+You will see one letter on the screen at a time.
+For each letter, decide whether or not to press the spacebar.
+There are three parts with different rules:
+0-BACK
+1-BACK
+2-BACK
+We will practice all three parts.
+
+Page 3: 0-Back Instructions
+We will first practice 0-BACK.
+Press the spacebar whenever you see the letter "X".
+X
+
+Page 4: Begin Practice
+BEGIN 0-BACK PRACTICE
+
+Page 5: 0-Back Countdown
+0-BACK
+Press the spacebar when you see the letter X
+
+Page 6: Practice
+<0_back_practice>
+D
+X
+F
+L
+X
+V
+S
+B
+X
+H
+T
+
+Page 6.1: Feedback False Negative
+That is not correct.
+Press the spacebar when you see the letter "X".
+
+Page 6.2: Feedback False Positive
+That is not correct.
+Only press the spacebar when you see the letter "X".
+
+Page 7: 1-Back Instructions
+Now we will practice 1-BACK
+Press the spacebar when the letter you see is the same as the letter that came "just before it".
+For example:
+PRESS
+M
+M
+
+Page 8: Begin Practice
+BEGIN 1-BACK PRACTICE
+
+Page 9: 1-Back Countdown
+1-BACK
+Press the spacebar when the letter you see is the same as the previous letter.
+
+Page 10: Practice
+<1_back_practice>
+N
+G
+G
+T
+F
+D
+R
+R
+P
+P
+C
+
+Page 10.1: Feedback False Negative
+That is not correct.
+Press the spacebar when the letter that you see is the same as the previous letter.
+
+Page 10.2: Feedback False Positive
+That is not correct.
+Only press the spacebar when the letter that you see is the same as the previous letter.
+
+Page 11: 1-Back Demo
+1st Letter
+Last Letter
+PRESS
+Skip 1-Back Movie
+Skip training movie and return to practice
+B
+C
+F
+G
+G
+T
+M
+M
+L
+N
+
+Page 11.1: 1-Back Demo Section 1
+We're going to try a new way of looking at the task.
+Let's assume that the list of letters below is the order of the letters you will see in this test.
+Whenever the current letter is the same as the letter that comes right before it, you should press the spacebar.
+
+Page 11.2: 1-Back Demo Section 2
+During the demonstration, letters will appear in the window just as they would during the test. You can follow the sequence of letters that will be shown by watching the list at the top of the screen. The current letter will be highlighted.
+
+Page 11.3: 1-Back Demo Section 3
+What you will see during the test is inside this window.
+Press the spacebar when the letter that you see is the same as the previous letter.
+
+Page 11.4: 1-Back Demo Section 4
+Now we will try the 1-BACK practice again.
+Like the first time you tried the practice, you will not have the list at the top of the screen to remind you of the previous letters.
+Remember to press the spacebar when the letter on the screen is the same as the one right before it.
+
+Page 12: 2-Back Instructions
+Now we will practice 2-BACK.
+Press the spacebar when the letter you see is the same as the one before the previous letter.
+For example:
+PRESS
+C
+T
+C
+
+Page 13: Begin Practice
+BEGIN 2-BACK PRACTICE
+
+Page 14: 2-Back Countdown
+2-BACK
+Press the spacebar when the letter you see is the same as the one before the previous letter.
+
+Page 15: Practice
+<2_back_practice>
+K
+T
+K
+S
+Z
+L
+Z
+H
+Z
+B
+J
+M
+J
+D
+C
+
+Page 15.1: Feedback False Negative
+That is not correct.
+Press the spacebar when the letter you see is the same as the one before the previous letter.
+
+Page 15.2: Feedback False Positive
+That is not correct.
+Only press the spacebar when the letter that you see is the same as the one before the previous letter.
+
+Page 16: 2-Back Demo
+1st Letter
+Last Letter
+PRESS
+Skip 2-Back Movie
+Skip training movie and return to practice
+B
+G
+F
+G
+M
+T
+M
+L
+M
+C
+
+Page 16.1: 2-Back Demo Section 1
+We're going to try a different way of looking at the task.
+Let's assume that the list of letters below is the order of the letters you will see during the 2-BACK.
+Whenever the current letter is the same as the letter that comes two before it, you should press the spacebar.
+
+Page 16.2: 2-Back Demo Section 2
+During the demonstration, letters will appear in the window just as they would during the test. You can follow the sequence of letters that will be shown by watching the list at the top of the screen. The current letter will be highlighted.
+
+Page 16.3: 2-Back Demo Section 3
+What you will see during the test is inside this window.
+Press the spacebar when the letter that you see is the same as the one before the previous letter.
+
+Page 16.4: 2-Back Demo Section 4
+Now we will try the 2-BACK practice again.
+Like the first time you tried the practice, you will not have the list at the top of the screen to remind you of the previous letters.
+Remember to press the spacebar when the letter on the screen is the same as the letter that came two before it.
+
+Page 17: Instructions
+You have completed the practice.
+We will now start the test.
+During the testing you will do the 0-BACK, 1-BACK and 2-BACK tasks several times.
+Do you have any questions before the test begins?
+
+Page 18: Begin Test
+BEGIN TEST
+
+Page 19: 0-Back Countdown
+0-BACK
+Press the spacebar when you see the letter X
+
+Page 20: 0-Back Test
+<0_back_1>
+X
+J
+Q
+C
+X
+H
+M
+Z
+N
+X
+B
+X
+X
+T
+F
+
+Page 21: 1-Back Countdown
+1-BACK
+Press the spacebar when the letter you see is the same as the previous letter.
+
+Page 22: 1-Back Test
+<1_back_1>
+N
+N
+B
+Q
+Q
+D
+J
+J
+V
+V
+L
+G
+G
+Z
+S
+
+Page 23: 2-Back Countdown
+2-BACK
+Press the spacebar when the letter you see is the same as the one before the previous letter.
+
+Page 24: 2-Back Test
+<2_back_1>
+L
+V
+S
+V
+B
+T
+B
+D
+K
+D
+R
+S
+J
+S
+J
+
+Page 25: 1-Back Countdown
+1-BACK
+Press the spacebar when the letter you see is the same as the previous letter.
+
+Page 26: 1-Back Test
+<1_back_2>
+H
+H
+Z
+P
+M
+F
+F
+R
+R
+K
+W
+T
+T
+C
+C
+
+Page 27: 2-Back Countdown
+2-BACK
+Press the spacebar when the letter you see is the same as the one before the previous letter.
+
+Page 28: 2-Back Test
+<2_back_2>
+K
+N
+R
+N
+P
+S
+P
+F
+P
+F
+T
+Z
+G
+J
+G
+
+Page 29: 0-Back Countdown
+0-BACK
+Press the spacebar when you see the letter X
+
+Page 30: 0-Back Test
+<0_back_2>
+X
+X
+M
+Q
+X
+W
+Z
+R
+X
+T
+C
+X
+N
+B
+V
