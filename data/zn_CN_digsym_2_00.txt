@@ -39,8 +39,8 @@ Page 7: Matching Test
 不同
 
 Page 8: Instructions
-在下一頁，點擊配對每個圖像的數字
-嘗試盡量準確及最短時間完成
+在下一页，请点击每个图像配对的数字，
+请尽快地准确完成
 
 Page 9: Memory Test
 <memory>
