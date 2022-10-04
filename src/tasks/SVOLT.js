@@ -135,7 +135,7 @@ export default class SVOLT extends React.Component {
     if(index === 0)
     {
       return <div className="container center">
-      <AssetLoader base_url={this.props.base_url} stimulus_dir="svolt" test_trials={this.props.test_trials} practice_trials={this.props.practice_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
+      <AssetLoader base_url={this.props.base_url} stimulus_dir={this.test_form === "b" ? "svolt_b" : "svolt"} test_trials={this.props.test_trials} practice_trials={this.props.practice_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
       </div>
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
