@@ -9,6 +9,7 @@ import {BeginPage} from '../components/BeginPage.js';
 import AssetLoader from '../loaders/AssetLoader.js';
 import SubmitPage from '../components/SubmitPage.js';
 import digsym_a_banner from '../assets/digsym/digsym_a_banner.png';
+import digsym_b_banner from '../assets/digsym/digsym_b_banner.png';
 
 
 const DEMO_INSTRUCTIONS_REGEX = /Digsym[_ ]Instructions/ig;
@@ -159,12 +160,13 @@ export default class Digsym extends React.Component
       const symbol_images = valid_image_trials.map((item) => {return {"stimulus": JSON.parse(item.stimulus).symbol}});
       const images = digit_images.concat(symbol_images);
       return <div className="container center">
-      <AssetLoader base_url={this.props.base_url} stimulus_dir="digsym" test_trials={images} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
+      <AssetLoader base_url={this.props.base_url} stimulus_dir={this.test_form === "b" ? "digsym_b" : "digsym"} test_trials={images} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
       </div>
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={digsym_a_banner} content={JSON.parse(timeline_object.content)} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
+      return (this.test_form === "b") ? <TitlePage banner={digsym_b_banner} content={JSON.parse(timeline_object.content)} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/> :
+      <TitlePage banner={digsym_a_banner} content={JSON.parse(timeline_object.content)} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
