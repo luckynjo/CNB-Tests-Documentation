@@ -1,0 +1,44 @@
+test: svolt-b
+version: 3.00
+language: fr_CA
+
+Page 0: Common
+CLIQUE ICI POUR CONTINUER
+RETOUR
+
+Page 1: Title
+Test d’apprentissage d’objet visuel
+Test court de mémoire immédiate
+CLIQUE ICI POUR CONTINUER
+
+Page 2: Instructions
+Tu vas voir certaines figures. Essaie de te rappeler la figure au complet.
+Plus tard, tu devras retrouver ces formes parmi un nouveau groupe de formes.
+
+Page 3: Begin Practice
+COMMENCE LA PRÉSENTATION
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Maintenant, tu vas voir d’autres formes. Certaines sont nouvelles, et tu en as déjà vu certaines autres.
+Décide si tu as déjà vu chaque forme.
+DÉFINITIVEMENT OUI
+PROBABLEMENT OUI
+PROBABLEMENT NON
+DÉFINITIVEMENT NON
+Clique sur DÉFINITIVEMENT OUI si tu es CERTAIN(E) de l’AVOIR vue.
+Clique sur PROBABLEMENT OUI si tu PENSES l’AVOIR vue.
+Clique sur PROBABLEMENT NON si tu PENSES NE PAS l’avoir vue.
+Clique sur DÉFINITIVEMENT NON si tu es CERTAIN(E) de NE PAS l’avoir vue.
+
+Page 6: Begin Test
+COMMENCE LE TEST
+
+Page 7: Test
+<trials>
+DÉFINITIVEMENT OUI
+PROBABLEMENT OUI
+PROBABLEMENT NON
+DÉFINITIVEMENT NON

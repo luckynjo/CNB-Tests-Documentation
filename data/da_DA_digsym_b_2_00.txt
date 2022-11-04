@@ -1,0 +1,49 @@
+test: digsym-b
+version: 2.00
+language: da_DA
+
+Page 0: Common
+KLIK HER FOR AT FORTSÆTTE
+GÅ TILBAGE
+
+Page 1: Title
+Digit Symbol Test
+Digit Symbol - Formular B
+KLIK HER FOR AT FORTSÆTTE
+
+Page 2: Instructions
+Øverst på skærmen er der to rækker der er delt ind i flere bokser. Hver boks i øverste række indeholder et unikt design. Hver boks i nederste række indeholder et unikt tal. Bemærk, at hver boks, der indeholder et design, kan sættes sammen med en boks, der indeholder et tal. Under denne test vises et nyt par bokser midt på skærmen. Du skal nu finde ud af, om designet og tallet i dette nye par svarer til et af de par, du ser ovenfor.
+
+Hvis det nye par svarer til et af parrene ovenfor, skal du trykke på knappen "SAMME". Hvis det nye par ikke svarer til et af parrene ovenfor, skal du trykke på knappen "FORSKELLIG".
+
+Page 3: Begin Practice
+START ØVELSE
+
+Page 4: Practice
+SAMME
+FORSKELLIG
+
+Page 5: Digsym Instructions
+Godt! Vi vil nu starte testen. Husk, at du skal finde ud af, om designet og tallet i det nye par svarer til et af de par, du ser ovenfor. Udfør testen så hurtigt, du kan, samtidig med at du prøver at svare korrekt.  Under testen på 90 sekunder får du ikke at vide, om du svarer korrekt eller forkert.
+
+Hvis det nye par svarer til et af parrene ovenfor, skal du trykke på knappen "SAMME". Hvis det nye par ikke svarer til et af parrene ovenfor, skal du trykke på knappen "FORSKELLIG". Arbejd så præcist og hurtigt som du kan.
+
+SAMME
+FORSKELLIG
+
+Page 6: Begin Test
+START TEST
+
+Page 7: Matching Test
+<matching>
+SAMME
+FORSKELLIG
+
+Page 8: Instructions
+På den næste side skal du klikke på det tal, der var parret med hvert symbol.
+Prøv at være så præcis og så hurtig som du kan.
+
+Page 9: Memory Test
+<memory>
+Hvilket tal hørte til dette symbol?
+Klik på det tal, der blev sat sammen med dette symbol.

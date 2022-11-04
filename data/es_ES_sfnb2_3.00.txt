@@ -13,8 +13,8 @@ Formulario abreviado
 HAGA CLIC AQUÍ PARA CONTINUAR
 
 Page 2: Instructions
-Verá una imagen en la pantalla cada vez.
-Para cada imagen, decida si pulsar o no la barra espaciadora.
+Verá salir imágenes en la pantalla de una en una.
+Para cada imagen, decida si debe pulsar o no la barra espaciadora.
 Hay tres partes con reglas diferentes:
 0-BACK
 1-BACK
@@ -73,8 +73,8 @@ Page 11: 1-Back Demo
 Primera imagen
 Última imagen
 PULSE
-SALTAR PELÍCULA 1-BACK
-Saltar la película de entrenamiento y volver a la práctica
+SALTAR LA SECUENCIA 1-BACK
+Saltar el entrenamiento y volver a la práctica
 
 Page 11.1: 1-Back Demo Section 1
 Vamos a probar una nueva forma de ver la tarea.
@@ -122,8 +122,8 @@ Page 16: 2-Back Demo
 Primera imagen
 Última imagen
 PULSE
-SALTAR PELÍCULA 2-BACK
-Saltar la película de entrenamiento y volver a la práctica
+SALTAR LA SECUENCIA  2-BACK
+Saltar la secuencia de entrenamiento y volver a la práctica
 
 Page 16.1: 2-Back Demo Section 1
 Vamos a intentar una nueva forma de ver la tarea.
@@ -139,7 +139,7 @@ Pulse la barra espaciadora cuando la imagen que vea sea la misma que se mostró 
 
 Page 16.4: 2-Back Demo Section 4
 Ahora intentaremos de nuevo la práctica del 2-BACK.
-Al igual que la primera vez que intentó la práctica, no tendrá la lista en la parte superior de la pantalla para recordar las imágenes anteriores.
+Al igual que la primera vez que intentó la práctica, no tendrá la lista en la parte superior de la pantalla, para recordar las imágenes anteriores.
 Recuerde que debe pulsar la barra espaciadora cuando la imagen en la pantalla sea la misma que la que apareció dos pasos antes.
 ¿Tiene alguna pregunta?
 

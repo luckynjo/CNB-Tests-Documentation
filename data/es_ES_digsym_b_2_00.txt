@@ -1,4 +1,4 @@
-test: digsym-a
+test: digsym-b
 version: 2.00
 language: es_ES
 
@@ -8,7 +8,7 @@ VOLVER
 
 Page 1: Title
 Prueba de símbolos y dígitos
-Símbolos y dígitos - Formulario A
+Símbolos y dígitos - Formulario B
 HAGA CLIC AQUÍ PARA CONTINUAR
 
 Page 2: Instructions
