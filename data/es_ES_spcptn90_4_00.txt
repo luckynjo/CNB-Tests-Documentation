@@ -58,7 +58,7 @@ PULSE
 Page 5: Number Test Instructions
 ¡Genial!
 Recuerde: Pulse la barra espaciadora cuando vea un NÚMERO.
-En la prueba, verá números diferentes a los que vio en la práctica.
+En la prueba, verá números diferentes a los que ha visto en la práctica.
 Aquí hay algunos ejemplos:
 HAGA CLIC AQUÍ PARA CONTINUAR
 VOLVER

@@ -1,0 +1,126 @@
+test: k-er40-d-preschool
+version: 3.60
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Go to the next
+Play
+
+Page 1: Title
+Penn Emotion Recognition Test
+ER40 Form D
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+In this game, you will see pictures of faces. Your job is to tell us the feeling or emotion of each picture.
+To play, you need to look carefully at each face and try to decide how the person is feeling.
+
+Page 3: Instructions
+First, let’s practice different feelings!
+
+Page 4: Slide Instructions
+This is a happy face.
+This is a sad face.
+This is an angry, mad face.
+This is a scared face.
+Sometime faces have no feeling, we call that a neutral face.
+
+Page 5: Instructions
+In this game, you need to look carefully at each face and try to decide how the person is feeling.
+Let’s see an example video of the game.
+
+Page 6: Demo Instructions
+What feeling is this face showing?
+Remember, these are the different feelings.
+
+Page 7: Instructions
+Now let’s practice with a couple pictures of faces.
+
+Page 8: Begin Practice
+BEGIN PRACTICE
+
+Page 9: Practice
+What feeling is this face showing?
+HAPPY
+SAD
+ANGRY
+FEAR
+NO FEELING
+
+Page 9.1: Feedback Correct
+Yaay! Good job! Try another one.
+
+Page 9.2: Feedback Incorrect
+That's not quite right. Please try again.
+
+Page 10: Practice
+What feeling is this face showing?
+HAPPY
+SAD
+ANGRY
+FEAR
+NO FEELING
+
+Page 10.1: Feedback Correct
+Great job! Try another one.
+
+Page 10.2: Feedback Incorrect
+That's not quite right. Please try again.
+
+Page 11: Practice
+What feeling is this face showing?
+HAPPY
+SAD
+ANGRY
+FEAR
+NO FEELING
+
+Page 11.1: Feedback Correct
+Excellent! That's correct! Try another one.
+
+Page 11.2: Feedback Incorrect
+That's not quite right. Please try again.
+
+Page 12: Practice
+What feeling is this face showing?
+HAPPY
+SAD
+ANGRY
+FEAR
+NO FEELING
+
+Page 12.1: Feedback Correct
+Amazing! Try another one.
+
+Page 12.2: Feedback Incorrect
+That's not quite right. Please try again.
+
+Page 13: Practice
+What feeling is this face showing?
+HAPPY
+SAD
+ANGRY
+FEAR
+NO FEELING
+
+Page 13.1: Feedback Correct
+Excellent! That's right!
+
+Page 13.2: Feedback Incorrect
+That's not quite right. Please try again.
+
+Page 14: Instructions
+You did a great job. We are done with practice!
+Now it is time for the game! Remember to look carefully at each face and try to decide how the person is feeling.
+
+Page 15: Begin Test
+BEGIN TEST
+
+Page 16: Test
+HAPPY
+SAD
+ANGRY
+FEAR
+NO FEELING

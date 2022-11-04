@@ -12,11 +12,11 @@ ER40 Formulario D
 HAGA CLIC AQUÍ PARA CONTINUAR
 
 Page 2: Instructions
-En esta prueba verá algunas caras. Observe atentamente cada rostro y trate de decidir qué siente esa persona.
+En esta prueba verá algunas caras. Observe atentamente cada rostro y trate de decidir qué está sintiendo esa persona.
 Haga clic en la palabra que mejor describa cómo se siente esa persona.
 
 Page 3: Instructions
-Si la persona no muestra ningún sentimiento, haga clic en «Sin sentimiento».
+Si la persona no muestra ningún sentimiento, haga clic en «Sin emoción».
 Probemos con una cara de práctica...
 
 Page 4: Begin Practice
@@ -31,13 +31,14 @@ MIEDO
 SIN SENTIMIENTO
 
 Page 5.1: Feedback Correct
-¡Estupendo trabajo!
+¡Buen trabajo!
 
 Page 5.2: Feedback Incorrect
 Eso no es del todo correcto. Por favor, inténtelo de nuevo.
 
 Page 6: Instructions
-La prueba comenzará ahora. Recuerde que debe mirar cada cara con atención. Sea tan rápido y preciso como pueda.
+La prueba comenzará ahora. Recuerde que debe mirar cada cara con atención.
+Sea tan rápido y preciso como pueda.
 
 Page 7: Begin Test
 COMENZAR LA PRUEBA

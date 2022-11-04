@@ -1,0 +1,44 @@
+test: svolt-b
+version: 3.00
+language: zh_CN
+
+Page 0: Common
+點擊這裡繼續
+返回
+
+Page 1: Title
+視覺物件學習測試
+簡短版即時記憶測試
+點擊這裡繼續
+
+Page 2: Instructions
+你會看到一些圖形。試著記住整個圖形。
+稍後，你將從一個更大的形狀群組中挑出這些形狀。
+
+Page 3: Begin Practice
+開始演示
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+現在你將看到更多的形狀。有些是新的，有些是你已經見過的。
+逐一決定你之前是否見過這些形狀。
+肯定見過
+可能見過
+可能沒見過
+肯定沒見過
+如果你確定你有見過，請點擊“肯定見過”。
+如果你認為你有見過，請點擊“可能見過”。
+如果你認為你沒有見過，請點擊“可能沒見過”。
+如果你確定你沒有見過，請點擊“肯定沒見過”。
+
+Page 6: Begin Test
+開始測試
+
+Page 7: Test
+<trials>
+肯定見過
+可能見過
+可能沒見過
+肯定沒見過
