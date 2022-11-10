@@ -167,7 +167,7 @@ export default class CPW extends React.Component
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <WordMemoryTrials base_url={this.props.base_url} instructions={JSON.parse(timeline_object.content)} buttons={this.words_buttons_text} trials={this.props.test_trials} onTrialsComplete={this.next}/>
+      return <WordMemoryTrials base_url={this.props.base_url} instructions={JSON.parse(timeline_object.content)} buttons={this.words_buttons_text} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete}/>
     }
     else
     {
