@@ -1,0 +1,58 @@
+test: sctap
+version: 2.00
+language: de_DE
+
+Page 0: Common
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+DRÜCKEN SIE DIE LEERTASTE, UM FORTZUFAHREN
+<WH> SCHREIBHAND
+<NWH> NICHT-SCHREIBHAND
+
+Page 1: Title
+Computerisierter Finger-Tapping-Test (kurz)
+Kurzform
+HIER KLICKEN, UM FORTZUFAHREN
+
+Page 2: Handedness trial
+Dies ist ein Test Ihrer Fingergeschwindigkeit.
+Drücken Sie die Leertaste, so schnell Sie können.
+Nach jedem Versuch wechseln Sie die Hand.
+Benutzen Sie die Maus, um Ihre Schreibhand auszuwählen.
+<HANDEDNESS> Linkshänder
+<HANDEDNESS> Rechtshänder
+
+Page 3: Demo Instructions
+Halten Sie Ihre Hand in der unten gezeigten Position
+
+Page 4: Instructions
+Üben wir das einmal.
+Wenn Sie „LOS“ sehen, drücken Sie die Leertaste, so schnell Sie können.
+Denken Sie daran, die soeben erlernte Handhaltung zu verwenden. BENUTZEN SIE NICHT IHRE GANZE HAND ODER IHREN ARM – nur Ihren Finger.
+
+Page 5: Begin Practice
+ÜBUNG BEGINNEN
+
+Page 6: Countdown
+ÜBUNGSVERSUCH <TRIAL_NUMBER> BENUTZEN SIE IHRE
+<WH> SCHREIBHAND
+<NWH> NICHT-SCHREIBHAND
+
+Page 7: Practice
+LOS!
+STOPP
+
+Page 8: Begin Test
+TEST BEGINNEN
+
+Page 9: Countdown
+VERSUCH <TRIAL_NUMBER> BENUTZEN SIE IHRE
+<WH> SCHREIBHAND
+<NWH> NICHT-SCHREIBHAND
+Dieser Versuch beginnt in
+Sekunden
+VERWENDEN SIE BEIM DRÜCKEN DER LEERTASTE DIE KORREKTE HANDHALTUNG
+
+Page 8: Test
+LOS!
+STOPP

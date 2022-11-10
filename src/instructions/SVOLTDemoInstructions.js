@@ -7,16 +7,15 @@ Instructions renders text / images / html content that is defined in a test and 
 */
 export const SVOLTDemoInstructions = props => {
   const {instructions, onGoBack, onContinue, continue_button_text, back_button_text} = props;
-  console.log('les instructions ', instructions);
   return (
     <>
     <div className = "instructions text--left top">
 
-     <p>{instructions[0]}</p>
+     <p className="volt--instructions">{instructions[0]}</p>
      {instructions.map((item, index) => {
        if(index >0 && index < 2)
        {
-         return (<p key={index + 50}>{item}</p>)
+         return (<p className="volt--instructions" key={index + 50}>{item}</p>)
        }
      })}
      <br/>
@@ -42,7 +41,7 @@ export const SVOLTDemoInstructions = props => {
      {instructions.map((item, index) => {
        if(index >5)
        {
-         return (<p key={index + 50}>{item}</p>)
+         return (<p className="volt--instructions" key={index + 50}>{item}</p>)
        }
      })}
     </div>

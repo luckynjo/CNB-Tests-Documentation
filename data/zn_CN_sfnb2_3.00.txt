@@ -1,0 +1,195 @@
+test: sfnb2
+version: 3.00
+language: zn_CN
+
+Page 0: Common
+点击此处继续
+返回
+按空格键继续。
+
+Page 1: Title
+简短Fractal-N-Back
+简式
+点击此处继续
+
+Page 2: Instructions
+您将在屏幕上每次看到一个图像。
+对于每个图像，决定是否按空格键。
+有三个部分，分别有不同的规则：
+返回0
+返回1
+返回2
+我们将练习所有三个部分。
+
+Page 3: 0-Back Instructions
+我们将首先练习返回0。
+每当您看到以下图像时，请按空格键：
+有任何疑问吗？
+
+Page 4: Begin Practice
+开始返回0练习
+
+Page 5: 0-Back Countdown
+返回0
+当您看到这个图像时，请按空格键：
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+这不正确。
+每次看到这个图像时都要按空格键:
+
+Page 6.2: Feedback False Positive
+这不正确。
+请只在看到这个图像时按空格键：
+
+Page 7: 1-Back Instructions
+现在我们练习返回1。
+当您看到的图像与就在它之前出现的图像相同时，按空格键。
+例如：
+按
+有任何疑问吗？
+
+Page 8: Begin Practice
+开始返回1练习
+
+Page 9: 1-Back Countdown
+返回1
+当您看到的图像与上一个图像相同时，按空格键。
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+这不正确。
+当您看到的图像与上一个图像相同时，按空格键。
+
+Page 10.2: Feedback False Positive
+这不正确。
+只有当您看到的图像与上一个图像相同时，才按空格键。
+
+Page 11: 1-Back Demo
+第一个图像
+最后一个图像
+按
+跳过返回1视频
+跳过培训视频，并返回练习
+
+Page 11.1: 1-Back Demo Section 1
+接下来我们换一种方法来做任务。
+1假设下面的图像列表是您将在这项测验中看到的图像序列。
+每当目前的图像与就在它之前出现的图像相同时，您应该按空格键。
+
+Page 11.2: 1-Back Demo Section 2
+在演示期间，图像将像在测验期间一样出现在窗口中。您可以通过查看屏幕顶部的列表来追踪将显示的图像序列。当前图像会在一个方框内。
+
+Page 11.3: 1-Back Demo Section 3
+您在测验期间看到的内容在这个窗口中。
+当您看到的图像与上一个图像相同时，按空格键。
+
+Page 11.4: 1-Back Demo Section 4
+现在我们再次尝试返回1练习。
+就像您第一次尝试这个练习时一样，但屏幕顶部不会显示列表来提醒您上一个图像。
+当屏幕上的图像与上一个图像相同时，请记住按空格键。
+您有任何疑问吗？
+
+Page 12: 2-Back Instructions
+现在我们练习返回2。
+当您看到的图像与上一个图像之前的图像相同时，按空格键。
+例如：
+按
+
+Page 13: Begin Practice
+开始返回2练习
+
+Page 14: 2-Back Countdown
+返回2
+当您看到的图像与上一个图像之前的图像相同时，按空格键。
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+这不正确。
+当您看到的图像与上一个图像之前的图像相同时，按空格键。
+
+Page 15.2: Feedback False Positive
+这不正确。
+只有当您看到的图像与上一个图像之前的图像相同时，才按空格键。
+
+Page 16: 2-Back Demo
+第一个图像
+最后一个图像
+按
+跳过返回2视频
+点击此处继续
+
+Page 16.1: 2-Back Demo Section 1
+我们将尝试另外一种方法来做任务。
+假设下面的图像列表是您将在返回2中看到的图像顺序。
+每当目前的图像与上两个图像之前出现的图像相同时，您应该按空格键。
+
+Page 16.2: 2-Back Demo Section 2
+在演示期间，图像将像在测验期间一样出现在窗口中。您可以通过查看屏幕顶部的列表来追踪将显示的图像序列。当前图像会在一个方框内显示。
+
+Page 16.3: 2-Back Demo Section 3
+您在测验期间看到的内容在这个窗口中。
+当您看到的图像与上一个图像之前的图像相同时，按空格键。
+
+Page 16.4: 2-Back Demo Section 4
+现在我们再次尝试返回2练习。
+就像您第一次尝试这个练习时一样，但屏幕顶部不会显示列表来提醒您前面的图像。
+当屏幕上的图像与上一个图像之前的图像相同时，请记住按空格键。
+您有任何疑问吗？
+
+Page 17: Instructions
+1您已经正确地完成了练习。
+我们现在开始测验。
+在测验期间，您将多次完成返回0、返回1和返回2任务。
+测验开始前您有什么疑问吗？
+
+Page 18: Begin Test
+开始测验
+
+Page 19: 0-Back Countdown
+返回0
+当您看到这个图像时，请按空格键：
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+返回1
+当您看到的图像与上一个图像相同时，按空格键。
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+返回2
+当您看到的图像与上一个图像之前的图像相同时，按空格键。
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+返回1
+当您看到的图像与上一个图像相同时，按空格键。
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+返回2
+当您看到的图像与上一个图像之前的图像相同时，按空格键。
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+返回0
+当您看到这个图像时，请按空格键：
+
+Page 30: 0-Back Test
+<0_back_2>

@@ -12,8 +12,8 @@ Memoria Inmediata Breve
 HAGA CLIC AQUÍ PARA CONTINUAR
 
 Page 2: Instructions
-Verá algunas figuras. Intente recordar la figura completa.
-Más tarde, escogerá estas formas de un grupo más grande de formas.
+Ahora  verá aparecer algunas figuras. Intente recordar la figura completa.
+Más tarde, tendrá que reconocer estas figuras en un grupo más grande de figuras.
 
 Page 3: Begin Practice
 COMENZAR LA PRESENTACIÓN
@@ -22,8 +22,8 @@ Page 4: Slideshow
 <slideshow>
 
 Page 5: Demo Instructions
-Ahora verá más formas. Algunas son nuevas, otras ya las ha visto.
-Decida si ha visto cada forma antes.
+Ahora verá más figuras. Algunas son nuevas, otras ya las ha visto.
+Decida si ha visto cada una de estas figuras antes.
 SEGURO QUE SÍ
 PROBABLEMENTE SI
 PROBABLEMENTE NO

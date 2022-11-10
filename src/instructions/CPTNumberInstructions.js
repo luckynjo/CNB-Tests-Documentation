@@ -17,9 +17,10 @@ export const CPTNumberInstructions = props => {
       {instructions.map((instruction, index) => {
         if(index < 3)
         {
-          return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
+          return <div key={index*10 + 5}><p className="instructions-text--small">{instruction}</p></div>
         }
       })}
+      <br/>
       <div className='flex medium--box center--horizontal'>
        <img src={inst1} alt="inst1" className='center--horizontal img--demo'/>
       <img src={inst2} alt="inst2" className= 'center--horizontal img--demo' />
@@ -32,7 +33,7 @@ export const CPTNumberInstructions = props => {
       <p className= 'green text--center'>{instructions[5] ||"DO PRESS"}</p>
       </div>
       <br/>
-      <p>{instructions[6] || "Let's practice."}</p>
+      <p className="instructions-text--small">{instructions[6] || "Let's practice."}</p>
     </div>
     <div className="position-bottom--absolute">
     <table className="buttons-table">

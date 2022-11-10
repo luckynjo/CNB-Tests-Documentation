@@ -1,0 +1,83 @@
+test: spcptn90
+version: 2.00
+language: zh_CN
+
+Page 0: Common
+點擊這裡繼續
+返回 按空格鍵繼續
+
+Page 1: Title
+賓大持續性操作能力測試-簡短版
+數字
+點擊這裡繼續
+
+Page 2: Number Instructions
+在這個測試中，你會看到屏幕上的線條。
+每當線條形成一個完整的數字時，請迅速按下空格鍵。
+例如：
+不要按
+不要按
+要按
+我們來練習一下。
+點擊這裡繼續
+
+Page 3: Begin Practice
+開始數字練習
+點擊這裡繼續
+返回
+
+Page 4: Countdown
+準備好!
+練習即將開始：
+使用空格鍵來回應
+
+Page 5: Practice
+<number_practice>
+按空格鍵繼續
+
+Page 5.1: Feedback Correct
+正確!
+
+Page 5.2: Feedback False Negative
+這不對。
+你看到了一個完整的數字，但沒按空格鍵。
+每當你看到一個完整的數字時，就	按空格鍵。
+要按
+
+Page 5.3: Feedback False Positive
+這不對。
+你沒看到一個完整的數字。
+只有當你看到一個完整的數字時才按空格鍵。
+不要按
+不要按
+不要按
+不要按
+要按
+
+Page 5: Number Test Instructions
+很好!
+請記住：當你看到數字時，就按空格鍵。
+在測試中你會看到與在練習中不同的數字。
+這裡有一些例子：
+點擊這裡繼續
+返回
+
+Page 6: Instructions
+測試現在開始。
+在測試期間，你不會被告知你的回答是對還是錯。
+點擊這裡繼續
+返回
+
+Page 7: Begin Test
+開始測試
+點擊這裡繼續
+返回
+
+Page 8: Countdown
+準備好!
+練習即將開始：
+使用空格鍵來回應
+
+Page 9: Test
+<number_test>
+使用空格鍵來回應

@@ -5,53 +5,54 @@ language: fr_CA
 Page 0: Common
 CLIQUE ICI POUR CONTINUER
 RETOUR
-APPUIE SUR LA BARRE D'ESPACEMENT POUR CONTINUER
+APPUIE SUR LA BARRE D’ESPACEMENT POUR CONTINUER
 <WH> MAIN AVEC LAQUELLE TU ÉCRIS
-<NWH> MAIN AVEC LAQUELLE TU N'ÉCRIS PAS
+<NWH> MAIN AVEC LAQUELLE TU N’ÉCRIS PAS
 
 Page 1: Title
-Short Computerized Finger-Tapping Task
-Short form
+Test court informatisé de tapotement de doigt
+Formulaire court
 CLIQUE ICI POUR CONTINUER
 
-Page 2: Handedness trial
+Page 2: Handedness Trial
 Ce test évalue la vitesse de ton doigt.
-Tape sur la barre d'espacement aussi vite que tu peux.
+Tape sur la barre d’espacement aussi vite que tu peux.
 Tu changeras de main après chaque essai.
 Utilise la souris pour sélectionner la main avec laquelle tu écris.
 <HANDEDNESS> Gaucher ou gauchère
 <HANDEDNESS> Droitier ou droitière
 
 Page 3: Demo Instructions
-Garde la main dans la position que tu vois ci-dessous. Je vais te montrer comment.
+Garde ta main dans la position que tu vois ci-dessous.
 
 Page 4: Instructions
-Pratiquons-nous.
-Quand tu verras 'GO!', tape sur la barre d'espacement aussi vite que tu peux.
-Rappelle-toi d'utiliser la position de la main que tu viens d'apprendre.
-N'UTILISE PAS LA MAIN AU COMPLET OU LE BRAS POUR TAPER seulement ton doigt.
+Exerçons-nous.
+Quand tu verras « GO », tape sur la barre d’espacement aussi vite que tu peux.
+Rappelle-toi d’utiliser la position de la main que tu viens d’apprendre. N’UTILISE PAS TA MAIN AU COMPLET OU TON BRAS POUR TAPER, seulement ton doigt. 
 
 Page 5: Begin Practice
-COMMENCE LA PRATIQUE
+COMMENCE À T’EXERCER
 
 Page 6: Countdown
-ESSAI <TRIAL_NUMBER> , UTILISE LA
+ESSAI PRATIQUE <TRIAL_NUMBER> UTILISE LA
 <WH> MAIN AVEC LAQUELLE TU ÉCRIS
-<NWH> MAIN AVEC LAQUELLE TU N'ÉCRIS PAS
-UTILISE LA BONNE POSITION DE LA MAIN LORSQUE TU APPUIES SUR LA BARRE D'ESPACEMENT
+<NWH> MAIN AVEC LAQUELLE TU N’ÉCRIS PAS
+
 Page 7: Practice
 GO!
-ARRÊTE
+ARRÊTE!
 
 Page 8: Begin Test
 COMMENCE LE TEST
 
 Page 9: Countdown
-ESSAI <TRIAL_NUMBER> , UTILISE LA
+ESSAI PRATIQUE <TRIAL_NUMBER> UTILISE LA
 <WH> MAIN AVEC LAQUELLE TU ÉCRIS
-<NWH> MAIN AVEC LAQUELLE TU N'ÉCRIS PAS
-UTILISE LA BONNE POSITION DE LA MAIN LORSQUE TU APPUIES SUR LA BARRE D'ESPACEMENT
+<NWH> MAIN AVEC LAQUELLE TU N’ÉCRIS PAS
+Cet essai va commencer dans
+secondes.
+Utilisez la position de la main correcte lorsque vous appuyez sur la barre d’espace.
 
 Page 8: Test
 GO!
-ARRÊTE
+ARRÊTE!

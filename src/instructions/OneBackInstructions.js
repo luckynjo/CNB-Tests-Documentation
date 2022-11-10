@@ -16,22 +16,22 @@ export const OneBackInstructions = props => {
       <table>
       <tbody>
       <tr>
-      <td colSpan={5}><p>{instructions[0]}</p><br/></td>
+      <td colSpan={5}><p className="instructions-text--small">{instructions[0]}</p></td>
       </tr>
 
       <tr>
-      <td  colSpan={5}><p>{instructions[1]}</p></td>
+      <td  colSpan={5}><p className="instructions-text--small">{instructions[1]}</p></td>
       </tr>
 
       <tr>
-      <td  colSpan={5}><p>{instructions[2]}</p></td>
+      <td  colSpan={5}><p className="instructions-text--small">{instructions[2]}</p></td>
       </tr>
 
       <tr className="demo--1back">
       <td><span> </span></td>
       <td><span> </span></td>
       <td><span> </span></td>
-      <td><p className='green text--center'>{instructions[3]}</p></td>
+      <td><p className='green text--center instructions-text--small'>{instructions[3]}</p></td>
       <td><span> </span></td>
       </tr>
       <tr  className="demo--1back">
@@ -55,7 +55,7 @@ export const OneBackInstructions = props => {
       </tbody>
       </table>
 
-      <p>{instructions[4] || ''}</p>
+      <p className="instructions-text--small">{instructions[4] || ''}</p>
     </div>
     <div className="position-bottom--absolute">
 

@@ -1,0 +1,147 @@
+test: k-spvrt-d
+version: 1.05
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+Penn Verbal Reasoning Test
+Children's Short Form D
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+This is a test of your ability to see the relationship between words.
+Use the mouse to choose the word that best completes each sentence.
+
+Page 3: Begin Practice
+BEGIN PRACTICE
+
+Page 4: Practice-1
+The sentences you see will look like this:
+Kitten is to cat, as puppy is to...
+cow
+bull
+dog
+bird
+How are a kitten and a cat related? Which of the four choices is related to 'puppy' in the same way?
+
+Page 4.1: Feedback Correct
+Amazing!
+
+Page 4.2: Feedback Incorrect
+HINT: A kitten is a baby cat, just as a puppy is a baby __________
+
+Page 5: Practice-2
+Lets try another one:
+Water is to boat as air is to...
+wind
+fly
+bus
+jet
+
+Page 5.1: Feedback Correct
+Great!
+
+Page 5.2: Feedback Incorrect
+HINT: Water is what a boat moves in just as air is what a __________ moves in
+
+Page 6: Practice-3
+And this one:
+Red is to blue as square is to...
+shape
+triangle
+cup
+girl
+
+Page 6.1: Feedback Correct
+Fantastic!
+
+Page 6.2: Feedback Incorrect
+HINT: Red and blue are both colors just as square and __________ are both shapes
+
+Page 7: Instructions
+Fantastic job!
+The test will begin now.
+
+Page 8: Begin Test
+BEGIN TEST
+
+Page 9: Test
+<trials>
+Tired is to exhausted as cold is to…
+wet
+frozen
+ice
+refrigerator
+Water is to popsicle as milk is to...
+sandwich
+cookies
+cereal
+ice cream
+Worm is to bird as mouse is to...
+trap
+cat
+rodent
+cheese
+Front is to rear as east is to...
+direction
+compass
+west
+south
+Hungry is to eat as tired is to ...
+bed
+thirsty
+dark
+sleep
+Traveler is to suitcase as student is to...
+school
+teacher
+pencil
+backpack
+Wood is to rot as iron is to...
+dampness
+rust
+steel
+ore
+Eye is to blind as ear is to...
+deaf
+hear
+see
+touch
+Ladder is to fireman as brush is to...
+hands
+book
+painter
+carpenter
+Cone is to ice cream as bun is to...
+sundae
+fudge
+mustard
+hamburger
+Sleep is to nap as dinner is to...
+restaurant
+bed
+snack
+food
+Referee is to rules as policeman is to...
+handcuffs
+criminal
+laws
+siren
+Verse is to song as chapter is to...
+read
+title
+page
+book
+Bird is to egg as plant is to...
+seed
+leaf
+root
+stem
+Nose is to face as finger is to...
+thumb
+hand
+fingernail
+knuckle

@@ -1,0 +1,130 @@
+test: spvrt
+version: 2.01
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+Penn's Logical Reasoning Test
+Short - Adult
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+This is a test of your verbal logic abilities. You will be asked to perform several verbal analogies.
+You should choose the word that best completes each sentence. Then, using the mouse, click on the chosen word.
+
+Page 3: Begin Practice
+BEGIN PRACTICE
+
+Page 4: Practice-1
+Kitten is to cat, as puppy is to...
+1. cow
+2. bull
+3. dog
+4. bird
+
+Page 4.1: Feedback Correct
+Correct
+
+Page 4.2: Feedback Incorrect
+Incorrect
+
+Page 5: Practice-2
+Red is to blue as square is to...
+1. shape
+2. triangle
+3. cup
+4. girl
+
+Page 5.1: Feedback Correct
+Correct
+
+Page 5.2: Feedback Incorrect
+Incorrect
+
+Page 6: Practice-3
+Word is to sentence as letter is to...
+1. opener
+2. carrier
+3. law
+4. word
+
+Page 6.1: Feedback Correct
+Correct
+
+Page 6.2: Feedback Incorrect
+Incorrect
+
+Page 7: Practice-4
+Period is to season as thyme is to...
+1. time
+2. rosemary
+3. baby
+4. spice
+
+Page 7.1: Feedback Correct
+Correct
+
+Page 7.2: Feedback Incorrect
+Incorrect
+
+Page 8: Practice-5
+Universe is to world as university is to...
+1. hippocampus
+2. class
+3. consciousness
+4. Unitarian
+
+Page 8.1: Feedback Correct
+Correct
+
+Page 8.2: Feedback Incorrect
+Incorrect
+
+Page 9: Begin Test
+BEGIN TEST
+
+Page 10: Test
+<trials>
+Predicament is to carelessness as response is to...
+1. answer
+2. stimulus
+3. effect
+4. good
+Food is to growth as work is to...
+1. employment
+2. entertainment
+3. office
+4. income
+Mistake is to eraser as constitution is to...
+1. preamble
+2. amendment
+3. law
+4. independence
+Front is to rear as bow is to...
+1. arrow
+2. curtsey
+3. stern
+4. fore
+Oration is to chat as banquet is to...
+1. festival
+2. party
+3. ball
+4. snack
+Referee is to rules as conscience is to...
+1. thought
+2. regulations
+3. morals
+4. Freud
+Pressure is to barometer as fever is to...
+1. temperature
+2. heat
+3. thermometer
+4. flu
+Wood is to decay as iron is to...
+1. dampness
+2. rust
+3. steel
+4. ore

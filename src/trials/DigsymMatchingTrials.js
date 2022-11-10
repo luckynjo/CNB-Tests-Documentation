@@ -210,12 +210,16 @@ export class DigsymMatchingTrials extends React.Component{
   findImage(image_url)
   {
 
+
     const clean_url = image_url;
+    const stimuli_path = this.props.test_form === "b" ? "stimuli/digsym_b/" : "stimuli/digsym/";
+    console.log("stimuli path: ", stimuli_path);
+    
     if(this.props.images)
     {
       return this.findAssetFile(clean_url);
     }
-    else return this.props.base_url + "stimuli/digsym/" + clean_url;
+    else return this.props.base_url + stimuli_path + clean_url;
   }
 
   findAssetFile(url)
@@ -231,6 +235,7 @@ export class DigsymMatchingTrials extends React.Component{
   findAssetFileInArray(url)
   {
     let file = null;
+    const stimuli_path = this.props.test_form === "b" ? "stimuli/digsym_b/" : "stimuli/digsym/";
     const assets = this.props.images || [];
     for(let i=0; i < assets.length; i++)
     {
@@ -240,7 +245,7 @@ export class DigsymMatchingTrials extends React.Component{
         continue;
       }
     }
-    return file || this.props.base_url + "stimuli/digsym/" + url;
+    return file || this.props.base_url + stimuli_path + url;
   }
 
   render()
@@ -258,10 +263,10 @@ export class DigsymMatchingTrials extends React.Component{
 
        <div className="digsym-response-buttons flex inline">
        <button className='button digsym-button' onClick={(e) => this.onClick(e, SAME)}>
-        <p>{this.props.same_text}</p>
+        {this.props.same_text}
        </button>
        <button className='button digsym-button' onClick={(e) => this.onClick(e, DIFF)}>
-        <p>{this.props.different_text}</p>
+        {this.props.different_text}
        </button>
        </div>
 

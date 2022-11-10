@@ -7,7 +7,7 @@ export class WordMemoryTrials extends React.Component{
   constructor(props)
   {
     super(props);
-    const stimulus = JSON.parse(this.props.trials[0].stimulus);
+    const stimulus = props.instructions[1];
     this.state = {
       trial: 0,
       word: stimulus,
@@ -36,7 +36,7 @@ export class WordMemoryTrials extends React.Component{
     const rt = new Date() - this.trialTime;
     if(next_trial < trial_count)
     {
-      const stimulus = JSON.parse(this.props.trials[next_trial].stimulus);
+      const stimulus = this.props.instructions[next_trial+1];
       this.setState((prevState, props) => {
         return {trial: next_trial, word: stimulus};
       }, this.start);
@@ -51,7 +51,7 @@ export class WordMemoryTrials extends React.Component{
   {
     const word = this.state.word;
     const buttons = this.props.buttons.map((item, index) => {
-      return (<button className="button memory-button" key={index + 155} onClick={(e) => this.onClick(e, index + 1)}>{item}</button>)
+      return (<button className="button cpw-button" key={index + 155} onClick={(e) => this.onClick(e, index + 1)}>{item}</button>)
     })
     return (
       <div className="container">
@@ -60,7 +60,7 @@ export class WordMemoryTrials extends React.Component{
        <Paragraph text={word} classList="stimulus-text--medium text-center" />
       </div>
 
-      <div className='inline memory-buttons--test'>
+      <div className='cpw-buttons--inline cpw-buttons--test'>
       {buttons}
       </div>
 

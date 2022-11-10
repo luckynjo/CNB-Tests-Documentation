@@ -1,4 +1,4 @@
-test: k-cpw
+test: KCPW_A
 version: 3.01
 language: en_US
 

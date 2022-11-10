@@ -1,0 +1,84 @@
+test: spcptn90
+version: 2.00
+language: de_DE
+
+Page 0: Common
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+Drücken Sie die Leertaste, um fortzufahren
+
+Page 1: Title
+Penn Continuous Performance Test
+Nummer
+HIER KLICKEN, UM FORTZUFAHREN
+
+Page 2: Number Instructions
+Bei diesem Test sehen Sie Linien auf dem Bildschirm.
+Immer, wenn die Linien eine vollständige ZAHL ergeben, drücken Sie schnell die Leertaste.
+Zum Beispiel:
+NICHT DRÜCKEN
+NICHT DRÜCKEN
+DRÜCKEN
+Üben wir das einmal.
+HIER KLICKEN, UM FORTZUFAHREN
+
+Page 3: Begin Practice
+ZAHLENÜBUNG BEGINNEN
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+
+Page 4: Countdown
+Machen Sie sich bereit!
+Die Übung beginnt in
+Verwenden Sie die Leertaste, um zu antworten.
+
+Page 5: Practice
+<number_practice>
+Drücken Sie die Leertaste, um fortzufahren.
+
+Page 5.1: Feedback Correct
+RICHTIG
+
+Page 5.2: Feedback False Negative
+Das war FALSCH.
+Sie haben eine vollständige Zahl gesehen, aber nicht die Leertaste gedrückt.
+Drücken Sie die Leertaste, wenn Sie eine vollständige ZAHL sehen.
+DRÜCKEN
+
+Page 5.3: Feedback False Positive
+Das war FALSCH.
+Sie haben keine vollständige Zahl gesehen.
+Drücken Sie die Leertaste NUR, wenn Sie eine vollständige ZAHL sehen.
+NICHT DRÜCKEN
+NICHT DRÜCKEN
+NICHT DRÜCKEN
+NICHT DRÜCKEN
+DRÜCKEN
+
+Page 5: Number Test Instructions
+Sehr gut!
+Denken Sie daran: Drücken Sie die Leertaste, wenn Sie eine ZAHL sehen.
+Im Test werden Sie andere Zahlen sehen als in der Übung.
+Hier einige Beispiele:
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+
+Page 6: Instructions
+Der Test beginnt jetzt.
+Während des Tests wird Ihnen NICHT gesagt, ob Ihre Antworten RICHTIG oder FALSCH sind.
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+
+Page 7: Begin Test
+TEST BEGINNEN
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+
+Page 8: Countdown
+Achtung!
+Die TEST beginnt in:
+Verwenden Sie die Leertaste, um zu antworten.
+
+Page 9: Test
+<number_test>
+Verwenden Sie die Leertaste, um zu antworten.

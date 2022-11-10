@@ -26,13 +26,13 @@ export const TestLoader = props =>
     //spllt-a-1.00-ff
     // k-er40-d-3.60-ff
     // svolt-3.00-ff
-    axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'sfnb2-2.00-ff', 'language': 'en_US'})
-    //axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
+    //axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'k-er40-d-preschool-3.60-ff', 'language': 'en_US'})
+    axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
           if(response.data.timeline.length > 0)
           {
-            if(response.data.test.test.includes('volt') || response.data.test.test.includes('er40'))
+            if(response.data.test.test.includes('volt') || response.data.test.test.includes('stroop'))
             {
               document.body.classList.remove('dark');
               document.body.classList.add('light');
