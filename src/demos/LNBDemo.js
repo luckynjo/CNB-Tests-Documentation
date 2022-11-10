@@ -229,8 +229,7 @@ export default class LNBDemo extends React.Component
 		return (
 			<>
 			<div className="instructions lnb-demo text--left">
-			 {this.props.content.welcome.map((item, index) => <div key={tracker + index + 1}><p>{item}</p><br/></div>)}
-
+			 {this.props.content.welcome.map((item, index) => <div key={tracker + index + 1}><p className="instructions-text--small">{item}</p><br/></div>)}
 
 			<div className="container arrow--container">
 			<table className="letters align-content-center">

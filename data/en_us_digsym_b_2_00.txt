@@ -1,0 +1,48 @@
+test: digsym-b
+version: 2.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+Digit Symbol Test
+Digit Symbol - Form B
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+At the top of the screen are two rows of boxes. Each box in the top row has a unique design inside. Each box in the bottom row has a unique number inside. Notice that each box with a design inside can be paired with a box with a number inside. During this test a new pair of boxes will appear in the middle of the screen. Your job is to decide if the design and number in this new pair match one of the pairs you see above.
+
+If the new pair matches one of the pairs above, press the "SAME" button. If the new pair does not match one of the pairs above, press the "DIFFERENT" button.
+
+Page 3: Begin Practice
+BEGIN PRACTICE
+
+Page 4: Practice
+SAME
+DIFFERENT
+
+Page 5: Digsym Instructions
+Good!  Now we will begin the test. Remember, your job is to decide if the design and number in the new pair match one of the pairs you see above. Work as quickly as you can while trying to give the correct answer. During the 90-second test, you will not be told if you are right or wrong.
+
+If the new pair matches one of the pairs above, press the “SAME” button. If the new pair does not match one of the pairs above, press the “DIFFERENT” button. Work as accurately and quickly as you can.
+SAME
+DIFFERENT
+
+Page 6: Begin Test
+BEGIN TEST
+
+Page 7: Matching Test
+<matching>
+SAME
+DIFFERENT
+
+Page 8: Instructions
+On the next page, click on the number that was paired with each symbol.
+Try to be as accurate and as fast as you can.
+
+Page 9: Memory Test
+<memory>
+What number went with this symbol?
+Click on the number that was paired with this symbol.

@@ -1,0 +1,49 @@
+test: digsym-b
+version: 2.00
+language: fr_CA
+
+Page 0: Common
+CLIQUE ICI POUR CONTINUER
+RETOUR
+
+Page 1: Title
+Test des symboles de chiffres
+Symbole de chiffres - Formulaire B
+CLIQUE ICI POUR CONTINUER
+
+Page 2: Instructions
+En haut de l'écran se trouvent deux rangées de cases. Chaque case de la rangée supérieure contient un dessin unique. Chaque case de la rangée inférieure contient un seul chiffre. Remarque que chaque case contenant un dessin peut être associée à une case contenant un chiffre. Pendant ce test, une nouvelle paire de cases apparaîtra au milieu de l'écran. Ta tâche consiste à déterminer si le dessin et le chiffre de cette nouvelle paire correspondent à l'une des paires que tu vois ci-dessus.
+
+Si la nouvelle paire correspond à l'une des paires ci-dessus, appuie sur le bouton « IDENTIQUE ». Si la nouvelle paire ne correspond pas à l'une des paires ci-dessus, appuie sur le bouton « DIFFÉRENTE ».
+
+Page 3: Begin Practice
+COMMENCE À T’EXERCER
+
+Page 4: Practice
+IDENTIQUE 
+DIFFÉRENTE
+
+Page 5: Digsym Instructions
+Bien! Nous allons maintenant passer au test. N'oublie pas que ton travail consiste à décider si le dessin et le chiffre de la nouvelle paire correspondent à l'une des paires que tu vois ci-dessus. Travaille aussi vite que possible tout en essayant de donner la bonne réponse. Pendant le test de 90 secondes, on ne te dira pas si tu as raison ou tort.
+
+Si la nouvelle paire correspond à l'une des paires ci-dessus, appuie sur le bouton « IDENTIQUE ». Si la nouvelle paire ne correspond pas à l'une des paires ci-dessus, appuie sur le bouton « DIFFÉRENTE ». Travaillez aussi précisément et rapidement que possible.
+
+IDENTIQUE 
+DIFFÉRENTE
+
+Page 6: Begin Test
+COMMENCE LE TEST
+
+Page 7: Matching Test
+<matching>
+IDENTIQUE 
+DIFFÉRENTE
+
+Page 8: Instructions
+Sur la page suivante, cliquez sur le chiffre qui a été associé à chaque symbole.
+Essayez d’être aussi précis et rapide que possible.
+
+Page 9: Memory Test
+<memory>
+Quel chiffre allait avec ce symbole?
+Clique sur le chiffre qui était associé à ce symbole.

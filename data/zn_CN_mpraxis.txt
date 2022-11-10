@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.05
+language: zn_CN
+
+Page 0: Common
+点击此处继续
+返回
+
+Page 1: Title
+动作练习测验
+点击此处继续
+
+Page 2: Instructions
+这将测验您控制鼠标的能力。
+您会看到一些绿色方框，一次显示一个方框。请把鼠标移到每个方框上，并点击一次。
+
+Page 3: Begin Practice
+开始练习
+
+Page 4: Practice
+点击绿色方框继续
+
+Page 5: Instructions
+这次您将有5秒钟的时间点击每个方框。请尽力在每个方框消失前点击方框。
+
+Page 6: Begin Test
+开始测验
+
+Page 7: Test
+点击绿色方框继续

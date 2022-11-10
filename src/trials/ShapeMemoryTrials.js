@@ -61,7 +61,7 @@ export class ShapeMemoryTrials extends React.Component{
     {
       return this.findAssetFile(clean_url);
     }
-    else return this.props.base_url + "stimuli/svolt/" + clean_url;
+    else return this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + clean_url;
   }
 
   findAssetFile(url)
@@ -86,7 +86,7 @@ export class ShapeMemoryTrials extends React.Component{
         continue;
       }
     }
-    return file || this.props.base_url + "stimuli/svolt/" + url;
+    return file || this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + url;
   }
 
   render()

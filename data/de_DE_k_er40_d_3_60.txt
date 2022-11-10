@@ -1,0 +1,51 @@
+test: k-er40
+version: 3.60
+language: de_DE
+
+Page 0: Common
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+
+Page 1: Title
+Penn Emotion Recognition Test
+ER40 Form D
+HIER KLICKEN, UM FORTZUFAHREN
+
+Page 2: Instructions
+Bei diesem Test sehen Sie einige Gesichter. Schauen Sie sich jedes Gesicht genau an und versuchen Sie zu entscheiden, was die Person fühlt.
+Klicken Sie auf das Wort, das am besten beschreibt, wie sich die Person fühlt.
+
+Page 3: Instructions
+Wenn die Person kein Gefühl zeigt, klicken Sie auf „Kein Gefühl“.
+Versuchen wir es mit einem Übungsgesicht...
+
+Page 4: Begin Practice
+ÜBUNG BEGINNEN
+
+Page 5: Practice
+Welches Gefühl gibt dieses Gesicht zu erkennen?
+GLÜCKLICH
+TRAURIG
+WÜTEND
+ÄNGSTLICH
+KEIN GEFÜHL
+
+Page 5.1: Feedback Correct
+Sehr gut!
+
+Page 5.2: Feedback Incorrect
+Das ist nicht ganz richtig. Bitte versuchen Sie es noch einmal.
+
+Page 6: Instructions
+Der Test beginnt jetzt. Denken Sie daran, sich jedes Gesicht genau anzuschauen.
+Seien Sie so schnell und so genau wie möglich.
+
+Page 7: Begin Test
+TEST BEGINNEN
+
+Page 8: Test
+GLÜCKLICH
+TRAURIG
+WÜTEND
+ÄNGSTLICH
+KEIN GEFÜHL

@@ -14,14 +14,14 @@ export const ZeroBackInstructions = props => {
       {instructions.map((instruction, index) => {
         if(instruction !== continue_button_text && instruction !== back_button_text && index < instructions.length - 1)
         {
-          return <div key={index*10 + 5}><p className="instructions-text--medium">{instruction}</p><br/></div>
+          return <div key={index*10 + 5}><p className="instructions-text--small">{instruction}</p><br/></div>
         }
       })}
       <br/>
       <img src={Xr} className="stimulus--small center--horizontal" alt="Press"/>
       <br/>
       <br/>
-      <p>{instructions[instructions.length - 1]}</p>
+      <p className="instructions-text--small">{instructions[instructions.length - 1]}</p>
 
     </div>
     <div className="position-bottom--absolute">

@@ -1,0 +1,49 @@
+test: digsym-b
+version: 2.00
+language: it_IT
+
+Page 0: Common
+FAI CLIC QUI PER CONTINUARE
+VAI INDIETRO
+
+Page 1: Title
+Test di simbolo della cifra
+Simbolo della cifra – Modulo B
+FAI CLIC QUI PER CONTINUARE
+
+Page 2: Instructions
+In cima allo schermo ci sono due file di caselle. All’interno di ciascuna casella nella fila superiore c’è un segno grafico unico. All’interno di ciascuna casella nella fila inferiore c’è un numero unico. Nota che ciascuna casella contenente un segno grafico può essere associata a una casella contenente un numero. Durante questo test, al centro dello schermo comparirà un nuovo paio di caselle. Devi decidere se il segno grafico e il numero che si trovano in questo nuovo paio corrispondono a una delle paia che vedi sopra.
+
+Se il nuovo paio corrisponde a una delle paia sopra, premi il pulsante IDENTICO.  Se il nuovo paio non corrisponde a una delle paia sopra, premi il pulsante DIVERSO:
+
+Page 3: Begin Practice
+INIZIA A ESERCITARTI
+
+Page 4: Practice
+IDENTICO
+DIVERSO
+
+Page 5: Digsym Instructions
+Bene! Ora inizierai il test. Ricordati che devi decidere se il segno grafico e il numero che si trovano nel nuovo paio corrispondono a una delle paia che vedi sopra. Procedi quanto più velocemente puoi mentre cerchi di dare la risposta corretta. Durante il test, che durerà 90 secondi, non ti sarà detto se le risposte sono corrette o sbagliate.
+
+Se il nuovo paio corrisponde a una delle paia sopra, premi il pulsante IDENTICO.  Se il nuovo paio non corrisponde a una delle paia sopra, premi il pulsante DIVERSO:
+
+IDENTICO
+DIVERSO
+
+Page 6: Begin Test
+INIZIA IL TEST
+
+Page 7: Matching Test
+<matching>
+IDENTICO
+DIVERSO
+
+Page 8: Instructions
+Nella prossima pagina, clicca sul numero che era accoppiato ad ogni simbolo.
+Cerca di essere il più accurato e veloce possibile
+
+Page 9: Memory Test
+<memory>
+Quale numero era associato a questo simbolo?
+Fai clic sul numero che era associato a questo simbolo.

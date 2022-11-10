@@ -1,0 +1,87 @@
+test: spllt-a
+version: 1.00
+language: de_DE
+
+Page 0: Common
+HIER KLICKEN, UM FORTZUFAHREN
+ZURÜCK
+SONSTIGES
+WEITER ZUM NÄCHSTEN VERSUCH
+
+Page 1: Title
+Penn List Learning Test (kurz)
+Kurzform
+HIER KLICKEN, UM FORTZUFAHREN
+
+Page 2: Instructions
+(Anweisungen 1)
+
+(Für den Testleiter: Drehen Sie den Computer jetzt aus dem Blickfeld des Teilnehmers weg. Während des gesamten Tests darf der Teilnehmer den Computerbildschirm nicht sehen. Lesen Sie dem Teilnehmer zuerst die folgenden Anweisungen vor. Lesen Sie dann die Wörter in den Listen laut vor, während die gelbe Markierung über jedes einzelne Wort fährt.)
+
+Ich lese Ihnen jetzt eine Liste von Wörtern vor. Hören Sie gut zu, denn wenn ich fertig bin, möchte ich, dass Sie so viele der Begriffe wie möglich wiederholen. Es spielt keine Rolle, in welcher Reihenfolge sie sich befinden – zählen Sie mir einfach so viele Begriffe auf, wie Sie können. Hier ist die Liste:
+
+(Seien Sie bereit, die Liste der Wörter vorzulesen)
+
+Page 3: Slideshow
+<slideshow>
+LÖWE
+SMARAGD
+ZELT
+LEHRER
+SAPHIR
+ZAHNARZT
+HOTEL
+PFERD
+INGENIEUR
+OPAL
+TIGER
+HÖHLE
+PROFESSOR
+PERLE
+KUH
+HÜTTE
+
+Page 4: Test
+<trials>
+LÖWE
+PFERD
+TIGER
+KUH
+ZELT
+HOTEL
+HÖHLE
+HÜTTE
+SMARAGD
+SAPHIR
+OPAL
+PERLE
+LEHRER
+ZAHNARZT
+INGENIEUR
+PROFESSOR
+
+Page 5: Instructions
+(Anweisungen 2)
+
+Ich wiederhole jetzt die Liste der Wörter. Ich möchte wieder, dass Sie so viele Begriffe wie möglich in beliebiger Reihenfolge wiederholen, einschließlich der Wörter, die Sie mir vielleicht schon genannt haben. Hier ist die Liste:
+
+(Seien Sie bereit, die Liste der Wörter vorzulesen)
+
+Page 6: Slideshow
+<slideshow>
+
+Page 7: Test
+<trials>
+
+Page 8: Instructions
+(Anweisungen 3)
+
+Ich wiederhole jetzt die Liste der Wörter. Ich möchte wieder, dass Sie so viele Begriffe wie möglich in beliebiger Reihenfolge wiederholen, einschließlich der Wörter, die Sie mir vielleicht schon genannt haben. Hier ist die Liste:
+
+(Seien Sie bereit, die Liste der Wörter vorzulesen)
+
+Page 9: Slideshow
+<slideshow>
+
+Page 10: Test
+<trials>

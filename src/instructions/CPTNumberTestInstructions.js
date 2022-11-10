@@ -20,10 +20,11 @@ export const CPTNumberTestInstructions = props => {
         // Ignore the continue and goback text.
         if(index < instructions.length - 2)
         {
-          return <div key={index + 15}><p>{instruction}</p><br/></div>
+          return <div key={index + 15}><p className="instructions-text--small">{instruction}</p></div>
         }
       })}
 
+      <br/>
       <br/>
       <div className="flex center--horizontal">
       <img src={num4} alt="8" className= 'center--horizontal img-test-demo'/>

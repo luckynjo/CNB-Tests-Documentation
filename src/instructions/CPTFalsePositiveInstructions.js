@@ -15,7 +15,6 @@ Instructions renders text / images / html content that is defined in a test and 
 */
 export const CPTFalsePositiveInstructions = props => {
   const {instructions, onContinue, spacebar_text, ...rest} = props;
-  console.log('les instructions ', instructions);
 
   let [pressed, setPressed] = useState(false);
 
@@ -57,9 +56,10 @@ export const CPTFalsePositiveInstructions = props => {
       {instructions.map((instruction, index) => {
         if(index < 3)
         {
-          return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
+          return <div key={index*10 + 5}><p className="instructions-text--small">{instruction}</p></div>
         }
       })}
+      <br/>
 
       <div className="center--horizontal">
       <div className="inline incorrect-response--multiple">

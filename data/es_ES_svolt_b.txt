@@ -1,0 +1,44 @@
+test: svolt-b
+version: 3.00
+language: es_ES
+
+Page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+
+Page 1: Title
+Prueba de aprendizaje de objetos visuales
+Memoria Inmediata Breve
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Instructions
+Ahora  verá aparecer algunas figuras. Intente recordar la figura completa.
+Más tarde, tendrá que reconocer estas figuras en un grupo más grande de figuras.
+
+Page 3: Begin Practice
+COMENZAR LA PRESENTACIÓN
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Ahora verá más figuras. Algunas son nuevas, otras ya las ha visto.
+Decida si ha visto cada una de estas figuras antes.
+SEGURO QUE SÍ
+PROBABLEMENTE SI
+PROBABLEMENTE NO
+SEGURO QUE NO
+Haga clic en SEGURO QUE SÍ si está SEGURO de HABERLA visto.
+Haga clic en PROBABLEMENTE SÍ si CREE que la HA visto.
+Haga clic en PROBABLEMENTE NO si CREE que NO LA HA visto.
+Haga clic en SEGURO QUE NO si está SEGURO de que NO LA HA visto.
+
+Page 6: Begin Test
+COMENZAR LA PRUEBA
+
+Page 7: Test
+<trials>
+SEGURO QUE SÍ
+PROBABLEMENTE SI
+PROBABLEMENTE NO
+SEGURO QUE NO

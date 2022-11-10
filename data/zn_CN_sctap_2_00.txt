@@ -1,0 +1,58 @@
+test: sctap
+version: 2.00
+language: zn_CN
+
+Page 0: Common
+点击此处继续
+返回
+按空格键继续
+<WH> 书写惯用手
+<NWH> 非书写惯用手
+
+Page 1: Title
+简短计算机手指-敲击任务
+简式
+点击此处继续
+
+Page 2: Handedness trial
+这是对您手指速度的测验。
+请尽可能快地敲击空格键。
+每次试验后您将换手。
+使用鼠标选择您的书写惯用手。
+<Handedness> 左手
+<Handedness> 右手
+
+Page 3: Demo Instructions
+将手放在您在下面看到的位置。
+
+Page 4: Instructions
+让我们来练习。
+当您看到“开始”时，请尽可能快地敲击空格键。
+请使用您刚刚看到的放手的位置。不要用整个手或手臂来敲击——只用手指。
+
+Page 5: Begin Practice
+开始练习
+
+Page 6: Countdown
+练习试验 <TRIAL NUMBER> 使用您的
+<WH> 书写惯用手
+<NWH> 非书写惯用手
+
+Page 7: Practice
+开始！
+停
+
+Page 8: Begin Test
+开始测验
+
+Page 9: Countdown
+试验 <TRIAL NUMBER> 使用您的
+<WH> 书写惯用手
+<NWH> 非书写惯用手
+试验将在倒计时结束时开始
+秒
+请把手放在正确位置、敲击空格键
+
+Page 8: Test
+开始！
+停

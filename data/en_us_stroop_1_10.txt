@@ -1,0 +1,123 @@
+test: stroop
+version: 1.10
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+Stroop Task
+Form A, 54 items
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+Instructions:
+This is a test to see how well you can control your attention.
+In this test, you will see different kinds of words or strings of X's printed in different colors (red, blue, and green). Always identify the COLOR OF WHAT YOU SEE and ignore what the word says. We want you to identify each color as fast as you can.
+
+Page 3: Demo Hand Instructions
+You will use the "V", "B", and "N" keys on the bottom row of the keyboard to make a response. Rest your first three fingers (index, middle, and ring fingers) of your hand on the keys, covering the letters but not pressing any key until you want to make a response.
+The "V" key stands for the color RED.
+The "B" key stands for the color BLUE.
+The "N" key stands for the color GREEN.
+Are you using your right or left hand to do this test? Click on one of the buttons below to continue.
+LEFT
+RIGHT
+
+Page 4: Begin Practice
+BEGIN PRACTICE
+
+Page 5: Demo Key Instructions
+Now rest your fingers on the "V", "B", and "N" keys and press each one to see what it tells you.
+The V key is for the color RED.
+The B key is for the color BLUE.
+The N key is for the color GREEN.
+
+Page 6: Crosshair
+<crosshair>
+
+Page 7: 1-Practice
+Now let's try to practice, with just a row of X's. Tell us the COLOR YOU SEE each time - the color that the X's are printed in. Try to respond as fast as you can to each trial.
+XXXXXX
+XXXXXX
+XXXXXX
+
+Page 8: 2-Practice
+Very good. Now try the same thing with names of colors. Remember, ALWAYS tell us the COLOR THAT YOU SEE and ignore what the word says. If you make a mistake, hit the key for the correct color.The test will not go on to the next trial until you get it correct.
+RED
+RED
+RED
+
+Page 9: 3-Practice
+Excellent. Now try it with different words. Again, tell us the COLOR THAT YOU SEE.
+dog
+cat
+car
+
+Page 10: Instructions
+Very good. Now let’s go on to the actual test. Again, in the test, you will see color names as the words on the screen. Throughout the whole test, tell us the COLOR THAT YOU SEE and ignore what the words say.
+Remember, if you make mistake, you have to find the correct key to hit to move the test along.
+
+Page 11: Begin Test
+BEGIN TEST
+
+Page 12: Crosshair
+<crosshair>
+
+Page 13: Test
+<trials>
+RED
+GREEN
+RED
+GREEN
+RED
+GREEN
+BLUE
+BLUE
+RED
+BLUE
+GREEN
+BLUE
+BLUE
+GREEN
+BLUE
+GREEN
+RED
+GREEN
+BLUE
+RED
+BLUE
+RED
+GREEN
+BLUE
+BLUE
+RED
+GREEN
+RED
+BLUE
+GREEN
+BLUE
+RED
+GREEN
+RED
+BLUE
+RED
+GREEN
+GREEN
+BLUE
+BLUE
+RED
+RED
+GREEN
+GREEN
+BLUE
+GREEN
+BLUE
+RED
+BLUE
+RED
+BLUE
+GREEN
+BLUE
+GREEN
