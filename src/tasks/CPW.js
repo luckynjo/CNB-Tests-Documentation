@@ -120,6 +120,7 @@ export default class CPW extends React.Component
   // Task is completed, submit responses.
   onTrialsComplete(responses)
   {
+    console.log('Trials completed with responses ', responses);
     this.setState((prevState, props) => {
       return {assessment_complete: true, responses: responses};
     });
