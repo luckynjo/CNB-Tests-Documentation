@@ -1,4 +1,4 @@
-test: svolt
+test: svolt-b
 version: 3.00
 language: es_ES
 

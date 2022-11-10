@@ -84,11 +84,13 @@ export class DigsymMemoryTrials extends React.Component{
   findImage(image_url)
   {
     const clean_url = image_url;
+    const stimuli_path = this.props.test_form === "b" ? "stimuli/digsym_b/" : "stimuli/digsym/";
+    console.log("stimuli path: ", stimuli_path);
     if(this.props.images)
     {
       return this.findAssetFile(clean_url);
     }
-    else return this.props.base_url + "stimuli/digsym/" + clean_url;
+    else return this.props.base_url + stimuli_path + clean_url;
   }
 
   findAssetFile(url)
@@ -104,6 +106,7 @@ export class DigsymMemoryTrials extends React.Component{
   findAssetFileInArray(url)
   {
     let file = null;
+    const stimuli_path = this.props.test_form === "b" ? "stimuli/digsym_b/" : "stimuli/digsym/";
     const assets = this.props.images || [];
     for(let i=0; i < assets.length; i++)
     {
@@ -113,7 +116,7 @@ export class DigsymMemoryTrials extends React.Component{
         continue;
       }
     }
-    return file || this.props.base_url + "stimuli/digsym/" + url;
+    return file || this.props.base_url + stimuli_path + url;
   }
 
   render()
