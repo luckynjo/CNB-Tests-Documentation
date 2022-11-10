@@ -1,4 +1,4 @@
-test: spllt-b
+test: spllt-c
 version: 1.00
 language: en_US
 
@@ -24,41 +24,41 @@ I'm going to read a list of words. Listen carefully, because when I'm done, I wa
 
 Page 3: Slideshow
 <slideshow>
-TRUMPET
-COAL
-SUGAR
-LETTUCE
-KEROSENE
-BEAN
-GARLIC
-VIOLIN
-POTATO
-WOOD
-CLARINET
-VANILLA
-CORN
-GASOLINE
-FLUTE
-CINNAMON
+EAGLE
+COPPER
+WRENCH
+TENNIS
+ALUMINUM
+GOLF
+SAW
+PIGEON
+SOCCER
+BRONZE
+OWL
+DRILL
+SOFTBALL
+STEEL
+CANARY
+SANDER
 
 Page 4: Test
 <trials>
-TRUMPET
-VIOLIN
-CLARINET
-FLUTE
-SUGAR
-GARLIC
-VANILLA
-CINNAMON
-COAL
-KEROSENE
-WOOD
-GASOLINE
-LETTUCE
-BEAN
-POTATO
-CORN
+EAGLE
+PIGEON
+OWL
+CANARY
+COPPER
+ALUMINUM
+BRONZE
+STEEL
+WRENCH
+SAW
+DRILL
+SANDER
+TENNIS
+GOLF
+SOCCER
+SOFTBALL
 
 Page 5: Instructions
 (Instructions 2)
@@ -68,7 +68,7 @@ I'm going to repeat the list of words. Again, I want you to say back as many of 
 (Be ready to read the list of words.)
 
 Page 6: Slideshow
-<Slideshow>
+<slideshow>
 
 Page 7: Test
 <trials>

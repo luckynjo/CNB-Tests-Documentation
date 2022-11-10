@@ -1,0 +1,89 @@
+test: spllt-b
+version: 1.00
+language: fr_CA
+
+Page 0: Common
+CLIQUE ICI POUR CONTINUER
+RETOUR À LA PAGE PRÉCÉDENTE
+AUTRE
+PASSE AU PROCHAIN ESSAI
+
+
+Page 1: Title
+Test court d’apprentissage de liste Penn
+Formulaire court
+CLIQUE ICI POUR CONTINUER
+
+Page 2: Instructions
+(Directives 1)
+
+(Administrateur du test : tournez maintenant l’ordinateur hors de la vue du participant ou de la participante. Le participant ou la participante ne doit pas voir l’écran de l’ordinateur pendant toute la durée du test. Lisez les directives ci-dessous au participant ou à la participante, puis lisez les mots des listes à voix haute au fur et à mesure que le surligneur jaune passe par-dessus chacun.)
+
+Je vais lire une liste de mots. Écoute attentivement parce que quand j’aurai fini, tu devras en répéter autant que tu peux. L’ordre n’est pas important, tu dois juste en répéter le plus possible. Voici la liste:
+
+(Soyez prête ou prêt à lire la liste de mots.)
+
+Page 3: Slideshow
+<slideshow>
+TROMPETTE
+CHARBON
+SUCRE
+LAITUE
+PÉTROLE
+HARICOT
+AIL
+VIOLON
+PATATE
+BOIS
+CLARINETTE
+VANILLE
+MAÏS
+ESSENCE
+FLÛTE
+CANNELLE
+
+Page 4: Test
+<trials>
+TROMPETTE
+VIOLON
+CLARINETTE
+FLÛTE
+CHARBON
+PÉTROLE
+BOIS
+ESSENCE
+SUCRE
+AIL
+VANILLE
+CANNELLE
+LAITUE
+HARICOT
+PATATE
+MAÏS
+
+
+Page 5: Instructions
+(Directives 2)
+
+Je vais répéter la liste de mots. Encore une fois, tu dois en répéter le plus possible, dans n’importe quel ordre, y compris des mots que tu m’as déjà dit. Voici la liste:
+
+(Soyez prête ou prêt à lire la liste de mots.)
+
+Page 6: Slideshow
+<slideshow>
+
+Page 7: Test
+<trials>
+
+Page 8: Instructions
+(Directives 3)
+
+Je vais répéter la liste de mots. Encore une fois, tu dois en répéter le plus possible, dans n’importe quel ordre, y compris des mots que tu m’as déjà dit. Voici la liste.
+
+(Soyez prête ou prêt à lire la liste de mots.)
+
+Page 9: Slideshow
+<slideshow>
+
+Page 10: Test
+<trials>
