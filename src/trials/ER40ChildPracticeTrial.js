@@ -152,7 +152,7 @@ export class ER40ChildPracticeTrial extends React.Component{
     const practiceInstruction = this.props.buttons[0];
     const buttons = this.props.buttons.map((item, index) => {
       if(index > 0){
-        return (<div className="button er40--response-button" key={index + 155} onClick={(e) => this.onPracticeResponse(e, index)}><img src={this.emoji_array[index-1]} height="80" width = "80"/></div>)
+        return (<div className="button er40--response-button-reg" key={index + 155} onClick={(e) => this.onPracticeResponse(e, index)}><img src={this.emoji_array[index-1]} height="80" width = "80"/></div>)
       }
     })
 
