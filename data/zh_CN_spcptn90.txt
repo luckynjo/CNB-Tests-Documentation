@@ -4,7 +4,8 @@ language: zh_CN
 
 Page 0: Common
 點擊這裡繼續
-返回 按空格鍵繼續
+返回按空格鍵繼續
+按空格鍵繼續
 
 Page 1: Title
 賓大持續性操作能力測試-簡短版
@@ -75,7 +76,7 @@ Page 7: Begin Test
 
 Page 8: Countdown
 準備好!
-練習即將開始：
+練習即將開始:
 使用空格鍵來回應
 
 Page 9: Test

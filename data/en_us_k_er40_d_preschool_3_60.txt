@@ -50,7 +50,7 @@ FEAR
 NO FEELING
 
 Page 9.1: Feedback Correct
-Yaay! Good job! Try another one.
+Yay! Good job! Try another one.
 
 Page 9.2: Feedback Incorrect
 That's not quite right. Please try again.
