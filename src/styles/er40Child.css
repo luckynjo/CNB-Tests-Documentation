@@ -48,7 +48,7 @@ margin-top:8px;
    justify-content: center;
 }
 
-.er40--response-button-reg{
+.er40--response-button-child{
    background-color:white;
    color:white;
    width:80px;
@@ -65,7 +65,7 @@ margin-top:8px;
    justify-content: center;
 }
 
-.er40--response-button-reg:hover{
+.er40--response-button-child:hover{
    background-color:white;
    scale: 1.4;
    color:white;
@@ -229,7 +229,7 @@ left: 50%;
 transform: translate(-50%,-50%);
 }
 
-div.responses-reg{
+div.responses-child{
   width: 200px;
   margin-top: 22px;
 }
