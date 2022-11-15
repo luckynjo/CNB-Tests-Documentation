@@ -111,7 +111,7 @@ export class ER40ChildTrials extends React.Component{
   {
     const stimulus = this.state.stimulus;
     const buttons = this.props.buttons.map((item, index) => {
-      return (<div className="button er40--response-button" key={index + 155} onClick={(e) => this.onClick(e, index+1)}><img src={this.emoji_array[index]} height="80" width = "80"/></div>)
+      return (<div className="button er40--response-button-child" key={index + 155} onClick={(e) => this.onClick(e, index+1)}><img src={this.emoji_array[index]} height="80" width = "80"/></div>)
     })
 
     return (
@@ -129,7 +129,7 @@ export class ER40ChildTrials extends React.Component{
                 </div>
               </td>
               <td>
-                <div className="responses">
+                <div className="responses-child">
                   {buttons}
                 </div>
               </td>
