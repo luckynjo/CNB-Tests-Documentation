@@ -1,36 +1,35 @@
-import React, { useRef, createRef, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import StaticCanvas from '../components/StaticCanvas.js';
+import CPTStimulus from '../stimuli/CPTStimulus.js';
+import {TableInstructions} from '../instructions/TableInstructions.js';
 import {Randomizer} from '../utils/Randomizer.js';
 import CNBResponse from './CNBResponse.js';
-import NBackStimulus from '../stimuli/NBackStimulus.js';
-// https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258
-// https://medium.com/@martin.crabtree/react-creating-an-interactive-canvas-component-e8e88243baf6
 
 
+const TRIAL_DURATION = 1000;
+const STIM_DURATION = 500; //300
 const RESPONSE_NOT_ALLOWED = -2;
 const START = 0;
 const STIM = 1;
-const ISI = 2;
+const ISI = 1.5; //2
 const STOPPED = 3;
 const FEEDBACK = 4;
-const IMG_REGEX = /\.?(png|gif|jpe?g)/ig;
 
-export default class NBackTrials extends React.Component
+export class CPTChildTrials extends React.Component
 {
   constructor(props)
   {
     super(props);
-    //console.log('Trials are ', props.trials,  ' section_type ', props.section_type);
-    //const x = props.section_type.replace('<', '').replace('>', '');
-    const trials = props.trials.filter(trial => trial.trial_section === props.section_type);
-    //console.log('The trials are ', trials);
+    const questions = Randomizer(this.props.trials, props.practice ? 2 : 3, true);
     const index = 0;
-    const stimulus = new NBackStimulus(this.findImage(trials[index].stimulus));
+    const trial = questions[index];
+    const stimulus = new CPTStimulus(this.findImage(this.props.trials[trial].stimulus));
 
     this.state = {
       index:index,
       stimulus: stimulus,
+      questions: questions,
       starttime: new Date(),
-      trials: trials,
       responses: []
     }
 
@@ -42,7 +41,7 @@ export default class NBackTrials extends React.Component
     this.nextTestSlide = this.nextTestSlide.bind(this);
     this.nextPracticeSlide = this.nextPracticeSlide.bind(this);
     this.nextSlide = this.nextSlide.bind(this);
-    this.duration = 2500;
+    this.duration = 1000;
     this.correct = 0;
   }
 
@@ -129,7 +128,7 @@ export default class NBackTrials extends React.Component
     const duration = timestamp - this.trialTimeStamp;
     if(this.task === STIM)
     {
-      if(duration >= 500)
+      if(this.props.form === "a" && duration >= 1000 || this.props.form === "b" && duration >= 500) //300
       {
         this.task = ISI;
       }
@@ -138,7 +137,7 @@ export default class NBackTrials extends React.Component
     }
     else if(this.task === ISI)
     {
-      if(duration >= this.duration)
+      if(duration >= 2000) //1000
       {
         this.task = STOPPED;
         this.stop();
@@ -199,22 +198,23 @@ export default class NBackTrials extends React.Component
   onPracticeResponse(e)
   {
     this.responded = true;
+    const questions = this.state.questions;
     const index = this.state.index;
-    const trial = this.state.trials[index];
+    const trial = this.props.trials[questions[index]];
     if(!trial.correct_response)
     {
       this.stop();
       window.removeEventListener("keydown", this.keyDown, false);
       this.correct = 0;
-      this.props.onPracticeFailed("False_Positive", this.props.section_type);
+      this.props.onPracticeFailed("False_Positive");
     }
 
     this.correct = this.correct + 1;
-    /**if(this.correct === 3)
+    if(this.correct === 3)
     {
       this.stop();
       this.props.onPracticeComplete();
-    }*/
+    }
   }
 
 
@@ -226,8 +226,9 @@ export default class NBackTrials extends React.Component
       this.responded = true;
       this.lastResponse = e.keyCode;
       const duration = new Date() - this.state.starttime;
+      const questions = this.state.questions;
       const index = this.state.index;
-      const trial = this.state.trials[index];
+      const trial = this.props.trials[questions[index]];
       //console.log('Recording response for question ', trial.question_number);
       let responses = this.state.responses;
       // Must deal with question id here somehow
@@ -257,8 +258,9 @@ export default class NBackTrials extends React.Component
     if(this.responded === false)
     {
       const duration = new Date() - this.state.starttime;
+      const questions = this.state.questions;
       const index = this.state.index;
-      const trial = this.state.trials[index];
+      const trial = this.props.trials[questions[index]];
       //console.log('Recording response for question ', trial.question_number);
       let responses = this.state.responses;
       responses.push(new CNBResponse(trial.question_number, 0, ""));
@@ -275,14 +277,15 @@ export default class NBackTrials extends React.Component
   nextPracticeSlide()
   {
     this.stop();
+    const questions = this.state.questions;
     const index = this.state.index;
-    const trial = this.state.trials[index];
+    const trial = this.props.trials[questions[index]];
     if(trial.correct_response && !this.responded)
     {
       this.stop();
       this.correct = 0;
       window.removeEventListener("keydown", this.keyDown, false);
-      this.props.onPracticeFailed("False_Negative", this.props.section_type);
+      this.props.onPracticeFailed("False_Negative");
     }
     else
     {
@@ -297,43 +300,32 @@ export default class NBackTrials extends React.Component
   nextTrial()
   {
 
+    const questions = this.state.questions;
     const next_index = this.state.index + 1;
-    const trial_count = this.state.trials.length;
+    const trial_count = questions.length;
     this.stop();
 
     if(next_index < trial_count)
     {
-      const stimulus = new NBackStimulus(this.findImage(this.state.trials[next_index].stimulus));
+      const stimulus = new CPTStimulus(this.findImage(this.props.trials[questions[next_index]].stimulus));
       this.setState((prevState, props) => {
         return {index: next_index, stimulus: stimulus, starttime: new Date()};
       }, this.start);
     }
     else
     {
-      if(this.props.practice)
-      {
-        this.props.onPracticeComplete();
-      }
-      else
-      {
-        this.props.onTrialsComplete(this.state.responses);
-      }
+      this.props.onTrialsComplete(this.state.responses);
     }
   }
 
   findImage(image_url)
   {
     const clean_url = JSON.parse(image_url);
-    if(!clean_url.match(IMG_REGEX))
-    {
-      return clean_url;
-    }
-
     if(this.props.images)
     {
       return this.findAssetFile(clean_url);
     }
-    else return this.props.base_url + "stimuli/flnb/" + clean_url;
+    else return this.props.base_url + "stimuli/cptChild/" + clean_url;
   }
 
   findAssetFile(url)
@@ -361,7 +353,7 @@ export default class NBackTrials extends React.Component
         continue;
       }
     }
-    return file || this.props.base_url + "stimuli/flnb/" + url;
+    return file || this.props.base_url + "stimuli/cptChild/" + url;
   }
 
   render()

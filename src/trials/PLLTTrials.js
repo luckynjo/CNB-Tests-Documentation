@@ -18,11 +18,11 @@ export class PLLTTrials extends React.Component{
 
   onResponse(evt, data)
   {
-    console.log('Response ', data);
+    //console.log('Response ', data);
     let responses = this.state.responses;
     const qid = this.state.stimulus.question_number;
     const count = this.state.responseCount + 1;
-    console.log('Response count ', count);
+    //console.log('Response count ', count);
     let trial_completed = false;
 
     if(data === "OTHER")
@@ -82,8 +82,6 @@ export class PLLTTrials extends React.Component{
     const count = responses.length;
     const wordsLeft = responses && responses.slice(0, count/2) || [];
     const wordsRight = responses && responses.slice(count/2) || [];
-    console.log('Given ', this.state.stimulus.stimulus);
-    console.log('Parsed ', JSON.parse(this.state.stimulus.stimulus));
     const response_values = JSON.parse(this.state.stimulus.stimulus);
     const responsesLeft = response_values.slice(0, count/2) || [];
     const responsesRight = response_values.slice(count/2) || [];

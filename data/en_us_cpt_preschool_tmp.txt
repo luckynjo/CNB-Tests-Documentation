@@ -1,0 +1,90 @@
+test: cpt-preschool
+version: 1.00
+language: en_US
+
+Page 0: Common
+Click here to continue
+Go back
+
+Page 1: Title
+Circle Task
+Shape
+Click here to continue
+
+Page 2: Shape Instructions
+This task is called the circle task!
+Here is a circle.
+Every time you see a circle you should press the spacebar.
+
+Page 3: Demo Instructions
+Here is another circle. Do you remember what you do when you see a circle on the screen?
+Can you press the spacebar now?
+
+Page 4: Shape Instructions 2
+Now, in this game, other shapes will appear on the screen.
+This is a square and a triangle. When they are on the screen you do NOT press the spacebar.
+
+Page 5: Shape Instructions 3
+Here is another triangle. Do you remember what you do when you see a triangle on the screen?
+You DO NOT press the spacebar. You ONLY press it when you see a circle.
+
+Page 6: Shape Instructions 4
+Here is a square. Do you remember what you do when you see a square on the screen?
+You DO NOT press the spacebar. You ONLY press it when you see a circle.
+
+Page 7: Demo Instructions
+And here is a circle. Do you remember what you do when you see a circle on the screen?
+Can you press the spacebar now?
+
+Page 8: Instructions
+Now let’s try a few practice trials.
+Remember, you ONLY press the spacebar for what shape? For Circles! And you do NOT press any button when you see any other shape.
+
+Page 9: Begin Practice
+BEGIN PRACTICE
+
+Page 10: Countdown
+Get Ready!
+The practice will begin in:
+Use the spacebar to respond.
+
+Page 11: Practice
+<shape_practice>
+Press the spacebar to continue.
+
+Page 11.1: Feedback Correct
+Correct!
+
+Page 11.2: Feedback False Negative
+That was INCORRECT.
+You saw a circle but did not press the spacebar.
+Press the spacebar whenever you see a circle.
+DO PRESS
+
+Page 11.3: Feedback False Positive
+That was INCORRECT.
+You did not see a circle.
+Press the spacebar ONLY when you see a circle.
+DON'T PRESS
+DON'T PRESS
+DON'T PRESS
+DON'T PRESS
+DO PRESS
+
+Page 12: Instructions
+Good job on the practice trials. Now it is time for the real game.
+Only press the button if you see a circle. If you see a triangle or a square you don’t press anything.
+
+Page 13: Begin Test
+BEGIN TEST
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 14: Countdown
+Get Ready!
+The test will begin in:
+Use the spacebar to respond.
+
+Page 15: Test
+<shape_test>
+Use the spacebar to respond.

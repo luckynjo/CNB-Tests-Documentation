@@ -16,10 +16,12 @@ function App(){
 	</Routes>
 </BrowserRouter>
 )*/
-//const BASE_URL = "https://webcnp.med.upenn.edu/surveys/";
-const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";
-const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/webcnp.pl";
-//const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/surveys/survey.pl";
+const BASE_URL = "https://webcnp.med.upenn.edu/surveys/";   /* surveys on prd */
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";   /* webcnp on dev */
+//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/surveys/";   /* surveys on dev */
+//const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/webcnp.pl";   /* webcnp on dev */
+const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/surveys/survey.pl";   /* surveys on prd */
+//const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/surveys/survey.pl";   /* surveys on dev */
 //const BASE_URL = "http://localhost/";
 return (
 	<TaskRunner base_url={BASE_URL} assessment_url={ASSESSMENT_URL}/>

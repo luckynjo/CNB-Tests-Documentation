@@ -2,10 +2,12 @@ import React, {useState, useEffect} from 'react';
 import '../styles/common.css';
 import MotorPraxisTask from '../tasks/MotorPraxisTask.js';
 import CPT from '../tasks/CPT.js';
+import CPTChild from '../tasks/CPTChild.js';
 import TAP from '../tasks/TAP.js';
 import CPF from '../tasks/CPF.js';
 import SVOLT from '../tasks/SVOLT.js';
 import ER40 from '../tasks/ER40.js';
+import Disc from '../tasks/Disc.js';
 import ER40Child from '../tasks/ER40Child.js';
 import NbackTask from '../tasks/NbackTask.js';
 import Digsym from '../tasks/Digsym.js';
@@ -71,6 +73,18 @@ export default class TaskRunner extends React.Component
       <MotorPraxisTask base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
+    else if(task === "timeline" && test.test.includes("cpt-preschool-b"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <CPTChild form={"b"} base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("cpt-preschool"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <CPTChild form={"a"} base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      </div>
+    }
     else if(task === "timeline" && test.test.includes("cpt"))
     {
       return <div className="container-8-by-6  dark frame">
@@ -123,6 +137,12 @@ export default class TaskRunner extends React.Component
     {
       return <div className="container-8-by-6  light frame">
       <ER40 base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} slideshow={this.state.slideshow} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("disc"))
+    {
+      return <div className="container-8-by-6  light frame">
+      <Disc base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline" && test.test.includes("cpw"))

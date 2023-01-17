@@ -20,7 +20,7 @@ Page 3: Begin Practice
 COMMENCE À T’EXERCER
 
 Page 4: Practice
-IDENTIQUE 
+IDENTIQUE
 DIFFÉRENTE
 
 Page 5: Digsym Instructions
@@ -28,7 +28,7 @@ Bien! Nous allons maintenant passer au test. N'oublie pas que ton travail consis
 
 Si la nouvelle paire correspond à l'une des paires ci-dessus, appuie sur le bouton « IDENTIQUE ». Si la nouvelle paire ne correspond pas à l'une des paires ci-dessus, appuie sur le bouton « DIFFÉRENTE ». Travaillez aussi précisément et rapidement que possible.
 
-IDENTIQUE 
+IDENTIQUE
 DIFFÉRENTE
 
 Page 6: Begin Test
@@ -36,7 +36,7 @@ COMMENCE LE TEST
 
 Page 7: Matching Test
 <matching>
-IDENTIQUE 
+IDENTIQUE
 DIFFÉRENTE
 
 Page 8: Instructions

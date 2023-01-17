@@ -12,7 +12,7 @@ import digsym_a_banner from '../assets/digsym/digsym_a_banner.png';
 import digsym_b_banner from '../assets/digsym/digsym_b_banner.png';
 
 
-const DEMO_INSTRUCTIONS_REGEX = /Digsym[_ ]Instructions/ig;
+const DIGSYM_INSTRUCTIONS_REGEX = /Digsym[_ ]Instructions/ig;
 const INSTRUCTIONS_REGEX = /Instructions/ig;
 const BEGIN_PAGE_REGEX = /Begin[ _](Test|Practice|Slideshow)/ig;
 const PRACTICE_REGEX = /Practice/ig;
