@@ -53,3 +53,33 @@ Use the spacebar to respond.
 Page 11: Test
 <shape_test>
 Use the spacebar to respond.
+
+Page 12: Shape Instructions 5
+Here is a Star.
+Every time you see a star you should click the button.
+
+Page 13: Star Instructions
+Here is another star. Do you remember what you do when you see a star on the screen?
+Can you click the button now?
+
+Page 14: Shape Instructions 6
+Now, in this game, other shapes will appear on the screen.
+This is a diamond and a rectangle. When they are on the screen you do NOT click the button.
+
+Page 15: Instructions
+It is time for the real game.
+Only click the button if you see a star. If you see a diamond or a rectangle you don’t click anything.
+
+Page 16: Begin Test
+BEGIN TEST
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 17: Ready Test
+Get Ready!
+The test will begin in:
+Use the spacebar to respond.
+
+Page 18: Last Test
+<shape_test>
+Use the spacebar to respond.

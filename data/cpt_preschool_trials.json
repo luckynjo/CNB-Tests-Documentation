@@ -1,6 +1,6 @@
 {
   "trials": [
-    {"question_number":1, "stimulus": "Blue_Circle.png", "responses" : "", "trial_type": "practice", "correct_response": 32},
+    {"question_number":1, "stimulus": "Circle_1.png", "responses" : "", "trial_type": "practice", "correct_response": 32},
     {"question_number":2, "stimulus": "Blue_Square.png", "responses" : "", "trial_type": "practice"},
     {"question_number":3, "stimulus": "Blue_Triangle.png", "responses" : "", "trial_type": "practice"},
     {"question_number":1, "stimulus": "Blue_Circle.png", "responses" : "", "trial_type": "test"},

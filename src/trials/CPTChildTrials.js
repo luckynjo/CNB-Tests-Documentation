@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import StaticCanvas from '../components/StaticCanvas.js';
-import CPTStimulus from '../stimuli/CPTStimulus.js';
+import CPTStimulus from '../stimuli/CPTChildStimulus.js';
 import {TableInstructions} from '../instructions/TableInstructions.js';
 import {Randomizer} from '../utils/Randomizer.js';
 import CNBResponse from './CNBResponse.js';
+import circle from '../assets/cptChild/Circle_1.png';
+import square from '../assets/cptChild/Square_1.png';
+import triangle from '../assets/cptChild/Triangle_1.png';
+import star from '../assets/cptChild/Star_1.png';
+import diamond from '../assets/cptChild/Diamond_1.png';
+import rectangle from '../assets/cptChild/Rectangle_1.png';
 
 
 const TRIAL_DURATION = 1000;
@@ -24,18 +30,20 @@ export class CPTChildTrials extends React.Component
     const index = 0;
     const trial = questions[index];
     const stimulus = new CPTStimulus(this.findImage(this.props.trials[trial].stimulus));
+    const responses = props.responses ? props.responses : [];
 
     this.state = {
       index:index,
       stimulus: stimulus,
       questions: questions,
       starttime: new Date(),
-      responses: []
+      displayBtn: false,
+      responses: responses // []
     }
 
     this.taskStart = new Date();
     this.canvasRef = React.createRef();
-    this.keyDown = this.keyDown.bind(this);
+    //this.keyDown = this.keyDown.bind(this);
     this.update = this.update.bind(this);
 
     this.nextTestSlide = this.nextTestSlide.bind(this);
@@ -47,7 +55,7 @@ export class CPTChildTrials extends React.Component
 
   componentDidMount()
   {
-    window.addEventListener("keydown", this.keyDown, false);
+    //window.addEventListener("keydown", this.keyDown, false);
     this.canvasSetup();
     this.trialStart = new Date();
     this.start();
@@ -78,6 +86,9 @@ export class CPTChildTrials extends React.Component
     this.lastResponse = "";
     this.allow_responses = 1;
     this.update();
+    this.setState((prevState, props) => {
+      return {displayBtn: true};
+    })
   }
 
   componentDidUpdate()
@@ -92,12 +103,15 @@ export class CPTChildTrials extends React.Component
     this.stimDrawCount = 0;
     this.isiDrawCount = 0;
     this.task = STOPPED;
+    this.setState((prevState, props) => {
+      return {displayBtn: false};
+    })
   }
 
   componentWillUnmount()
   {
     this.stop();
-    window.removeEventListener("keydown", this.keyDown, false);
+    //window.removeEventListener("keydown", this.keyDown, false);
   }
 
   update(timestamp)
@@ -128,7 +142,7 @@ export class CPTChildTrials extends React.Component
     const duration = timestamp - this.trialTimeStamp;
     if(this.task === STIM)
     {
-      if(this.props.form === "a" && duration >= 1000 || this.props.form === "b" && duration >= 500) //300
+      if(this.props.form === "a" && duration >= 500 || this.props.form === "b" && duration >= 500) //300
       {
         this.task = ISI;
       }
@@ -137,7 +151,7 @@ export class CPTChildTrials extends React.Component
     }
     else if(this.task === ISI)
     {
-      if(duration >= 2000) //1000
+      if(duration >= 1500) //1000
       {
         this.task = STOPPED;
         this.stop();
@@ -169,27 +183,27 @@ export class CPTChildTrials extends React.Component
 
 
 
-  keyDown(e)
-  {
-    //this.log_event('keyDown ' + e.keyCode, new Date());
-    // TO DO: Add error sound for invalid key presses
-    if(this.allow_responses === RESPONSE_NOT_ALLOWED)
-    {
-      return;
-    }
-    else if(e.keyCode !== 32)
-    {
-      return;
-    }
-    if(this.props.practice)
-    {
-      this.onPracticeResponse(e);
-    }
-    else
-    {
-      this.onTestResponse(e);
-    }
-  }
+  // keyDown(e)
+  // {
+  //   //this.log_event('keyDown ' + e.keyCode, new Date());
+  //   // TO DO: Add error sound for invalid key presses
+  //   if(this.allow_responses === RESPONSE_NOT_ALLOWED)
+  //   {
+  //     return;
+  //   }
+  //   else if(e.keyCode !== 32)
+  //   {
+  //     return;
+  //   }
+  //   if(this.props.practice)
+  //   {
+  //     this.onPracticeResponse(e);
+  //   }
+  //   else
+  //   {
+  //     this.onTestResponse(e);
+  //   }
+  // }
 
   /**
   * Handle response to practice question.
@@ -204,7 +218,7 @@ export class CPTChildTrials extends React.Component
     if(!trial.correct_response)
     {
       this.stop();
-      window.removeEventListener("keydown", this.keyDown, false);
+      //window.removeEventListener("keydown", this.keyDown, false);
       this.correct = 0;
       this.props.onPracticeFailed("False_Positive");
     }
@@ -284,7 +298,7 @@ export class CPTChildTrials extends React.Component
     {
       this.stop();
       this.correct = 0;
-      window.removeEventListener("keydown", this.keyDown, false);
+      //window.removeEventListener("keydown", this.keyDown, false);
       this.props.onPracticeFailed("False_Negative");
     }
     else
@@ -358,9 +372,13 @@ export class CPTChildTrials extends React.Component
 
   render()
   {
+    console.log(this.state.responses);
     return(
       <div className="container canvas_container">
       <canvas ref={this.canvasRef} width="800" height="600" />
+      {this.state.displayBtn ? <button className="btn cptChild--button--test" onClick={e => this.onTestResponse(e)}>
+        Click here
+      </button> : ""}
       </div>
     );
   }

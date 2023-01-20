@@ -13,14 +13,19 @@ import cpt_child_banner from '../assets/cpt/banner.png';
 
 const SHAPE_INSTRUCTIONS_REGEX = /Shape[ _]Instructions/ig;
 const TEST_COUNTDOWN_REGEX = /Test[ _]Count/ig;
+const SECOND_COUNTDOWN_REGEX = /Ready[ _]Test/ig;
 const SHAPE_INSTRUCTIONS_2_REGEX = /Shape[ _]Instructions[ _]2/ig;
 const SHAPE_INSTRUCTIONS_3_REGEX = /Shape[ _]Instructions[ _]3/ig;
 const SHAPE_INSTRUCTIONS_4_REGEX = /Shape[ _]Instructions[ _]4/ig;
+const SHAPE_INSTRUCTIONS_5_REGEX = /Shape[ _]Instructions[ _]5/ig;
+const SHAPE_INSTRUCTIONS_6_REGEX = /Shape[ _]Instructions[ _]6/ig;
 const DEMO_INSTRUCTIONS_REGEX = /Demo[ _]Instructions/ig;
+const STAR_INSTRUCTIONS_REGEX = /Star[ _]Instructions/ig;
 const INSTRUCTIONS_REGEX = /Instructions/ig;
 const BEGIN_PAGE_REGEX = /Begin[ _](Test|Practice)/ig;
 const PRACTICE_REGEX = /Practice$/ig;
 const TEST_REGEX = /Test$/ig;
+const Last_TEST_REGEX = /Last[ _]Test/ig;
 const TITLE_PAGE_REGEX = /Title/ig;
 const FALSE_POSITIVE_REGEX = /False[ _]Positive/ig;
 const FALSE_NEGATIVE_REGEX = /False[ _]Negative/ig;
@@ -28,11 +33,16 @@ const FALSE_NEGATIVE_REGEX = /False[ _]Negative/ig;
 export default class CPTChild extends React.Component{
   constructor(props){
     super(props);
+
+    this.trials = [{question_number: 1, stimulus: "Circle_1.png"}, {question_number: 2, stimulus: "Square_1.png"}, {question_number: 3, stimulus: "Triangle_1.png"},
+                {question_number: 4, stimulus: "Star_1.png"}, {question_number: 5, stimulus: "Diamond_1.png"}, {question_number: 6, stimulus: "Rectangle_1.png"}];
+
     this.state = {
       index: 0,
       image_urls: [],
       feedback: null,
       responses: [],
+      set_complete: 0,
       assessment_complete: false,
       skipped: 0,
       starttime: new Date()
@@ -144,11 +154,11 @@ export default class CPTChild extends React.Component{
     });
   }
 
-  onTrialsComplete(responses)
+  onTrialsComplete(responses, set)
   {
     let updated_responses = this.state.responses.concat(responses);
     this.setState((prevState, props) => {
-      return {responses: updated_responses}
+      return {responses: updated_responses, set_complete:set}
     }, this.next);
   }
 
@@ -208,7 +218,7 @@ export default class CPTChild extends React.Component{
     else if(index === 0)
     {
       /// Also set the text for continue, go back etc.
-      return <div className="container center"><AssetLoader base_url={this.props.base_url} stimulus_dir="cpt" practice_trials={this.props.practice_trials} test_trials={this.props.test_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} /></div>
+      return <div className="container center"><AssetLoader base_url={this.props.base_url} stimulus_dir="cptChild" practice_trials={this.props.practice_trials} test_trials={this.trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} /></div>
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
@@ -218,14 +228,14 @@ export default class CPTChild extends React.Component{
     {
       return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
-    // else if(section_title.match(TEST_INSTRUCTIONS_REGEX))
-    // {
-    //   return <CPTNumberTestInstructions  instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={(e) => this.back(e, BEGIN_PAGE_REGEX)} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
-    // }
-    // else if(section_title.includes("Number_Instructions"))
-    // {
-    //   return <CPTNumberInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text}/>
-    // }
+    else if(section_title.match(SHAPE_INSTRUCTIONS_6_REGEX))
+    {
+      return <ShapeInstructions form={this.props.form} instructions={JSON.parse(timeline_object.content)} keyMode={false} type={"diamond-rectangle"} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+    }
+    else if(section_title.match(SHAPE_INSTRUCTIONS_5_REGEX))
+    {
+      return <ShapeInstructions form={this.props.form} instructions={JSON.parse(timeline_object.content)} keyMode={false} type={"star"} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+    }
     else if(section_title.match(SHAPE_INSTRUCTIONS_4_REGEX))
     {
       return <ShapeInstructions form={this.props.form} instructions={JSON.parse(timeline_object.content)} keyMode={false} type={"square"} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
@@ -237,6 +247,10 @@ export default class CPTChild extends React.Component{
     else if(section_title.match(SHAPE_INSTRUCTIONS_2_REGEX))
     {
       return <ShapeInstructions form={this.props.form} instructions={JSON.parse(timeline_object.content)} keyMode={false} type={"square-triangle"} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+    }
+    else if(section_title.match(STAR_INSTRUCTIONS_REGEX))
+    {
+      return <ShapeInstructions form={this.props.form} instructions={JSON.parse(timeline_object.content)} keyMode={true} type={"star-2"} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(DEMO_INSTRUCTIONS_REGEX))
     {
@@ -250,13 +264,23 @@ export default class CPTChild extends React.Component{
     {
       return <CPTChildTrials form={this.props.form} base_url={this.props.base_url} images={this.images} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
     }
+    else if(section_title.match(SECOND_COUNTDOWN_REGEX))
+    {
+      return <CPTCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
+    }
     else if(section_title.match(TEST_COUNTDOWN_REGEX))
     {
       return <CPTCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
     }
+    else if(section_title.match(Last_TEST_REGEX))
+    {
+      const test_trials = [{question_number: 4, stimulus: JSON.stringify("Star_1.png")}, {question_number: 5, stimulus: JSON.stringify("Diamond_1.png")}, {question_number: 6, stimulus: JSON.stringify("Rectangle_1.png")}];
+      return <CPTChildTrials form={this.props.form} set={2} responses={this.state.responses} base_url={this.props.base_url} images={this.images} trials={test_trials} onTrialsComplete={this.onTrialsComplete}/>
+    }
     else if(section_title.match(TEST_REGEX))
     {
-      return <CPTChildTrials form={this.props.form} base_url={this.props.base_url} images={this.images} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete}/>
+      const test_trials = [{question_number: 1, stimulus: JSON.stringify("Circle_1.png")}, {question_number: 2, stimulus: JSON.stringify("Square_1.png")}, {question_number: 3, stimulus: JSON.stringify("Triangle_1.png")}];
+      return <CPTChildTrials form={this.props.form} set={1} base_url={this.props.base_url} images={this.images} trials={test_trials} onTrialsComplete={this.onTrialsComplete}/>
     }
     else
     {

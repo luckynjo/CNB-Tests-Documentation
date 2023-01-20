@@ -156,3 +156,47 @@ p.instructions-text--small {
   padding-top: 6px;
   padding-left: 6px;
 }
+
+.cptChild--button{
+  /*position: absolute;
+  top: 420px;*/
+  position: relative;
+  z-index: 1;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  color: black;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.cptChild--button--test{
+  position: absolute;
+  top: 440px;
+  /*position: relative;
+  z-index: 1;
+  bottom: 5px;*/
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  color: black;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}

@@ -1,9 +1,12 @@
 import React from "react";
 import {ContinueButton} from '../components/ContinueButton.js';
 import {GoBackButton} from '../components/GoBackButton.js';
-import circle from '../assets/cptChild/Blue_Circle.png';
-import square from '../assets/cptChild/Blue_Square.png';
-import triangle from '../assets/cptChild/Blue_Triangle.png';
+import circle from '../assets/cptChild/Circle_1.png';
+import square from '../assets/cptChild/Square_1.png';
+import triangle from '../assets/cptChild/Triangle_1.png';
+import diamond from '../assets/cptChild/Diamond_1.png';
+import star from '../assets/cptChild/Star_1.png';
+import rectangle from '../assets/cptChild/Rectangle_1.png';
 /***
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
@@ -13,30 +16,6 @@ export class ShapeInstructions extends React.Component {
     this.state={
       pressed: false
     };
-    this.keyDown = this.keyDown.bind(this);
-  }
-
-  componentDidMount(){
-    window.addEventListener("keydown", this.keyDown, false);
-  }
-
-  componentWillUnmount()
-  {
-    window.removeEventListener("keydown", this.keyDown, false);
-  }
-
-  keyDown(e){
-    if(this.props.keyMode && e.keyCode === 32){
-      this.setState((prevState, props) => {
-        return {pressed: true};
-      });
-      setTimeout(()=>{
-        this.setState((prevState, props) => {
-          return {pressed: false};
-        });
-        this.props.onContinue();
-      }, 1000);
-    }
   }
 
   render(){
@@ -60,10 +39,43 @@ export class ShapeInstructions extends React.Component {
             }
             else
             {
+              if(index === 1 && type === "diamond-rectangle"){
+                return (
+                  <div key={index*10 + 5}>
+                    <div className="img-position-cpt-child-2"><img src={diamond} width="200" alt="diamond"/> <img src={rectangle} width="200" alt="rectangle"/></div>
+                    <br/>
+                    <br/>
+                    <div><p>{instruction}</p><br/></div>
+                  </div>
+                );
+              }
+              if(index === 1 && type === "star-2"){
+                return (
+                  <div key={index*10 + 5}>
+                    <div className="img-position-cpt-child"><div className={this.props.form === "b" && this.state.pressed  ? "img-position-cpt-child-b" : ""}><img src={star} width="200" alt="star"/></div></div>
+                    <br/>
+                    <br/>
+                    <div><p>{instruction}</p><br/></div>
+                    <button className="btn cptChild--button" onClick={this.props.onContinue}>
+                      Click here
+                    </button>
+                  </div>
+                );
+              }
+              if(index === 1 && type === "star"){
+                return (
+                  <div key={index*10 + 5}>
+                    <div className="img-position-cpt-child"><img src={star} width="200" alt="star"/></div>
+                    <br/>
+                    <br/>
+                    <div><p>{instruction}</p><br/></div>
+                  </div>
+                );
+              }
               if(index === 1 && type === "square"){
                 return (
                   <div key={index*10 + 5}>
-                    <div className="img-position-cpt-child"><img src={square} width="160" alt="square"/></div>
+                    <div className="img-position-cpt-child"><img src={square} width="200" alt="square"/></div>
                     <br/>
                     <br/>
                     <div><p>{instruction}</p><br/></div>
@@ -73,7 +85,7 @@ export class ShapeInstructions extends React.Component {
               if(index === 1 && type === "triangle"){
                 return (
                   <div key={index*10 + 5}>
-                    <div className="img-position-cpt-child"><img src={triangle} width="160" alt="triangle"/></div>
+                    <div className="img-position-cpt-child"><img src={triangle} width="200" alt="triangle"/></div>
                     <br/>
                     <br/>
                     <div><p>{instruction}</p><br/></div>
@@ -83,7 +95,7 @@ export class ShapeInstructions extends React.Component {
               if(index === 1 && type === "square-triangle"){
                 return (
                   <div key={index*10 + 5}>
-                    <div className="img-position-cpt-child-2"><img src={square} width="160" alt="square"/> <img src={triangle} width="160" alt="triangle"/></div>
+                    <div className="img-position-cpt-child-2"><img src={square} width="200" alt="square"/> <img src={triangle} width="200" alt="triangle"/></div>
                     <br/>
                     <br/>
                     <div><p>{instruction}</p><br/></div>
@@ -93,17 +105,20 @@ export class ShapeInstructions extends React.Component {
               if(index === 1 && type === "circle-2"){
                 return (
                   <div key={index*10 + 5}>
-                    <div className="img-position-cpt-child"><div className={this.props.form === "b" && this.state.pressed  ? "img-position-cpt-child-b" : ""}><img src={circle} width="160" alt="circle"/></div></div>
+                    <div className="img-position-cpt-child"><div className={this.props.form === "b" && this.state.pressed  ? "img-position-cpt-child-b" : ""}><img src={circle} width="200" alt="circle"/></div></div>
                     <br/>
                     <br/>
                     <div><p>{instruction}</p><br/></div>
+                    <button className="btn cptChild--button" onClick={this.props.onContinue}>
+                      Click here
+                    </button>
                   </div>
                 );
               }
               if(index === 2 && type === "circle"){
                 return (
                   <div key={index*10 + 5}>
-                    <div className="img-position-cpt-child"><div className={this.props.form === "b" && this.state.pressed  ? "img-position-cpt-child-b" : ""}><img src={circle} width="160" alt="circle"/></div></div>
+                    <div className="img-position-cpt-child"><div className={this.props.form === "b" && this.state.pressed  ? "img-position-cpt-child-b" : ""}><img src={circle} width="200" alt="circle"/></div></div>
                     <br/>
                     <br/>
                     <div><p>{instruction}</p><br/></div>

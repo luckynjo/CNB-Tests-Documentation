@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tests/survey_assess/static/css/main.c9c6d846.css",
-    "main.js": "/tests/survey_assess/static/js/main.d15e4449.js",
+    "main.css": "/tests/survey_assess/static/css/main.90592f69.css",
+    "main.js": "/tests/survey_assess/static/js/main.35027d48.js",
     "static/js/787.dbbfea37.chunk.js": "/tests/survey_assess/static/js/787.dbbfea37.chunk.js",
     "static/media/banner.png": "/tests/survey_assess/static/media/banner.b5249dbbfe18f38072bf.png",
     "static/media/Vr.png": "/tests/survey_assess/static/media/Vr.5f51010ec0df4cc65da7.png",
@@ -17,22 +17,25 @@
     "static/media/motor_praxis_banner.png": "/tests/survey_assess/static/media/motor_praxis_banner.c9254c952633ed600e6a.png",
     "static/media/fear_transparent.png": "/tests/survey_assess/static/media/fear_transparent.6d1b0e57b4741a872daf.png",
     "static/media/er40_banner.png": "/tests/survey_assess/static/media/er40_banner.327edbef8d4800493f50.png",
+    "static/media/Star_1.png": "/tests/survey_assess/static/media/Star_1.708108f2e14f4ab178c8.png",
     "static/media/keyboard.png": "/tests/survey_assess/static/media/keyboard.21cf43d4cd93e9cc7dd8.png",
     "static/media/wordIcon.png": "/tests/survey_assess/static/media/wordIcon.8481b3340d4a4572c543.png",
     "static/media/Neutral_transparent.png": "/tests/survey_assess/static/media/Neutral_transparent.4e51aeae06fd5c03e5ae.png",
     "static/media/cursor-1.png": "/tests/survey_assess/static/media/cursor-1.01193a87273316810a19.png",
+    "static/media/Circle_1.png": "/tests/survey_assess/static/media/Circle_1.b786c1532acf1d508aa1.png",
     "static/media/Xr.png": "/tests/survey_assess/static/media/Xr.b994346a19e13f83200a.png",
+    "static/media/Triangle_1.png": "/tests/survey_assess/static/media/Triangle_1.a76860cea8b286c9cc32.png",
     "static/media/digsym_b_banner.png": "/tests/survey_assess/static/media/digsym_b_banner.fc7d6b8692b9ed61e3a3.png",
+    "static/media/Diamond_1.png": "/tests/survey_assess/static/media/Diamond_1.cb49d03f07fd9ee8cb9e.png",
     "static/media/digsym_a_banner.png": "/tests/survey_assess/static/media/digsym_a_banner.ee664bed7cf8d113a330.png",
-    "static/media/Blue_Triangle.png": "/tests/survey_assess/static/media/Blue_Triangle.f820f0141d18be3873e7.png",
     "static/media/logo.svg": "/tests/survey_assess/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/tests/survey_assess/index.html",
-    "main.c9c6d846.css.map": "/tests/survey_assess/static/css/main.c9c6d846.css.map",
-    "main.d15e4449.js.map": "/tests/survey_assess/static/js/main.d15e4449.js.map",
+    "main.90592f69.css.map": "/tests/survey_assess/static/css/main.90592f69.css.map",
+    "main.35027d48.js.map": "/tests/survey_assess/static/js/main.35027d48.js.map",
     "787.dbbfea37.chunk.js.map": "/tests/survey_assess/static/js/787.dbbfea37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9c6d846.css",
-    "static/js/main.d15e4449.js"
+    "static/css/main.90592f69.css",
+    "static/js/main.35027d48.js"
   ]
 }
