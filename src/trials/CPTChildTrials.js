@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import StaticCanvas from '../components/StaticCanvas.js';
+import {PlayButton} from '../components/PlayButton.js';
 import CPTStimulus from '../stimuli/CPTChildStimulus.js';
 import {TableInstructions} from '../instructions/TableInstructions.js';
 import {Randomizer} from '../utils/Randomizer.js';
@@ -372,12 +373,12 @@ export class CPTChildTrials extends React.Component
 
   render()
   {
-    console.log(this.state.responses);
+    console.log(this.state.stimulus);
     return(
       <div className="container canvas_container">
       <canvas ref={this.canvasRef} width="800" height="600" />
-      {this.state.displayBtn ? <button className="btn cptChild--button--test" onClick={e => this.onTestResponse(e)}>
-        Click here
+      {this.state.displayBtn ? <button className="cptChild--button--test" onClick={e => this.onTestResponse(e)}>
+        <PlayButton />
       </button> : ""}
       </div>
     );

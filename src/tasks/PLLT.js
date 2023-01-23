@@ -31,6 +31,7 @@ export default class PLLT extends React.Component{
     this.back_button_text = content[1];
     this.other_button_text = content[2];
     this.next_trial_button_text = content[3];
+    this.total_responses_text = content[4] ? content[4] : "Total Responses Made";
 
     this.next = this.next.bind(this);
     this.back = this.back.bind(this);
@@ -159,7 +160,7 @@ export default class PLLT extends React.Component{
 		}
     else if(section_title.match(TEST_REGEX))
     {
-      return <PLLTTrials trials={this.props.test_trials} trial={this.state.trial} words={this.trialWords(JSON.parse(timeline_object.content))} next_trial_button_text={this.next_trial_button_text} other_button_text={this.other_button_text} onTrialsComplete={(e) => this.onTrialsComplete(e)} />
+      return <PLLTTrials trials={this.props.test_trials} trial={this.state.trial} words={this.trialWords(JSON.parse(timeline_object.content))} next_trial_button_text={this.next_trial_button_text} total_responses_text={this.total_responses_text} other_button_text={this.other_button_text} onTrialsComplete={(e) => this.onTrialsComplete(e)} />
     }
 		else
 		{

@@ -1,6 +1,7 @@
 import React from "react";
 import {ContinueButton} from '../components/ContinueButton.js';
 import {GoBackButton} from '../components/GoBackButton.js';
+import {PlayButton} from '../components/PlayButton.js';
 import circle from '../assets/cptChild/Circle_1.png';
 import square from '../assets/cptChild/Square_1.png';
 import triangle from '../assets/cptChild/Triangle_1.png';
@@ -56,8 +57,8 @@ export class ShapeInstructions extends React.Component {
                     <br/>
                     <br/>
                     <div><p>{instruction}</p><br/></div>
-                    <button className="btn cptChild--button" onClick={this.props.onContinue}>
-                      Click here
+                    <button className="cptChild--button" onClick={this.props.onContinue}>
+                    <PlayButton />
                     </button>
                   </div>
                 );
@@ -109,8 +110,8 @@ export class ShapeInstructions extends React.Component {
                     <br/>
                     <br/>
                     <div><p>{instruction}</p><br/></div>
-                    <button className="btn cptChild--button" onClick={this.props.onContinue}>
-                      Click here
+                    <button className="cptChild--button" onClick={this.props.onContinue}>
+                    <PlayButton />
                     </button>
                   </div>
                 );

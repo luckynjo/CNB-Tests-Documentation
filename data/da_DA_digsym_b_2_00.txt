@@ -12,7 +12,7 @@ Digit Symbol - Formular B
 KLIK HER FOR AT FORTSÆTTE
 
 Page 2: Instructions
-Øverst på skærmen er der to rækker der er delt ind i flere bokser. Hver boks i øverste række indeholder et unikt design. Hver boks i nederste række indeholder et unikt tal. Bemærk, at hver boks, der indeholder et design, kan sættes sammen med en boks, der indeholder et tal. Under denne test vises et nyt par bokser midt på skærmen. Du skal nu finde ud af, om designet og tallet i dette nye par svarer til et af de par, du ser ovenfor.
+Øverst på skærmen er der to rækker, der er delt ind i flere bokse. Hver boks i øverste række indeholder en unik figur. Hver boks i nederste række indeholder et unikt tal. Bemærk, at hver boks, der indeholder en figur, kan sættes sammen med en boks, der indeholder et tal. Under denne øvelse vises et nyt par bokse midt på skærmen. Du skal nu finde ud af, om figuren og tallet i dette nye par svarer til et af de par, du ser ovenfor.
 
 Hvis det nye par svarer til et af parrene ovenfor, skal du trykke på knappen "SAMME". Hvis det nye par ikke svarer til et af parrene ovenfor, skal du trykke på knappen "FORSKELLIG".
 
@@ -24,7 +24,7 @@ SAMME
 FORSKELLIG
 
 Page 5: Digsym Instructions
-Godt! Vi vil nu starte testen. Husk, at du skal finde ud af, om designet og tallet i det nye par svarer til et af de par, du ser ovenfor. Udfør testen så hurtigt, du kan, samtidig med at du prøver at svare korrekt.  Under testen på 90 sekunder får du ikke at vide, om du svarer korrekt eller forkert.
+Godt! Vi vil nu starte selve testen. Husk, at du skal finde ud af, om figuren og tallet i det nye par svarer til et af de par, du ser ovenfor. Udfør testen så hurtigt, du kan, samtidig med at du prøver at svare korrekt. Under testen på 90 sekunder får du ikke at vide, om du svarer korrekt eller forkert.
 
 Hvis det nye par svarer til et af parrene ovenfor, skal du trykke på knappen "SAMME". Hvis det nye par ikke svarer til et af parrene ovenfor, skal du trykke på knappen "FORSKELLIG". Arbejd så præcist og hurtigt som du kan.
 
@@ -40,10 +40,10 @@ SAMME
 FORSKELLIG
 
 Page 8: Instructions
-På den næste side skal du klikke på det tal, der var parret med hvert symbol.
+På næste side skal du klikke på det tal, der var parret med hver enkelt figur.
 Prøv at være så præcis og så hurtig som du kan.
 
 Page 9: Memory Test
 <memory>
-Hvilket tal hørte til dette symbol?
-Klik på det tal, der blev sat sammen med dette symbol.
+Hvilket tal hørte denne figur til?
+Klik på det tal, der blev sat sammen med denne figur.

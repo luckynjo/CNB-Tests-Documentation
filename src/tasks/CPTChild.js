@@ -3,7 +3,7 @@ import '../styles/cptChild.css';
 import {CPTChildTrials} from '../trials/CPTChildTrials.js';
 import AssetLoader from '../loaders/AssetLoader.js';
 import TitlePage from '../components/TitlePage.js';
-import {CPTCountdownInstructions} from '../instructions/CPTCountdownInstructions.js';
+import {CPTChildCountdownInstructions} from '../instructions/CPTChildCountdownInstructions.js';
 import {ShapeInstructions} from '../instructions/ShapeInstructions.js';
 import {CPTFalsePositiveInstructions} from '../instructions/CPTFalsePositiveInstructions.js';
 import {CPTFalseNegativeInstructions} from '../instructions/CPTFalseNegativeInstructions.js';
@@ -266,11 +266,11 @@ export default class CPTChild extends React.Component{
     }
     else if(section_title.match(SECOND_COUNTDOWN_REGEX))
     {
-      return <CPTCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
+      return <CPTChildCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
     }
     else if(section_title.match(TEST_COUNTDOWN_REGEX))
     {
-      return <CPTCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
+      return <CPTChildCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
     }
     else if(section_title.match(Last_TEST_REGEX))
     {

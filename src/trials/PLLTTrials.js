@@ -138,7 +138,7 @@ export class PLLTTrials extends React.Component{
 
       <td></td>
       <td></td>
-      <td><p className="response-message text--center">{'Total Responses Made'}</p></td>
+      <td><p className="response-message text--center">{this.props.total_responses_text}</p></td>
       </tr>
       <tr>
       <td></td>

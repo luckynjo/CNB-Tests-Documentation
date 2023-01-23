@@ -157,6 +157,29 @@ p.instructions-text--small {
   padding-left: 6px;
 }
 
+.cptChild--button:active{
+  /*position: absolute;
+  top: 420px;*/
+  position: relative;
+  z-index: 1;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  color: black;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 4px white solid;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
 .cptChild--button{
   /*position: absolute;
   top: 420px;*/
@@ -168,20 +191,21 @@ p.instructions-text--small {
   width: 120px;
   height: 120px;
   color: black;
-  background-color: yellow;
+  background-color: green;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  border: 2px white solid;
   border-radius: 60px;
   cursor: pointer;
   font-size: large;
   font-weight: bold;
 }
 
-.cptChild--button--test{
+.cptChild--button--test:active{
   position: absolute;
-  top: 440px;
+  top: 460px;
   /*position: relative;
   z-index: 1;
   bottom: 5px;*/
@@ -190,13 +214,76 @@ p.instructions-text--small {
   width: 120px;
   height: 120px;
   color: black;
-  background-color: yellow;
+  background-color: green;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  border: 4px white solid;
   border-radius: 60px;
   cursor: pointer;
   font-size: large;
   font-weight: bold;
+}
+
+.cptChild--button--test{
+  position: absolute;
+  top: 460px;
+  /*position: relative;
+  z-index: 1;
+  bottom: 5px;*/
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  color: black;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 2px white solid;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.cptChild--button--countdown{
+  position: relative;
+  z-index: 1;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  color: black;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 2px white solid;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.cprChild--button--triangle{
+  width: 0px;
+  height: 0px;
+  border: 25px white solid;
+  border-color: transparent;
+  border-left-color: white;
+  margin-left: 40px;
+}
+
+.cprChild--button--triangle--countdown{
+  width: 0px;
+  height: 0px;
+  border: 15px white solid;
+  border-color: transparent;
+  border-left-color: white;
+  margin-left: 25px;
 }
