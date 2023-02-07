@@ -160,13 +160,12 @@ p.instructions-text--small {
 .cptChild--button:active{
   /*position: absolute;
   top: 420px;*/
-  position: relative;
-  z-index: 1;
-  bottom: 15px;
-  left: 50%;
+  position: absolute;
+  top: 415px;
+  left: 95%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   color: black;
   background-color: green;
   display: flex;
@@ -183,13 +182,12 @@ p.instructions-text--small {
 .cptChild--button{
   /*position: absolute;
   top: 420px;*/
-  position: relative;
-  z-index: 1;
-  bottom: 15px;
-  left: 50%;
+  position: absolute;
+  top: 420px;
+  left: 95%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   color: black;
   background-color: green;
   display: flex;
@@ -205,14 +203,14 @@ p.instructions-text--small {
 
 .cptChild--button--test:active{
   position: absolute;
-  top: 460px;
+  top: 465px;
   /*position: relative;
   z-index: 1;
   bottom: 5px;*/
-  left: 50%;
+  left: 90%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   color: black;
   background-color: green;
   display: flex;
@@ -228,14 +226,14 @@ p.instructions-text--small {
 
 .cptChild--button--test{
   position: absolute;
-  top: 460px;
+  top: 470px;
   /*position: relative;
   z-index: 1;
   bottom: 5px;*/
-  left: 50%;
+  left: 90%;
   transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   color: black;
   background-color: green;
   display: flex;
@@ -286,4 +284,13 @@ p.instructions-text--small {
   border-color: transparent;
   border-left-color: white;
   margin-left: 25px;
+}
+
+.cprChild--button--triangle--test{
+  width: 0px;
+  height: 0px;
+  border: 25px white solid;
+  border-color: transparent;
+  border-left-color: white;
+  margin-left: 40px;
 }

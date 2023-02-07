@@ -7,38 +7,37 @@ Click here to continue
 Go back
 
 Page 1: Title
-Circle Task
-Shape
+Shapes Task
+Shapes
 Click here to continue
 
 Page 2: Shape Instructions
-This task is called the circle task!
-Here is a circle.
-Every time you see a circle you should press the spacebar.
+This task is called the Shapes Task!
+Every time you see a circle, click the play button as fast as possible.
 
 Page 3: Demo Instructions
-Here is another circle. Do you remember what you do when you see a circle on the screen?
-Can you press the spacebar now?
+Here is a circle. Do you remember what you do when you see a circle on the screen?
+Can you click the play button now?
 
 Page 4: Shape Instructions 2
-Now, in this game, other shapes will appear on the screen.
-This is a square and a triangle. When they are on the screen you do NOT press the spacebar.
+Do NOT click the play button if you see any other shapes.
+ONLY click the play button for the CIRCLE.
 
 Page 5: Shape Instructions 3
-Here is another triangle. Do you remember what you do when you see a triangle on the screen?
-You DO NOT press the spacebar. You ONLY press it when you see a circle.
+Here is a triangle. Do you remember what you do when you see a triangle on the screen?
+You DO NOT click the play button. You ONLY click it when you see a circle.
 
 Page 6: Shape Instructions 4
 Here is a square. Do you remember what you do when you see a square on the screen?
-You DO NOT press the spacebar. You ONLY press it when you see a circle.
+You DO NOT click the play button. You ONLY click it when you see a circle.
 
 Page 7: Demo Instructions
 And here is a circle. Do you remember what you do when you see a circle on the screen?
-Can you press the spacebar now?
+Can you click the play button now?
 
 Page 8: Instructions
-It is time for the real game.
-Only press the button if you see a circle. If you see a triangle or a square you don’t press anything.
+Now you will play the Shapes Task.
+Remember to click the play button when you see a circle.
 
 Page 9: Begin Test
 BEGIN TEST
@@ -48,8 +47,38 @@ GO BACK
 Page 10: Test Count
 Get Ready!
 The test will begin in:
-Use the spacebar to respond.
+Click the play button to respond
 
 Page 11: Test
 <shape_test>
-Use the spacebar to respond.
+Click the play button to respond
+
+Page 12: Shape Instructions 5
+Part 2 of the Shapes Task
+Every time you see a star, click the play button as fast as you can.
+
+Page 13: Star Instructions
+Here is a star. Do you remember what you do when you see a star on the screen?
+Can you click the play button now?
+
+Page 14: Shape Instructions 6
+Do NOT click the play button if you see any other shapes.
+ONLY click the play button for the STAR.
+
+Page 15: Instructions
+Now you will play the Shapes Task.
+Remember to click the play button when you see a star, but do not click the button if you see any other shapes.
+
+Page 16: Begin Test
+BEGIN TEST
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 17: Ready Test
+Get Ready!
+The test will begin in:
+Click the play button to respond
+
+Page 18: Last Test
+<shape_test>
+Click the play button to respond

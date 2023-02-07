@@ -9,7 +9,7 @@ export class PlayButton extends React.Component {
   render(){
     return (
       <div>
-        <div className={this.props.countdown ? "cprChild--button--triangle--countdown" : "cprChild--button--triangle"}>
+        <div className={this.props.countdown ? "cprChild--button--triangle--countdown" : this.props.test ? "cprChild--button--triangle--test"  : "cprChild--button--triangle"}>
         </div>
       </div>
     );

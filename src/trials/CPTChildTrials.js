@@ -27,7 +27,7 @@ export class CPTChildTrials extends React.Component
   constructor(props)
   {
     super(props);
-    const questions = Randomizer(this.props.trials, props.practice ? 2 : 3, true);
+    const questions = Randomizer(this.props.trials, props.practice ? 2 : 16, true);
     const index = 0;
     const trial = questions[index];
     const stimulus = new CPTStimulus(this.findImage(this.props.trials[trial].stimulus));
@@ -143,7 +143,7 @@ export class CPTChildTrials extends React.Component
     const duration = timestamp - this.trialTimeStamp;
     if(this.task === STIM)
     {
-      if(this.props.form === "a" && duration >= 500 || this.props.form === "b" && duration >= 500) //300
+      if(this.props.form === "a" && duration >= 500 || this.props.form === "b" && duration >= 300) //300
       {
         this.task = ISI;
       }
@@ -373,12 +373,11 @@ export class CPTChildTrials extends React.Component
 
   render()
   {
-    console.log(this.state.stimulus);
     return(
       <div className="container canvas_container">
       <canvas ref={this.canvasRef} width="800" height="600" />
       {this.state.displayBtn ? <button className="cptChild--button--test" onClick={e => this.onTestResponse(e)}>
-        <PlayButton />
+        <PlayButton test={this.props.test ? this.props.test : false}/>
       </button> : ""}
       </div>
     );

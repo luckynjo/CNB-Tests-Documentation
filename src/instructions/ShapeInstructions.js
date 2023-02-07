@@ -66,10 +66,11 @@ export class ShapeInstructions extends React.Component {
               if(index === 1 && type === "star"){
                 return (
                   <div key={index*10 + 5}>
+                    <div><p>{instruction}</p><br/></div>
+                    <br/>
                     <div className="img-position-cpt-child"><img src={star} width="200" alt="star"/></div>
                     <br/>
                     <br/>
-                    <div><p>{instruction}</p><br/></div>
                   </div>
                 );
               }
@@ -116,13 +117,14 @@ export class ShapeInstructions extends React.Component {
                   </div>
                 );
               }
-              if(index === 2 && type === "circle"){
+              if(index === 1 && type === "circle"){
                 return (
                   <div key={index*10 + 5}>
+                    <div><p>{instruction}</p><br/></div>
+                    <br/>
                     <div className="img-position-cpt-child"><div className={this.props.form === "b" && this.state.pressed  ? "img-position-cpt-child-b" : ""}><img src={circle} width="200" alt="circle"/></div></div>
                     <br/>
                     <br/>
-                    <div><p>{instruction}</p><br/></div>
                   </div>
                 );
               }

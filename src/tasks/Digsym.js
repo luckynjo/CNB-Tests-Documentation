@@ -172,9 +172,13 @@ export default class Digsym extends React.Component
     {
       return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
-    else if(section_title.match(INSTRUCTIONS_REGEX))
+    else if(section_title.match(DIGSYM_INSTRUCTIONS_REGEX) || section_title.includes("Page_2:_Instructions"))
     {
       return <DigsymInstructions test_form={this.test_form} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+    }
+    else if(section_title.match(INSTRUCTIONS_REGEX))
+    {
+      return <SimpleInstructions test_form={this.test_form} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {

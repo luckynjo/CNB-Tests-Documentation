@@ -256,9 +256,13 @@ export default class CPTChild extends React.Component{
     {
       return <ShapeInstructions form={this.props.form} instructions={JSON.parse(timeline_object.content)} keyMode={true} type={"circle-2"} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
-    else if(section_title.match(INSTRUCTIONS_REGEX) || section_title.match(SHAPE_INSTRUCTIONS_REGEX))
+    else if(section_title.match(SHAPE_INSTRUCTIONS_REGEX))
     {
       return <ShapeInstructions form={this.props.form} instructions={JSON.parse(timeline_object.content)} keyMode={false} type={"circle"} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+    }
+    else if(section_title.match(INSTRUCTIONS_REGEX))
+    {
+      return <ShapeInstructions form={this.props.form} instructions={JSON.parse(timeline_object.content)} keyMode={false} type={"instr"} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {
@@ -275,12 +279,12 @@ export default class CPTChild extends React.Component{
     else if(section_title.match(Last_TEST_REGEX))
     {
       const test_trials = [{question_number: 4, stimulus: JSON.stringify("Star_1.png")}, {question_number: 5, stimulus: JSON.stringify("Diamond_1.png")}, {question_number: 6, stimulus: JSON.stringify("Rectangle_1.png")}];
-      return <CPTChildTrials form={this.props.form} set={2} responses={this.state.responses} base_url={this.props.base_url} images={this.images} trials={test_trials} onTrialsComplete={this.onTrialsComplete}/>
+      return <CPTChildTrials form={this.props.form} test={true} set={2} responses={this.state.responses} base_url={this.props.base_url} images={this.images} trials={test_trials} onTrialsComplete={this.onTrialsComplete}/>
     }
     else if(section_title.match(TEST_REGEX))
     {
       const test_trials = [{question_number: 1, stimulus: JSON.stringify("Circle_1.png")}, {question_number: 2, stimulus: JSON.stringify("Square_1.png")}, {question_number: 3, stimulus: JSON.stringify("Triangle_1.png")}];
-      return <CPTChildTrials form={this.props.form} set={1} base_url={this.props.base_url} images={this.images} trials={test_trials} onTrialsComplete={this.onTrialsComplete}/>
+      return <CPTChildTrials form={this.props.form} test={true} set={1} base_url={this.props.base_url} images={this.images} trials={test_trials} onTrialsComplete={this.onTrialsComplete}/>
     }
     else
     {
