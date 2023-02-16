@@ -7,6 +7,7 @@ HIER KLICKEN, UM FORTZUFAHREN
 ZURÜCK
 SONSTIGES
 WEITER ZUM NÄCHSTEN VERSUCH
+Antworten insgesamt
 
 Page 1: Title
 Penn List Learning Test (kurz)
@@ -24,41 +25,41 @@ Ich lese Ihnen jetzt eine Liste von Wörtern vor. Hören Sie gut zu, denn wenn i
 
 Page 3: Slideshow
 <slideshow>
-Adler
-Kupfer
-Schraubenschlüssel
-Tennis
-Aluminium
-Golf
-Säge
-Taube
-Fussball
-Bronze
-Eule
-Bohrer
-Softball
-Stahl
-Kanarienvogel
-Schleifmaschine
+ADLER
+KUPFER
+SCHRAUBENSCHLÜSSEL
+TENNIS
+ALUMINIUM
+GOLF
+SÄGE
+TAUBE
+FUSSBALL
+BRONZE
+EULE
+BOHRER
+SOFTBALL
+STAHL
+KANARIENVOGEL
+SCHLEIFMASCHINE
 
 Page 4: Test
 <trials>
-Adler
-Taube
-Eule
-Kanarienvogel
-Kupfer
-Aluminium
-Bronze
-Stahl
-Schraubenschlüssel
-Säge
-Bohrer
-Schleifmaschine
-Tennis
-Golf
-Fussball
-Softball
+ADLER
+TAUBE
+EULE
+KANARIENVOGEL
+KUPFER
+ALUMINIUM
+BRONZE
+STAHL
+SCHRAUBENSCHLÜSSEL
+SÄGE
+BOHRER
+SCHLEIFMASCHINE
+TENNIS
+GOLF
+FUSSBALL
+SOFTBALL
 
 
 Page 5: Instructions

@@ -18,7 +18,7 @@ Page 2: Handedness Trial
 Questo è un test della velocità delle tue dita.
 Premi e rilascia la barra spaziatrice alla massima velocità possibile.
 Dopo ogni prova cambierai mano.
-Usa il mouse per selezionare la mano che digiterà.
+Usa il mouse per selezionare la mano con cui scrivi.
 <HANDEDNESS> Mano sinistra
 <HANDEDNESS> Mano destra
 
