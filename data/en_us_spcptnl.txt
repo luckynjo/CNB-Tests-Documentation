@@ -1,0 +1,140 @@
+test: spcptnl
+version: 3.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Press the spacebar to continue
+
+Page 1: Title
+Short Penn Continuous Performance test
+Number-Letter
+CLICK HERE TO CONTINUE
+
+Page 2: Number Instructions
+This test has two parts.
+In the first part, you will see lines on the screen. Whenever the lines make a complete NUMBER, quickly press the spacebar.
+For example:
+DON'T PRESS
+DON'T PRESS
+DO PRESS
+Let's practice.
+CLICK HERE TO CONTINUE
+
+Page 3: Begin Practice
+BEGIN NUMBER PRACTICE
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 4: Countdown
+Get Ready!
+The practice will begin in:
+Use the spacebar to respond.
+
+Page 5: Practice
+<number_practice>
+Press the spacebar to continue.
+
+Page 5.1: Feedback Correct
+CORRECT!
+
+Page 5.2: Feedback False Negative
+That was INCORRECT.
+You saw a complete number but did not press the spacebar.
+Press the spacebar whenever you see a complete NUMBER.
+DO PRESS
+
+Page 5.3: Feedback False Positive
+That was INCORRECT.
+You did not see a complete number.
+Press the spacebar ONLY when you see a complete NUMBER.
+DON'T PRESS
+DON'T PRESS
+DON'T PRESS
+DON'T PRESS
+DO PRESS
+
+Page 6: Letter Instructions
+Fantastic!
+In the second part, whenever the lines form a complete CAPITAL LETTER, quickly press the spacebar.
+For example:
+DON'T PRESS
+DON'T PRESS
+DO PRESS
+Let's practice.
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 7: Begin Practice
+BEGIN LETTER PRACTICE
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 8: Countdown
+Get Ready!
+The practice will begin in:
+Use the spacebar to respond.
+
+Page 9: Practice
+<letter_practice>
+Press the spacebar to continue.
+
+Page 9.1: Feedback Correct
+CORRECT!
+
+Page 9.2: Feedback False Negative
+That was INCORRECT.
+You saw a complete letter but did not press the spacebar.
+Press the spacebar whenever you see a complete LETTER.
+DO PRESS
+
+Page 9.3: Feedback False Positive
+That was INCORRECT.
+You did not see a complete letter.
+Press the spacebar ONLY when you see a complete LETTER.
+DON'T PRESS
+DON'T PRESS
+DON'T PRESS
+DON'T PRESS
+DO PRESS
+
+Page 10: Instructions
+Great!
+Remember:
+In the FIRST HALF, press the spacebar when you see a NUMBER.
+In the SECOND HALF, press the spacebar when you see a LETTER.
+A message will tell you when to switch.
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 11: Number Letter Test Instructions
+In the test, you will see different numbers and capital letters than you saw in the practice.
+Here are some examples:
+NUMBERS
+CAPITAL LETTERS
+Work as accurately and quickly as you can.
+Let’s Begin!
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 12: Begin Test
+BEGIN TEST
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 13: Countdown
+Get Ready!
+The test will begin in:
+Use the spacebar to respond.
+
+Page 14: Test
+<number_test>
+Use the spacebar to respond.
+
+Page 15: Breakblock
+SWITCH TO LETTERS
+
+Page 16: Test
+<letter_test>
+Use the spacebar to respond.

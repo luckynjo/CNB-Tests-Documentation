@@ -85,7 +85,6 @@ export class DigsymMemoryTrials extends React.Component{
   {
     const clean_url = image_url;
     const stimuli_path = this.props.test_form === "b" ? "stimuli/digsym_b/" : "stimuli/digsym/";
-    console.log("stimuli path: ", stimuli_path);
     if(this.props.images)
     {
       return this.findAssetFile(clean_url);

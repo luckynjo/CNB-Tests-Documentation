@@ -7,6 +7,7 @@ export class STROOPTrials extends React.Component {
     let stimulus = props.instructions[1];
     this.state = {
       index: 0,
+      trial_number: 0,
       trial: props.trials[0],
       stimulus: stimulus,
       starttime: new Date(),
@@ -73,19 +74,20 @@ export class STROOPTrials extends React.Component {
   {
     const trials_count = this.props.instructions.length;
     const next_index = this.state.index + 1;
+    const next_trial_number = this.state.trial_number + 1;
     if(next_index < trials_count-1)
     {
       const stimulus = this.props.instructions[next_index+1];
       this.setState((prevState, props) => {
-        return {index: next_index, stimulus: stimulus, trial: this.props.trials[next_index], starttime: new Date()}
+        return {index: next_index, trial_number: next_trial_number, stimulus: stimulus, trial: this.props.trials[next_trial_number], starttime: new Date()}
       });
     }
     else
     {
-      this.setState((prevState, props) => {
-        return {index: 0, trial: this.props.trials[0], starttime: new Date()}
-      })
       this.props.onContinue();
+      this.setState((prevState, props) => {
+        return {index: 0, trial_number: next_trial_number, trial: this.props.trials[next_trial_number], starttime: new Date()}
+      })
     }
   }
 

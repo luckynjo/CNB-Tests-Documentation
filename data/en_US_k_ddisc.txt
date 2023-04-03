@@ -1,0 +1,109 @@
+test: k-ddisc
+version: 1.07
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Would you rather have?
+OR
+
+Page 1: Title
+Delay Discounting ITC Test
+Delay Discounting
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+Instructions:
+Two amounts of money will be shown on the screen. You will be asked whether you would rather receive the smaller amount today, or the bigger amount later. You will also see how many days you have to wait to receive the bigger amount.
+This is a "pretending" exercise -- you will not really receive this money. But we ask you to make your choices as if they were real. There are no correct or incorrect answers.
+
+Page 3: Instructions
+Make your choice by clicking on one of the blue buttons. When choosing, remember that 30 days is about one month, and 180 days is about 6 months.
+You will get to practice before you begin, so don't worry if you don't understand everything yet. You can ask as many questions as you like during the practice. Once the actual task begins, we cannot answer any more questions.
+
+Page 4: Begin Practice
+BEGIN PRACTICE
+
+Page 5: Practice
+$25 today
+$30 in 10 days
+$10 today
+$20 in 30 days
+$30 today
+$35 in 5 days
+$20 today
+$45 in 65 days
+
+Page 6: Begin Test
+BEGIN TEST
+
+Page 7: Test
+$17 today
+$35 in 168 days
+$25 today
+$30 in 40 days
+$14 today
+$30 in 7 days
+$26 today
+$30 in 122 days
+$13 today
+$25 in 58 days
+$16 today
+$25 in 14 days
+$19 today
+$35 in 105 days
+$20 today
+$25 in 1 day
+$16 today
+$25 in 7 days
+$29 today
+$30 in 130 days
+$34 today
+$35 in 160 days
+$28 today
+$30 in 113 days
+$15 today
+$30 in 5 days
+$19 today
+$25 in 100 days
+$32 today
+$35 in 49 days
+$34 today
+$35 in 127 days
+$22 today
+$25 in 171 days
+$22 today
+$25 in 136 days
+$11 today
+$35 in 108 days
+$14 today
+$25 in 63 days
+$16 today
+$35 in 119 days
+$14 today
+$30 in 36 days
+$15 today
+$30 in 16 days
+$23 today
+$25 in 172 days
+$25 today
+$30 in 8 days
+$11 today
+$25 in 4 days
+$29 today
+$30 in 107 days
+$20 today
+$30 in 126 days
+$24 today
+$25 in 112 days
+$22 today
+$30 in 3 days
+$21 today
+$25 in 76 days
+$10 today
+$35 in 25 days
+$31 today
+$35 in 81 days
+$20 today
+$35 in 15 days

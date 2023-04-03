@@ -19,10 +19,10 @@ export default class NBackTrials extends React.Component
   constructor(props)
   {
     super(props);
-    console.log('Trials are ', props.trials,  ' section_type ', props.section_type);
+    //console.log('Trials are ', props.trials,  ' section_type ', props.section_type);
     //const x = props.section_type.replace('<', '').replace('>', '');
     const trials = props.trials.filter(trial => trial.trial_section === props.section_type);
-    console.log('The trials are ', trials);
+    //console.log('The trials are ', trials);
     const index = 0;
     const stimulus = new NBackStimulus(this.findImage(trials[index].stimulus));
 
@@ -259,7 +259,7 @@ export default class NBackTrials extends React.Component
       const duration = new Date() - this.state.starttime;
       const index = this.state.index;
       const trial = this.state.trials[index];
-      console.log('Recording response for question ', trial.question_number);
+      //console.log('Recording response for question ', trial.question_number);
       let responses = this.state.responses;
       responses.push(new CNBResponse(trial.question_number, 0, ""));
       this.setState((prevState, props) => {

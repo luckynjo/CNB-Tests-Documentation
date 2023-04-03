@@ -90,8 +90,8 @@ export class PLLTSlideshow extends React.Component{
 
     const rendered_words = wordsLeft.map((word, index) =>
     <tr key={index}>
-    <td className="left"><p className={wordsLeft[index] === stimulus && this.state.active ? "word active" : "word"}>{wordsLeft[index]}</p></td>
-    <td className="right"><p className={wordsRight[index] === stimulus && this.state.active  ? "word active" : "word"}>{wordsRight[index]}</p></td>
+    <td className="left"><p style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize: "18px"} : {}} className={wordsLeft[index] === stimulus && this.state.active ? "word active" : "word"}>{wordsLeft[index]}</p></td>
+    <td className="right"><p style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize: "18px"} : {}} className={wordsRight[index] === stimulus && this.state.active  ? "word active" : "word"}>{wordsRight[index]}</p></td>
     </tr>)
 
     return(

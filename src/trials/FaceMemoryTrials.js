@@ -37,7 +37,7 @@ export class FaceMemoryTrials extends React.Component{
   {
     const next_trial = this.state.trial + 1;
     const trial_count = this.props.trials.length;
-    console.log('Next trial be ', next_trial);
+    //console.log('Next trial be ', next_trial);
     // Continue task.
     if(next_trial < trial_count)
     {
@@ -93,7 +93,7 @@ export class FaceMemoryTrials extends React.Component{
   {
     const stimulus = this.state.stimulus;
     const buttons = this.props.buttons.map((item, index) => {
-      return (<button className="button cpf-button" key={index + 155} onClick={(e) => this.onClick(e, index + 1)}>{item}</button>)
+      return (<button className="button cpf-test-button" key={index + 155} onClick={(e) => this.onClick(e, index + 1)}>{item}</button>)
     })
 
     return (
@@ -103,7 +103,7 @@ export class FaceMemoryTrials extends React.Component{
        <img className="slideshow-image" src={stimulus} />
       </div>
 
-      <div className='inline memory-buttons--test'>
+      <div className='cpf-inline cpf-buttons--test'>
       {buttons}
       </div>
 

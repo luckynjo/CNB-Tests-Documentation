@@ -1,0 +1,366 @@
+test: edisc
+version: 1.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+Effort Discounting Task
+Effort Discounting
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+Two numbers will be shown on the screen. You will be asked which number is bigger.
+The computer will keep track of how many you have gotten correct so far; when you have a total of 100 correct, this part will be finished.
+Make your choice by clicking on one of the blue buttons.
+
+Page 3: Begin Test
+BEGIN TEST
+
+Page 4: Test With Feedback
+Which number is bigger?
+716 OR 633
+1 of 100 required
+944 OR 869
+2 of 100 required
+858 OR 916
+3 of 100 required
+629 OR 548
+4 of 100 required
+339 OR 196
+5 of 100 required
+233 OR 147
+6 of 100 required
+312 OR 471
+7 of 100 required
+419 OR 587
+8 of 100 required
+576 OR 763
+9 of 100 required
+881 OR 938
+10 of 100 required
+154 OR 327
+11 of 100 required
+537 OR 722
+12 of 100 required
+735 OR 800
+13 of 100 required
+708 OR 529
+14 of 100 required
+589 OR 528
+15 of 100 required
+674 OR 788
+16 of 100 required
+383 OR 216
+17 of 100 required
+723 OR 623
+18 of 100 required
+316 OR 501
+19 of 100 required
+878 OR 821
+20 of 100 required
+449 OR 335
+21 of 100 required
+283 OR 145
+22 of 100 required
+374 OR 318
+23 of 100 required
+626 OR 540
+24 of 100 required
+983 OR 850
+25 of 100 required
+922 OR 996
+26 of 100 required
+271 OR 455
+27 of 100 required
+806 OR 981
+28 of 100 required
+274 OR 412
+29 of 100 required
+404 OR 462
+30 of 100 required
+847 OR 716
+31 of 100 required
+111 OR 187
+32 of 100 required
+709 OR 799
+33 of 100 required
+581 OR 499
+34 of 100 required
+343 OR 407
+35 of 100 required
+782 OR 610
+36 of 100 required
+248 OR 392
+37 of 100 required
+875 OR 728
+38 of 100 required
+741 OR 852
+39 of 100 required
+338 OR 447
+40 of 100 required
+507 OR 357
+41 of 100 required
+335 OR 396
+42 of 100 required
+506 OR 602
+43 of 100 required
+226 OR 378
+44 of 100 required
+833 OR 935
+45 of 100 required
+672 OR 562
+46 of 100 required
+399 OR 332
+47 of 100 required
+435 OR 366
+48 of 100 required
+656 OR 517
+49 of 100 required
+566 OR 683
+50 of 100 required
+372 OR 209
+51 of 100 required
+146 OR 242
+52 of 100 required
+443 OR 320
+53 of 100 required
+155 OR 297
+54 of 100 required
+654 OR 727
+55 of 100 required
+269 OR 410
+56 of 100 required
+114 OR 227
+57 of 100 required
+523 OR 611
+58 of 100 required
+575 OR 480
+59 of 100 required
+805 OR 940
+60 of 100 required
+614 OR 526
+61 of 100 required
+495 OR 382
+62 of 100 required
+899 OR 742
+63 of 100 required
+410 OR 235
+64 of 100 required
+323 OR 179
+65 of 100 required
+202 OR 388
+66 of 100 required
+568 OR 687
+67 of 100 required
+797 OR 933
+68 of 100 required
+337 OR 511
+69 of 100 required
+317 OR 424
+70 of 100 required
+463 OR 577
+71 of 100 required
+964 OR 880
+72 of 100 required
+867 OR 679
+73 of 100 required
+702 OR 518
+74 of 100 required
+125 OR 189
+75 of 100 required
+514 OR 341
+76 of 100 required
+446 OR 337
+77 of 100 required
+297 OR 430
+78 of 100 required
+512 OR 619
+79 of 100 required
+841 OR 676
+80 of 100 required
+347 OR 289
+81 of 100 required
+738 OR 882
+82 of 100 required
+349 OR 240
+83 of 100 required
+745 OR 677
+84 of 100 required
+296 OR 387
+85 of 100 required
+678 OR 609
+86 of 100 required
+795 OR 613
+87 of 100 required
+928 OR 770
+88 of 100 required
+810 OR 959
+89 of 100 required
+699 OR 533
+90 of 100 required
+605 OR 423
+91 of 100 required
+510 OR 624
+92 of 100 required
+249 OR 338
+93 of 100 required
+298 OR 174
+94 of 100 required
+954 OR 758
+95 of 100 required
+485 OR 566
+96 of 100 required
+757 OR 580
+97 of 100 required
+697 OR 612
+98 of 100 required
+403 OR 510
+99 of 100 required
+224 OR 285
+100 of 100 required
+
+Page 4.1: Feedback Incorrect
+That is not correct. Please try again.
+
+Page 5: Instructions
+Two amounts of money will be shown on the screen. You will be asked whether you would rather receive the smaller amount by doing less work, or the bigger amount by doing more work.
+In this task, the work you will be asked to think about is answering questions on the Bigger Number Task you just finished. For example, when an options says “250 presses” that means answering 250 of the Bigger Number Task questions.
+
+Page 6: Instructions
+This is a “pretending” exercise – you will not really receive any money and you will not really do the work. But we ask you to make your choices as if they were real. There are no correct or incorrect answers.
+Make your choice by clicking on one of the blue buttons. Remember, when we are talking about presses, we are referring to answering that number of questions of the Bigger Number Test.
+
+Page 7: Instructions
+You will get to practice before you begin, so don’t worry if you don't understand everything yet. You can ask as many questions as you like during the practice. Once the actual task begins, we cannot answer any more questions.
+
+Page 8: Begin Practice
+BEGIN PRACTICE
+
+Page 9: Practice
+Would you rather have?
+$0.50 for 1 press
+OR
+$3.50 for 20 presses
+$2.30 for 1 press
+OR
+$2.50 for 660 presses
+$0.50 for 1 press
+OR
+$4.00 for 30 presses
+$2.90 for 1 press
+OR
+$3.00 for 660 presses
+$1.50 for 1 press
+OR
+$2.50 for 660 presses
+
+Page 10: Begin Test
+BEGIN TEST
+
+Page 11: Test
+Would you rather have?
+$1.00 for 1 press
+OR
+$3.50 for 250 presses
+$1.40 for 1 press
+OR
+$3.50 for 150 presses
+$0.80 for 1 press
+OR
+$3.50 for 620 presses
+$1.00 for 1 press
+OR
+$3.50 for 60 presses
+$1.90 for 1 press
+OR
+$2.50 for 80 presses
+$1.30 for 1 press
+OR
+$2.50 for 580 presses
+$1.70 for 1 press
+OR
+$2.50 for 480 presses
+$1.50 for 1 press
+OR
+$3.00 for 50 presses
+$1.30 for 1 press
+OR
+$2.50 for 370 presses
+$1.40 for 1 press
+OR
+$3.00 for 70 presses
+$2.10 for 1 press
+OR
+$3.00 for 170 presses
+$1.10 for 1 press
+OR
+$3.50 for 40 presses
+$1.10 for 1 press
+OR
+$2.50 for 50 presses
+$2.50 for 1 press
+OR
+$3.00 for 400 presses
+$0.80 for 1 press
+OR
+$2.50 for 50 presses
+$0.90 for 1 press
+OR
+$3.50 for 30 presses
+$2.60 for 1 press
+OR
+$3.00 for 150 presses
+$1.00 for 1 press
+OR
+$3.50 for 160 presses
+$2.50 for 1 press
+OR
+$3.00 for 80 presses
+$1.10 for 1 press
+OR
+$3.50 for 350 presses
+$1.40 for 1 press
+OR
+$2.50 for 630 presses
+$0.80 for 1 press
+OR
+$3.00 for 30 presses
+$1.20 for 1 press
+OR
+$3.50 for 50 presses
+$1.50 for 1 press
+OR
+$3.00 for 160 presses
+$2.70 for 1 press
+OR
+$3.00 for 280 presses
+$0.70 for 1 press
+OR
+$3.50 for 50 presses
+$1.00 for 1 press
+OR
+$2.50 for 40 presses
+$1.20 for 1 press
+OR
+$3.50 for 120 presses
+$1.10 for 1 press
+OR
+$3.00 for 110 presses
+$1.60 for 1 press
+OR
+$2.50 for 70 presses
+$1.40 for 1 press
+OR
+$3.50 for 240 presses
+$1.20 for 1 press
+OR
+$2.50 for 110 presses
+$1.70 for 1 press
+OR
+$3.00 for 120 presses
+$2.10 for 1 press
+OR
+$2.50 for 300 presses

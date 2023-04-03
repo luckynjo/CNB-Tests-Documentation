@@ -1,0 +1,42 @@
+test: cpf
+version: 2.05
+language: af_SA
+
+Page 0: Common
+Penn Face Memory Test
+Druk hier om voort te gaan
+Gaan terug
+
+Page 1: Title
+Penn Face Memory Test
+Druk hier om voort te gaan
+
+Page 2: Instructions
+Ek gaan vir jou gesigte wys. Kyk mooi na elke gesig en probeer om dit te onthou.
+Hierdie gesigte wat jy nou gaan sien, gaan jy later uitkies uit 'n nuwe groep gesigte.
+
+Page 3: Begin Slideshow
+BEGIN DEMONSTRASIE
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Nou gaan jy meer gesigte sien. Sommige is nuwe gesigte, en ander het jy reeds gesien. Vir elke gesig, besluit of jy dit vantevore gesien het of nie.
+Druk BESLIS JA as jy SEKER is jy HET dit gesien.
+Druk WAARSKYNLIK JA as jy DINK jy HET dit gesien.
+Druk WAARSKYNLIK NEE as jy DINK jy HET DIT NIE gesien nie.
+Druk BESLIS NEE as jy SEKER is jy HET DIT NIE gesien nie.
+BESLIS JA
+WAARSKYNLIK JA
+WAARSKYNLIK NEE
+BESLIS NEE
+
+Page 6: Begin Test
+BEGIN TOETS
+
+Page 7: Test
+BESLIS JA
+WAARSKYNLIK JA
+WAARSKYNLIK NEE
+BESLIS NEE

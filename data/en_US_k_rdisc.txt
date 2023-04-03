@@ -1,0 +1,124 @@
+test: k-rdisc
+version: 1.07
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Would you rather have?
+OR
+
+Page 1: Title
+Risk Discounting Task
+Risk Discounting
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+Instructions:
+Two amounts of money will be shown on the screen. You will be asked to choose one. If you choose the bigger amount, you have a 50/50 chance of receiving the money. Just like when you flip a coin, you will receive that amount of money about half of the time. The other times, you will not get anything.  This is called the "50/50 amount."
+If you choose the smaller amount, you are guaranteed to receive it. This is called the "certain amount".
+
+Page 3: Instructions
+This is a "pretending" exercise -- you will not really receive any money. But we ask you to make your choices as if they were real. There are no correct or incorrect answers.
+Make your choice by clicking on one of the blue buttons.
+You will get to practice before you begin, so don't worry if you don't understand everything yet. You can ask as many questions as you like during the practice. Once the actual task begins, we cannot answer any more questions.
+
+Page 4: Begin Practice
+BEGIN PRACTICE
+
+Page 5: Practice
+$28 50/50 chance
+$18 certain
+$15 50/50 chance
+$12 certain
+$64 50/50 chance
+$55 certain
+$44 50/50 chance
+$39 certain
+
+Page 6: Begin Test
+BEGIN TEST
+
+Page 7: Test
+$23 50/50 chance
+$8 certain
+$37 50/50 chance
+$18 certain
+$45 50/50 chance
+$18 certain
+$28 50/50 chance
+$16 certain
+$93 50/50 chance
+$32 certain
+$100 50/50 chance
+$63 certain
+$37 50/50 chance
+$20 certain
+$78 50/50 chance
+$31 certain
+$30 50/50 chance
+$14 certain
+$36 50/50 chance
+$1 certain
+$50 50/50 chance
+$21 certain
+$89 50/50 chance
+$28 certain
+$50 50/50 chance
+$5 certain
+$29 50/50 chance
+$14 certain
+$28 50/50 chance
+$15 certain
+$95 50/50 chance
+$42 certain
+$27 50/50 chance
+$12 certain
+$86 50/50 chance
+$45 certain
+$13 50/50 chance
+$4 certain
+$14 50/50 chance
+$4 certain
+$88 50/50 chance
+$22 certain
+$72 50/50 chance
+$36 certain
+$51 50/50 chance
+$19 certain
+$44 50/50 chance
+$37 certain
+$39 50/50 chance
+$18 certain
+$21 50/50 chance
+$15 certain
+$95 50/50 chance
+$40 certain
+$40 50/50 chance
+$7 certain
+$36 50/50 chance
+$18 certain
+$99 50/50 chance
+$57 certain
+$46 50/50 chance
+$13 certain
+$26 50/50 chance
+$1 certain
+$22 50/50 chance
+$8 certain
+$23 50/50 chance
+$12 certain
+$40 50/50 chance
+$10 certain
+$52 50/50 chance
+$5 certain
+$17 50/50 chance
+$3 certain
+$81 50/50 chance
+$68 certain
+$65 50/50 chance
+$46 certain
+$64 50/50 chance
+$2 certain
+$49 50/50 chance
+$31 certain

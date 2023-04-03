@@ -7,6 +7,7 @@ KLIK HER FOR AT FORTSÆTTE
 GÅ TILBAGE
 ANDET
 FORTSÆT TIL NÆSTE FORSØG
+Samlede svar foretaget
 
 Page 1: Title
 Kort Penn Liste-Indlærings-test B
@@ -16,9 +17,9 @@ KLIK HER FOR AT FORTSÆTTE
 Page 2: Instructions
 (Instruktioner 1)
 
-(Til test-administrator: Vend nu computerskærmen væk fra deltagerens synsfelt. Deltageren må ikke kunne se computerskærmen igennem hele denne test. Læs instruktionerne nedenfor op for deltageren. Læs herefter ordene i listen højt, i takt med at ordene bliver markerede med gult.)
+(Til test-administrator: Vend nu computerskærmen væk fra deltagerens synsfelt. Deltageren må ikke kunne se computerskærmen igennem hele denne test. Læs instruktionerne nedenfor op for deltageren. Læs herefter ordene på listen højt, i takt med at ordene bliver markerede med gult.)
 
-Jeg vil nu læse op en liste med ord. Hør godt efter, for når jeg er færdig med at læse, vil jeg have dig til at genfortælle så mange af ordene som muligt. Rækkefølgen spiller ingen rolle – bare sig så mange du kan huske. Her kommer listen:
+Jeg vil nu læse en liste op med ord. Hør godt efter, for når jeg er færdig med at læse, vil jeg bede dig om at genfortælle så mange af ordene som muligt. Rækkefølgen spiller ingen rolle – bare sig så mange du kan huske. Her kommer listen:
 
 (Vær parat til at læse listen med ord)
 
@@ -63,7 +64,7 @@ KORN
 Page 5: Instructions
 (Instruktioner 2)
 
-Jeg vil nu gentage listen med ord. Igen vil jeg gerne have dig til at sige så mange af ordene som du kan huske, i hvilken som helst rækkefølge, inklusive de ord, du allerede har fortalt mig. Her kommer listen:
+Jeg vil nu gentage listen med ord. Igen vil jeg gerne bede dig om at sige så mange af ordene, som du kan huske, i hvilken som helst rækkefølge, inklusive de ord, du allerede har fortalt mig. Her kommer listen:
 
 (Vær parat til at læse listen med ord.)
 
@@ -76,7 +77,7 @@ Page 7: Test
 Page 8: Instructions
 (Instruktioner 3)
 
-Jeg vil nu gentage listen med ord. Igen vil jeg gerne have dig til at sige så mange af ordene som du kan huske, i hvilken som helst rækkefølge, inklusive de ord, du allerede har fortalt mig. Her kommer listen:
+Jeg vil nu gentage listen med ord. Igen vil jeg gerne bede dig om at sige så mange af ordene, som du kan huske, i hvilken som helst rækkefølge, inklusive de ord, du allerede har fortalt mig. Her kommer listen:
 
 (Vær parat til at læse listen med ord.)
 

@@ -7,6 +7,7 @@ HIER KLICKEN, UM FORTZUFAHREN
 ZURÜCK
 SONSTIGES
 WEITER ZUM NÄCHSTEN VERSUCH
+Antworten insgesamt
 
 Page 1: Title
 Penn List Learning Test (kurz)
@@ -24,41 +25,41 @@ Ich lese Ihnen jetzt eine Liste von Wörtern vor. Hören Sie gut zu, denn wenn i
 
 Page 3: Slideshow
 <slideshow>
-Hose
-Marienkäfer
-Tal
-Narzisse
-Spinne
-Nelke
-Schlucht
-Rock
-Lilie
-Käfer
-Schuh
-Klippe
-Orchidee
-Ameise
-Hut
-Berg
+HOSE
+MARIENKÄFER
+TAL
+NARZISSE
+SPINNE
+NELKE
+SCHLUCHT
+ROCK
+LILIE
+KÄFER
+SCHUH
+KLIPPE
+ORCHIDEE
+AMEISE
+HUT
+BERG
 
 Page 4: Test
 <trials>
-Hose
-Rock
-Schuh
-Hut
-Marienkäfer
-Spinne
-Käfer
-Ameise
-Tal
-Schlucht
-Klippe
-Berg
-Narzisse
-Nelke
-Lilie
-Orchidee
+HOSE
+ROCK
+SCHUH
+HUT
+MARIENKÄFER
+SPINNE
+KÄFER
+AMEISE
+TAL
+SCHLUCHT
+KLIPPE
+BERG
+NARZISSE
+NELKE
+LILIE
+ORCHIDEE
 
 Page 5: Instructions
 (Anweisungen 2)

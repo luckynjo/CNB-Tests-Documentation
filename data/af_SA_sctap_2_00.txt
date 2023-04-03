@@ -1,0 +1,58 @@
+test: sctap
+version: 2.00
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+DRUK DIE SPASIEBALK OM VOORT TE GAAN
+<WH> SKRYFHAND
+<NWH> NIE-SKRYWENDE HAND
+
+Page 1: Title
+Short Computerized Finger-Tapping Task
+Short form
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Handedness trial
+Jou vinger spoed word hier getoets.
+Druk die spasiebalk so vining as wat jy kan.
+Na elke proeflopie gaan jy hande omruil.
+Gebruik die muis om jou skryfhand te kies.
+<HANDEDNESS> Linkshandig
+<HANDEDNESS> Regshandig
+
+Page 3: Demo Instructions
+Hou aan om jou hand in die posisie wat jy hier onder sien te hou.
+
+Page 4: Instructions
+Kom ons oefen.
+Wanneer jy sien "GAAN!" druk die spasiebalk so vining as wat jy kan.
+Onthou, gebruik die hand posisie wat jy nou net geleer het. MOENIE JOU HELE HAND OF ARM GEBRUIK OM TE DRUK NIE -- net jou vinger.
+
+Page 5: Begin Practice
+BEGIN OEFENING
+
+Page 6: Countdown
+OEFEN RONDTE <TRIAL_NUMBER> GEBRUIK JOU
+<WH> SKRYFHAND
+<NWH> NIE-SKRYWENDE HAND
+
+Page 7: Practice
+GAAN!
+STOP!
+
+Page 8: Begin Test
+BEGIN TOETS
+
+Page 9: Countdown
+RONDTE <TRIAL_NUMBER> GEBRUIK JOU
+<WH> SKRYFHAND HAND
+<NWH> NIE-SKRYWENDE HAND
+Die rondte begin in:
+sekondes.
+HOU JOU HAND IN DIE REGTE POSISIE WANNEER JY OP DIE SPASIEBALK DRUK.
+
+Page 8: Test
+GAAN!
+STOP!

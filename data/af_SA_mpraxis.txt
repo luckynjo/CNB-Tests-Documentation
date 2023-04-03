@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.05
+language: af_SA
+
+Page 0: Common
+Druk hier om voort te gaan
+Gaan terug
+
+Page 1: Title
+Motor Praxis Task
+Druk hier om voort te gaan
+
+Page 2: Instructions
+Jou vermoë om die muis te beheer word hier getoets.
+Jy sal een vir een groen bokse sien. Beweeg die muis oor elke boks en druk EEN KEER daarop.
+
+Page 3: Begin Practice
+BEGIN OEFENING
+
+Page 4: Practice
+Druk op die groen boks om voort te gaan
+
+Page 5: Instructions
+Hierdie keer sal jy 5 sekondes hê om op elke boks te druk. Probeer om op die boks te druk voor dit verdwyn.
+
+Page 6: Begin Test
+BEGIN TOETS
+
+Page 7: Test
+Druk op die groen boks om voort te gaan

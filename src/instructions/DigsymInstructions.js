@@ -29,19 +29,13 @@ export const DigsymInstructions = props => {
       }
     });
   return (
-    size > 4 ?
+    size >= 2 ?
     <div className="page full">
     <div className = "instructions digsym text--left">
-
     <img className="instructions-image-centered" src={test_form === "a" ? digsym_a_banner : digsym_b_banner} />
-     <p>{instructions_str.join(" ")}</p>
-     <br/>
-
-     <p>{other_instructions_str.join(" ")}</p>
-     <br/>
-
+     <p>{other_instructions_str[0]}</p>
+     <p>{other_instructions_str[1]}</p>
      <div className="inline instructions-button-row">
-
        <div className="inline instructions-button-wrapper"><p className="instructions-button">{same_text}</p></div>
        <div className="inline instructions-button-wrapper"><p className="instructions-button">{different_text}</p></div>
      </div>
