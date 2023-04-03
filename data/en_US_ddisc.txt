@@ -15,7 +15,7 @@ CLICK HERE TO CONTINUE
 
 Page 2: Instructions
 Instructions:
-The purpose of this task is to measure your preferences for different hypothetical amounts of money. Please make your decisions as if all choices involved were real. We are interested in which reward you would choose to receive if you were offered these choices for real. There are no correct\nincorrect choices.
+The purpose of this task is to measure your preferences for different hypothetical amounts of money. Please make your decisions as if all choices involved were real. We are interested in which reward you would choose to receive if you were offered these choices for real. There are no correct or incorrect choices.
 Two amounts of money will appear on the screen. One amount can be received right now. The other amount can be received later. The screen will show you how long you will have to wait to receive that amount. The amount of the "right now" reward will change after each of your decisions. The "later" reward will stay the same for a group of choices.
 
 Page 3: Instructions

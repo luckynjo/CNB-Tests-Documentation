@@ -23,11 +23,11 @@ export const CPFDemoInstructions = props => {
      <p>{instructions[4]}</p>
      </p>
 
-     <div className='memory-buttons--other center--horizontal inline'>
+     <div className='cpf-instructions-button center--horizontal inline'>
      {instructions.map((item, index) => {
        if(index > 4)
        {
-         return (<button className="button cpf-button" key={index + 55}>{item}</button>)
+         return (<button className="button cpf-test-button" key={index + 55}>{item}</button>)
        }
      })}
      </div>

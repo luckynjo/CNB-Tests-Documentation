@@ -1,0 +1,195 @@
+test: sfnb2
+version: 3.00
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+Druk spasiebalk om voort te gaan.
+
+Page 1: Title
+Short Fractal-N-Back
+Short Form
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Instructions
+Jy gaan een beeld op 'n slag op die skerm sien.
+Vir elke beeld, besluit om die spasiebalk te druk of nie.
+Daar is drie dele met verskillende reëls:
+0-TERUG
+1-TERUG
+2-TERUG
+Ons sal al drie dele oefen.
+
+Page 3: 0-Back Instructions
+Ons gaan eers 0-TERUG oefen.
+Druk die spasiebalk wanneer jy die volgende beeld sien:
+Enige vrae?
+
+Page 4: Begin Practice
+BEGIN 0-TERUG OEFENING
+
+Page 5: 0-Back Countdown
+0-TERUG
+Druk die spasiebalk wanneer jy hierdie beeld sien:
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+Dit is nie reg nie.
+Druk die spasiebalk elke keer wanneer jy hierdie beeld sien.
+
+Page 6.2: Feedback False Positive
+Dit is nie reg nie.
+Druk slegs die spasiebalk wanneer jy hierdie beeld sien.
+
+Page 7: 1-Back Instructions
+Nou gaan ons 1-TERUG oefen
+Druk die spasiebalk wanneer die beeld wat jy sien dieselfde is as die beeld wat "net voor dit" was.
+Byvoorbeeld:
+DRUK
+Enige vrae?
+
+Page 8: Begin Practice
+BEGIN 1-TERUG OEFENING
+
+Page 9: 1-Back Countdown
+1-TERUG
+Druk die spasiebalk wanneer die beeld wat jy sien dieselfde is as die vorige beeld.
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+Dit is nie reg nie.
+Druk die spasiebalk wanneer die beeld wat jy sien dieselfde is as die vorige beeld.
+
+Page 10.2: Feedback False Positive
+Dit is nie reg nie.
+Druk slegs die spasiebalk wanneer die beeld wat jy sien dieselfde is as die vorige beeld.
+
+Page 11: 1-Back Demo
+1ste Beeld
+Laaste Beeld
+DRUK
+Slaan 1-Terug Video oor
+Slaan opleiding video oor en gaan terug na oefening
+
+Page 11.1: 1-Back Demo Section 1
+Ons gaan 'n nuwe manier om na die taak te kyk probeer.
+Kom ons neem aan die lys beelde hieronder is in die volgorde van die beelde wat jy in hierdie toets sal sien.
+Wanneer die huidige beeld dieselfde is as die beeld wat reg voor dit kom, moet jy die spasiebalk druk.
+
+Page 11.2: 1-Back Demo Section 2
+Tydens die demonstrasie sal beelde in die venster verskyn net soos dit sal tydens die toets. Jy kan die volgorde waarin beelde gewys sal word volg deur na die lys bo-aan die skerm te kyk. Die huidige beeld sal n boks rondom hê.
+
+Page 11.3: 1-Back Demo Section 3
+Wat jy tydens die toets sal sien, is binne hierdie venster.
+Druk die spasiebalk wanneer die beeld wat jy sien dieselfde is as die vorige beeld.
+
+Page 11.4: 1-Back Demo Section 4
+Nou sal ons weer die 1-TERUG oefening probeer.
+Soos die eerste keer wat jy die oefening probeer het, sal jy nie die lys bo-aan die skerm hê om jou aan die vorige beelde te herinner nie.
+Onthou om die spasiebalk te druk wanneer die beeld op die skerm dieselfde is as die vorige een.
+Het jy enige vrae?
+
+Page 12: 2-Back Instructions
+Nou gaan ons 2-TERUG oefen.
+Druk  die spasiebalk wanneer die beeld op die skerm dieselfde is as die een voor die vorige beeld.
+Byvoorbeeld:
+DRUK
+
+Page 13: Begin Practice
+BEGIN 2-TERUG OEFENING
+
+Page 14: 2-Back Countdown
+2-TERUG
+Druk die spasiebalk wanneer die beeld op die skerm dieselfde is as die een voor die vorige beeld.
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+Dit is nie reg nie.
+Druk die spasiebalk wanneer die beeld op die skerm dieselfde is as die een voor die vorige beeld.
+
+Page 15.2: Feedback False Positive
+Dit is nie reg nie.
+Druk slegs die spasiebalk wanneer die beeld op die skerm dieselfde is as die een voor die vorige beeld.
+
+Page 16: 2-Back Demo
+1ste Beeld
+Laaste Beeld
+DRUK
+Slaan 2-Terug Video oor
+Slaan oefen video oor en keer terug na oefening
+
+Page 16.1: 2-Back Demo Section 1
+Ons gaan 'n nuwe manier om na die taak te kyk probeer.
+Kom ons neem aan die lys beelde hieronder is in die volgorde van die beelde wat jy in die 2-TERUG sal sien.
+Wanneer die huidige beeld dieselfde is as die beeld wat twee voor dit gekom het, moet jy die spasiebalk druk.
+
+Page 16.2: 2-Back Demo Section 2
+Tydens die demonstrasie sal beelde in die venster verskyn net soos dit sal tydens die toets. Jy kan die volgorde waarin die beelde gewys sal word volg deur na die lys bo-aan die skerm te kyk. Die huidige beeld sal 'n boks rondom hê.
+
+Page 16.3: 2-Back Demo Section 3
+Wat jy tydens die toets sal sien, is binne hierdie venster.
+Druk die spasiebalk wanneer die beeld wat jy sien dieselfde is as die beeld voor die vorige een.
+
+Page 16.4: 2-Back Demo Section 4
+Nou sal ons weer die 2-TERUG oefening probeer.
+Soos die eerste keer wat jy die oefening probeer het, sal jy nie die lys bo-aan die skerm hê om jou aan die vorige beelde te herinner nie.
+Onthou om die spasiebalk te druk wanneer die beeld op die skerm dieselfde is as die beeld wat twee voor dit gekom het.
+Het jy enige vrae?
+
+Page 17: Instructions
+Jy het die oefening voltooi.
+Ons gaan nou met die toets begin.
+Tydens die toets sal jy die 0-TERUG, 1-TERUG, en 2-TERUG take verskeie keer doen.
+Het jy vrae voor die toets begin?
+
+Page 18: Begin Test
+BEGIN TOETS
+
+Page 19: 0-Back Countdown
+0-TERUG
+Druk die spasiebalk wanneer jy hierdie beeld sien:
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+1-TERUG
+Druk die spasiebalk wanneer die huidige beeld dieselfde is as die vorige beeld.
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+2-TERUG
+Druk die spasiebalk wanneer die beeld wat jy sien dieselfde is as die een voor die vorige beeld.
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+1-TERUG
+Druk die spasiebalk wanneer die huidige beeld dieselfde is as die vorige beeld.
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+2-TERUG
+Druk die spasiebalk wanneer die beeld wat jy sien dieselfde is as die een voor die vorige beeld.
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+0-TERUG
+Druk die spasiebalk wanneer jy hierdie beeld sien:
+
+Page 30: 0-Back Test
+<0_back_2>

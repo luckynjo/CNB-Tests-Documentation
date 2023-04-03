@@ -100,10 +100,10 @@ export class PLLTTrials extends React.Component{
     const words = wordsLeft.map((word, index) =>
     <tr key={index}>
     <td>
-    <button className={"pllt-response-button " + activeClass(wordsLeft[index])} onClick={(e) => this.onResponse(e, responsesLeft[index].trim())}>{"** " + wordsLeft[index] + " **"}</button>
+    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsLeft[index])} onClick={(e) => this.onResponse(e, responsesLeft[index].trim())}>{"** " + wordsLeft[index] + " **"}</button>
     </td>
     <td>
-    <button className={"pllt-response-button " + activeClass(wordsRight[index])} onClick={(e) => this.onResponse(e, responsesRight[index].trim())}>{"** " + wordsRight[index] + " **"}</button>
+    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsRight[index])} onClick={(e) => this.onResponse(e, responsesRight[index].trim())}>{"** " + wordsRight[index] + " **"}</button>
     </td>
     {index === 0 &&
       (

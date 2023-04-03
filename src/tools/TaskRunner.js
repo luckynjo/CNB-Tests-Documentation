@@ -117,8 +117,14 @@ export default class TaskRunner extends React.Component
     }
     else if(task === "timeline" && test.test.includes("pllt"))
     {
+      let form = null;
+      let language = null;
+      if(test.test.includes("de_DE") && test.test.includes("pllt-c")){
+        form = "c";
+        language = "de_DE";
+      }
       return <div className="container-8-by-6  dark frame">
-      <PLLT base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
+      <PLLT base_url={this.props.base_url} form={form} language={language} timeline={timeline} test={test} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline" && test.test.includes("svolt"))

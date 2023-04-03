@@ -5,6 +5,8 @@ language: en_US
 Page 0: Common
 CLICK HERE TO CONTINUE
 GO BACK
+Would you rather have?
+OR
 
 Page 1: Title
 Risk Discounting Task
@@ -25,55 +27,98 @@ Page 4: Begin Practice
 BEGIN PRACTICE
 
 Page 5: Practice
-Would you rather have?
-$28 50/50 chance OR $18 certain
-$15 50/50 chance OR $12 certain
-$64 50/50 chance OR $55 certain
-$44 50/50 chance OR $39 certain
+$28 50/50 chance
+$18 certain
+$15 50/50 chance
+$12 certain
+$64 50/50 chance
+$55 certain
+$44 50/50 chance
+$39 certain
 
 Page 6: Begin Test
 BEGIN TEST
 
 Page 7: Test
-Would you rather have?
-$23 50/50 chance OR $8 certain
-$37 50/50 chance OR $18 certain
-$45 50/50 chance OR $18 certain
-$28 50/50 chance OR $16 certain
-$93 50/50 chance OR $32 certain
-$100 50/50 chance OR $63 certain
-$37 50/50 chance OR $20 certain
-$78 50/50 chance OR $31 certain
-$30 50/50 chance OR $14 certain
-$36 50/50 chance OR $1 certain
-$50 50/50 chance OR $21 certain
-$89 50/50 chance OR $28 certain
-$50 50/50 chance OR $5 certain
-$29 50/50 chance OR $14 certain
-$28 50/50 chance OR $15 certain
-$95 50/50 chance OR $42 certain
-$27 50/50 chance OR $12 certain
-$86 50/50 chance OR $45 certain
-$13 50/50 chance OR $4 certain
-$14 50/50 chance OR $4 certain
-$88 50/50 chance OR $22 certain
-$72 50/50 chance OR $36 certain
-$51 50/50 chance OR $19 certain
-$44 50/50 chance OR $37 certain
-$39 50/50 chance OR $18 certain
-$21 50/50 chance OR $15 certain
-$95 50/50 chance OR $40 certain
-$40 50/50 chance OR $7 certain
-$36 50/50 chance OR $18 certain
-$99 50/50 chance OR $57 certain
-$46 50/50 chance OR $13 certain
-$26 50/50 chance OR $1 certain
-$22 50/50 chance OR $8 certain
-$23 50/50 chance OR $12 certain
-$40 50/50 chance OR $10 certain
-$52 50/50 chance OR $5 certain
-$17 50/50 chance OR $3 certain
-$81 50/50 chance OR $68 certain
-$65 50/50 chance OR $46 certain
-$64 50/50 chance OR $2 certain
-$49 50/50 chance OR $31 certain
+$23 50/50 chance
+$8 certain
+$37 50/50 chance
+$18 certain
+$45 50/50 chance
+$18 certain
+$28 50/50 chance
+$16 certain
+$93 50/50 chance
+$32 certain
+$100 50/50 chance
+$63 certain
+$37 50/50 chance
+$20 certain
+$78 50/50 chance
+$31 certain
+$30 50/50 chance
+$14 certain
+$36 50/50 chance
+$1 certain
+$50 50/50 chance
+$21 certain
+$89 50/50 chance
+$28 certain
+$50 50/50 chance
+$5 certain
+$29 50/50 chance
+$14 certain
+$28 50/50 chance
+$15 certain
+$95 50/50 chance
+$42 certain
+$27 50/50 chance
+$12 certain
+$86 50/50 chance
+$45 certain
+$13 50/50 chance
+$4 certain
+$14 50/50 chance
+$4 certain
+$88 50/50 chance
+$22 certain
+$72 50/50 chance
+$36 certain
+$51 50/50 chance
+$19 certain
+$44 50/50 chance
+$37 certain
+$39 50/50 chance
+$18 certain
+$21 50/50 chance
+$15 certain
+$95 50/50 chance
+$40 certain
+$40 50/50 chance
+$7 certain
+$36 50/50 chance
+$18 certain
+$99 50/50 chance
+$57 certain
+$46 50/50 chance
+$13 certain
+$26 50/50 chance
+$1 certain
+$22 50/50 chance
+$8 certain
+$23 50/50 chance
+$12 certain
+$40 50/50 chance
+$10 certain
+$52 50/50 chance
+$5 certain
+$17 50/50 chance
+$3 certain
+$81 50/50 chance
+$68 certain
+$65 50/50 chance
+$46 certain
+$64 50/50 chance
+$2 certain
+$49 50/50 chance
+$31 certain

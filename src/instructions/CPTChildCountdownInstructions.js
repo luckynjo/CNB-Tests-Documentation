@@ -1,18 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import {SimpleInstructionsParser} from '../utils/SimpleInstructionsParser.js';
 import {Span} from '../components/Span.js';
-import {PlayButton} from '../components/PlayButton.js';
 import {Paragraph} from '../components/Paragraph.js';
 import {Image} from '../components/Image.js';
 import {Row} from '../layouts/Row.js';
 import keyboard_pic from '../assets/keyboard.png';
+import circle from '../assets/cptChild/Circle_1.png';
+import star from '../assets/cptChild/Star_1.png';
 
 /****
  Function to display countdown timer for CPT task.
 */
 
 export const CPTChildCountdownInstructions = props => {
-  const {seconds, instructions, callback, ...rest} = props;
+  const {seconds, instructions, callback, shape, ...rest} = props;
   let [remainingTime, setRemainingTime] = useState(seconds);
 
   useEffect(() => {
@@ -51,7 +52,7 @@ export const CPTChildCountdownInstructions = props => {
     <td colSpan={2}><p className="text--center">{instructions[2] || 'Use the spacebar to respond'}</p></td>
     <td>
     <button className="cptChild--button--countdown">
-      <PlayButton countdown={true}/>
+      {shape === "circle" ? <img src={circle} width="100" alt="circle"/> : <img src={star} width="100" alt="star"/>}
     </button>
     </td>
     </tr>

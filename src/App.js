@@ -1,6 +1,6 @@
 import logo from './logo.svg';
-import {TestVersionsEditor} from './tools/TestVersionsEditor.js';
-//import TaskRunner from './tools/TaskRunner.js';
+//import {TestVersionsEditor} from './tools/TestVersionsEditor.js';
+import TaskRunner from './tools/TaskRunner.js';
 
 
 import ReactDOM from "react-dom/client";
@@ -17,14 +17,14 @@ function App(){
 </BrowserRouter>
 )*/
 //const BASE_URL = "https://webcnp.med.upenn.edu/surveys/";   /* surveys on prd */
-//const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";   /* webcnp on dev */
+const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";   /* webcnp on dev */
 //const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/surveys/";   /* surveys on dev */
 const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/webcnp.pl";   /* webcnp on dev */
 //const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/surveys/survey.pl";   /* surveys on prd */
 //const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/surveys/survey.pl";   /* surveys on dev */
-const BASE_URL = "http://localhost/";
+//const BASE_URL = "http://localhost/";
 return (
-	<TestVersionsEditor base_url={BASE_URL} assessment_url={ASSESSMENT_URL}/>
+	<TaskRunner base_url={BASE_URL} assessment_url={ASSESSMENT_URL}/>
 )
 }
 

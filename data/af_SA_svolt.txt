@@ -1,0 +1,44 @@
+test: svolt
+version: 3.00
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+
+Page 1: Title
+Visual Object Learning Test
+Immediate Memory Short
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Instructions
+Jy sal 'n paar figure sien. Probeer om die hele figuur te onthou.
+Later sal jy hierdie vorms uitkies uit 'n groter groep vorms.
+
+Page 3: Begin Practice
+BEGIN DEMONSTRASIE
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Nou gaan jy meer vorms sien. Sommige is nuut, ander het jy reeds gesien.
+Vir elke vorm, besluit of jy dit voorheen gesien het.
+BESLIS JA
+WAARSKYNLIK JA
+WAARSKYNLIK NEE
+BESLIS NEE
+Druk BESLIS JA as jy SEKER is jy HET dit gesien.
+Druk WAARSKYNLIK JA as jy DINK jy HET dit gesien.
+Druk WAARSKYNLIK NEE as jy DINK jy HET dit NIE gesien NIE.
+Druk BESLIS NEE as jy SEKER is jy HET dit NIE gesien NIE.
+
+Page 6: Begin Test
+BEGIN TOETS
+
+Page 7: Test
+<trials>
+BESLIS JA
+WAARSKYNLIK JA
+WAARSKYNLIK NEE
+BESLIS NEE

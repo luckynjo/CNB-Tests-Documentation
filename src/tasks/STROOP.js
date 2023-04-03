@@ -124,7 +124,7 @@ export default class STROOP extends React.Component {
 
   onPracticeComplete()
   {
-    const index = this.state.index + 3;
+    const index = this.state.index + 10;
     this.setState((prevState, props) => {
       return {index: index};
     });
@@ -216,15 +216,15 @@ export default class STROOP extends React.Component {
     }
     else if(section_title.match(PRACTICE_1_REGEX))
     {
-      return <STROOPTrials proc={"practice"} base_url={this.props.base_url} trials={this.props.practice_trials} onTrialsComplete={this.onTrialsComplete} onContinue={this.next} instructions={JSON.parse(timeline_object.content)}/>
+      return <STROOPTrials proc={"practice"} index={this.state.index} base_url={this.props.base_url} trials={this.props.practice_trials} onTrialsComplete={this.onTrialsComplete} onContinue={this.next} instructions={JSON.parse(timeline_object.content)}/>
     }
     else if(section_title.match(PRACTICE_2_REGEX))
     {
-      return <STROOPTrials proc={"practice"} base_url={this.props.base_url} trials={this.props.practice_trials} onTrialsComplete={this.onTrialsComplete} onContinue={this.next} instructions={JSON.parse(timeline_object.content)}/>
+      return <STROOPTrials proc={"practice"} index={this.state.index} base_url={this.props.base_url} trials={this.props.practice_trials} onTrialsComplete={this.onTrialsComplete} onContinue={this.next} instructions={JSON.parse(timeline_object.content)}/>
     }
     else if(section_title.match(PRACTICE_3_REGEX))
     {
-      return <STROOPTrials proc={"practice"} base_url={this.props.base_url} trials={this.props.practice_trials} onTrialsComplete={this.onTrialsComplete} onContinue={this.next} instructions={JSON.parse(timeline_object.content)}/>
+      return <STROOPTrials proc={"practice"} index={this.state.index} base_url={this.props.base_url} trials={this.props.practice_trials} onTrialsComplete={this.onTrialsComplete} onContinue={this.next} instructions={JSON.parse(timeline_object.content)}/>
     }
     else if(section_title.match(TEST_REGEX))
     {

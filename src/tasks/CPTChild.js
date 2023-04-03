@@ -270,11 +270,11 @@ export default class CPTChild extends React.Component{
     }
     else if(section_title.match(SECOND_COUNTDOWN_REGEX))
     {
-      return <CPTChildCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
+      return <CPTChildCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next} shape="star"/>
     }
     else if(section_title.match(TEST_COUNTDOWN_REGEX))
     {
-      return <CPTChildCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
+      return <CPTChildCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next} shape="circle"/>
     }
     else if(section_title.match(Last_TEST_REGEX))
     {

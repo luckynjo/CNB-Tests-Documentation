@@ -151,8 +151,9 @@ export class ER40ChildPracticeTrial extends React.Component{
     const feedback = this.state.feedback;
     const practiceInstruction = this.props.buttons[0];
     const buttons = this.props.buttons.map((item, index) => {
+      const emotions = ["Happy", "Sad", "Angry", "Scared", "Neutral"];
       if(index > 0){
-        return (<div className="button er40--response-button-child" key={index + 155} onClick={(e) => this.onPracticeResponse(e, index)}><img src={this.emoji_array[index-1]} height="80" width = "80"/></div>)
+        return (<div className="button er40--response-button-child" key={index + 155} onClick={(e) => this.onPracticeResponse(e, index)}><img src={this.emoji_array[index-1]} height="80" width = "80" style={{marginLeft: "2px"}}/><p style={{ paddingLeft: "5px", marginTop: "22px", marginRight: "4px"}}>{emotions[index-1]}</p></div>)
       }
     })
 

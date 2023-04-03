@@ -1,0 +1,30 @@
+test: k-pcet
+version: 3.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+The Penn Conditional Exclusion Task
+A-Form
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+You will see four objects. Click on the object that does not belong.
+When you choose correctly, you will see CORRECT.
+When you choose incorrectly, you will see INCORRECT.
+
+Page 3: Begin Test
+BEGIN TEST
+
+Page 4: Test
+<pcet_trials>
+Click on the object that is NOT like the others.
+
+Page 4.1: Feedback Correct
+CORRECT
+
+Page 4.2: Feedback Incorrect
+INCORRECT

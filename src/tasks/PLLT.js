@@ -156,11 +156,11 @@ export default class PLLT extends React.Component{
 		}
 		else if(section_title.match(SLIDESHOW_REGEX))
 		{
-			return <PLLTSlideshow words={this.slideshowWords(JSON.parse(timeline_object.content))} onSlideShowComplete={this.next}/>
+			return <PLLTSlideshow form={this.props.form} language={this.props.language} words={this.slideshowWords(JSON.parse(timeline_object.content))} onSlideShowComplete={this.next}/>
 		}
     else if(section_title.match(TEST_REGEX))
     {
-      return <PLLTTrials trials={this.props.test_trials} trial={this.state.trial} words={this.trialWords(JSON.parse(timeline_object.content))} next_trial_button_text={this.next_trial_button_text} total_responses_text={this.total_responses_text} other_button_text={this.other_button_text} onTrialsComplete={(e) => this.onTrialsComplete(e)} />
+      return <PLLTTrials form={this.props.form} language={this.props.language} trials={this.props.test_trials} trial={this.state.trial} words={this.trialWords(JSON.parse(timeline_object.content))} next_trial_button_text={this.next_trial_button_text} total_responses_text={this.total_responses_text} other_button_text={this.other_button_text} onTrialsComplete={(e) => this.onTrialsComplete(e)} />
     }
 		else
 		{

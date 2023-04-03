@@ -11,7 +11,7 @@ import triangle from '../assets/cptChild/Triangle_1.png';
 import star from '../assets/cptChild/Star_1.png';
 import diamond from '../assets/cptChild/Diamond_1.png';
 import rectangle from '../assets/cptChild/Rectangle_1.png';
-
+import click_sound from '../assets/cptChild/click_sound.mp3';
 
 const TRIAL_DURATION = 1000;
 const STIM_DURATION = 500; //300
@@ -52,6 +52,7 @@ export class CPTChildTrials extends React.Component
     this.nextSlide = this.nextSlide.bind(this);
     this.duration = 1000;
     this.correct = 0;
+    this.audio = new Audio(click_sound);
   }
 
   componentDidMount()
@@ -375,10 +376,9 @@ export class CPTChildTrials extends React.Component
   {
     return(
       <div className="container canvas_container">
+      <div className='cptChild--stimuli--sound' onClick={e => {this.audio.play(); this.onTestResponse(e)}}>
       <canvas ref={this.canvasRef} width="800" height="600" />
-      {this.state.displayBtn ? <button className="cptChild--button--test" onClick={e => this.onTestResponse(e)}>
-        <PlayButton test={this.props.test ? this.props.test : false}/>
-      </button> : ""}
+      </div>
       </div>
     );
   }
