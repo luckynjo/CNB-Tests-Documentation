@@ -1,0 +1,36 @@
+test: cpf_cal
+version: 2.05
+language: tn_BW
+
+Page 0: Common
+Teko ya bokgoni jwa go gakologelwa difatlhego ya “Penn”
+TOBETSA FA GO TSWELELA
+BOELA FA MORAGO
+
+Page 1: Title
+Penn Face Memory Test
+TOBETSA FA GO TSWELELA
+
+Page 2: Instructions
+Ke tsile go go bontsha difatlhego di se kae. Leba ka keletlhoko sefatlhego sengwe le sengwe o leke go di gakologelwa.
+Morago, o tla tlhopha difatlhego tse o setseng odi bone mo difatlhego tse dintsi di kopane.
+
+Page 3: Begin Slideshow
+SIMOLOLA ITHUTUNTSHO
+
+Page 4: Slideshow
+<slideshow>
+
+Page 5: Demo Instructions
+Jaanong o tla bona difatlhego di le mmalwa. Dingwe di disha, dingwe o sa tswa go di bona. Supa tse o kileng wa di bona.
+Tobetsa ‘EE’ fa okile wa bona sefatlhego.
+obetsa ‘NYAA’ fa o sa bona sefatlhego.
+EE
+NYAA
+
+Page 6: Begin Test
+SIMOLOLA TEKO
+
+Page 7: Test
+EE
+NYAA

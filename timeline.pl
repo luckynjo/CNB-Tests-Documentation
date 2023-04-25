@@ -32,7 +32,7 @@ my %vars = (
 # only returns upon successful authentication
 #my ($adminid, $http_header_hashref) = check_login($cgi, \%vars, 'zscores', $template, 'zscores.pl', $db);
 my %invalid_request = ("status" => 400, "message" => "There was an error processing your request. Please try again later.");
-my %success_request = ("status" => 400, "message" => "Content was updated successfully.");
+my %success_request = ("status" => 200, "message" => "Content was updated successfully.");
 my $raw_data = $cgi->param('POSTDATA');
 if(!$raw_data)
 {

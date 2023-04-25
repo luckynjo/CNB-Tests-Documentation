@@ -13,7 +13,16 @@ export const TestLoader = props =>
 {
   const {base_url, assessment_url, onLoad, onError, ...rest} = props;
   let [loaded, setLoaded] = useState(0);
-  let [message, setMessage] = useState("Loading test ...");
+	let [message, setMessage] = useState("Loading test ...");
+
+	const location = window.location.href;
+	console.log('url ', location);
+	let zurl = 'webcnp.pl';
+	if (location.includes('survey')) {
+		zurl = 'survey.pl';
+	} else if (location.includes('administer')) {
+		zurl = 'administer.pl';
+	}
 
   useEffect(() => {
     //axios.get('http://localhost/webcnp.pl?op=get_next_test_json')
@@ -27,7 +36,8 @@ export const TestLoader = props =>
     // k-er40-d-3.60-ff
     // svolt-3.00-ff
     //axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'k-er40-d-preschool-3.60-ff', 'language': 'en_US'})
-    axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
+    //axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
+	  axios.get(zurl + '/?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
           if(response.data.timeline.length > 0)
