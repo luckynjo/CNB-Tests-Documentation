@@ -15,6 +15,7 @@ export const TestLoader = props =>
   let [loaded, setLoaded] = useState(0);
 	let [message, setMessage] = useState("Loading test ...");
 
+	/*** We have several assessment URLs and webcnp and surveys will eventually be retired. However, we always want to request the tests from the current page. */
 	const location = window.location.href;
 	console.log('url ', location);
 	let zurl = 'webcnp.pl';
@@ -25,18 +26,10 @@ export const TestLoader = props =>
 	}
 
   useEffect(() => {
-    //axios.get('http://localhost/webcnp.pl?op=get_next_test_json')
+    // axios.get('http://localhost/webcnp.pl?op=get_next_test_json')
     // sctap-2.00-ff
-    // spcptn90-4.00-ff
-    // svolt-3.00-ff
-    //cpf-2.05-ff
-    // digsym-a-2.00-ff
-    // sfnb2-3.00-ff
-    //spllt-a-1.00-ff
-    // k-er40-d-3.60-ff
-    // svolt-3.00-ff
+	// axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
 	  axios.get(zurl + '/?op=get_next_test_json')
-    //axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);
           if(response.data.timeline.length > 0)
