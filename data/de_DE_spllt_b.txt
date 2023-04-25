@@ -7,6 +7,7 @@ HIER KLICKEN, UM FORTZUFAHREN
 ZURÜCK
 SONSTIGES
 WEITER ZUM NÄCHSTEN VERSUCH
+Antworten insgesamt
 
 Page 1: Title
 Penn List Learning Test (kurz)
@@ -24,41 +25,41 @@ Ich lese Ihnen jetzt eine Liste von Wörtern vor. Hören Sie gut zu, denn wenn i
 
 Page 3: Slideshow
 <slideshow>
-Trompete
-Kohle
-Zucker
-Salat
-Kerosin
-Bohne
-Knoblauch
-Violine
-Kartoffel
-Holz
-Klarinette
-Vanille
-Getreide
-Benzin
-Flöte
-Zimt
+TROMPETE
+KOHLE
+ZUCKER
+SALAT
+KEROSIN
+BOHNE
+KNOBLAUCH
+VIOLINE
+KARTOFFEL
+HOLZ
+KLARINETTE
+VANILLE
+GETREIDE
+BENZIN
+FLÖTE
+ZIMT
 
 Page 4: Test
 <trials>
-Trompete
-Violine
-Klarinette
-Flöte
-Kohle
-Kerosin
-Holz
-Benzin
-Zucker
-Knoblauch
-Vanille
-Zimt
-Salat
-Bohne
-Kartoffel
-Getreide
+TROMPETE
+VIOLINE
+KLARINETTE
+FLÖTE
+KOHLE
+KEROSIN
+HOLZ
+BENZIN
+ZUCKER
+KNOBLAUCH
+VANILLE
+ZIMT
+SALAT
+BOHNE
+KARTOFFEL
+GETREIDE
 
 Page 5: Instructions
 (Anweisungen 2)

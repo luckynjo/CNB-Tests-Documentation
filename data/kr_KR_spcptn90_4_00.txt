@@ -29,7 +29,7 @@ Page 3: Begin Practice
 
 Page 4: Countdown
 준비하십시오!
-연습 시작 초읽기: 응답하려면 스페이스 바를 누르세요
+연습이 곧 시작됩니다:
 응답하려면 스페이스 바를 누르세요
 
 Page 5: Practice
@@ -76,7 +76,7 @@ Page 7: Begin Test
 
 Page 8: Countdown
 준비하십시오!
-몇 가지 예는 다음과 같습니다.
+검사가 곧 시작됩니다:
 응답하려면 스페이스 바를 누르세요
 
 Page 9: Test

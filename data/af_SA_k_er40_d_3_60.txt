@@ -1,0 +1,51 @@
+test: k-er40
+version: 3.60
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+
+Page 1: Title
+Penn Emotion Recognition Test
+ER40 Form D
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Instructions
+In hierdie toets gaan jy gesigte sien. Kyk mooi na elke gesig en probeer besluit hoe die persoon voel.
+Druk op die woord wat die beste beskryf hoe die persoon voel.
+
+Page 3: Instructions
+As die person geen gevoel wys, druk op "Geen Gevoel."
+Kom ons oefen 'n gesig...
+
+Page 4: Begin Practice
+BEGIN OEFENING
+
+Page 5: Practice
+Watter gevoel wys hierdie gesig?
+GELUKKIG
+ONGELUKKIG
+KWAAD
+VREES
+GEEN GEVOEL
+
+Page 5.1: Feedback Correct
+Wel gedaan!
+
+Page 5.2: Feedback Incorrect
+Dit is nie heeltemal reg nie. Probeer weer asseblief.
+
+Page 6: Instructions
+Die toets gaan nou begin. Onthou om mooi na eke gesig te kyk.
+Wees so vining en akkuraat as wat jy kan.
+
+Page 7: Begin Test
+BEGIN TOETS
+
+Page 8: Test
+GELUKKIG
+ONGELUKKIG
+KWAAD
+VREES
+GEEN GEVOEL

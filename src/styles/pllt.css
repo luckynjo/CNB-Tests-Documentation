@@ -24,7 +24,7 @@ table.words td{
   color: white;
   border: solid 2px white;
   height: 40px;
-  width: 192px;
+  width: 232px;  /** 192px **/
   text-align: center;
       line-height: 40px;
   margin-top: 4px;
@@ -47,7 +47,7 @@ table.words td{
 
 .response-messages
 {
-  width: 700px;
+  width: 760px;
   height: 60px;
   margin: 8px;
 }

@@ -8,7 +8,7 @@ GÅ TILBAGE
 
 Page 1: Title
 Visual Object Learning Test
-Kort hukommelse
+Korttidshukommelse
 KLIK HER FOR AT FORTSÆTTE
 
 Page 2: Instructions
@@ -22,8 +22,8 @@ Page 4: Slideshow
 <slideshow>
 
 Page 5: Demo Instructions
-Nu vil du se flere former. Nogle er nye, andre har du allerede set.
-Find ud af, om du har set den enkelte form før.
+Nu vil du se flere figurer. Nogle er nye, andre har du allerede set.
+Find ud af, om du har set den enkelte figur før.
 HELT SIKKERT JA
 SANDSYNLIGVIS JA
 SANDSYNLIGVIS NEJ

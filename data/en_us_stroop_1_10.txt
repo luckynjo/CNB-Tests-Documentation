@@ -42,11 +42,25 @@ Now let's try to practice, with just a row of X's. Tell us the COLOR YOU SEE eac
 XXXXXX
 XXXXXX
 XXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
+XXXXXX
 
 Page 8: 2-Practice
-Very good. Now try the same thing with names of colors. Remember, ALWAYS tell us the COLOR THAT YOU SEE and ignore what the word says. If you make a mistake, hit the key for the correct color.The test will not go on to the next trial until you get it correct.
+Very good. Now try the same thing with names of colors. Remember, ALWAYS tell us the COLOR THAT YOU SEE and ignore what the word says. If you make a mistake, press the key for the correct color. The test will not go on to the next trial until you get it correct.
 RED
+BLUE
+GREEN
+BLUE
+GREEN
 RED
+GREEN
+RED
+BLUE
 RED
 
 Page 9: 3-Practice
@@ -54,10 +68,17 @@ Excellent. Now try it with different words. Again, tell us the COLOR THAT YOU SE
 dog
 cat
 car
+cow
+bug
+toy
+glass
+bus
+bird
+tree
 
 Page 10: Instructions
 Very good. Now let’s go on to the actual test. Again, in the test, you will see color names as the words on the screen. Throughout the whole test, tell us the COLOR THAT YOU SEE and ignore what the words say.
-Remember, if you make mistake, you have to find the correct key to hit to move the test along.
+Remember, if you make a mistake, you have to find the correct key to press to move the test along.
 
 Page 11: Begin Test
 BEGIN TEST
