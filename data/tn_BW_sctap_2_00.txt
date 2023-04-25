@@ -1,0 +1,58 @@
+test: sctap
+version: 2.00
+language: tn_BW
+
+Page 0: Common
+TOBETSA FA GO TSWELELA
+BOELA FA MORAGO
+TOBETSA SPACEBAR GO TSWELELA.
+<WH> LETSOGO LE O KWALANG KA LONE
+<NWH> LETSOGO LE O SA KWALENG KA LONE
+
+Page 1: Title
+Teko ya go tobetsa ka monwana mo sebala-makgolong
+Short form
+TOBETSA FA GO TSWELELA
+
+Page 2: Handedness trial
+Teko e e tlhatlhoba bofefo jwa monwana wa gago.
+Tobetsa spacebar ka bofefo jo o bo kgonang.
+O tla fetola matsogo morago ga tlhatlhobo nngwe le nngwe.
+Dirisa sesupo sa sebala-makgolo go tlhopha letsogo la gago le le kwalang.
+<HANDEDNESS> Letsogo la molema
+<HANDEDNESS> Letsogo la moja
+
+Page 3: Demo Instructions
+Baya letsogo la gago ka fa go supisitsweng ka teng fa tlase. Ke tla a go kaela ka fa o ka bayang monwana wagago ka teng.
+
+Page 4: Instructions
+A re ikatise.
+Fa o bona lefoko "SIMOLOLA" tobetsa spacebar ka bofefo jo o ka bokgonang.
+Gakologelwa mokgwa wa go dirisa letsogo la gago le  o sa tswang go o ithuta ka lone. O SEKA WA DIRISA SEATLA SOTLHE KGOTSA LETSOGO GO TOBETSA – Dirisa menwana fela.
+
+Page 5: Begin Practice
+SIMOLOLA IKATISO
+
+Page 6: Countdown
+TEKO YA IKATISO YA <TRIAL_NUMBER> DIRISA
+<WH> LETSOGO LE O KWALANG KA LONE
+<NWH> LETSOGO LE O SA KWALENG KA LONE
+
+Page 7: Practice
+SIMOLOLA!
+EMA!
+
+Page 8: Begin Test
+SIMOLOLA TEKO
+
+Page 9: Countdown
+ITHUTUNTSHO <TRIAL_NUMBER> DIRISA
+<WH> LETSOGO LE O KWALANG KA LONE
+<NWH> LETSOGO LE O SA KWALENG KA LONE
+Ithutuntsho e simolola mo:
+disekonteng.
+DIRISA TSELA E O E RUTILWENG YA GO BAYA LETSOGO FA O TOBETSA SPACEBAR.
+
+Page 8: Test
+SIMOLOLA!
+EMA!

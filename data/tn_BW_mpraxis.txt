@@ -1,0 +1,30 @@
+test: mpraxis
+version: 2.05
+language: tn_BW
+
+Page 0: Common
+TOBETSA FA GO TSWELELA
+BOELA FA MORAGO
+
+Page 1: Title
+Teko ya Motor Praxis
+TOBETSA FA GO TSWELELA
+
+Page 2: Instructions
+Se ke go tlhatlhoba bokgoni jwa gago jwa go laola sesutiso sa computara.
+O tla bona mabokoso a matala ka bongwe ke bongwe. Tsamaisa 'sesutiso' sa computara fa godimo ga lebokoso lengwe le lenwge. Tobetsa lebokoso gangwe fela.
+
+Page 3: Begin Practice
+SIMOLOLA IKATISO
+
+Page 4: Practice
+Tobetsa mo lebokosong le letala go tswelela.
+
+Page 5: Instructions
+Mo nakong e, otla fiwa 'disekonte' dile tlhano goka tobetsa lebokoso lengwe le lengwe pele le timela.
+
+Page 6: Begin Test
+SIMOLOLA TEKO
+
+Page 7: Test
+Tobetsa mo lebokosong le letala go tswelela.

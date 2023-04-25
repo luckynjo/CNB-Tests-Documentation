@@ -1,0 +1,50 @@
+test: digsym-a
+version: 2.00
+language: tn_BW
+
+Page 0: Common
+TOBETSA FA GO TSWELELA
+BOELA FA MORAGO
+GO A TSHWANA
+GA GO TSHWANE
+
+Page 1: Title
+Teko ya Digit Symbol
+Digit Symbol - Form A
+TOBETSA FA GO TSWELELA
+
+Page 2: Instructions
+Fa godimo ga sesupa ditshwantsho sa gago o tla bona tselana tse pedi tsa mabokoso. Mabokoso a fa godimo a na le matshwao, a fa tlase a na le dinomoro. Ela tlhoko gore, nomoro nngwe le nngwe e na le letshwao la yone. Mo tekong ee, dibokoso tse pedi tse disha di tlaa supiwa fa gare ga sesupo ditshwantsho. Tiro ya gago ke go tsaya tshwetso ya gore matshwao le dinomore tse di mo mabokosong a mabedi a, di tshwana le tse di fa godimo.
+
+Fa letshwao le nomoro tse diŝa di tshwana le nngwe ya a a fa godimo, tobetsa fa go kwadilweng gotwe, ‘GO A TSHWANA’. Fa letshwao le nomoro tse diŝa di sa tshwane le nngwe ya a a fa godimo, tobetsa fa go kwadilweng gotwe, ‘GA GO TSHWANE’.
+
+Page 3: Begin Practice
+SIMOLOLA IKATISO
+
+Page 4: Practice
+GO A TSHWANA
+GA GO TSHWANE
+
+Page 5: Digsym Instructions
+O dirile sentle! Jaanong re tla simolola teko. Gakologelwa, tiro ya gago ke go lemoga fa letshwao le nomoro tse di mo mabokosong a mabedi di tshwana le tse di mo mabokosong a fa godimo. Bereka ka bofefo jo oka bo kgonang mme o leka go fa karabo e e siameng. Fa teko e simolotse, ga o na go bolelelwa gore a o tshwere kgotsa ga o a tshwara.
+
+Fa mabokoso a mabedi a mancha a tshwana le a fa godimo, tobetsa fa go kwadilweng gotwe, ‘GO A TSHWANA’. Fa mabokoso a mabedi a mancha a sa tshwane le a fa godimo, tobetsa fa go kwadilweng gotwe, ‘GA GO TSHWANE’.
+GO A TSHWANA
+GA GO TSHWANE
+
+Page 6: Begin Test
+SIMOLOLA TEKO
+
+Page 7: Matching Test
+<matching>
+GO A TSHWANA
+GA GO TSHWANE
+
+Page 8: Instructions
+Mo tsebeng e e latelang, tobetsa nomoro e e neng e bapisitswe letshwao le.
+Bereka ka bofefo jo oka bo kgonang mme o leka go fa karabo e e siameng.
+
+Page 9: Memory Test
+<memory>
+Ke efe nomoro e tsamaelanang le letshwao le?
+Tobetsa nomoro e e neng e bapisitswe letshwao le.
