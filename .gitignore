@@ -10,7 +10,8 @@
 /assess
 /admin
 /manage
-
+/zassess
+/survey_assess
 # production
 /build
 /cogtests
