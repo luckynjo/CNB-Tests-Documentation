@@ -12,7 +12,7 @@ import digsym_a_banner from '../assets/digsym/digsym_a_banner.png';
 import digsym_b_banner from '../assets/digsym/digsym_b_banner.png';
 
 
-const DIGSYM_INSTRUCTIONS_REGEX = /Digsym[_ ]Instructions/ig;
+const DEMO_INSTRUCTIONS_REGEX = /Digsym[_ ]Instructions/ig;
 const INSTRUCTIONS_REGEX = /Instructions/ig;
 const BEGIN_PAGE_REGEX = /Begin[ _](Test|Practice|Slideshow)/ig;
 const PRACTICE_REGEX = /Practice/ig;
@@ -172,13 +172,15 @@ export default class Digsym extends React.Component
     {
       return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
-    else if(section_title.match(DIGSYM_INSTRUCTIONS_REGEX) || section_title.includes("Page_2:_Instructions"))
-    {
-      return <DigsymInstructions test_form={this.test_form} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
-    }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
-      return <SimpleInstructions test_form={this.test_form} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      let instructions_page = null;
+      if(section_title.includes("Page_2:_Instructions")){
+        instructions_page = 2;
+      } else if(section_title.includes("Page_5:_Digsym_Instructions")){
+        instructions_page = 5;
+      }
+      return <DigsymInstructions test_form={this.test_form} instructions_page={instructions_page} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {
