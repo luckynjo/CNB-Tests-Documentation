@@ -14,7 +14,8 @@ import Digsym from '../tasks/Digsym.js';
 import CPW from '../tasks/CPW.js';
 import PLLT from '../tasks/PLLT.js';
 import STROOP from '../tasks/STROOP.js';
-import {TestLoader} from '../loaders/TestLoader.js';
+import { TestLoader } from '../loaders/TestLoader.js';
+import SubmitPage from '../components/SubmitPage.js';
 
 export default class TaskRunner extends React.Component
 {
@@ -31,8 +32,28 @@ export default class TaskRunner extends React.Component
     }
     this.timeline = [];
     this.test_info = null;
-    document.body.classList.add('dark');
+      document.body.classList.add('dark');
+      this.skipListener = this.skipListener.bind(this);
   }
+    /***
+* Handler for overral key presses.
+* Specifically checks for skip command.
+* TO DO: Add beep for invalid key presses.
+*/
+    skipListener(e) {
+        // Check for skip command for cnb tests cmd . on mac or ctrl . on others.
+        if ((e.metaKey || e.ctrlKey) && e.keyCode === 190) {
+            console.log("skip task", new Date());
+            e.stopPropagation();
+            this.skipTest();
+        }
+    }
+
+    skipTest() {
+        this.setState((prevState, props) => {
+            return { assessment_complete: true, skipped: 1 };
+        });
+    }
 
   onTaskLoaded(data)
   {
@@ -56,14 +77,24 @@ export default class TaskRunner extends React.Component
     });
   }
 
+    componentWillUnmount() {
+        window.removeEventListener("keydown", this.skipListener, false);
+    }
+
+    componentDidMount() {
+        window.addEventListener("keydown", this.skipListener, false);
+    }
+
   render()
   {
     const task = this.state.task;
     const test = this.state.test;
     const timeline = this.state.timeline;
     const trials = this.state.trials;
-
-    if(task === "")
+      if (this.state.assessment_complete) {
+          return <SubmitPage test={test.test} skipped={1} starttime={new Date()}/>
+     }
+    else if(task === "")
     {
       return <TestLoader base_url={this.props.base_url} assessment_url={this.props.assessment_url} onLoad={(e) => {this.onTaskLoaded(e);}} onError={(e) => {this.onTaskLoadError(e);}} />
     }
@@ -166,7 +197,8 @@ export default class TaskRunner extends React.Component
     else if(task === "timeline")
     {
       return <div className="container-8-by-6  dark frame">
-      <h2>Unkown test {test.test} with title {test.title}</h2>
+          <h2>{test.test} is not supported in this version.</h2>
+          <p>Please skip the test to continue.</p>
       </div>
     }
     else if(task === "error")
