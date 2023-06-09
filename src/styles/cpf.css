@@ -2,6 +2,7 @@ img.slideshow-image
 {
   width: auto;
   height: 350px;
+  pointer-events: none;
 }
 
 .memory-buttons--other

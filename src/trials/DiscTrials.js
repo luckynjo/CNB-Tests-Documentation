@@ -96,21 +96,21 @@ export class DiscTrials extends React.Component {
             <p className="discount-question">{this.props.hint}</p>
             <p className="discount-feedback"></p>
             <div className="button discount-button discount-button-top" onClick={e => this.onClick(e, this.state.stimulusPart1)}>
-              <span className="discount-button-text-offset">
+              <div className="discount-button-text-offset">
               {stimulusPart1Amnt}
-              </span>
-              <span className="discount-button-text-pink">
+              </div>
+              <div className="discount-button-text-pink">
               {stimulusPart1Stmnt}
-              </span>
+              </div>
             </div>
             <p className="discount-or">{this.props.orWord}</p>
             <div className="button discount-button discount-button-bottom" onClick={e => this.onClick(e, this.state.stimulusPart2)}>
-              <span className="discount-button-text-offset">
+              <div className="discount-button-text-offset">
               {stimulusPart2Amnt}
-              </span>
-              <span className="discount-button-text-pink">
+              </div>
+              <div className="discount-button-text-pink">
               {stimulusPart2Stmnt}
-              </span>
+              </div>
             </div>
         </div>
       );

@@ -1,0 +1,33 @@
+test: pmat24-a
+version: 3.00
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+Goed gedoen! Probeer die volgende een.
+Dit is nie reg nie. Probeer asseblief weer.
+
+Page 1: Title
+Penn Matrix Analysis Toets
+Vorm A, 24 items
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Instructions
+In hierdie toets gaan jy 'n patroon sien op elke blad. 'n Stuk van elke patroon sal weg gelaat wees. Druk op die vierkant hieronder wat die patroon die beste voltooi.
+Kom ons oefen.
+
+Page 3: Begin Practice
+BEGIN OEFENING
+
+Page 4: Practice
+<pmat_practice>
+
+Page 5: Instructions
+Die toets gaan begin. Druk slegs EEN KEER op jou antwoord.
+
+Page 6: Begin Test
+BEGIN TOETS
+
+Page 7: Test
+<trials>

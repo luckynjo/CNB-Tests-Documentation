@@ -1,10 +1,12 @@
 test: pmat24-a
-version: 2.00
+version: 3.00
 language: en_US
 
 Page 0: Common
 CLICK HERE TO CONTINUE
 GO BACK
+Good job! Try the next one.
+That is not correct. Please try again.
 
 Page 1: Title
 Penn Matrix Analysis Test
@@ -20,12 +22,6 @@ BEGIN PRACTICE
 
 Page 4: Practice
 <pmat_practice>
-
-Page 4.1: Feedback Correct
-Good job! Try the next one.
-
-Page 4.2: Feedback Incorrect
-That is not correct. Please try again.
 
 Page 5: Instructions
 The test will begin. Click only ONCE on your answer.

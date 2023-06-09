@@ -1,0 +1,209 @@
+.back-button:hover{
+opacity:0.9;
+}
+.back-button:active{
+opacity:1;
+}
+p.back-button--text{
+    font-size:15px;
+    color:#FFFFFF;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.footer{
+text-align:center;
+width:100%;
+}
+.footer, .footer p{
+font-size:14px;
+text-align:center;
+}
+.footer--title.row{
+padding-top: 16px;
+}
+
+p.small, p.copyright{
+font-size: 12px;
+font-weight: bold;
+padding:8px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.text--left{
+text-align:left;
+}
+.text--right{
+text-align:right;
+}
+
+.text--center{
+text-align:center;
+}
+
+.invisible{
+display:none;
+}
+.green{
+color: green;
+}
+.red{
+color: red;
+}
+p.red, span.red{
+  color:red;
+}
+p.green, span.green{
+  color: green;
+}
+
+.center--horizontal{
+	margin: 0 auto;
+}
+
+.center--relative{
+	display:block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center--bottom{
+	display:block;
+  margin: 0;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
+}
+
+
+.feedback{
+z-index: 2000;
+position: absolute;
+top:0px;
+width:800px;
+}
+
+.feedback p{
+  color:#003366;
+  text-align: center;
+}
+
+
+
+.pmat-button{
+opacity:0.95;
+}
+.pmat-button:hover{
+border:5px solid #6699FF;
+}
+
+
+
+.pmat_test_container{
+width:703px;
+}
+
+div.pmat--responses
+{
+  display: flex;
+  z-index: 2000;
+
+}
+
+div.pmat--responses.resp_type1
+{
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.pmat--responses.resp_type2
+{
+  position: absolute;
+  top: 416px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.pmat--responses.resp_type3
+{
+  position: absolute;
+  top: 390px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+div.pmat--responses.trials_type1
+{
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.pmat--responses.trials_type4
+{
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.pmat--responses.trials_type3
+{
+  position: absolute;
+  top: 390px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.pmat--responses div{
+  z-index:1000;
+  border: 5px solid #CCCCCC;
+  background: transparent;
+  cursor: pointer;
+  margin:4px;
+}
+
+div.pmat--responses div:hover
+{
+border: 5px solid #6699FF;
+}
+
+.light
+{
+   background: #FFFFFF;
+   color:#000000;
+}
+
+
+p, span{
+color: black;
+}
+
+#root, body{
+background: #000000;
+background-color: black;
+color: #FFFFFF;
+}
+
+p.test-header, p.small{
+  color:black;
+}
+
+.instructions--top{
+  position: absolute;
+  top: 100px;
+  left: 32px;
+}

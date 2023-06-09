@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/tests/survey_assess/static/css/main.657d43ed.css",
-    "main.js": "/tests/survey_assess/static/js/main.f083ee22.js",
+    "main.css": "/tests/survey_assess/static/css/main.14ddb7cc.css",
+    "main.js": "/tests/survey_assess/static/js/main.ab4536f6.js",
     "static/js/787.dbbfea37.chunk.js": "/tests/survey_assess/static/js/787.dbbfea37.chunk.js",
     "static/media/banner.png": "/tests/survey_assess/static/media/banner.b5249dbbfe18f38072bf.png",
     "static/media/Vr.png": "/tests/survey_assess/static/media/Vr.5f51010ec0df4cc65da7.png",
     "static/media/fear_pic.png": "/tests/survey_assess/static/media/fear_pic.57557f080bf8bcc49899.png",
     "static/media/angry_practice.png": "/tests/survey_assess/static/media/angry_practice.d5bbfa934f8186a1ad41.png",
+    "static/media/rdisc_banner.png": "/tests/survey_assess/static/media/rdisc_banner.30dbdff98947a38eab8a.png",
     "static/media/right_hand.png": "/tests/survey_assess/static/media/right_hand.1c904d6aa207c70dae26.png",
     "static/media/left_hand.png": "/tests/survey_assess/static/media/left_hand.c67bd923ac9586f352aa.png",
     "static/media/sad_transparent.png": "/tests/survey_assess/static/media/sad_transparent.5e2aa04884e57f44564a.png",
@@ -31,12 +32,12 @@
     "static/media/click_sound.mp3": "/tests/survey_assess/static/media/click_sound.499d4af4c7c3a003d11d.mp3",
     "static/media/logo.svg": "/tests/survey_assess/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/tests/survey_assess/index.html",
-    "main.657d43ed.css.map": "/tests/survey_assess/static/css/main.657d43ed.css.map",
-    "main.f083ee22.js.map": "/tests/survey_assess/static/js/main.f083ee22.js.map",
+    "main.14ddb7cc.css.map": "/tests/survey_assess/static/css/main.14ddb7cc.css.map",
+    "main.ab4536f6.js.map": "/tests/survey_assess/static/js/main.ab4536f6.js.map",
     "787.dbbfea37.chunk.js.map": "/tests/survey_assess/static/js/787.dbbfea37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.657d43ed.css",
-    "static/js/main.f083ee22.js"
+    "static/css/main.14ddb7cc.css",
+    "static/js/main.ab4536f6.js"
   ]
 }

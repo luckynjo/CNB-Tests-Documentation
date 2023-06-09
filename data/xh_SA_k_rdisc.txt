@@ -1,0 +1,124 @@
+test: k-rdisc
+version: 1.08
+language: xh_SA
+
+Page 0: Common
+CINEZELA APHA UKUZE UQHUBEKE
+BUYELA EMVA
+Ungathanda ukufumana?
+OKANYE
+
+Page 1: Title
+Risk Discounting Umsebenzi
+Risk Discounting
+CINEZELA APHA UKUZE UQHUBEKE
+
+Page 2: Instructions
+Imiyalelo:
+Izixa ezibini zemali ziya kuboniswa kwiskrini. Uya kucelwa ukuba ukhethe enye. Ukuba ukhetha isixa esikhulu, unethuba elingange-50/50 lokufumana imali. Ngoko uya kufumana imali malunga nehafu (isiqingatha) yexesha. Ngamanye amaxesha, awuzukufumana nto. Oku kubizwa ngokuba yi "50/50 yesixa."
+Ukuba ukhetha imali encinci, uqinisekisiwe ukuba uyakuyifumana. Oku kubizwa ngokuba "sisixa esiqinisekisiweyo".
+
+Page 3: Instructions
+Lo ngumsebenzi "wokuzenzisa" -- awuyi kuyifumana ngokwenene le mali. Kodwa siyakucela ukuba wenze ukhetho lwakho ngokungathi lolokwenene. Akukho zimpendulo zichanekileyo okanye ezingachanekanga.
+Yenza ukhetho lwakho ngokucinezela kwelinye lamaqhosha abhlowu. Uza kuziqhelanisa (prek'tiza) ngaphambi kokuba uqale, ke ungabinexhala ukuba awuyiqondi yonke into okwangoku.
+Unokubuza imibuzo emininzi njengoko uthanda ngexesha lokuziqhelanisa. Wakuba uqalile owona msebenzi, asikwazi ukuphendula imibuzo.
+
+Page 4: Begin Practice
+QALISA UKUZIQHELANISA (UKUPREK'TIZA)
+
+Page 5: Practice
+i-R69 kangange thuba eligu50/50
+i-R44 eqinisekisiweyo
+i-R36 kangange thuba eligu50/50
+i-R29 eqinisekisiweyo
+i-R159 kangange thuba eligu50/50
+i-R137 eqinisekisiweyo
+i-R109 kangange thuba eligu50/50
+i-R97 eqinisekisiweyo
+
+Page 6: Begin Test
+QALISA UVAVANYO
+
+Page 7: Test
+i-R56 kangange thuba eligu50/50
+i-R19 eqinisekisiweyo
+i-R92 kangange thuba eligu50/50
+i-R44 eqinisekisiweyo
+i-R112 kangange thuba eligu50/50
+i-R44 eqinisekisiweyo
+i-R69 kangange thuba eligu50/50
+i-R39 eqinisekisiweyo
+i-R232 kangange thuba eligu50/50
+i-R79 eqinisekisiweyo
+i-R250 kangange thuba eligu50/50
+i-R157 eqinisekisiweyo
+i-R92 kangange thuba eligu50/50
+i-R49 eqinisekisiweyo
+i-R195 kangange thuba eligu50/50
+i-R76 eqinisekisiweyo
+i-R74 kangange thuba eligu50/50
+i-R34 eqinisekisiweyo
+i-R89 kangange thuba eligu50/50
+i-R1 eqinisekisiweyo
+i-R124 kangange thuba eligu50/50
+i-R51 eqinisekisiweyo
+i-R222 kangange thuba eligu50/50
+i-R69 eqinisekisiweyo
+i-R124 kangange thuba eligu50/50
+i-R11 eqinisekisiweyo
+i-R71 kangange thuba eligu50/50
+i-R34 eqinisekisiweyo
+i-R69 kangange thuba eligu50/50
+i-R36 eqinisekisiweyo
+i-R237 kangange thuba eligu50/50
+i-R104 eqinisekisiweyo
+i-R66 kangange thuba eligu50/50
+i-R29 eqinisekisiweyo
+i-R215 kangange thuba eligu50/50
+i-R112 eqinisekisiweyo
+i-R31 kangange thuba eligu50/50
+i-R9 eqinisekisiweyo
+i-R34 kangange thuba eligu50/50
+i-R9 eqinisekisiweyo
+i-R220 kangange thuba eligu50/50
+i-R54 eqinisekisiweyo
+i-R180 kangange thuba eligu50/50
+i-R89 eqinisekisiweyo
+i-R127 kangange thuba eligu50/50
+i-R46 eqinisekisiweyo
+i-R109 kangange thuba eligu50/50
+i-R92 eqinisekisiweyo
+i-R97 kangange thuba eligu50/50
+i-R44 eqinisekisiweyo
+i-R51 kangange thuba eligu50/50
+i-R36 eqinisekisiweyo
+i-R237 kangange thuba eligu50/50
+i-R99 eqinisekisiweyo
+i-R99 kangange thuba eligu50/50
+i-R16 eqinisekisiweyo
+i-R89 kangange thuba eligu50/50
+i-R44 eqinisekisiweyo
+i-R247 kangange thuba eligu50/50
+i-R142 eqinisekisiweyo
+i-R114 kangange thuba eligu50/50
+i-R31 eqinisekisiweyo
+i-R64 kangange thuba eligu50/50
+i-R1 eqinisekisiweyo
+i-R54 kangange thuba eligu50/50
+i-R19 eqinisekisiweyo
+i-R56 kangange thuba eligu50/50
+i-R29 eqinisekisiweyo
+i-R99 kangange thuba eligu50/50
+i-R24 eqinisekisiweyo
+i-R129 kangange thuba eligu50/50
+i-R11 eqinisekisiweyo
+i-R41 kangange thuba eligu50/50
+i-R6 eqinisekisiweyo
+i-R202 kangange thuba eligu50/50
+i-R170 eqinisekisiweyo
+i-R162 kangange thuba eligu50/50
+i-R114 eqinisekisiweyo
+i-R159 kangange thuba eligu50/50
+i-R4 eqinisekisiweyo
+i-R122 kangange thuba eligu50/50
+i-R76 eqinisekisiweyo
