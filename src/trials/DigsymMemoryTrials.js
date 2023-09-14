@@ -12,10 +12,10 @@ TO DO: Reaplce cpf here stimuli/cpf/ with test.stimulus_folder.
 
 const SAME = 'same';
 const DIFF = 'diff';
-const TRUE_POSITIVE = 'tp';
-const FALSE_POSITIVE = 'fp';
-const TRUE_NEGATIVE = 'tn';
-const FALSE_NEGATIVE = 'fn';
+const TRUE_POSITIVE = 'TP';
+const FALSE_POSITIVE = 'FP';
+const TRUE_NEGATIVE = 'TN';
+const FALSE_NEGATIVE = 'FN';
 const DIGITS = ["dig1.png", "dig2.png", "dig3.png", "dig4.png", "dig5.png", "dig6.png", "dig7.png", "dig8.png", "dig9.png"];
 export class DigsymMemoryTrials extends React.Component{
 
@@ -127,11 +127,11 @@ export class DigsymMemoryTrials extends React.Component{
       <div className="container">
 
        <p className="digsym-memory-instructions">
-       <span>
+       <span className="memory-test-inst">
        {this.props.content[1]}
        </span>
        <br/>
-       <span>
+       <span className="memory-test-inst">
        {this.props.content[2]}
        </span>
        </p>

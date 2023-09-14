@@ -16,9 +16,32 @@ export class ShapeInstructions extends React.Component {
   constructor(props){
     super(props);
     this.state={
-      pressed: false
+      pressed: false,
+      play: false
     };
-    this.audio = new Audio(click_sound);
+    this.play = this.play.bind(this);
+    //this.togglePlay = this.togglePlay.bind(this);
+    //this.audio = new Audio(click_sound);
+  }
+
+  // componentDidMount() {
+  //   this.audio.addEventListener('ended', () => this.setState({ play: false }));
+  // }
+  //
+  // componentWillUnmount() {
+  //   this.audio.removeEventListener('ended', () => this.setState({ play: false }));
+  // }
+
+  // togglePlay () {
+  //   this.setState({ play: !this.state.play }, () => {
+  //     this.state.play ? this.audio.play() : this.audio.pause();
+  //   });
+  // }
+
+  play(){
+    let audio = new Audio(click_sound);
+    //audio.load();
+    audio.play();
   }
 
   render(){
@@ -54,8 +77,8 @@ export class ShapeInstructions extends React.Component {
               }
               if(index === 1 && type === "star-2"){
                 return (
-                  <div key={index*10 + 5} className="cptChild--stimuli--prac" onClick={() => {this.audio.play(); onContinue()}}>
-                    <div className="img-position-cpt-child">
+                  <div key={index*10 + 5} className="cptChild--stimuli--prac" onClick={onContinue}>
+                    <div className="img-position-cpt-child-clicked">
                       <div className={this.props.form === "b" && this.state.pressed  ? "img-position-cpt-child-b" : ""}>
                         <img src={star} width="300" alt="star"/>
                       </div>
@@ -111,8 +134,8 @@ export class ShapeInstructions extends React.Component {
               if(index === 1 && type === "circle-2"){
                 return (
                   <div key={index*10 + 5} >
-                    <div className="cptChild--stimuli--prac" onClick={() => {this.audio.play(); onContinue()}}>
-                      <div className="img-position-cpt-child">
+                    <div className="cptChild--stimuli--prac" onClick={onContinue}>
+                      <div className="img-position-cpt-child-clicked">
                         <div className={this.props.form === "b" && this.state.pressed  ? "img-position-cpt-child-b" : ""}>
                           <img src={circle} width="300" alt="circle"/>
                         </div>

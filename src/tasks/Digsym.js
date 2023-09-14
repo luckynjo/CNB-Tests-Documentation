@@ -174,13 +174,16 @@ export default class Digsym extends React.Component
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
+      let showImage = false;
       let instructions_page = null;
       if(section_title.includes("Page_2:_Instructions")){
         instructions_page = 2;
+        showImage = true;
       } else if(section_title.includes("Page_5:_Digsym_Instructions")){
         instructions_page = 5;
+        showImage = true;
       }
-      return <DigsymInstructions test_form={this.test_form} instructions_page={instructions_page} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <DigsymInstructions test_form={this.test_form} showImage={showImage} instructions_page={instructions_page} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} same_text={this.same_text} different_text={this.different_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {

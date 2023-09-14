@@ -46,9 +46,11 @@ margin-top:8px;
    display: flex;
    align-items: center;
    justify-content: center;
+   cursor: pointer;
 }
 
 .er40--response-button-child{
+   cursor: pointer;
    background-color:white;
    color:white;
    width:80px;
@@ -62,25 +64,27 @@ margin-top:8px;
    margin-left: 70px;
    display: flex;
    align-items: center;
+   -webkit-tap-highlight-color: transparent;
 }
 
-.er40--response-button-child:hover{
-   background-color:white;
+.er40--response-button-child:active{
+   /*background-color:white;*/
    scale: 1.4;
-   color:white;
-   width:164px;
-   height:80px;
-   line-height: 60px;
+   /*color:white;*/
+   width:170px;
+   /*height:80px;
+   line-height: 60px;*/
    border: solid 1.5px grey;
    border-radius: 50px;
-   font-size:24px;
+   /*font-size:24px;
    text-align:center;
    font-weight:bold;
-   font-family:Helvetica;
+   font-family:Helvetica;*/
    margin-bottom:22px;
    margin-left: 50px;
-   display: flex;
-   align-items: center;
+   -webkit-tap-highlight-color: transparent;
+   /*display: flex;
+   align-items: center;*/
 }
 
 .er40--response-button-2{
@@ -101,6 +105,7 @@ margin-top:8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .er40--image-placeholder
@@ -203,6 +208,7 @@ div.stimulus--er40 img
       padding-top: 64px;
       margin-left: 2px;
 margin-right: 2px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .er40--table {
@@ -230,6 +236,7 @@ transform: translate(-50%,-50%);
 div.responses-child{
   width: 200px;
   margin-top: 22px;
+  position: relative;
 }
 
 div.responses-2{
@@ -246,6 +253,7 @@ div.responses-3{
 div.responses-4{
   width: 200px;
   margin-top: 0px;
+  position: relative;
 }
 
 p.er40--feedback{

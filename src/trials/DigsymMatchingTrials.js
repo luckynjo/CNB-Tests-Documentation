@@ -13,10 +13,10 @@ TO DO: Reaplce cpf here stimuli/cpf/ with test.stimulus_folder.
 // Constants used for recorind responses.
 const SAME = 'same';
 const DIFF = 'diff';
-const TRUE_POSITIVE = 'tp';
-const FALSE_POSITIVE = 'fp';
-const TRUE_NEGATIVE = 'tn';
-const FALSE_NEGATIVE = 'fn';
+const TRUE_POSITIVE = 'TP';
+const FALSE_POSITIVE = 'FP';
+const TRUE_NEGATIVE = 'TN';
+const FALSE_NEGATIVE = 'FN';
 
 export class DigsymMatchingTrials extends React.Component{
 
