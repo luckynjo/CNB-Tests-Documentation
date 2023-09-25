@@ -18,6 +18,7 @@ import PCET from '../tasks/PCET.js';
 import PMAT from '../tasks/PMAT.js';
 import GNG from '../tasks/GNG.js';
 import ADT from '../tasks/ADT.js';
+import MEDF from '../tasks/MEDF.js';
 import {TestLoader} from '../loaders/TestLoader.js';
 
 export default class TaskRunner extends React.Component
@@ -189,6 +190,12 @@ export default class TaskRunner extends React.Component
     {
       return <div className="container-8-by-6  light frame">
       <ADT base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("medf36-a"))
+    {
+      return <div className="container-8-by-6  light frame">
+      <MEDF base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline")

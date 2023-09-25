@@ -1,0 +1,141 @@
+
+div.flex.test{
+  padding-top: 30px;
+}
+
+.text--center{
+text-align:center;
+}
+
+.center--horizontal{
+	margin: 0 auto;
+}
+
+div.comparison--responses
+{
+	display: flex;
+	width:600px;
+	padding-top:16px;
+}
+div.comparison--stimuli
+{
+	display: flex;
+	padding-top: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+.stimulus--medf
+{
+  background: #000;
+  border: 10px solid #036;
+  border-radius: 4px;
+  height: 370px;
+  /* margin-left: 15px; */
+  display: flex;
+  width: 375px;
+  justify-content: center;
+  align-items: center;
+}
+.stimulus--medf div.row div.col, .stimulus--medf td{
+
+}
+
+.light
+{
+   background: #FFFFFF;
+   color:#000000;
+}
+div.hint{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 0px;
+}
+
+div.feedback{
+	height: 30px;
+  text-align:center;
+  color: #993333;
+}
+div.flex.test{
+  padding-top: 30px;
+}
+.memory-button{
+color: #FFFFFF;
+background:#003366;
+border-radius:16px;
+    font-size: 24pt;
+    font-weight: bold;
+margin:8px;
+width:180px;
+height:73px;
+line-height:73px;
+font-size: 24px;
+text-align: center;
+
+}
+.pvrt--response-button{
+color: #FFFFFF;
+background:#003366;
+    min-width: 350px;
+    height: 55px;
+border-radius:16px;
+    font-size: 24pt;
+    font-weight: bold;
+margin:8px;
+}
+
+
+
+p,span{
+/**font-size:30px;*/
+  margin: 0;
+width:100%;
+/**  font-size: calc(4vw + 4vh + 2vmin);*/
+font-size:30px;
+font-weight:bold;
+}
+
+p, h1, h2, h3, h4, table, tr, td{
+}
+.light p{
+color:#003366;
+}
+.feedback p{
+text-align:center;
+color: #993333;
+font-size: 20px;
+}
+.stimulus--pvrt{
+text-align:center;
+color:#003366;
+}
+.title{
+  font-size:54pt;
+  font-weight:bold;
+  width:90%;
+  text-align:center;
+}
+
+.frame{
+	border: solid 2px grey;
+}
+
+#message{
+font-size:20px;
+font-weight:bold;
+margin-left: 65px;
+margin-top:8px;
+}
+
+body{
+  line-height: 1.3;
+}
+
+div.instructions.center{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 64px;
+}

@@ -1,5 +1,5 @@
 test: medf36
-version: 2.06
+version: 3.06
 language: en_US
 
 Page 0: Common
