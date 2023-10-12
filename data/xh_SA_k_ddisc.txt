@@ -1,0 +1,109 @@
+test: k-ddisc
+version: 1.08
+language: xh_SA
+
+Page 0: Common
+CINEZELA APHA UKUZE UQHUBEKE
+BUYELA EMVA
+Ungathanda ukufumana?
+OKANYE
+
+Page 1: Title
+Delay Discounting ITC Uvavanyo
+Delay Discounting
+CINEZELA APHA UKUZE UQHUBEKE
+
+Page 2: Instructions
+Imiyalelo:
+Izixa ezibini zemali ziya kuboniswa kwiskrini. Uyakubuzwa ukuba ungathanda ukufumana imali encinci namhlanje, okanye isixa esikhulu kamva. Uya kubona kwakhona ukuba zingaphi iintsuku omele ulinde ukuze ufumane isixa esikhulu.
+Lo ngumsebenzi "wokuzenzisa" -- awuyi kuyifumana ngokwenene le mali. Kodwa siyakucela ukuba wenze ukhetho lwakho ngokungathi lolokwenene. Akukho zimpendulo zichanekileyo okanye ezingachanekanga.
+
+Page 3: Instructions
+Yenza ukhetho lwakho ngokucinezela kwelinye lamaqhosha abhlowu. Xa ukhetha, khumbula ukuba iintsuku eziyi-30 zimalunga nenyanga enye, kwaye iintsuku eziyi-180 zimalunga neenyanga ezi-6.
+Uza kuziqhelanisa (prek'tiza) ngaphambi kokuba uqale, ke ungabinexhala ukuba awuyiqondi yonke into okwangoku. Unokubuza imibuzo emininzi njengoko uthanda ngexesha lokuziqhelanisa. Wakuba uqalile owona msebenzi, asikwazi ukuphendula imibuzo.
+
+Page 4: Begin Practice
+QALISA UKUZIQHELANISA (UKUPREK'TIZA)
+
+Page 5: Practice
+i-R110 namhlanje
+i-R145 kwiintsuku eziyi-10
+i-R5 namhlanje
+i-R75 kwiintsuku eziyi-30
+i-R145 namhlanje
+i-R180 kwiintsuku eziyi-5
+i-R75 namhlanje
+i-R250 kwiinstuku eziyi-65
+
+Page 6: Begin Test
+QALISA UVAVANYO
+
+Page 7: Test
+i-R54 namhlanje
+i-R180 kwiintsuku eziyi-168
+i-R110 namhlanje
+i-R145 kwiintsuku eziyi-40
+i-R33 namhlanje
+i-R145 kwiintsuku eziyi-7
+i-R117 namhlanje
+i-R145 kwiintsuku eziyi-122
+i-R26 namhlanje
+i-R110 kwiintsuku eziyi-58
+i-R47 namhlanje
+i-R110 kwiintsuku eziyi-14
+i-R68 namhlanje
+i-R180 kwiintsuku eziyi-105
+i-R75 namhlanje
+i-R110 kwiintsuku eziyi-1
+i-R47 namhlanje
+i-R110 kwiintsuku eziyi-7
+i-R138 namhlanje
+i-R145 kwiintsuku eziyi-130
+i-R173 namhlanje
+i-R180 kwiintsuku eziyi-160
+i-R131 namhlanje
+i-R145 kwiintsuku eziyi-113
+i-R40 namhlanje
+i-R145 kwiintsuku eziyi-5
+i-R68 namhlanje
+i-R110 kwiintsuku eziyi-100
+i-R159 namhlanje
+i-R180 kwiintsuku eziyi-49
+i-R173 namhlanje
+i-R180 kwiintsuku eziyi-127
+i-R89 namhlanje
+i-R110 kwiintsuku eziyi-171
+i-R89 namhlanje
+i-R110 kwiintsuku eziyi-136
+i-R12 namhlanje
+i-R180 kwiintsuku eziyi-108
+i-R33 namhlanje
+i-R110 kwiintsuku eziyi-63
+i-R47 namhlanje
+i-R180 kwiintsuku eziyi-119
+i-R33 namhlanje
+i-R145 kwiintsuku eziyi-36
+i-R40 namhlanje
+i-R145 kwiintsuku eziyi-16
+i-R96 namhlanje
+i-R110 kwiintsuku eziyi-172
+i-R110 namhlanje
+i-R145 kwiintsuku eziyi-8
+i-R12 namhlanje
+i-R110 kwiintsuku eziyi-4
+i-R138 namhlanje
+i-R145 kwiintsuku eziyi-107
+i-R75 namhlanje
+i-R145 kwiintsuku eziyi-126
+i-R103 namhlanje
+i-R110 kwiintsuku eziyi-112
+i-R89 namhlanje
+i-R145 kwiintsuku eziyi-3
+i-R82 namhlanje
+i-R110 kwiintsuku eziyi-76
+i-R5 namhlanje
+i-R180 kwiintsuku eziyi-25
+i-R152 namhlanje
+i-R180 kwiintsuku eziyi-81
+i-R75 namhlanje
+i-R180 kwiintsuku eziyi-15

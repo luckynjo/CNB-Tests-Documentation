@@ -1,0 +1,45 @@
+test: adt36
+version: 3.07
+language: tu_TR
+
+Page 0: Common
+DEVAM ETMEK İÇİN BURAYA TIKLAYIN
+GERİ DÖNÜN
+Bu Yüz
+Aynı Yaş
+Hangi yüz daha yaşlı?
+
+Page 1: Title
+Yaş Ayırt Etme Testi
+36- Öge, Form A
+DEVAM ETMEK İÇİN BURAYA TIKLAYIN
+
+Page 2: Instructions
+Tek seferde iki yüz göreceksiniz. Hangi yüzün daha yaşlı olduğunu veya yüzlerin aynı yaşta olup olmadığını belirlemeye çalışın.
+Daha yaşlı olan yüzün altındaki tuşa tıklayın. Eğer aynı yaşta olduklarını düşünüyorsanız, ortadaki "Aynı Yaş" tuşuna tıklayın.
+
+Page 3: Instructions
+Bazen yüzler arasındaki fark çok küçüktür. Yalnızca çok dikkatli baktığınızda bu farkı görebilirsiniz.
+Haydi bazı alıştırma yüzlerini deneyelim...
+
+Page 4: Begin Practice
+ALIŞTIRMAYA BAŞLA
+
+Page 5: Practice
+<practice_trials>
+
+Page 5.1: Feedback Correct
+İyi iş çıkardınız! Bir sonrakini deneyin.
+
+Page 5.2: Feedback Incorrect
+Tam olarak doğru değil. Lütfen tekrar deneyin.
+
+Page 6: Instructions
+İyi iş çıkardınız!
+Test şimdi başlayacak. Yüzler arasındaki farklara dikkatlice bakmayı unutmayın.
+
+Page 7: Begin Test
+TESTE BAŞLA
+
+Page 8: Test
+<trials>

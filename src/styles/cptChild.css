@@ -6,6 +6,12 @@ font-size: 41pt;
 font-size: 60pt;
 }
 
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
 img.keyboard--continue{
   height: 80px;
   width: auto;
@@ -287,14 +293,10 @@ p.instructions-text--small {
 }
 
 .cptChild--stimuli--button:active {
-  background-color: #1E1E1E;
-  opacity: 1;
-  border: none;
-  outline: none;
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-
+  background-color: transparent;
+  /*opacity: 0.5;*/
+  filter: brightness(3);
+  transform: scale(1.2);
 }
 
 .cptChild--stimuli--button{
@@ -320,3 +322,58 @@ p.instructions-text--small {
   width: 100%;
   height: 300px;
 }
+
+/*
+.cptChild--stimuli--prac:active {
+  background-color: #ffde34;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  height: 300px;
+}
+*/
+
+.shapeinstructions--prac {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.shapeinstructions--prac:active {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.img-position-cpt-child-clicked {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/*
+.img-position-cpt-child-clicked:active {
+  background-color: transparent;
+}
+*/
+
+.img-position-cpt-child-clicked img:active {
+  /*opacity: .5;*/
+  filter: brightness(3);
+  transform: scale(1.2);
+}
+
+/*
+canvas img:active {
+  opacity: .5;
+}
+*/

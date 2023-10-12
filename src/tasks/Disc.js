@@ -7,6 +7,7 @@ import TitlePage from '../components/TitlePage.js';
 import AssetLoader from '../loaders/AssetLoader.js';
 import SubmitPage from '../components/SubmitPage.js';
 import ddisc_banner from '../assets/ddisc/ddisc_banner.png';
+import rdisc_banner from '../assets/rdisc/rdisc_banner.png';
 
 const INSTRUCTIONS_REGEX = /Instructions/ig;
 const BEGIN_PAGE_REGEX = /Begin[ _](Test|Practice)/ig;
@@ -152,12 +153,12 @@ export default class Disc extends React.Component {
     if(index === 0)
     {
       return <div className="container center">
-      <AssetLoader base_url={this.props.base_url} stimulus_dir="ddisc" test_trials={this.props.test_trials} practice_trials={this.props.practice_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
+      <AssetLoader base_url={this.props.base_url} stimulus_dir={this.props.test.test.includes("ddisc") ? "ddisc" : "rdisc"} test_trials={this.props.test_trials} practice_trials={this.props.practice_trials} onAssetsLoadComplete={(e) => this.onAssetsLoadComplete(e)} />
       </div>
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={ddisc_banner} theme={"light"} content={JSON.parse(timeline_object.content)} onClick={this.next} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} {...this.props.test}/>
+      return <TitlePage banner={this.props.test.test.includes("ddisc") ? ddisc_banner : rdisc_banner} theme={"light"} content={JSON.parse(timeline_object.content)} onClick={this.next} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} {...this.props.test}/>
     }
 		else if(section_title.match(INSTRUCTIONS_REGEX))
 		{

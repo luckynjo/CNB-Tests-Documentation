@@ -1,0 +1,218 @@
+
+div.instructions.top {
+    left: 50%;
+    min-width: 700px;
+    position: fixed;
+    top: 48px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.text--left {
+    text-align: left;
+}
+
+.vsplot-inst {
+  min-width: 700px;
+}
+
+
+.center--horizontal{
+	margin: 0 auto;
+}
+
+.center--relative{
+	display:block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center--bottom{
+	display:block;
+  margin: 0;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
+}
+
+body{
+  line-height: 1.3;
+}
+
+
+.canvas_feedback{
+z-index:1000;
+    width: 800px;
+}
+
+.plot--response-button{
+border: solid 4px #0097CB;
+background: #FFFFFF;
+color: #0097CB;
+font-size: 20px;
+font-weight:bold;
+}
+
+.plot--left{
+width:68px;
+height:62px;
+background:url('../assets/vsplot/left.png');
+}
+
+.plot--right{
+width:66px;
+height:62px;
+background:url('../assets/vsplot/right.png');
+}
+.plot--finished{
+margin-top: 24px;
+}
+.memory-button{
+min-height:80px;
+max-width:132px;
+font-size: 20px;
+border: solid 2px white;
+background: transparent;
+color: #FFFFFF;
+}
+
+#message{
+font-size:20px;
+font-weight:bold;
+margin-left: 65px;
+margin-top:8px;
+}
+
+.canvas_container{
+padding: 0px;
+}
+
+
+.center--h{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instructions-text--small span{
+font-size:14pt;
+color: #0099FF;
+
+}
+
+div.canvas--response div.row div.col
+{
+  width: 180px;
+  padding: 8px;
+}
+
+.canvas--responses{
+  z-index: 999;
+    position: absolute;
+    bottom: 8px;
+}
+
+.plot--response-button.plot--left, .plot--response-button.plot--right
+{
+  margin:8px;
+}
+
+.plot--finished{
+  margin-top: 0px;
+}
+td.plot-td--left, td.plot-td--right{
+  width: 250px;
+}
+
+p.instructions-text--small{
+  padding-left: 48px;
+      padding-right: 48px;
+      width:auto;
+}
+td.inst{
+  width:300px;
+}
+
+div.instructions-top.center{
+  margin: 0;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+.a1, .a2{
+  border: solid 5px black;
+  padding-top: 8px;
+      padding-bottom: 8px;
+      width: 330px;
+  min-height: 200px;
+}
+
+.a1.border--highlight,.a2.border--highlight
+{
+  border: solid 5px #FFFF00;
+}
+
+.audio_player{
+  width: 48px;
+  display: block;
+  position: absolute;
+  left: 740px;
+  top: 400px;
+}
+.play_state__off{
+  width: 48px;
+  height: 48px;
+  background-image: url('../assets/vsplot/audio_off.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 1px black;
+}
+
+.play_state__on{
+  width: 48px;
+  height: 48px;
+  background-image: url('../assets/vsplot/audio_on.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 1px black;
+}
+
+.play{
+  width: 32px;
+  height:32px;
+  cursor:pointer;
+  background-size: contain;
+  background-image: url('../assets/vsplot/audio_play.png');
+  background-repeat: no-repeat;
+  border: solid 2px red;
+  animation: playme 1s linear infinite;
+}
+
+.repeat{
+  width: 48px;
+  height: 48px;
+  cursor:pointer;
+  background-image: url('../assets/vsplot/audio_repeat.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: solid 1px black;
+}
+
+div.canvas_feedback .audio_player {
+    top: 100px;
+}
+
+@keyframes playme {
+  50% {
+    opacity: 0.3;
+  }
+}

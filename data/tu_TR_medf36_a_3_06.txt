@@ -1,0 +1,51 @@
+test: medf36
+version: 3.06
+language: tu_TR
+
+Page 0: Common
+DEVAM ETMEK İÇİN BURAYA TIKLAYIN
+GERİ DÖNÜN
+Bu Yüz
+Eşit
+
+Page 1: Title
+Ölçülü Duygu Ayırt Etme Görevi
+Form A, 36 öge
+DEVAM ETMEK İÇİN BURAYA TIKLAYIN
+
+Page 2: Instructions
+Tek seferde iki yüz göreceksiniz. Duygunun adı sorunun üzerinde görünecek. Hangi yüzün duyguyu daha çok gösterdiğine veya yüzlerin eşit derecede duygusal olup olmadığına karar vermeye çalışın.
+Daha duygusal olan yüzün altındaki tuşa tıklayın. Eğer eşit derecede duygusal olduklarını düşünüyorsanız, "Eşit" tuşuna tıklayın.
+
+Page 3: Instructions
+Bazen yüzlerin arasındaki fark çok küçüktür. Yalnızca çok dikkatli bakarsanız bu farkı görebilirsiniz.
+Haydi alıştırma yapalım...
+
+Page 4: Begin Practice
+ALIŞTIRMAYA BAŞLA
+
+Page 5: Practice
+<practice_trials>
+Hangi yüz daha öfkeli?
+Hangi yüz daha mutlu?
+Hangi yüz daha üzgün?
+
+Page 5.1: Feedback Correct
+İyi iş çıkardınız! Bir sonrakini deneyin.
+
+Page 5.2: Feedback Incorrect
+Tam olarak doğru değil. Lütfen tekrar deneyin.
+
+Page 6: Instructions
+İyi iş çıkardınız!
+Test şimdi başlayacak. Yüzler arasındaki farklara dikkatlice bakmayı unutmayın.
+
+Page 7: Begin Test
+TESTE BAŞLA
+
+Page 8: Test
+<trials>
+Hangi yüz daha mutlu?
+Hangi yüz daha öfkeli?
+Hangi yüz daha korkmuş?
+Hangi yüz daha üzgün?

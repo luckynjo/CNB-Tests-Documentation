@@ -1,0 +1,238 @@
+test: gng150
+version: 3.00
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+Druk
+Moenie druk nie
+X
+Y
+DRUK DIE SPASIEBALK OM VOORT TE GAAN
+
+Page 1: Title
+Go No Go Taak
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Instructions
+Hierdie taak is om te kyk hoe goed jy kan besluit wanneer om te reageer en wanneer om nie te reageer nie.
+Jy sal letters sien verskyn op verskillende plekke op die skerm. Druk die SPASIEBALK wanneer jy die letter 'X' sien op die boonste helfte van die skerm. Onthou, druk slegs wanneer dit 'n 'X' is (nie n 'Y' nie) en net wanneer dit op die boonste helfte van die skerm is (nie die onderste helfte nie).
+
+Page 3: Demo Instructions
+Druk
+X
+Druk  Moenie druk nie
+X Y
+Onthou - druk slegs die SPASIEBALK wanneer jy die letter 'X' in die boonste helfte van die skerm sien.
+Moenie druk nie  Moenie druk nie
+X X
+Moenie druk nie
+X
+
+Page 4: Begin Practice
+BEGIN OEFENING
+
+Page 5: Countdown
+<countdown>
+3
+2
+1
+
+Page 6: Practice
+X
+X
+Y
+X
+Y
+X
+X
+Y
+X
+X
+X
+Y
+
+Page 6.1: Feedback False Negative
+Dit is nie reg nie.
+Dit was 'n 'X' in die boonste helfte van die skerm.
+Onthou om die spasiebalk te druk wanneer jy 'n 'X' in die boonste helfte van die skerm sien.
+Kom ons probeer dit weer.
+
+Page 6.2: Feedback False Positive Y
+Dit is nie reg nie.
+Daardie letter was 'Y', nie 'X' nie.
+Druk slegs die spasiebalk wanneer jy 'n 'X' in die boonste helfte van die skerm sien.
+Kom ons probeer dit weer.
+
+Page 6.3: Feedback False Positive X
+Dit is nie reg nie.
+Dit was 'n 'X' maar dit was in die onderste helfte van die skerm.
+Druk slegs die spasiebalk wanneer jy 'n 'X' in die boonste helfte van die skerm sien.
+Kom ons probeer dit weer.
+
+Page 7: Instructions
+Jy het die oefening voltooi. Ons gaan nou met die toets begin.
+Onthou om die SPASIEBALK te druk slegs wanneer jy die letter 'X' in die boonste helfte van die skerm sien.
+In die toets sal jy nie gesê word as jy 'n fout maak nie.
+
+Page 8: Begin Test
+BEGIN TOETS
+
+Page 9: Countdown
+<countdown>
+3
+2
+1
+
+Page 10: Test
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+Y
+Y
+X
+X
+X
+X
+X
+Y
+X
+Y
+X
+X
+X
+Y
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+Y
+Y
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+Y
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+X
+X
+Y
+X
+Y
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+X

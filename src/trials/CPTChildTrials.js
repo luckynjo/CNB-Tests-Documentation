@@ -52,7 +52,9 @@ export class CPTChildTrials extends React.Component
     this.nextSlide = this.nextSlide.bind(this);
     this.duration = 1000;
     this.correct = 0;
-    this.audio = new Audio(click_sound);
+    this.play = this.play.bind(this);
+    //this.togglePlay = this.togglePlay.bind(this);
+    //this.audio = new Audio(click_sound);
   }
 
   componentDidMount()
@@ -61,6 +63,12 @@ export class CPTChildTrials extends React.Component
     this.canvasSetup();
     this.trialStart = new Date();
     this.start();
+  }
+
+  play(){
+    let audio = new Audio(click_sound);
+    //audio.load();
+    audio.play();
   }
 
   canvasSetup()
@@ -109,6 +117,12 @@ export class CPTChildTrials extends React.Component
       return {displayBtn: false};
     })
   }
+
+  // togglePlay () {
+  //   this.setState({ play: !this.state.play }, () => {
+  //     this.state.play ? this.audio.play() : this.audio.pause();
+  //   });
+  // }
 
   componentWillUnmount()
   {
@@ -236,6 +250,8 @@ export class CPTChildTrials extends React.Component
 
   onTestResponse(e)
   {
+    // let ctx = this.canvasRef.current.getContext("2d");
+    // ctx.globalAlpha = 0.5;
     this.feedback = false;
     if(!this.responded)
     {
@@ -376,7 +392,7 @@ export class CPTChildTrials extends React.Component
   {
     return(
       <div className="container canvas_container">
-      <div className='cptChild--stimuli--sound' onClick={e => {this.audio.play(); this.onTestResponse(e)}}>
+      <div className='cptChild--stimuli--button' onClick={e => this.onTestResponse(e)}>
       <canvas ref={this.canvasRef} width="800" height="600" />
       </div>
       </div>
