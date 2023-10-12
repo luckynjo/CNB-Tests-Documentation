@@ -21,12 +21,8 @@ function App(){
 //const BASE_URL = "https://webcnp.med.upenn.edu/"; /* webcnp on prd */
 const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/";   /* webcnp on dev */
 //const BASE_URL = "https://penncnp-dev.pmacs.upenn.edu/surveys/";   /* surveys on dev */
-<<<<<<< HEAD
-const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/administer.pl";   /* webcnp on dev */
-=======
 //const ASSESSMENT_URL = "http://localhost/webcnp.pl"; /* localhost */
 const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/administer.pl";   /* webcnp on dev */
->>>>>>> 01b3a6e (Updated code for various tasks)
 //const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/surveys/survey.pl";   /* surveys on prd */
 //const ASSESSMENT_URL = "https://webcnp.med.upenn.edu/administer.pl"; /* webcnp on prd */
 //const ASSESSMENT_URL = "https://penncnp-dev.pmacs.upenn.edu/surveys/survey.pl";   /* surveys on dev */
