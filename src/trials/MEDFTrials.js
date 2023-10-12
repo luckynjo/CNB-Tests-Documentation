@@ -6,6 +6,7 @@ import {Randomizer} from '../utils/Randomizer.js';
 export class MEDFTrials extends React.Component {
   constructor(props){
     super(props);
+    this.getHint = this.getHint.bind(this);
     const trials = props.trials;
     const questions = Randomizer(trials, 1, true);
     const stimulus1 = this.findImage(JSON.parse(props.trials[questions[0]].stimulus)[0]);
@@ -18,7 +19,7 @@ export class MEDFTrials extends React.Component {
       stimulus2: stimulus2,
       responses: [],
       trialTime: new Date(),
-      hint: hintObj.hint
+      hint: this.getHint(hintObj.hint)
     };
 
     this.responded = false;
@@ -57,14 +58,33 @@ export class MEDFTrials extends React.Component {
       const next_stimulus1 = this.findImage(JSON.parse(this.props.trials[questions[next_trial]].stimulus)[0]);
       const next_stimulus2 = this.findImage(JSON.parse(this.props.trials[questions[next_trial]].stimulus)[1]);
       const next_hintObj = JSON.parse(this.props.trials[questions[next_trial]].stimulus)[2];
+      const next_hint = this.getHint(next_hintObj.hint);
       this.setState((prevState, props) => {
-        return {trial: next_trial, stimulus1: next_stimulus1, stimulus2: next_stimulus2, trialTime: new Date(), responses: responses, hint: next_hintObj.hint};
+        return {trial: next_trial, stimulus1: next_stimulus1, stimulus2: next_stimulus2, trialTime: new Date(), responses: responses, hint: next_hint};
       });
     }
     // Task completed.
     else
     {
       this.props.onTrialsComplete(responses);
+    }
+  }
+
+  getHint(eng_hint)
+  {
+    const happyHint = this.props.content[1];
+    const angryHint = this.props.content[2];
+    const afraidHint = this.props.content[3];
+    const sadHint = this.props.content[4];
+
+    if(eng_hint.includes("happy")){
+      return happyHint;
+    } else if (eng_hint.includes("angry")){
+      return angryHint;
+    } else if (eng_hint.includes("afraid")){
+      return afraidHint;
+    } else if (eng_hint.includes("sad")){
+      return sadHint;
     }
   }
 
@@ -109,7 +129,7 @@ export class MEDFTrials extends React.Component {
     const stimulus2 = this.state.stimulus2;
     const hint = this.state.hint;
     const buttons = this.props.buttons.map((item, index) => {
-      return (<button className="button memory-button" key={index + 155} onClick={(e) => this.onTestResponse(e, index)}>{item}</button>)
+      return (<button className="button medf-memory-button" key={index + 155} onClick={(e) => this.onTestResponse(e, index)}>{item}</button>)
     })
 
     return (

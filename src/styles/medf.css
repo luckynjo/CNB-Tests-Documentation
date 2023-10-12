@@ -61,7 +61,7 @@ div.feedback{
 div.flex.test{
   padding-top: 30px;
 }
-.memory-button{
+.medf-memory-button{
 color: #FFFFFF;
 background:#003366;
 border-radius:16px;
@@ -138,4 +138,8 @@ div.instructions.center{
   left: 50%;
   transform: translateX(-50%);
   top: 64px;
+}
+
+.medf--feedback{
+  color: #B22222;
 }
