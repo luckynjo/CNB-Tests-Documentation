@@ -179,3 +179,7 @@ div.instructions.digsym p.instructions-button {
 .button.digsym-button p{
   padding: 2px;
 }
+
+.memory-test-inst {
+  color: white;
+}

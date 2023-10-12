@@ -1,0 +1,124 @@
+test: k-rdisc
+version: 1.08
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+Watter een van die volgende sou jy liewer wou hê?
+OF
+
+Page 1: Title
+Risk Discounting Taak
+Risk Discounting
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Instructions
+Instruksies:
+Twee bedrae geld sal op die skerm gewys word. Jy sal gevra word om een te kies. As jy die groter bedrag kies, het jy 'n 50/50 kans om die geld te ontvang. So, jy sal omtrent die helfte van die tyd daardie bedrag ontvang. Die ander tye sal jy niks ontvang nie. Dit word die "50/50 bedrag" genoem.
+Wanneer jy die kleiner bedrag kies, is jy gewaarborg dat jy dit sal ontvang. Dit word die "definitiewe bedrag" genoem.
+
+Page 3: Instructions
+Dit is 'n "voorgee" oefening - jy gaan nie regtig enige geld ontvang nie. Maar ons vra jou om jou keuses te maak asof dit werklik is. Daar is geen regte of verkeerde antwoorde nie.
+Maak jou keuse deur op een van die blou knoppies te druk.
+Jy gaan oefen voor jy begin, so moenie bekommerd wees as jy nie alles reeds verstaan nie. Gedurende die oefening kan jy so veel vrae vra as wat jy wil vra. Sodra die werklike toets begin kan ons nie meer enige vrae beantwoord nie.
+
+Page 4: Begin Practice
+BEGIN OEFENING
+
+Page 5: Practice
+R69 50/50 kans
+R44 definitief
+R36 50/50 kans
+R29 definitief
+R159 50/50 kans
+R137 definitief
+R109 50/50 kans
+R97 definitief
+
+Page 6: Begin Test
+BEGIN TOETS
+
+Page 7: Test
+R56 50/50 kans
+R19 definitief
+R92 50/50 kans
+R44 definitief
+R112 50/50 kans
+R44 definitief
+R69 50/50 kans
+R39 definitief
+R232 50/50 kans
+R79 definitief
+R250 50/50 kans
+R157 definitief
+R92 50/50 kans
+R49 definitief
+R195 50/50 kans
+R76 definitief
+R74 50/50 kans
+R34 definitief
+R89 50/50 kans
+R1 definitief
+R124 50/50 kans
+R51 definitief
+R222 50/50 kans
+R69 definitief
+R124 50/50 kans
+R11 definitief
+R71 50/50 kans
+R34 definitief
+R69 50/50 kans
+R36 definitief
+R237 50/50 kans
+R104 definitief
+R66 50/50 kans
+R29 definitief
+R215 50/50 kans
+R112 definitief
+R31 50/50 kans
+R9 definitief
+R34 50/50 kans
+R9 definitief
+R220 50/50 kans
+R54 definitief
+R180 50/50 kans
+R89 definitief
+R127 50/50 kans
+R46 definitief
+R109 50/50 kans
+R92 definitief
+R97 50/50 kans
+R44 definitief
+R51 50/50 kans
+R36 definitief
+R237 50/50 kans
+R99 definitief
+R99 50/50 kans
+R16 definitief
+R89 50/50 kans
+R44 definitief
+R247 50/50 kans
+R142 definitief
+R114 50/50 kans
+R31 definitief
+R64 50/50 kans
+R1 definitief
+R54 50/50 kans
+R19 definitief
+R56 50/50 kans
+R29 definitief
+R99 50/50 kans
+R24 definitief
+R129 50/50 kans
+R11 definitief
+R41 50/50 kans
+R6 definitief
+R202 50/50 kans
+R170 definitief
+R162 50/50 kans
+R114 definitief
+R159 50/50 kans
+R4 definitief
+R122 50/50 kans
+R76 definitief

@@ -1,5 +1,5 @@
 test: k-ddisc
-version: 1.07
+version: 1.08
 language: en_US
 
 Page 0: Common

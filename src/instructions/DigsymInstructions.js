@@ -8,31 +8,37 @@ import digsym_b_banner from '../assets/digsym/digsym_b_banner.png';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const DigsymInstructions = props => {
-  const {instructions, instructions_page, onGoBack, onContinue, continue_button_text, back_button_text, same_text, different_text, test_form} = props;
+  const {instructions, showImage, instructions_page, onGoBack, onContinue, continue_button_text, back_button_text, same_text, different_text, test_form} = props;
 
   const updated_instructions = instructions.filter(item => item !== same_text && item !== different_text && item !== continue_button_text && item !== back_button_text);
   const size = updated_instructions.length;
   const offset = (instructions_page && (instructions_page === 2 ? 2 : 3)) || 2;
   const instructions_str = updated_instructions.map((item, index) => {
-    if(item && index < size - offset)
+    if(item && size > 2 && index < size - offset)
     {
+      return item;
+    }
+    if(item && size <= 2 && index < 1){
       return item;
     }
   });
   const other_instructions_str = updated_instructions.map((item, index) => {
-      if(item && index >= size - offset)
+      if(item && size > 2 && index >= size - offset)
       {
         if(item !== same_text && item !== different_text)
         {
           return item;
         }
       }
+      if(item && size <= 2 && index >= 1){
+        return item;
+      }
     });
 
 
   const renderDigsymInstructions = () => {
     return (
-      size > 4 ?
+      showImage ?
       <div className="page full">
       <div className = "instructions digsym text--left">
 

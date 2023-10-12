@@ -1,0 +1,33 @@
+test: pmat24-a
+version: 3.00
+language: tu_TR
+
+Page 0: Common
+DEVAM ETMEK İÇİN BURAYA TIKLAYIN
+GERİ DÖNÜN
+İyi iş çıkardınız! Bir sonrakini deneyin.
+Bu doğru değil. Lütfen tekrar deneyin.
+
+Page 1: Title
+Penn Matriks Analiz Testi
+Form A, 24 öge
+DEVAM ETMEK İÇİN BURAYA TIKLAYIN
+
+Page 2: Instructions
+Bu testte, her sayfada bir motif göreceksiniz. Her motifte bir eksik parça olacak. Motifi en iyi tamamlayan alttaki kareye tıklayın.
+Haydi alıştırma yapalım.
+
+Page 3: Begin Practice
+ALIŞTIRMAYA BAŞLA
+
+Page 4: Practice
+<pmat_practice>
+
+Page 5: Instructions
+Test başlayacak. Cevabınıza sadece BİR KEZ tıklayın.
+
+Page 6: Begin Test
+TESTE BAŞLA
+
+Page 7: Test
+<trials>

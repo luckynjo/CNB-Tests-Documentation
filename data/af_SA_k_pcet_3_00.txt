@@ -1,0 +1,30 @@
+test: k-pcet
+version: 4.00
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+
+Page 1: Title
+Die Penn Conditional Exclusion Taak
+A-Vorm
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Instructions
+Jy sal vier voorwerpe sien. Druk op die voorwerp wat nie hoort nie.
+Wanneer jy reg kies, sal jy REG sien.
+Wanneer jy verkeerd kies, sal jy VERKEERD sien.
+
+Page 3: Begin Test
+BEGIN TOETS
+
+Page 4: Test
+<pcet_trials>
+Druk op die voorwerp wat NIE soos die ander is nie.
+
+Page 4.1: Feedback Correct
+REG
+
+Page 4.2: Feedback Incorrect
+VERKEERD

@@ -1,0 +1,33 @@
+test: pmat24-a
+version: 3.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Good job! Try the next one.
+That is not correct. Please try again.
+
+Page 1: Title
+Penn Matrix Analysis Test
+Form A, 24 items
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+In this test, you will see a pattern on each page. Each pattern will be missing a piece. Click on the square at the bottom that best completes the pattern.
+Let's practice.
+
+Page 3: Begin Practice
+BEGIN PRACTICE
+
+Page 4: Practice
+<pmat_practice>
+
+Page 5: Instructions
+The test will begin. Click only ONCE on your answer.
+
+Page 6: Begin Test
+BEGIN TEST
+
+Page 7: Test
+<trials>

@@ -32,31 +32,55 @@ export default class AssetLoader extends React.Component
 			let images = [];
 			if(this.props.practice_trials)
 			{
-				this.props.practice_trials.forEach((item, i) => {
-					const stimulus = JSON.parse(item.stimulus);
-					if(!images.find(x => x.includes(stimulus)))
-					{
+				if(this.props.task && (this.props.task === "adt" || this.props.task === "medf"))
+				{
+					this.props.practice_trials.forEach((item, i) => {
+						const stimulus1 = JSON.parse(item.stimulus)[0];
+						const stimulus2 = JSON.parse(item.stimulus)[1];
+						!images.find(x => x.includes(stimulus1)) && images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus1);
+						!images.find(x => x.includes(stimulus1)) && images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus2);
+					});
+				}
+				else
+				{
+					this.props.practice_trials.forEach((item, i) => {
+						const stimulus = JSON.parse(item.stimulus);
+						if(!images.find(x => x.includes(stimulus)))
+						{
 
-						images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus);
-					}
-				});
+							images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus);
+						}
+					});
+				}
 			}
 			if(this.props.test_trials)
 			{
-				this.props.test_trials.forEach((item, i) => {
-					let stimulus;
-					try{
-						stimulus = JSON.parse(item.stimulus);
-					}
-					catch(e)
-					{
-						stimulus = item.stimulus;
-					}
-					if(!images.find(x => x.includes(stimulus)))
-					{
-						images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus);
-					}
-				});
+				if(this.props.task && (this.props.task === "adt" || this.props.task === "medf"))
+				{
+					this.props.test_trials.forEach((item, i) => {
+						const stimulus1 = JSON.parse(item.stimulus)[0];
+						const stimulus2 = JSON.parse(item.stimulus)[1];
+						!images.find(x => x.includes(stimulus1)) && images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus1);
+						!images.find(x => x.includes(stimulus1)) && images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus2);
+					});
+				}
+				else
+				{
+					this.props.test_trials.forEach((item, i) => {
+						let stimulus;
+						try{
+							stimulus = JSON.parse(item.stimulus);
+						}
+						catch(e)
+						{
+							stimulus = item.stimulus;
+						}
+						if(!images.find(x => x.includes(stimulus)))
+						{
+							images.push(this.props.base_url + "stimuli/" + this.props.stimulus_dir + "/" + stimulus);
+						}
+					});
+				}
 			}
 			if(this.slideshow)
 			{

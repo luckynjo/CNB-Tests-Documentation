@@ -1,0 +1,52 @@
+test: vsplot24
+version: 3.10
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Click the buttons to rotate the BLUE line.
+Click FINISHED when the lines look parallel.
+FINISHED
+
+Page 1: Title
+Variable Short Penn Line Orientation Test
+CLICK HERE TO CONTINUE
+
+Page 2: Demo Instructions
+You will see two lines. The RED line is fixed in place. The BLUE line can be rotated around its center. Rotate the BLUE line until it has the same orientation as (or is parallel to) the RED line.
+These lines are parallel.
+These lines are NOT parallel.
+
+Page 3: Demo Instructions
+Rotate the BLUE line by clicking on the square buttons. The picture on the button shows the direction that the BLUE line will rotate.
+Try to rotate the BLUE line to the correct position with as few clicks as you can. Click "FINISHED" when you are done.
+Let's practice.
+
+Page 4: Begin Practice
+BEGIN PRACTICE
+
+Page 5: Practice
+See how the lines are parallel?
+
+Page 5.1: Feedback Correct
+Good job!
+Excellent!
+That's right.
+
+Page 5.2: Feedback Left Incorrect
+The lines are not oriented the same way. Try moving the BLUE line using the button on the LEFT.
+
+Page 5.3: Feedback Right Incorrect
+The lines are not oriented the same way. Try moving the BLUE line using the button on the RIGHT.
+
+Page 6: Instructions
+The lines will begin in different places on each page. They will also move a different amount with each click on different pages. Just remember to rotate the BLUE line so it is parallel to the red line.
+Please sit at your normal viewing distance from the screen and use only your eyes to judge the positions of the lines.
+The test will begin now. In the test, the lines will not get longer when they are parallel.
+
+Page 7: Begin Test
+BEGIN TEST
+
+Page 8: Test
+<trials>

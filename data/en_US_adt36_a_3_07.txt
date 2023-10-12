@@ -1,0 +1,45 @@
+test: adt36
+version: 3.07
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+This Face
+Same Age
+Which face is older?
+
+Page 1: Title
+Age Differentiation Task
+36-Item, Form A
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+You will see two faces at a time. Try to determine which face is older, or whether the faces are the same age.
+Click on the button below the face that is older. If you think they are the same age, click on the middle button that says "Same Age".
+
+Page 3: Instructions
+Sometimes the difference between the two faces is very small. You will only see it when you look very carefully.
+Let's try some practice faces...
+
+Page 4: Begin Practice
+BEGIN PRACTICE
+
+Page 5: Practice
+<practice_trials>
+
+Page 5.1: Feedback Correct
+Good job! Try the next one.
+
+Page 5.2: Feedback Incorrect
+That's not quite right. Please try again
+
+Page 6: Instructions
+Good job!
+The test will begin now. Remember to look carefully for differences between the faces.
+
+Page 7: Begin Test
+BEGIN TEST
+
+Page 8: Test
+<trials>

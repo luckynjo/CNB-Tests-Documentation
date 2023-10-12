@@ -1,0 +1,52 @@
+test: vsplot24
+version: 3.10
+language: tu_TR
+
+Page 0: Common
+DEVAM ETMEK İÇİN BURAYA TIKLAYIN
+GERİ DÖNÜN
+MAVİ çizgiyi döndürmek için tuşlara tıklayın.
+Çizgiler paralel göründüğünde BİTTİ’yte tıklayın.
+BİTTİ
+
+Page 1: Title
+Değişken Kısa Penn Çizgi Yönelimi Testi
+DEVAM ETMEK İÇİN BURAYA TIKLAYIN
+
+Page 2: Demo Instructions
+İki çizgi göreceksiniz. KIRMIZI çizgi yerinde sabit. MAVİ çizgi merkezi etrafında döndürülebilir. MAVİ çizgiyi KIRMIZI çizgiyle aynı yönelime sahip oluncaya kadar (veya KIRMIZI çizgiye paralel oluncaya kadar) döndürün.
+Bu çizgiler paralel.
+Bu çizgiler paralel DEĞİL.
+
+Page 3: Demo Instructions
+MAVİ çizgiyi kare tuşlara tıklayarak döndürün. Tuşun üzerindeki resim MAVİ çizginin döneceği yönü gösterir.
+MAVİ çizgiyi olabildiğince az tıklamayla doğru konuma döndürmeye çalışın. Bitirdiğinizde "BİTTİ"ye tıklayın.
+Haydi alıştırma yapalım.
+
+Page 4: Begin Practice
+ALIŞTIRMAYA BAŞLA
+
+Page 5: Practice
+Çizgilerin nasıl paralel olduğunu görüyor musunuz?
+
+Page 5.1: Feedback Correct
+İyi iş çıkardınız!
+Mükemmel!
+Bu doğru.
+
+Page 5.2: Feedback Left Incorrect
+Çizgiler aynı yönelimde değiller. SOLDAKİ tuşu kullanarak MAVİ çizgiyi hareket ettirmeyi deneyin.
+
+Page 5.3: Feedback Right Incorrect
+Çizgiler aynı yönelimde değiller. SAĞDAKİ tuşu kullanarak MAVİ çizgiyi hareket ettirmeyi deneyin.
+
+Page 6: Instructions
+Her sayfada çizgiler farklı yerlerde başlayacak. Ayrıca farklı sayfalarda her tıklayışta farklı miktarda hareket edecekler. MAVİ çizgiyi kırmızı çizgiye paralel olana kadar döndürmeyi unutmayın.
+Lütfen ekrandan normal görüş mesafenizde oturun ve çizgilerin konumlarını belirlemek için sadece gözlerinizi kullanın.
+Test şimdi başlayacak. Testte, çizgiler paralel olduklarında, daha fazla uzamayacaklar.
+
+Page 7: Begin Test
+TESTE BAŞLA
+
+Page 8: Test
+<trials>

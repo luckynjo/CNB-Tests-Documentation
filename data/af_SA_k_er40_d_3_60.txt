@@ -7,7 +7,7 @@ DRUK HIER OM VOORT TE GAAN
 GAAN TERUG
 
 Page 1: Title
-Penn Emotion Recognition Test
+Penn Emotion Recognition Toets
 ER40 Form D
 DRUK HIER OM VOORT TE GAAN
 
@@ -16,7 +16,7 @@ In hierdie toets gaan jy gesigte sien. Kyk mooi na elke gesig en probeer besluit
 Druk op die woord wat die beste beskryf hoe die persoon voel.
 
 Page 3: Instructions
-As die person geen gevoel wys, druk op "Geen Gevoel."
+As die persoon geen gevoel wys, druk op "Geen Gevoel."
 Kom ons oefen 'n gesig...
 
 Page 4: Begin Practice

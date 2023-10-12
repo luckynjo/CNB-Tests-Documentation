@@ -1,0 +1,51 @@
+test: medf36
+version: 3.06
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+This Face
+Equal
+
+Page 1: Title
+Measured Emotion Differentiation Task
+Form  A, 36 items
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+You will see two faces at a time. The name of an emotion appears in the question above. Try to decide which face is showing the feeling more, or whether the faces are equally emotional.
+Click on the button below the face that is more emotional.  If you think they are equally emotional, click on the button that says "Equal".
+
+Page 3: Instructions
+Sometimes the difference between the two faces is very small.  You will only see it when you look very carefully.
+Let's practice...
+
+Page 4: Begin Practice
+BEGIN PRACTICE
+
+Page 5: Practice
+<practice_trials>
+Which face is more angry?
+Which face is more happy?
+Which face is more sad?
+
+Page 5.1: Feedback Correct
+Good job! Try the next one.
+
+Page 5.2: Feedback Incorrect
+That's not quite right. Please try again
+
+Page 6: Instructions
+Good job!
+The test will begin now. Remember to look carefully for differences between the faces.
+
+Page 7: Begin Test
+BEGIN TEST
+
+Page 8: Test
+<trials>
+Which face is more happy?
+Which face is more angry?
+Which face is more afraid?
+Which face is more sad?
