@@ -113,13 +113,13 @@ export class MEDFPracticeTrials extends React.Component {
     const feedback = this.state.feedback;
     const hint = this.state.hint;
     const buttons = this.props.buttons.map((item, index) => {
-      return (<button className="button memory-button" key={index + 155} onClick={(e) => this.onPracticeResponse(e, index)}>{item}</button>)
+      return (<button className="button medf-memory-button" key={index + 155} onClick={(e) => this.onPracticeResponse(e, index)}>{item}</button>)
     })
 
     return (
       <div>
         <div className="feedback">
-          <p className="text--center">{feedback}</p>
+          <p className="text--center medf--feedback" style={{ color: "#DC143C" }}>{feedback}</p>
         </div>
         <div className="hint">
           <p className="hint text--center">{hint}</p>

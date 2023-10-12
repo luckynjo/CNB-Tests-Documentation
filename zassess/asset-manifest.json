@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/tests/zassess/static/css/main.229eeae7.css",
-    "main.js": "/tests/zassess/static/js/main.f33e48f2.js",
+    "main.css": "/tests/zassess/static/css/main.cf6204e4.css",
+    "main.js": "/tests/zassess/static/js/main.c40bfac2.js",
     "static/js/787.dbbfea37.chunk.js": "/tests/zassess/static/js/787.dbbfea37.chunk.js",
+    "static/media/escher_relativity_med.png": "/tests/zassess/static/media/escher_relativity_med.f46077f279c3ca6fc3de.png",
     "static/media/banner.png": "/tests/zassess/static/media/banner.b5249dbbfe18f38072bf.png",
     "static/media/Vr.png": "/tests/zassess/static/media/Vr.5f51010ec0df4cc65da7.png",
     "static/media/fear_pic.png": "/tests/zassess/static/media/fear_pic.57557f080bf8bcc49899.png",
@@ -32,12 +33,12 @@
     "static/media/click_sound.mp3": "/tests/zassess/static/media/click_sound.499d4af4c7c3a003d11d.mp3",
     "static/media/logo.svg": "/tests/zassess/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/tests/zassess/index.html",
-    "main.229eeae7.css.map": "/tests/zassess/static/css/main.229eeae7.css.map",
-    "main.f33e48f2.js.map": "/tests/zassess/static/js/main.f33e48f2.js.map",
+    "main.cf6204e4.css.map": "/tests/zassess/static/css/main.cf6204e4.css.map",
+    "main.c40bfac2.js.map": "/tests/zassess/static/js/main.c40bfac2.js.map",
     "787.dbbfea37.chunk.js.map": "/tests/zassess/static/js/787.dbbfea37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.229eeae7.css",
-    "static/js/main.f33e48f2.js"
+    "static/css/main.cf6204e4.css",
+    "static/js/main.c40bfac2.js"
   ]
 }

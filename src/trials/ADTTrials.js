@@ -106,7 +106,7 @@ export class ADTTrials extends React.Component {
     const stimulus2 = this.state.stimulus2;
     const hint = this.props.hint;
     const buttons = this.props.buttons.map((item, index) => {
-      return (<button className="button memory-button" key={index + 155} onClick={(e) => this.onTestResponse(e, index)}>{item}</button>)
+      return (<button className="button adt-memory-button" key={index + 155} onClick={(e) => this.onTestResponse(e, index)}>{item}</button>)
     })
 
     return (
