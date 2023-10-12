@@ -1,0 +1,195 @@
+test: sfnb2
+version: 3.00
+language: xh_SA
+
+Page 0: Common
+COFA APHA UKUZE UQHUBEKE
+BUYA UMVA
+Cofa iqhosha elide uqhubeke.
+
+Page 1: Title
+Short Fractal-N-Back
+Short Form
+COFA APHA UKUZE UQHUBEKE
+
+Page 2: Instructions
+Uzakubona umfanekiso ubemnye ngexesha kwi-screen.
+Kumfanekiso ngamnye, khetha ukuba ucofe na okanye ungacofi kwiqhosha elide.
+Kukho ingxenye ezintathu ezinemiqathango eyahlukileyo:
+0-UMVA
+1-UMVA
+2-UMVA
+Sizakuthi siziqhelanise nazo zonke ezingxenye zintathu.
+
+Page 3: 0-Back Instructions
+Sizokuqala ukuziqhelanisa no 0-UMVA.
+Cofa iqhosha elide xa ubona lomfanekiso:
+Ikhona imibuzo?
+
+Page 4: Begin Practice
+QALISA UKUZIQHELANISA NO 0-UMVA
+
+Page 5: 0-Back Countdown
+O-UMVA
+Cofa iqhosha elide xa ubona lomfanekiso:
+
+Page 6: Practice
+<0_back_practice>
+
+Page 6.1: Feedback False Negative
+Akuchanekanga oku.
+Cofa iqhosa elide qho ubona lo mfanekiso.
+
+Page 6.2: Feedback False Positive
+Akuchanekanga oku.
+Cofa iqhosa elide qho ubona lo mfanekiso.
+
+Page 7: 1-Back Instructions
+Ngoku sizakuziqhelanisa ukwenza u 1-UMVA.
+Cofa iqhosha elide xa ubona umfanekisa ofana nalona obuvele phambi kwawo.
+Umzekelo:
+COFA
+Ikhona Imibuzo?
+
+Page 8: Begin Practice
+QALISA UKUZIQHELANISA NO 1-UMVA
+
+Page 9: 1-Back Countdown
+1-UMVA
+Cofa iqhosha elide xa ubona umfanekisa ofana nalona obuvele phambi kwawo.
+
+Page 10: Practice
+<1_back_practice>
+
+Page 10.1: Feedback False Negative
+Akuchanekanga oku.
+Cofa iqhosha elide xa ubona umfanekisa ofana nalona obuvele phambi kwawo.
+
+Page 10.2: Feedback False Positive
+Akuchanekanga oku.
+Cofa iqhosha elide kuphela xa ubona umfanekisa ofana nalona obuvele phambi kwawo.
+
+Page 11: 1-Back Demo
+Umfanekiso wokuqala
+Umfanekiso wokugqibela
+COFA
+Tsiba umboniso ka 1-Umva
+Tsiba umboniso wokuziqhelanisa yaye ubuyele umva ekuziqhelaniseni
+
+Page 11.1: 1-Back Demo Section 1
+Sizakujonga indlela entsha yokwenza lo msebenzi.
+Masenze ngathi olo luhlu lwemifanekiso ingezantsi lulandelelwano lwemifanekiso ozakuyibona koluvavanyo.
+Qho xa lo mfanekiso uwubonayo ufana na lo udlulileyo, uze ucofe iqhosha elide.
+
+Page 11.2: 1-Back Demo Section 2
+Ngexesha lomboniso, imifanekiso ozakuy’bona izakuvela ngendlela efanayo na xa uvavanywa. Ungalandela uluhlu lwemifanekiso eboniswayo apha ngasentla. Imifanekiso eboniswayo ifakwe ebhokisini.
+
+Page 11.3: 1-Back Demo Section 3
+Into ozokuyibona ngexesha lovavanyo ilapha phakathi kweli bhokisi.
+Cofa iqhosha elide xa  umfanekiso owubonayo efana nomfanekiso odlulileyo.
+
+Page 11.4: 1-Back Demo Section 4
+Ngoku sizakuthi siziqhelanise no 1-UMVA kwakhona.
+Njenga kuqala uzame ukuziqhelanisa, awuzukubanalo uluhlu phezulu kwiscreen elizakukhumbuza ngemifanekiso edlulileyo.
+Khumbula ukucofa iqhosha elide xa umfanekiso okwi-screen efana nomfanekiso odlulileyo.
+Unayo na imibuzo?
+
+Page 12: 2-Back Instructions
+Ngoku sizokuqalisa ukuziqhelanisa no 2-UMVA.
+Cofa iqhosha elide xa umfanekiso owubonayo ufana nomfanekiso ophambi komfanekiso odlulileyo.
+Umzekelo:
+COFA
+
+Page 13: Begin Practice
+Qala ukuziqhelanisa no 2-UMVA
+
+Page 14: 2-Back Countdown
+2-UMVA
+Cofa iqhosha elide xa umfanekiso owubonayo ufana nomfanekiso  ophambi komfanekiso odlulileyo.
+
+Page 15: Practice
+<2_back_practice>
+
+Page 15.1: Feedback False Negative
+Akuchanekanga oku.
+Cofa iqhosha elide xa umfanekiso owubonayo ufana nomfanekiso  ophambi komfanekiso odlulileyo.
+
+Page 15.2: Feedback False Positive
+Akuchanekanga oku.
+Cofa iqhosha elide xa umfanekiso owubonayo ufana nomfanekiso  ophambi komfanekiso odlulileyo.
+
+Page 16: 2-Back Demo
+Umfanekiso wokuqala
+Umfanekiso wokugqibela
+COFA
+Tsiba umboniso ka 2-Umva
+Tsiba umboniso wokuziqhelanisa yaye ubuyele umva ekuziqhelaniseni
+
+Page 16.1: 2-Back Demo Section 1
+Sizakujonga indlela entsha yokwenza lo msebenzi.
+Masenze ngathi olo lohlu lwemifanekiso ingezantsi lulandelelwano lwemifanekiso ozakuyibona xa usenza u 2-UMVA.
+Qho xa umfanekiso owubonayo efana nemfanekiso emibini edlulileyo kufuneka ucofe iqhosa elide.
+
+Page 16.2: 2-Back Demo Section 2
+Ngelixesha lomboniso, imifanekiso ozakuy’bona, izakuvela ngendlela efanayo na xa uvavanywa. Ungalandela uluhlu lwemifanekiso ezokuboniswa ngokuthi ubukele uluhlu oluphezulu kwi-screen. Imifanekiso eboniswayo ifakwe ebhokisini.
+
+Page 16.3: 2-Back Demo Section 3
+Lento ozokuyibona ngexesha lovavanyo ilapha phakathi kwebhokisi.
+Cofa iqhosha elide xa umfanekiso owubonayo ufana nomfanekiso  ophambi komfanekiso odlulileyo.
+
+Page 16.4: 2-Back Demo Section 4
+Ngoku sizakuthi siziqhelanise no 2-UMVA kwakhona.
+Njenga kuqala uzame ukuziqhelanisa, awuzukubanalo uluhlu phezulu kwiscreen elizakukhumbuza ngemifanekiso edlulileyo.
+Khumbula ukucofa iqhosha elide qho xa umfanekiso owubonayo efana nemfanekiso emibini edlulileyo.
+Unayo na imibuzo?
+
+Page 17: Instructions
+Ugqibile ukuziqhelanisa.
+Ngoku sizakuthi siqalise Uvavanyo.
+Ngexesha lovavanyo uzokwenza umsebenzi ka 0- UMVA, 1-UMVA, kunye no 2-UMVA izihlando eziliqela.
+Ingaba unayo imibuzo phambi kokuba siqalise uvavanyo?
+
+Page 18: Begin Test
+QALISA UVAVANYO
+
+Page 19: 0-Back Countdown
+0-UMVA
+Cofa iqhosha elide xa ubona lo mfanekiso:
+
+Page 20: 0-Back Test
+<0_back_1>
+
+Page 21: 1-Back Countdown
+1-UMVA
+Cofa iqhosha elide xa ubona umfanekisa ofana nalona obuvele phambi kwawo.
+
+Page 22: 1-Back Test
+<1_back_1>
+
+Page 23: 2-Back Countdown
+2-UMVA
+Cofa iqhosha elide xa umfanekiso owubonayo ufana nomfanekiso  ophambi komfanekiso odlulileyo.
+
+Page 24: 2-Back Test
+<2_back_1>
+
+Page 25: 1-Back Countdown
+1-UMVA
+Cofa iqhosha elide xa ubona umfanekisa ofana nalona obuvele phambi kwawo.
+
+Page 26: 1-Back Test
+<1_back_2>
+
+Page 27: 2-Back Countdown
+2-UMVA
+Cofa iqhosha elide xa umfanekiso owubonayo ufana nomfanekiso  ophambi komfanekiso odlulileyo.
+
+Page 28: 2-Back Test
+<2_back_2>
+
+Page 29: 0-Back Countdown
+0-UMVA
+Cofa iqhosha elide xa ubona lo mfanekiso:
+
+Page 30: 0-Back Test
+<0_back_2>
