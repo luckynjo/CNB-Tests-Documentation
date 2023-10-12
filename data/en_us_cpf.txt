@@ -1,5 +1,5 @@
 test: cpf
-version: 2.05
+version: 2.06
 language: en_US
 
 Page 0: Common

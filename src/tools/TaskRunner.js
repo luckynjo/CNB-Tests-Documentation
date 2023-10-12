@@ -14,8 +14,10 @@ import Digsym from '../tasks/Digsym.js';
 import CPW from '../tasks/CPW.js';
 import PLLT from '../tasks/PLLT.js';
 import STROOP from '../tasks/STROOP.js';
-import { TestLoader } from '../loaders/TestLoader.js';
-import SubmitPage from '../components/SubmitPage.js';
+import PCET from '../tasks/PCET.js';
+import PMAT from '../tasks/PMAT.js';
+import GNG from '../tasks/GNG.js';
+import {TestLoader} from '../loaders/TestLoader.js';
 
 export default class TaskRunner extends React.Component
 {
@@ -192,6 +194,24 @@ export default class TaskRunner extends React.Component
     {
       return <div className="container-8-by-6  dark frame">
       <STROOP base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("k-pcet"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <PCET base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("pmat24"))
+    {
+      return <div className="container-8-by-6  light frame">
+      <PMAT base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      </div>
+    }
+    else if(task === "timeline" && test.test.includes("gng150"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <GNG base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline")

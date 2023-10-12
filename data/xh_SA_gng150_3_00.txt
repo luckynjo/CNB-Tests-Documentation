@@ -1,0 +1,238 @@
+test: gng150
+version: 3.00
+language: xh_SA
+
+Page 0: Common
+CINEZELA APHA UKUZE UQHUBEKE
+BUYELA EMVA
+Cinezela
+Sukucinezela
+X
+Y
+CINEZELA IQHOSHA ISPACEBAR UKUZE UQHUBEKE
+
+Page 1: Title
+Go No Go Umsebenzi
+CINEZELA APHA UKUZE UQHUBEKE
+
+Page 2: Instructions
+Lo ngumsebenzi wokubona ukuba ukhetha njani ukuba uphendule nini kwaye ungaphenduli nini.
+Uya kubona oonobumba bevela kwiindawo ezahlukeneyo kwisikrini sekhomputha. Cinezela iqhosha i-SPACEBAR nanini na xa ubona unobumba 'X' kumntla wesikrini. Khumbula, cinezela kuphela xa ingu-'X' (hayi u-'Y') nakunye xa unobumba engentla kwesikrini sekhomputha (hayi ngezantsi).
+
+Page 3: Demo Instructions
+Cinezela
+X
+Cinezela  Sukucinezela
+X Y
+Khumbula- cinezela iqhosha iSPACEBAR xa ubona unobumba 'X' ngentla kweskrini kuphela.
+Sukucinezela  Sukucinezela
+X X
+Sukucinezela
+X
+
+Page 4: Begin Practice
+QALISA UKUZIQHELANISA (UKUPREK'TIZA)
+
+Page 5: Countdown
+<countdown>
+3
+2
+1
+
+Page 6: Practice
+X
+X
+Y
+X
+Y
+X
+X
+Y
+X
+X
+X
+Y
+
+Page 6.1: Feedback False Negative
+Ayilunganga lena.
+Lowo ngunobumba u'X' ngentla kwesikrini sekhomphutha.
+Khumbula ukucinezela iqhosha iSPACEBAR xa ubona unobumba 'X' ngentla kweskrini.
+Masiphinde sizame kwakhona.
+
+Page 6.2: Feedback False Positive Y
+Ayilunganga lena.
+Lowo ibingunobumba u'Y', hayi u'X'.
+Cinezela iqhosha iSPACEBAR xa ubona unobumba 'X' ngentla kweskrini kuphela.
+Masiphinde sizame kwakhona.
+
+Page 6.3: Feedback False Positive X
+Ayilunganga lena.
+Lowo ngunobumba u'X', kodwa ungezantsi kwesikrini sekhomphutha.
+Cinezela iqhosha iSPACEBAR xa ubona unobumba 'X' ngentla kweskrini kuphela.
+Masiphinde sizame kwakhona.
+
+Page 7: Instructions
+Ukugqibile ukuziqhelanisa (ukuprek'tiza). Ngoku sizoqala uvavanyo.
+Khumbula ucinezela iqhosha iSPACEBAR xa ubona unobumba 'X' ngentla kweskrini kuphela.
+Kuvavanyo, awuzukuxelelwa xa wenze impazamo.
+
+Page 8: Begin Test
+QALISA UVAVANYO
+
+Page 9: Countdown
+<countdown>
+3
+2
+1
+
+Page 10: Test
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+Y
+Y
+X
+X
+X
+X
+X
+Y
+X
+Y
+X
+X
+X
+Y
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+Y
+Y
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+Y
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+X
+X
+Y
+X
+Y
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+X

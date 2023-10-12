@@ -1,5 +1,5 @@
 test: svolt
-version: 3.00
+version: 4.00
 language: af_SA
 
 Page 0: Common
@@ -7,7 +7,7 @@ DRUK HIER OM VOORT TE GAAN
 GAAN TERUG
 
 Page 1: Title
-Visual Object Learning Test
+Visual Object Learning Toets
 Immediate Memory Short
 DRUK HIER OM VOORT TE GAAN
 

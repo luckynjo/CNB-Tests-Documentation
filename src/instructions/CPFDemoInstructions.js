@@ -12,12 +12,10 @@ export const CPFDemoInstructions = props => {
     <div className = "instructions text--left top">
 
      <p>{instructions[0]}</p>
-     <br/>
      <p>
      <p>{instructions[1]}</p>
      <p>{instructions[2]}</p>
      </p>
-     <br/>
      <p>
      <p>{instructions[3]}</p>
      <p>{instructions[4]}</p>

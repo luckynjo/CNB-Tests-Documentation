@@ -1,0 +1,109 @@
+test: k-ddisc
+version: 1.08
+language: af_SA
+
+Page 0: Common
+DRUK HIER OM VOORT TE GAAN
+GAAN TERUG
+Watter een van die volgende sou jy liewer wou hê?
+OF
+
+Page 1: Title
+Delay Discounting ITC Toets
+Delay Discounting
+DRUK HIER OM VOORT TE GAAN
+
+Page 2: Instructions
+Instruksies:
+Twee bedrae geld sal op die skerm gewys word. Jy sal gevra word of jy liewer die kleiner bedrag vandag wil ontvang, of die groter bedrag later. Jy sal ook sien hoeveel dae jy sal moet wag om die groter bedrag te ontvang.
+Hierdie is 'n "voorgee" oefening - jy sal nie werklik die geld ontvang nie. Maar ons vra jou om 'n keuse te maak asof dit werklik is. Daar is geen regte of verkeerde antwoorde nie.
+
+Page 3: Instructions
+Maak jou keuse deur op een van die blou knoppies te druk. Wanneer jy kies, onthou dat 30 dae omtrent 'n maand is, en 180 dae omtrent 6 maande is.
+Jy sal kan oefen voordat jy begin, so moenie bekommerd wees as jy nie alles reeds verstaan nie. Gedurende die oefening kan jy so veel vrae vra as wat jy wil vra. Sodra die werklike taak begin kan ons nie meer enige vrae antwoord nie.
+
+Page 4: Begin Practice
+BEGIN OEFENING
+
+Page 5: Practice
+R110 vandag
+R145 oor 10 dae
+R5 vandag
+R75 oor 30 dae
+R145 vandag
+R180 oor 5 dae
+R75 vandag
+R250 oor 65 dae
+
+Page 6: Begin Test
+BEGIN TOETS
+
+Page 7: Test
+R54 vandag
+R180 oor 168 dae
+R110 vandag
+R145 oor 40 dae
+R33 vandag
+R145 oor 7 dae
+R117 vandag
+R145 oor 122 dae
+R26 vandag
+R110 oor 58 dae
+R47 vandag
+R110 oor 14 dae
+R68 vandag
+R180 oor 105 dae
+R75 vandag
+R110 oor 1 dag
+R47 vandag
+R110 oor 7 dae
+R138 vandag
+R145 oor 130 dae
+R173 vandag
+R180 oor 160 dae
+R131 vandag
+R145 oor 113 dae
+R 40 vandag
+R145 oor 5 dae
+R68 vandag
+R110 oor 100 dae
+R159 vandag
+R180 oor 49 dae
+R173 vandag
+R180 oor 127 dae
+R89 vandag
+R110 in 171 dae
+R89 vandag
+R110 oor 136 dae
+R12 vandag
+R180 oor 108 dae
+R33 vandag
+R110 oor 63 dae
+R47 vandag
+R180 oor 119 dae
+R33 vandag
+R145 oor 36 dae
+R40 vandag
+R145 oor 16 dae
+R96 vandag
+R110 oor 172 dae
+R110 vandag
+R145 i oor n 8 dae
+R12 vandag
+R110 oor 4 dae
+R138 vandag
+R145 oor 107 dae
+R75 vandag
+R145 oor 126 dae
+R103 vandag
+R110 oor 112 dae
+R89 vandag
+R145 oor 3 dae
+R82 vandag
+R110 oor 76 dae
+R5 vandag
+R180 oor 25 dae
+R152 vandag
+R180 oor 81 dae
+R75 vandag
+R180 oor 15 dae

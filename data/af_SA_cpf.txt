@@ -1,14 +1,14 @@
 test: cpf
-version: 2.05
+version: 2.06
 language: af_SA
 
 Page 0: Common
-Penn Face Memory Test
+Penn Face Memory Taak
 Druk hier om voort te gaan
 Gaan terug
 
 Page 1: Title
-Penn Face Memory Test
+Penn Face Memory Taak
 Druk hier om voort te gaan
 
 Page 2: Instructions
