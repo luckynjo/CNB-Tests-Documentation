@@ -1,0 +1,31 @@
+test: cpfd
+version: 2.05
+language: en_US
+
+Page 0: Common
+PENN FACIAL MEMORY TEST
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+PENN FACIAL MEMORY TEST
+Delayed Memory
+CLICK HERE TO CONTINUE
+
+Page 2: Demo Instructions
+Remember you saw some faces before?  Now you will see a new group of faces.
+The same buttons will be below each word as before:
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
+Answer the question "Did you see the face before?" by clicking on one of the buttons.
+
+Page 3: Begin Test
+BEGIN TEST
+
+Page 4: Test
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
