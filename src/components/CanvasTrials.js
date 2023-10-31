@@ -108,7 +108,6 @@ export default class CanvasTrials extends BaseTrials
 		// Test block
 		else
 		{
-			console.log("In CanvasTrials onNextCanvasTrials");
 			// Log false negative response.
 			if(this.responded === false)
 			{

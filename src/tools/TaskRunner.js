@@ -21,6 +21,7 @@ import ADT from '../tasks/ADT.js';
 import MEDF from '../tasks/MEDF.js';
 import VSPLOT from '../tasks/VSPLOT.js';
 import {TestLoader} from '../loaders/TestLoader.js';
+import SubmitPage from '../components/SubmitPage.js';
 
 export default class TaskRunner extends React.Component
 {

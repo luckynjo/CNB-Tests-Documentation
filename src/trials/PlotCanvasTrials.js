@@ -28,7 +28,6 @@ export default class PlotCanvasTrials extends CanvasTrials
 
 	onResponse(data)
 	{
-    console.log("In PlotCanvas onResponse()");
 		if(this.props.content.proc === 'practice')
 		{
 			this.onPracticeResponse(data);
