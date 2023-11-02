@@ -1,0 +1,57 @@
+test: aim
+version: 3.01
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Left Pair
+Right Pair
+Target Object
+
+Page 1: Title
+Penn's Abstraction, Inhibition, and Working Memory Test
+AIM Form A
+CLICK HERE TO CONTINUE
+
+Page 2: Demo Instructions
+At the bottom of the screen, you will see a single target object. At the top of the screen you will see two pairs of objects. You are to decide whether the target object at the bottom of the screen best fits with the pair of objects on the left or the pair on the right. Use your mouse to make your selection.
+
+Page 3: Begin Practice
+BEGIN PRACTICE
+
+Page 4: Practice
+<practice_trials>
+
+Page 4.1: Feedback Correct
+CORRECT
+
+Page 4.2: Feedback Incorrect
+INCORRECT
+
+Page 5: Instructions
+As you have seen, your task is to tell us whether the shape at the bottom belongs with the shapes on the right side or the left side.
+On some of the trials, the shape on the bottom will disappear before you are shown the top shapes. You must remember the bottom shape in order to match it with the shapes on the left or right of the screen.
+We will now do a few examples.
+
+Page 6: Begin Practice
+BEGIN PRACTICE
+
+Page 7: Practice
+<practice_trials>
+
+Page 7.1: Feedback Correct
+CORRECT
+
+Page 7.2: Feedback Incorrect
+INCORRECT
+
+Page 8: Instructions
+We will now do the test.
+On some of the trials, you will be shown all of the shapes at the same time. On other trials the shape on the bottom will disappear before you are shown the top shapes.
+
+Page 9: Begin Test
+BEGIN TEST
+
+Page 10: Test
+<trials>

@@ -147,7 +147,6 @@ export default class BaseTrials extends React.Component
 		let responses = this.getResponses();
 		this.responded = true;
 		this.lastResponse = response;
-		console.log("In BaseTrials onResponse(): ", responses);
 		// End test block early for tasks which terminate based on responses.
 		if(stimuli.discontinueTest(response))
 		{
@@ -198,7 +197,6 @@ export default class BaseTrials extends React.Component
 		// Has not reached end of block, load next trial.
 		if(stimuli.hasNext())
 		{
-			console.log("Basetrials nextTrial() ");
 			this.log_event('start_onset_stim', (new Date()).getTime());
 			this.starttime = new Date();
 			this.setState((prevState, props) => {
@@ -255,7 +253,7 @@ export default class BaseTrials extends React.Component
 			else if(this.props.content.proc === 'test')
 			{
 				let l = this.event_log;
-				this.props.onComplete({responses: this.state.responses, logs: l});
+				this.props.onComplete(this.state.responses);
 			}
 			else if(this.props.content.proc === 'practice')
 			{

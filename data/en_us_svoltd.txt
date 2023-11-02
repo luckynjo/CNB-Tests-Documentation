@@ -1,0 +1,30 @@
+test: svoltd
+version: 3.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 1: Title
+Visual Object Learning Test
+Delayed Memory Short
+CLICK HERE TO CONTINUE
+
+Page 2: Demo Instructions
+Remember you saw some shapes before?
+Now you will see a new group of shapes. The same buttons will be below each one as before.
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
+Answer the question "Did you see the shape before?" by clicking on one of the buttons.
+
+Page 3: Begin Test
+BEGIN TEST
+
+Page 4: Test
+DEFINITELY YES
+PROBABLY YES
+PROBABLY NO
+DEFINITELY NO
