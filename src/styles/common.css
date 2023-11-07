@@ -245,7 +245,7 @@ transform: translateY(1px);
     min-width: 236px;
     height: 32px;
     z-index: 10;
-    position: absolute;
+    /*position: absolute;*/
     bottom: 2px;
     background-color: #009900;
     line-height:32px;
@@ -400,7 +400,8 @@ div.instructions.top{
   border: 1px solid #FFFFFF;
 }
 
-
+/*
 .section--footer table tbody tr td button.continue-button{
   bottom: 66px;
 }
+*/
