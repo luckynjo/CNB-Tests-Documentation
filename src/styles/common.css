@@ -250,7 +250,7 @@ transform: translateY(1px);
     background-color: #009900;
     line-height:32px;
     text-align:center;
-    font-size:15px;
+    font-size: /*15px*/ 13px;
     color:#FFFFFF;
     font-family: Helvetica;
     font-weight: bold;

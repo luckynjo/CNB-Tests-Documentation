@@ -95,7 +95,7 @@ export class PLLTSlideshow extends React.Component{
     </tr>)
 
     return(
-      <div className={"instructions center"}>
+      <div className={"pllt--instructions center"}>
       <table className="words center--horizontal">
        <tbody>
        {rendered_words}

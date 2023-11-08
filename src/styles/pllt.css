@@ -75,3 +75,19 @@ table.words td{
   /**height: 20px;
   padding: 70px 0;*/
 }
+
+.text--center--pllt{
+  text-align:center;
+  margin: 0;
+  width:100%;
+  /**  font-size: calc(4vw + 4vh + 2vmin);*/
+  font-size:22px;
+  font-weight:bold;
+}
+
+.pllt--instructions{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+}
