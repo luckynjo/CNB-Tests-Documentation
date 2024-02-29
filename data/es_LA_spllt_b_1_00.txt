@@ -1,0 +1,87 @@
+test: spllt-b
+version: 1.00
+language: es_LA
+
+Page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+VOLVER
+OTROS
+PASAR AL SIGUIENTE ENSAYO
+
+Page 1: Title
+Prueba corta de aprendizaje de lista de Penn
+Formulario abreviado
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Instructions
+(Instrucciones 1)
+
+(Al administrador de la prueba: ahora retire el ordenador de la vista del participante. Durante toda esta prueba, el participante no debe poder ver la pantalla del ordenador. Lea las instrucciones que aparecen a continuación al participante y después a continuación, lea las palabras de la lista en voz alta, a la vez que se van resaltando en amarillo).
+
+Voy a leer una lista de palabras. Escuche con atención porque cuando termine de leerla, quiero que me diga todos las palabras que pueda recordar. No importa en qué orden estén, sólo dígame todas las que pueda. Esta es la lista:
+
+(Prepárese para leer la lista de palabras)
+
+Page 3: Slideshow
+<slideshow>
+TROMPETA
+CARBÓN
+AZÚCAR
+LECHUGA
+OXIGENO
+HABAS
+AJO
+VIOLÍN
+PATATA
+MADERA
+CLARINETE
+VAINILLA
+MAÍZ
+GASOLINA
+FLAUTA
+CANELA
+
+Page 4: Test
+<trials>
+TROMPETA
+VIOLÍN
+CLARINETE
+FLAUTA
+CARBÓN
+OXIGENO
+MADERA
+GASOLINA
+LECHUGA
+HABAS
+PATATA
+MAÍZ
+AZÚCAR
+AJO
+VAINILLA
+CANELA
+
+Page 5: Instructions
+(Instrucciones 2)
+
+Voy a repetir la lista de palabras. De nuevo, quiero que repita todas las palabras que pueda en cualquier orden, incluyendo las palabras que ya me haya dicho. Esta es la lista:
+
+(Prepárese para leer la lista de palabras)
+
+Page 6: Slideshow
+<Slideshow>
+
+Page 7: Test
+<trials>
+
+Page 8: Instructions
+(Instrucciones 3)
+
+Voy a repetir la lista de palabras. De nuevo, quiero que repita todas las palabras que pueda en cualquier orden, incluyendo las palabras que ya me haya dicho. Esta es la lista:
+
+(Prepárese para leer la lista de palabras)
+
+Page 9: Slideshow
+<slideshow>
+
+Page 10: Test
+<trials>
