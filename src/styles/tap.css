@@ -105,3 +105,7 @@ top: 416px;
 left: 50%;
 transform: translateX(-50%);
 }
+
+.tap--instructions--text{
+  color: white;
+}
