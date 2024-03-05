@@ -128,6 +128,12 @@ export default class TaskRunner extends React.Component
       <CPT base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
+    else if(task === "timeline" && test.test.includes("tap-3.00"))
+    {
+      return <div className="container-8-by-6  dark frame">
+      <TAP base_url={this.props.base_url} version={"3.00"} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      </div>
+    }
     else if(task === "timeline" && test.test.includes("tap"))
     {
       return <div className="container-8-by-6  dark frame">

@@ -13,7 +13,6 @@ export const TapCountdownInstructions = props => {
   let [pressed, setPressed] = useState(false);
   let [view, setView] = useState("instructions");
   const parsed_handedness = JSON.parse(handedness);
-  console.log('Continue text be ', spacebar_text);
 
   function keyDown(e)
   {

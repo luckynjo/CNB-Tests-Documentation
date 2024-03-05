@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/tap.css';
 import {TapTrials} from '../trials/TapTrials.js';
+import {TapTrialsWithCount} from '../trials/TapTrialsWithCount.js';
 import {TapHandednessTrial} from '../trials/TapHandednessTrial.js';
 import TitlePage from '../components/TitlePage.js';
 import {BeginPage} from '../components/BeginPage.js';
@@ -228,11 +229,19 @@ export default class TAP extends React.Component{
     }
     else if(section_title.match(PRACTICE_REGEX))
     {
-      return <TapTrials key={10 + this.state.practice_trial + 1} trials={this.props.practice_trials} practice={true}  index={this.state.practice_trial} goText={JSON.parse(timeline_object.content)[0]} stopText={JSON.parse(timeline_object.content)[1]} onPracticeComplete={this.onPracticeComplete}/>
+      if(this.props.version && this.props.version === "3.00"){
+        return <TapTrialsWithCount key={10 + this.state.practice_trial + 1} trials={this.props.practice_trials} practice={true}  index={this.state.practice_trial} goText={JSON.parse(timeline_object.content)[0]} stopText={JSON.parse(timeline_object.content)[1]} onPracticeComplete={this.onPracticeComplete}/>
+      } else {
+        return <TapTrials key={10 + this.state.practice_trial + 1} trials={this.props.practice_trials} practice={true}  index={this.state.practice_trial} goText={JSON.parse(timeline_object.content)[0]} stopText={JSON.parse(timeline_object.content)[1]} onPracticeComplete={this.onPracticeComplete}/>
+      }
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <TapTrials key={10 + this.state.test_trial + 1} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete} index={this.state.test_trial} goText={JSON.parse(timeline_object.content)[0]} stopText={JSON.parse(timeline_object.content)[1]}/>
+      if(this.props.version && this.props.version === "3.00"){
+        return <TapTrialsWithCount key={10 + this.state.test_trial + 1} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete} index={this.state.test_trial} goText={JSON.parse(timeline_object.content)[0]} stopText={JSON.parse(timeline_object.content)[1]}/>
+      } else {
+        return <TapTrials key={10 + this.state.test_trial + 1} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete} index={this.state.test_trial} goText={JSON.parse(timeline_object.content)[0]} stopText={JSON.parse(timeline_object.content)[1]}/>
+      }
     }
     else
     {

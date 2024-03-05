@@ -17,7 +17,7 @@ export const SimpleInstructions = props => {
           if(instruction.includes("GO!"))
           {
             const text_arr = instruction.split("GO!");
-            return <p><span>{text_arr[0]}</span><span className="green">GO!</span><span>{text_arr[1]}</span></p>
+            return <p><span className="tap--instructions--text">{text_arr[0]}</span><span className="green">GO!</span><span className="tap--instructions--text">{text_arr[1]}</span></p>
           }
           else
           {
