@@ -213,10 +213,10 @@ export default class VSPLOT extends React.Component {
         	<table className="canvas--responses">
         	<tbody>
         	<tr>
-        	<td className="inst"><p className="instructions-text--small tip">{this.hintLeft}</p></td>
+        	<td className="inst"><p className="plot-instructions-text--small tip">{this.hintLeft}</p></td>
         	<td><button value={-1} className="button plot--response-button plot--left center--horizontal"> </button></td>
         	<td><button value={1} className="button plot--response-button plot--right center--horizontal"> </button></td>
-        	<td className="inst"><p className="instructions-text--small tip">{this.hintRight}</p></td>
+        	<td className="inst"><p className="plot-instructions-text--small tip">{this.hintRight}</p></td>
         	</tr>
         	<tr>
         	<td colSpan={4}><button value="FINISHED" className='button plot--response-button center--horizontal plot--finished'>{this.finished_text}</button></td>
@@ -242,10 +242,10 @@ export default class VSPLOT extends React.Component {
         	<table className="canvas--responses">
         	<tbody>
         	<tr>
-        	<td className="inst"><p className="instructions-text--small tip">{this.hintLeft}</p></td>
+        	<td className="inst"><p className="plot-instructions-text--small tip">{this.hintLeft}</p></td>
         	<td><button value={-1} className="button plot--response-button plot--left center--horizontal"> </button></td>
         	<td><button value={1} className="button plot--response-button plot--right center--horizontal"> </button></td>
-        	<td className="inst"><p className="instructions-text--small tip">{this.hintRight}</p></td>
+        	<td className="inst"><p className="plot-instructions-text--small tip">{this.hintRight}</p></td>
         	</tr>
         	<tr>
         	<td colSpan={4}><button value="FINISHED" className='button plot--response-button center--horizontal plot--finished'>{this.finished_text}</button></td>

@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/gng.css';
 import TitlePage from '../components/TitlePage.js';
 import AssetLoader from '../loaders/AssetLoader.js';
+import {GNGInstructions} from '../instructions/GNGInstructions.js';
 import {SimpleInstructions} from '../instructions/SimpleInstructions.js';
 import {GNGDemoInstructions} from '../instructions/GNGDemoInstructions.js';
 import {SimpleCountdownInstructions} from '../instructions/SimpleCountdownInstructions.js';
@@ -211,7 +212,7 @@ export default class GNG extends React.Component {
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
       return <div className="container-8-by-6  dark frame">
-        <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} hideGoBack={this.canGoBack()} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+        <GNGInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} hideGoBack={this.canGoBack()} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
       </div>
     }
     else if(section_title.includes("_Countdown"))
@@ -225,7 +226,7 @@ export default class GNG extends React.Component {
       const feedback_false_neg = JSON.parse(this.props.timeline[this.state.index+1].content);
       const feedback_false_pos_y = JSON.parse(this.props.timeline[this.state.index+2].content);
       const feedback_false_pos_x = JSON.parse(this.props.timeline[this.state.index+3].content);
-      if(this.props.response_device == "button"){
+      if(this.props.response_device == "touch"){
         return <GNGPracticeTrialsWithBtn base_url={this.props.base_url} section="practice" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onPracticeComplete} feedback_false_neg={feedback_false_neg} continue_button_text={this.continue_button_text} feedback_false_pos_y={feedback_false_pos_y} feedback_false_pos_x={feedback_false_pos_x} back={this.back} incorrect_practice_cnt={this.state.incorrect_practice_cnt} addIncorrectPracticeCnt={this.addIncorrectPracticeCnt} spacebar_text={this.spacebar_text}/>
       }
       return <div className="container-8-by-6  dark frame">
@@ -234,7 +235,7 @@ export default class GNG extends React.Component {
     }
     else if(section_title.match(TEST_REGEX))
     {
-      if(this.props.response_device == "button"){
+      if(this.props.response_device == "touch"){
         return <GNGTestTrialsWithBtn base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete} continue_button_text={this.continue_button_text}/>
       }
       return <div className="container-8-by-6  dark frame">
