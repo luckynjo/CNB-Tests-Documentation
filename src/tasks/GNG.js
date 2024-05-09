@@ -211,7 +211,6 @@ export default class GNG extends React.Component {
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
-      console.log(section_title);
       let page = 2;
       if(section_title.includes("Page_7") || section_title.includes("Page 7")){
         page = 7;

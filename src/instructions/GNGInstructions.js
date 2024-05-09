@@ -9,7 +9,6 @@ Instructions renders text / images / html content that is defined in a test and 
 */
 export const GNGInstructions = props => {
   const {instructions, page, onGoBack, onContinue, continue_button_text, back_button_text, hideGoBack} = props;
-  console.log("page: ", page);
   let page2_inst_str_buff1 = "";
   let page2_inst_str_buff2 = "";
   let page2_inst_str_buff3 = "";
