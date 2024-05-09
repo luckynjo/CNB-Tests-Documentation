@@ -79,7 +79,10 @@ Let's try that again.
 
 Page 7: Instructions
 You have completed the practice. We will now start the test.
-Remember to tap or click the screen only when you see the letter 'X' in the upper half of the screen.
+Remember to
+tap
+or click
+the screen only when you see the letter 'X' in the upper half of the screen.
 In the test, you will not be told if you make a mistake.
 
 Page 8: Begin Test
