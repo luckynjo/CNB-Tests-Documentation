@@ -9,6 +9,8 @@ import {GNGFeedbackInstructions} from '../instructions/GNGFeedbackInstructions.j
 import SubmitPage from '../components/SubmitPage.js';
 import {GNGPracticeTrials} from '../trials/GNGPracticeTrials.js';
 import {GNGTestTrials} from '../trials/GNGTestTrials.js';
+import {GNGPracticeTrialsWithBtn} from '../trials/GNGPracticeTrialsWithBtn.js';
+import {GNGTestTrialsWithBtn} from '../trials/GNGTestTrialsWithBtn.js';
 import {BeginPage} from '../components/BeginPage.js';
 import banner from '../assets/gng/banner.png';
 
@@ -190,34 +192,54 @@ export default class GNG extends React.Component {
     }
     else if(section_title.match(TITLE_PAGE_REGEX))
     {
-      return <TitlePage banner={banner} content={JSON.parse(timeline_object.content)} banner_width={312} theme={"dark"} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
+      return <div className="container-8-by-6  dark frame">
+        <TitlePage banner={banner} content={JSON.parse(timeline_object.content)} banner_width={312} theme={"dark"} continue_button_text={this.continue_button_text} onClick={this.next} {...this.props.test}/>
+      </div>
     }
     else if(section_title.match(BEGIN_PAGE_REGEX))
     {
-      return <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <div className="container-8-by-6  dark frame">
+        <BeginPage title={JSON.parse(timeline_object.content)[0]} onContinue={this.next} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      </div>
     }
     else if(section_title.match(DEMO_INSTRUCTIONS_REGEX))
     {
-      return <GNGDemoInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} hideGoBack={false} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+      return <div className="container-8-by-6  dark frame">
+        <GNGDemoInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} hideGoBack={false} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+      </div>
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
-      return <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} hideGoBack={this.canGoBack()} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+      return <div className="container-8-by-6  dark frame">
+        <SimpleInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} hideGoBack={this.canGoBack()} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+      </div>
     }
     else if(section_title.includes("_Countdown"))
     {
-      return <SimpleCountdownInstructions seconds={3} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
+      return <div className="container-8-by-6  dark frame">
+        <SimpleCountdownInstructions seconds={3} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
+      </div>
     }
     else if(section_title.match(PRACTICE_REGEX))
     {
       const feedback_false_neg = JSON.parse(this.props.timeline[this.state.index+1].content);
       const feedback_false_pos_y = JSON.parse(this.props.timeline[this.state.index+2].content);
       const feedback_false_pos_x = JSON.parse(this.props.timeline[this.state.index+3].content);
-      return <GNGPracticeTrials base_url={this.props.base_url} section="practice" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onPracticeComplete} feedback_false_neg={feedback_false_neg} feedback_false_pos_y={feedback_false_pos_y} feedback_false_pos_x={feedback_false_pos_x} back={this.back} incorrect_practice_cnt={this.state.incorrect_practice_cnt} addIncorrectPracticeCnt={this.addIncorrectPracticeCnt} spacebar_text={this.spacebar_text}/>
+      if(this.props.response_device == "button"){
+        return <GNGPracticeTrialsWithBtn base_url={this.props.base_url} section="practice" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onPracticeComplete} feedback_false_neg={feedback_false_neg} continue_button_text={this.continue_button_text} feedback_false_pos_y={feedback_false_pos_y} feedback_false_pos_x={feedback_false_pos_x} back={this.back} incorrect_practice_cnt={this.state.incorrect_practice_cnt} addIncorrectPracticeCnt={this.addIncorrectPracticeCnt} spacebar_text={this.spacebar_text}/>
+      }
+      return <div className="container-8-by-6  dark frame">
+        <GNGPracticeTrials base_url={this.props.base_url} section="practice" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onPracticeComplete} feedback_false_neg={feedback_false_neg} feedback_false_pos_y={feedback_false_pos_y} feedback_false_pos_x={feedback_false_pos_x} back={this.back} incorrect_practice_cnt={this.state.incorrect_practice_cnt} addIncorrectPracticeCnt={this.addIncorrectPracticeCnt} spacebar_text={this.spacebar_text}/>
+      </div>
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <GNGTestTrials base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete}/>
+      if(this.props.response_device == "button"){
+        return <GNGTestTrialsWithBtn base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete} continue_button_text={this.continue_button_text}/>
+      }
+      return <div className="container-8-by-6  dark frame">
+        <GNGTestTrials base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete}/>
+      </div>
     }
     else
     {

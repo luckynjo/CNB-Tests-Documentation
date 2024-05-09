@@ -1,0 +1,53 @@
+test: vsplot15
+version: 3.00
+language: es_ES
+
+Page 0: Common
+HAGA CLIC AQUÍ PARA CONTINUAR
+REGRESAR
+Haga clic en los botones para rotar la línea AZUL.
+Haga clic en TERMINADO cuando las líneas parezcan paralelas.
+TERMINADO
+
+Page 1: Title
+Prueba Penn de orientación de líneas
+HAGA CLIC AQUÍ PARA CONTINUAR
+
+Page 2: Demo Instructions
+Verá dos líneas. La línea ROJA está fija en su lugar. La línea AZUL se puede girar alrededor de su centro. Gire la línea AZUL hasta que tenga la misma orientación que (sea paralela con) la línea ROJA.
+Estas líneas son paralelas.
+Estas líneas NO son paralelas.
+¿Puede mostrarme con dos dedos cómo son las líneas paralelas?
+
+Page 3: Demo Instructions
+Gire la línea AZUL haciendo clic en los botones cuadrados. La imagen del botón muestra la dirección en la que girará la línea AZUL.
+Intente girar la línea AZUL hasta la posición correcta con la menor cantidad de clics posible. Cuando termine, haga clic en "LISTO".
+Vamos a practicar.
+
+Page 4: Begin Practice
+COMENZAR LA PRÁCTICA
+
+Page 5: Practice
+Ve cómo las líneas están paralelas?
+
+Page 5.1: Feedback Correct
+¡MUY BIEN!
+¡EXCELENTE!
+Correcto.
+
+Page 5.2: Feedback Left Incorrect
+Las líneas no tienen la misma orientación. Trate de mover la línea AZUL usando el botón de la IZQUIERDA.
+
+Page 5.3: Feedback Right Incorrect
+Las líneas no tienen la misma orientación. Trate de mover la línea AZUL con el botón de la DERECHA.
+
+Page 6: Instructions
+Recuerde que tiene que girar la línea AZUL para que quede paralela a la línea roja.
+Siéntese a su distancia normal de la pantalla y use solo sus ojos para juzgar las posiciones de las líneas.
+La prueba comenzará ahora. En la prueba, las líneas no se alargarán cuando sean paralelas.
+
+Page 7: Begin Test
+INICIAR PRUEBA
+
+Page 8: Test
+<trials>

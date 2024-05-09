@@ -1,0 +1,22 @@
+{
+  "trials": [
+{"question_number": 1, "trial_type" : "practice", "stimulus": [{"type": "red", "x":150, "y":80, "radius": 24, "theta":117, "delta":9},{"type": "blue", "x":650, "y":80, "radius": 24, "theta":63, "delta":9}]},
+{"question_number": 2, "trial_type" : "practice", "stimulus": [{"type": "red", "x":200, "y":380, "radius": 24, "theta":72, "delta":9},{"type": "blue", "x":600, "y":80, "radius": 24, "theta":135, "delta":9}]},
+{"question_number": 3, "trial_type" : "practice", "stimulus": [{"type": "red", "x":650, "y":380, "radius": 24, "theta":126, "delta":9},{"type": "blue", "x":150, "y":380, "radius": 8, "theta":81, "delta":9}]},
+{"question_number": 1, "trial_type": "test", "stimulus": [{"type": "red", "x":600, "y":380, "radius": 24, "theta":18, "delta":9},{"type": "blue", "x":200, "y":80, "radius": 24, "theta":90, "delta":9}]},
+{"question_number": 2, "trial_type": "test", "stimulus": [{"type": "red", "x":650, "y":380, "radius": 24, "theta":63, "delta":9},{"type": "blue", "x":150, "y":380, "radius": 24, "theta":162, "delta":9}]},
+{"question_number": 3, "trial_type": "test", "stimulus": [{"type": "red", "x":150, "y":80, "radius": 24, "theta":81, "delta":9},{"type": "blue", "x":650, "y":80, "radius": 8, "theta":144, "delta":9}]},
+{"question_number": 4, "trial_type": "test", "stimulus": [{"type": "red", "x":650, "y":80, "radius": 24, "theta":102, "delta":6},{"type": "blue", "x":150, "y":80, "radius": 24, "theta":42, "delta":6}]},
+{"question_number": 5, "trial_type": "test", "stimulus": [{"type": "red", "x":600, "y":80, "radius": 24, "theta":168, "delta":6},{"type": "blue", "x":200, "y":380, "radius": 8, "theta":120, "delta":6}]},
+{"question_number": 6, "trial_type": "test", "stimulus": [{"type": "red", "x":200, "y":80, "radius": 24, "theta":66, "delta":6},{"type": "blue", "x":600, "y":380, "radius": 24, "theta":108, "delta":6}]},
+{"question_number": 7, "trial_type": "test", "stimulus": [{"type": "red", "x":200, "y":380, "radius": 24, "theta":159, "delta":3},{"type": "blue", "x":600, "y":80, "radius": 24, "theta":132, "delta":3}]},
+{"question_number": 8, "trial_type": "test", "stimulus": [{"type": "red", "x":600, "y":380, "radius": 24, "theta":81, "delta":3},{"type": "blue", "x":200, "y":80, "radius": 8, "theta":120, "delta":3}]},
+{"question_number": 9, "trial_type": "test", "stimulus": [{"type": "red", "x":600, "y":380, "radius": 24, "theta":18, "delta":9},{"type": "blue", "x":200, "y":80, "radius": 24, "theta":90, "delta":9}]},
+{"question_number": 10, "trial_type": "test", "stimulus": [{"type": "red", "x":200, "y":80, "radius": 24, "theta":66, "delta":6},{"type": "blue", "x":600, "y":380, "radius": 24, "theta":108, "delta":6}]},
+{"question_number": 11, "trial_type": "test", "stimulus": [{"type": "red", "x":650, "y":380, "radius": 24, "theta":63, "delta":9},{"type": "blue", "x":150, "y":380, "radius": 24, "theta":162, "delta":9}]},
+{"question_number": 12, "trial_type": "test", "stimulus": [{"type": "red", "x":650, "y":80, "radius": 24, "theta":102, "delta":6},{"type": "blue", "x":150, "y":80, "radius": 24, "theta":42, "delta":6}]},
+{"question_number": 13, "trial_type": "test", "stimulus": [{"type": "red", "x":600, "y":80, "radius": 24, "theta":168, "delta":6},{"type": "blue", "x":200, "y":380, "radius": 8, "theta":120, "delta":6}]},
+{"question_number": 14, "trial_type": "test", "stimulus": [{"type": "red", "x":150, "y":80, "radius": 24, "theta":81, "delta":9},{"type": "blue", "x":650, "y":80, "radius": 8, "theta":144, "delta":9}]},
+{"question_number": 15, "trial_type": "test", "stimulus": [{"type": "red", "x":600, "y":380, "radius": 24, "theta":81, "delta":3},{"type": "blue", "x":200, "y":80, "radius": 8, "theta":120, "delta":3}]}
+]
+}

@@ -14,15 +14,15 @@ export class VSPLOTInstructions extends React.Component {
   render(){
     const {instructions, onGoBack, images, page, onContinue, continue_button_text, back_button_text, hideGoBack} = this.props;
 
-    const parallel_instruction = (page == 2) && instructions[instructions.length-2];
-    const not_parallel_instruction = (page == 2) && instructions[instructions.length-1];
+    const parallel_instruction = (page == 2) && instructions[instructions.length-3];
+    const not_parallel_instruction = (page == 2) && instructions[instructions.length-2];
     return(
       <>
       <div className = "instructions text--left top">
         {instructions.map((instruction, index) => {
           if(instruction !== continue_button_text && instruction !== back_button_text)
           {
-            if(page == 2 && (index != instructions.length-1) && (index != instructions.length-2)){
+            if(page == 2 && (index < instructions.length-3)){
               return <div key={index*10 + 5}><p style={{fontSize: "24px"}}>{instruction}</p><br/></div>
             } else if (page == 3 && (index != instructions.length-1)){
               return <div key={index*10 + 5}><p style={{fontSize: "24px"}}>{instruction}</p><br/></div>
@@ -32,15 +32,19 @@ export class VSPLOTInstructions extends React.Component {
       </div>
       { page == 2 &&
          (
-           <div style={{ display: "flex", flexDirection: "row", position: "relative", top: "250px", alignItems: "center", justifyContent: "space-around"  }}>
-           {images.map((image, index) => {
-             return (
-             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around" }}>
-               <div><p style={{fontSize: "24px"}}>{index == 0 ? parallel_instruction : not_parallel_instruction}</p></div>
-               <div><img src={image} /></div>
+           <div style={{display: "flex", flexDirection: "column"}}>
+             <div style={{ display: "flex", flexDirection: "row", position: "relative", top: "250px", alignItems: "center", justifyContent: "space-around"  }}>
+             {images.map((image, index) => {
+               return (
+               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around" }}>
+                 <div><p style={{fontSize: "24px"}}>{index == 0 ? parallel_instruction : not_parallel_instruction}</p></div>
+                 <div><img src={image} /></div>
+               </div>
+             )
+            })}
              </div>
-           )
-          })}
+             <div style={{ display: "flex", position: "relative", top: "260px", alignItems: "center", justifyContent: "center", maxWidth: "700px", minWidth: "700px", left: "50%", webkitTransform: "translateX(-50%)", transform: "translateX(-50%)"
+}}><p style={{fontSize: "24px"}}>{instructions[instructions.length-1]}</p></div>
            </div>
           )
       }

@@ -11,14 +11,14 @@ export const CPFDemoInstructions = props => {
     <>
     <div className = "instructions text--left top">
 
-     <p>{instructions[0]}</p>
+     <p className="cpf-demo-instructions-text">{instructions[0]}</p>
      <p>
-     <p>{instructions[1]}</p>
-     <p>{instructions[2]}</p>
+     <p className="cpf-demo-instructions-text">{instructions[1]}</p>
+     <p className="cpf-demo-instructions-text">{instructions[2]}</p>
      </p>
      <p>
-     <p>{instructions[3]}</p>
-     <p>{instructions[4]}</p>
+     <p className="cpf-demo-instructions-text">{instructions[3]}</p>
+     <p className="cpf-demo-instructions-text">{instructions[4]}</p>
      </p>
 
      <div className='cpf-instructions-button center--horizontal inline'>

@@ -9,3 +9,25 @@
   transform: translate(-50%, -50%);
   overflow-x: hidden;
 }
+
+.clickable-box-gng {
+  height: 100vh;
+  width: 100vw;
+}
+
+.clickable-box-gng:active {
+  background-color: #808080;
+}
+
+.container-8-by-6-gng
+{
+    background-color: black;
+    width: 800px;
+    height: 600px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

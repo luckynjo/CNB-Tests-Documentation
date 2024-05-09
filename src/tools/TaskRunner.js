@@ -220,9 +220,11 @@ export default class TaskRunner extends React.Component
     }
     else if(task === "timeline" && test.test.includes("gng150"))
     {
-      return <div className="container-8-by-6  dark frame">
-      <GNG base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
-      </div>
+      let response_device = "keyboard";
+      if(test.test.includes("gng150-btn")){
+        response_device = "button";
+      }
+      return <GNG response_device={response_device} base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
     }
     else if(task === "timeline" && test.test.includes("adt36-a"))
     {
@@ -236,7 +238,7 @@ export default class TaskRunner extends React.Component
       <MEDF base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
-    else if(task === "timeline" && test.test.includes("vsplot24"))
+    else if(task === "timeline" && test.test.includes("vsplot"))
     {
       return <div className="container-8-by-6  dark frame">
       <VSPLOT base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
