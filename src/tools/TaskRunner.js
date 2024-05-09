@@ -221,8 +221,8 @@ export default class TaskRunner extends React.Component
     else if(task === "timeline" && test.test.includes("gng150"))
     {
       let response_device = "keyboard";
-      if(test.test.includes("gng150-btn")){
-        response_device = "button";
+      if(test.test.includes("gng150-tch")){
+        response_device = "touch";
       }
       return <GNG response_device={response_device} base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
     }

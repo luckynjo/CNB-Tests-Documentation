@@ -99,7 +99,7 @@ padding: 0px;
   margin-right: auto;
 }
 
-.instructions-text--small span{
+.plot-instructions-text--small span{
 font-size:14pt;
 color: #0099FF;
 
@@ -129,7 +129,7 @@ td.plot-td--left, td.plot-td--right{
   width: 250px;
 }
 
-p.instructions-text--small{
+p.plot-instructions-text--small{
   padding-left: 48px;
       padding-right: 48px;
       width:auto;
