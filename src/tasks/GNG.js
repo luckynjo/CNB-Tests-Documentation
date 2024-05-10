@@ -211,8 +211,12 @@ export default class GNG extends React.Component {
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
+      let page = 2;
+      if(section_title.includes("Page_7") || section_title.includes("Page 7")){
+        page = 7;
+      }
       return <div className="container-8-by-6  dark frame">
-        <GNGInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} hideGoBack={this.canGoBack()} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+        <GNGInstructions instructions={JSON.parse(timeline_object.content)} page={page} onContinue={this.next} hideGoBack={this.canGoBack()} onGoBack={this.back} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
       </div>
     }
     else if(section_title.includes("_Countdown"))
