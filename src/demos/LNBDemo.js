@@ -488,14 +488,14 @@ export default class LNBDemo extends React.Component
 					<td>
 					 <div className="flex inline center--horizontal stimulus-image-demo-container">
 					 {
-						 this.props.content.title.includes("1") &&
+						 this.props.test.includes("fnb") && this.props.content.title.includes("1") &&
 					   <>
 						  <img src={Vr} className="stimulus-image-demo" alt="M"/>
 							<img src={Vr} className="stimulus-image-demo" alt="M"/>
 						</>
 					 }
 					 {
-						 this.props.content.title.includes("2") &&
+						 this.props.test.includes("fnb") && this.props.content.title.includes("2") &&
 						 <>
 						  <img src={Kr} className="stimulus-image-demo" alt="M"/>
 							<img src={Vr} className="stimulus-image-demo" alt="M"/>
@@ -507,7 +507,7 @@ export default class LNBDemo extends React.Component
 				 </tr>
 				 <tr>
 					<td>
-					 <img src={keypic} alt="Keyboard" className="keyboard center--horizontal"/>
+					 {this.props.test.includes("fnb") && <img src={keypic} alt="Keyboard" className="keyboard center--horizontal"/>}
 					</td>
 				 </tr>
 				</tbody>

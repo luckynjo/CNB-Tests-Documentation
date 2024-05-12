@@ -9,6 +9,7 @@ import axios from 'axios';
 /***
  Loads test data from the server.
 */
+
 export const TestLoader = props =>
 {
   const {base_url, assessment_url, onLoad, onError, ...rest} = props;
@@ -24,20 +25,7 @@ export const TestLoader = props =>
 	} else if (location.includes('administer')) {
 		zurl = 'administer.pl';
 	}
-
   useEffect(() => {
-    // axios.get('http://localhost/webcnp.pl?op=get_next_test_json')
-    // sctap-2.00-ff
-    // spcptn90-4.00-ff
-    // svolt-3.00-ff
-    //cpf-2.05-ff
-    // digsym-a-2.00-ff
-    // sfnb2-3.00-ff
-    //spllt-a-1.00-ff
-    // k-er40-d-3.60-ff
-    // svolt-3.00-ff
-    //axios.post(base_url + 'tests.pl', {'op': 'administer', 'test': 'stroop-1.10-ff', 'language': 'en_US'})
-    //axios.get(assessment_url ? assessment_url + '?op=get_next_test_json' : base_url + 'webcnp.pl?op=get_next_test_json')
     axios.get('?op=get_next_test_json')
          .then((response) => {
           //  setLoaded(100); onLoad(response.data);

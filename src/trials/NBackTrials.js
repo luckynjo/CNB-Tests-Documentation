@@ -19,10 +19,7 @@ export default class NBackTrials extends React.Component
   constructor(props)
   {
     super(props);
-    //console.log('Trials are ', props.trials,  ' section_type ', props.section_type);
-    //const x = props.section_type.replace('<', '').replace('>', '');
     const trials = props.trials.filter(trial => trial.trial_section === props.section_type);
-    //console.log('The trials are ', trials);
     const index = 0;
     const stimulus = new NBackStimulus(this.findImage(trials[index].stimulus));
 
@@ -37,6 +34,7 @@ export default class NBackTrials extends React.Component
     this.taskStart = new Date();
     this.canvasRef = React.createRef();
     this.keyDown = this.keyDown.bind(this);
+    this.onClick = this.onClick.bind(this);
     this.update = this.update.bind(this);
 
     this.nextTestSlide = this.nextTestSlide.bind(this);
@@ -49,6 +47,10 @@ export default class NBackTrials extends React.Component
   componentDidMount()
   {
     window.addEventListener("keydown", this.keyDown, false);
+    if(this.props.response_device !== "keyboard")
+    {
+        window.addEventListener("click", this.onClick, false);
+    }
     this.canvasSetup();
     this.trialStart = new Date();
     this.start();
@@ -99,6 +101,10 @@ export default class NBackTrials extends React.Component
   {
     this.stop();
     window.removeEventListener("keydown", this.keyDown, false);
+    if(this.props.response_device !== "keyboard")
+    {
+        window.removeEventListener("click", this.onClick, false);
+    }
   }
 
   update(timestamp)
@@ -192,6 +198,23 @@ export default class NBackTrials extends React.Component
     }
   }
 
+  onClick(e)
+  {
+    if(this.allow_responses === RESPONSE_NOT_ALLOWED)
+    {
+      return;
+    }
+
+    if(this.props.practice)
+    {
+      this.onPracticeResponse(e);
+    }
+    else
+    {
+      this.onTestResponse(e);
+    }
+  }
+
   /**
   * Handle response to practice question.
   * @param {event} e The keyboard keydown event.
@@ -205,6 +228,10 @@ export default class NBackTrials extends React.Component
     {
       this.stop();
       window.removeEventListener("keydown", this.keyDown, false);
+      if(this.props.response_device !== "keyboard")
+      {
+          window.removeEventListener("click", this.onClick, false);
+      }
       this.correct = 0;
       this.props.onPracticeFailed("False_Positive", this.props.section_type);
     }
@@ -282,6 +309,10 @@ export default class NBackTrials extends React.Component
       this.stop();
       this.correct = 0;
       window.removeEventListener("keydown", this.keyDown, false);
+      if(this.props.response_device !== "keyboard")
+      {
+          window.removeEventListener("click", this.onClick, false);
+      }
       this.props.onPracticeFailed("False_Negative", this.props.section_type);
     }
     else

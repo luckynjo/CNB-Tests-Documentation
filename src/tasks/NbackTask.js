@@ -252,6 +252,11 @@ export default class NbackTask extends React.Component{
       const section_4 = JSON.parse(this.props.timeline[index + 7].content);
       const back_button_text = this.back_button_text;
       const verbose_title = JSON.parse(this.props.timeline[index - 1].content)[0];
+      let demo_items = practice_type.includes("1") ? ["Br.png", "Cr.png", "Fr.png", "Gr.png", "Gr.png", "Tr.png", "Mr.png", "Mr.png", "Lr.png", "Nr.png"] : [ "Br.png", "Gr.png", "Fr.png", "Gr.png", "Mr.png", "Tr.png", "Mr.png", "Lr.png", "Mr.png", "Cr.png"];
+      if(this.props.test.test.includes("lnb"))
+      {
+          demo_items = practice_type.includes("1") ? ["B", "C", "F", "G", "G", "T", "M", "M", "L", "N"] : ["B", "G", "F", "G", "M", "T", "M", "L", "M", "C"];
+      }
       const base_url = this.props.base_url;
       const demo_object = {
         arrowTitle: 'Image',
@@ -267,7 +272,7 @@ export default class NbackTask extends React.Component{
         title: practice_type.includes("1") ? '1-BACK' : '2-BACK',
         verbose_title: verbose_title ? verbose_title : (practice_type.includes("1") ? '1-BACK' : '2-BACK'),
         base_url: base_url,
-        items: practice_type.includes("1") ? ["Br.png", "Cr.png", "Fr.png", "Gr.png", "Gr.png", "Tr.png", "Mr.png", "Mr.png", "Lr.png", "Nr.png"] : [ "Br.png", "Gr.png", "Fr.png", "Gr.png", "Mr.png", "Tr.png", "Mr.png", "Lr.png", "Mr.png", "Cr.png"],
+        items: demo_items,
         answers:practice_type.includes("1") ?[ 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0] : [ 0,  0,   0,   1,   0,   0,   1 ,  0,   1,  0],
         next: 'continue',
         welcome: section_1,
@@ -319,13 +324,14 @@ export default class NbackTask extends React.Component{
     const timeline_object = this.props.timeline[index];
     const section_title = timeline_object.section_title;
     const feedback = this.state.feedback;
+      const test = this.props.test;
     if(this.state.demo)
     {
-      return <LNBDemo base_url={this.props.base_url} onContinue={this.finishDemo} skipPractice={this.finishDemo} content={this.demo} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <LNBDemo test={test.test} response_device={test.response_device} base_url={this.props.base_url} onContinue={this.finishDemo} skipPractice={this.finishDemo} content={this.demo} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(feedback)
     {
-      return <NBackPracticeFailedInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} practice_type={this.state.practice_type} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
+        return <NBackPracticeFailedInstructions test={test.test} response_device={test.response_device} instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} practice_type={this.state.practice_type} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text} />
     }
     else if(index === 0)
     {
@@ -346,15 +352,15 @@ export default class NbackTask extends React.Component{
     }
     else if(section_title.match(ZEROBACK_INSTRUCTIONS_REGEX))
     {
-      return <ZeroBackInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <ZeroBackInstructions test={test.test} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(ONEBACK_INSTRUCTIONS_REGEX))
     {
-      return <OneBackInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <OneBackInstructions test={test.test} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(TWOBACK_INSTRUCTIONS_REGEX))
     {
-      return <TwoBackInstructions instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <TwoBackInstructions test={test.test} instructions={JSON.parse(timeline_object.content)} onContinue={this.next} onGoBack={this.back} hideGoBack={!this.canGoBack()} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(section_title.match(INSTRUCTIONS_REGEX))
     {
@@ -362,7 +368,7 @@ export default class NbackTask extends React.Component{
     }
     else if(section_title.match(COUNTDOWN_REGEX))
     {
-      return <NBackCountdownInstructions seconds={6} callback={this.next} title={section_title} instructions={JSON.parse(timeline_object.content)} />
+      return <NBackCountdownInstructions seconds={6} response_device={test.response_device || 'keyboard'} callback={this.next} title={section_title} test={test.test} instructions={JSON.parse(timeline_object.content)} />
     }
     else if(section_title.match(PRACTICE_REGEX))
     {

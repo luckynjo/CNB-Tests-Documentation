@@ -8,7 +8,7 @@ import green_arrow from '../assets/flnb/green_arrow.png';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const TwoBackInstructions = props => {
-  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text, hideGoBack} = props;
+  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text, hideGoBack, test} = props;
 
   return (
     <div className="page center">
@@ -37,9 +37,9 @@ export const TwoBackInstructions = props => {
         <td><img src={green_arrow} className="center--horizontal" alt="Arrow"/></td>
       </tr>
       <tr className="demo--2back">
-        <td>  <img src={Kr} className="stimulus--small center--horizontal" alt="Press"/> </td>
-        <td>  <img src={Vr} className="stimulus--small center--horizontal" alt="Press"/> </td>
-        <td>  <img src={Kr} className="stimulus--small center--horizontal" alt="Press"/> </td>
+        <td>{test.includes("fnb") ? <img src={Kr} className="stimulus--small center--horizontal" alt="Press"/> : <p className="lnb stimulus-text--medium text--center">C</p>} </td>
+        <td>{test.includes("fnb") ? <img src={Vr} className="stimulus--small center--horizontal" alt="Press"/> : <p className="lnb stimulus-text--medium text--center">T</p>} </td>
+        <td>{test.includes("fnb") ? <img src={Kr} className="stimulus--small center--horizontal" alt="Press"/> : <p className="lnb stimulus-text--medium text--center">C</p>}</td>
       </tr>
 
       <tr>
