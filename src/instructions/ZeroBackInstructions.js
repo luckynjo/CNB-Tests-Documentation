@@ -1,12 +1,12 @@
 import {SimpleInstructionsParser} from '../utils/SimpleInstructionsParser.js';
 import {ContinueButton} from '../components/ContinueButton.js';
-import {GoBackButton} from '../components/GoBackButton.js';
+import { GoBackButton } from '../components/GoBackButton.js';
 import Xr from '../assets/flnb/Xr.png';
 /***
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const ZeroBackInstructions = props => {
-  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text, hideGoBack} = props;
+  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text, hideGoBack, test, ...rest} = props;
 
   return (
     <div className="page center">
@@ -18,10 +18,11 @@ export const ZeroBackInstructions = props => {
         }
       })}
       <br/>
-      <img src={Xr} className="stimulus--small center--horizontal" alt="Press"/>
+      {test.includes("fnb") && <img src={Xr} className="stimulus--small center--horizontal" alt="Press"/>}
+      {test.includes("lnb") && <p className="stimulus-text--medium text--center">X</p>}
       <br/>
       <br/>
-      <p className="instructions-text--small">{instructions[instructions.length - 1]}</p>
+      {!test.includes("lnb") && <p className="instructions-text--small">{instructions[instructions.length - 1]}</p>}
 
     </div>
     <div className="position-bottom--absolute">

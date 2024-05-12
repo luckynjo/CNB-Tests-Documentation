@@ -40,14 +40,13 @@ Instructions renders text / images / html content that is defined in a test and 
 
 */
 export const NBackPracticeFailedInstructions = props => {
-  const {instructions, onContinue, spacebar_text, practice_type, ...rest} = props;
-
+    const { instructions, onContinue, spacebar_text, practice_type, test, response_device, continue_button_text, ...rest } = props;
+    console.log('test ', test, ' response device ', response_device);
   let [pressed, setPressed] = useState(false);
 
   function keyDown(e)
   {
     e.preventDefault();
-    console.log('Key down is ', e.keyCode);
     if(e.keyCode === 32)
     {
       setPressed(true);
@@ -58,9 +57,8 @@ export const NBackPracticeFailedInstructions = props => {
   function keyUp(e)
   {
     e.preventDefault();
-    console.log('Key up is ', e.keyCode);
-    //setPressed(false);
   }
+
 
   useEffect(() => {
 
@@ -92,7 +90,7 @@ export const NBackPracticeFailedInstructions = props => {
       <p className="text--center green">{instructions[3]}</p>
 
       <div className="inline flex center--horizontal">
-        {practice_type.includes("0") && <img src={Xr} className="stimulus--small center--horizontal"  alt="X"/>}
+        {test.includes("fnb") && practice_type.includes("0") && <img src={Xr} className="stimulus--small center--horizontal"  alt="X"/>}
       </div>
 
     </div>
@@ -104,6 +102,7 @@ export const NBackPracticeFailedInstructions = props => {
     <div className="position-bottom--absolute-with-keyboard">
      <table className="keyboard-table">
       <tbody>
+      {response_device === "keyboard" &&
        <tr>
         <td colSpan={2}>
          <p className="text--center">{spacebar_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p>
@@ -112,6 +111,14 @@ export const NBackPracticeFailedInstructions = props => {
          <img src={keyboard} className="keyboard--continue left" alt="Keyboard image" />
         </td>
        </tr>
+      }
+      {response_device !== "keyboard" &&
+      <tr>
+        <td></td>
+        <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
+        <td></td>
+      </tr>
+      }
        <tr><td></td><td></td><td></td></tr>
       </tbody>
      </table>
