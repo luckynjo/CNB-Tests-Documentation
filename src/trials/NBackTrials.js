@@ -42,6 +42,10 @@ export default class NBackTrials extends React.Component
     this.nextSlide = this.nextSlide.bind(this);
     this.duration = 2500;
     this.correct = 0;
+
+    this.addClickStyle = this.addClickStyle.bind(this);
+    this.removeClickStyle = this.removeClickStyle.bind(this);
+    this.visualFeedbackTimeout = -1;
   }
 
   componentDidMount()
@@ -49,6 +53,11 @@ export default class NBackTrials extends React.Component
     window.addEventListener("keydown", this.keyDown, false);
     if(this.props.response_device !== "keyboard")
     {
+        const frame = document.querySelector(".frame");
+        if (frame) {
+            frame.classList.add("nback");
+            frame.focus();
+        }
         window.addEventListener("click", this.onClick, false);
     }
     this.canvasSetup();
@@ -104,6 +113,7 @@ export default class NBackTrials extends React.Component
     if(this.props.response_device !== "keyboard")
     {
         window.removeEventListener("click", this.onClick, false);
+        clearTimeout(this.visualFeedbackTimeout);
     }
   }
 
@@ -205,6 +215,7 @@ export default class NBackTrials extends React.Component
       return;
     }
 
+    this.addClickStyle();
     if(this.props.practice)
     {
       this.onPracticeResponse(e);
@@ -213,6 +224,25 @@ export default class NBackTrials extends React.Component
     {
       this.onTestResponse(e);
     }
+
+    this.visualFeedbackTimeout = setTimeout(this.removeClickStyle, 128);
+  }
+
+  addClickStyle()
+  {
+      const frame = document.querySelector(".frame");
+      if (!frame.classList.contains("nback-trial--click"))
+      {
+          frame.classList.add("nback-trial--click");
+      }
+  }
+
+  removeClickStyle()
+  {
+      const frame = document.querySelector(".frame");
+      if (frame.classList.contains("nback-trial--click")) {
+          frame.classList.remove("nback-trial--click");
+      }
   }
 
   /**
@@ -230,6 +260,10 @@ export default class NBackTrials extends React.Component
       window.removeEventListener("keydown", this.keyDown, false);
       if(this.props.response_device !== "keyboard")
       {
+          const frame = document.querySelector(".frame");
+          if (frame) {
+              frame.classList.remove("nback");
+          }
           window.removeEventListener("click", this.onClick, false);
       }
       this.correct = 0;
@@ -398,7 +432,7 @@ export default class NBackTrials extends React.Component
   render()
   {
     return(
-      <div className="container canvas_container">
+      <div className="container canvas_container nback">
       <canvas ref={this.canvasRef} width="800" height="600" />
       </div>
     );
