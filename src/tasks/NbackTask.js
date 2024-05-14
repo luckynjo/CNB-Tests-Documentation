@@ -327,7 +327,7 @@ export default class NbackTask extends React.Component{
       const test = this.props.test;
     if(this.state.demo)
     {
-      return <LNBDemo test={test.test} response_device={test.response_device} base_url={this.props.base_url} onContinue={this.finishDemo} skipPractice={this.finishDemo} content={this.demo} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
+      return <LNBDemo test={test.test} response_device={test.response_device || 'keyboard'} base_url={this.props.base_url} onContinue={this.finishDemo} skipPractice={this.finishDemo} content={this.demo} continue_button_text={this.continue_button_text} back_button_text={this.back_button_text}/>
     }
     else if(feedback)
     {

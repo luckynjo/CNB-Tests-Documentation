@@ -548,3 +548,6 @@ p.instructions-text--small {
 .flnb--table{
   min-width: 700px;
 }
+.frame.nback-trial--click{
+    border: solid 2px white;
+}
