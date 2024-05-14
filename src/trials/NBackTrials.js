@@ -35,6 +35,9 @@ export default class NBackTrials extends React.Component
     this.canvasRef = React.createRef();
     this.keyDown = this.keyDown.bind(this);
     this.onClick = this.onClick.bind(this);
+    this.onPointerDown = this.onPointerDown.bind(this);
+    this.onPointerUp = this.onPointerUp.bind(this);
+    this.onPointerCancel = this.onPointerCancel.bind(this);
     this.update = this.update.bind(this);
 
     this.nextTestSlide = this.nextTestSlide.bind(this);
@@ -59,6 +62,9 @@ export default class NBackTrials extends React.Component
             frame.focus();
         }
         window.addEventListener("click", this.onClick, false);
+        window.addEventListener("pointerdown", this.onPointerDown, false);
+        window.addEventListener("pointerup", this.onPointerUp, false);
+        window.addEventListener("pointercancel", this.onPointerCancel, false);
     }
     this.canvasSetup();
     this.trialStart = new Date();
@@ -114,6 +120,9 @@ export default class NBackTrials extends React.Component
     {
         window.removeEventListener("click", this.onClick, false);
         clearTimeout(this.visualFeedbackTimeout);
+        window.removeEventListener("pointerdown", this.onPointerDown, false);
+        window.removeEventListener("pointerup", this.onPointerUp, false);
+        window.removeEventListener("pointercancel", this.onPointerCancel, false);
     }
   }
 
@@ -214,8 +223,6 @@ export default class NBackTrials extends React.Component
     {
       return;
     }
-
-    this.addClickStyle();
     if(this.props.practice)
     {
       this.onPracticeResponse(e);
@@ -224,8 +231,21 @@ export default class NBackTrials extends React.Component
     {
       this.onTestResponse(e);
     }
+  }
 
-    this.visualFeedbackTimeout = setTimeout(this.removeClickStyle, 128);
+  onPointerDown(e)
+  {
+      this.addClickStyle();
+  }
+
+  onPointerCancel()
+  {
+      this.removeClickStyle();
+  }
+
+  onPointerUp(e)
+  {
+      this.visualFeedbackTimeout = setTimeout(this.removeClickStyle, 64);
   }
 
   addClickStyle()
@@ -265,6 +285,9 @@ export default class NBackTrials extends React.Component
               frame.classList.remove("nback");
           }
           window.removeEventListener("click", this.onClick, false);
+          window.removeEventListener("pointerdown", this.onPointerDown, false);
+          window.removeEventListener("pointerup", this.onPointerUp, false);
+          window.removeEventListener("pointercancel", this.onPointerCancel, false);
       }
       this.correct = 0;
       this.props.onPracticeFailed("False_Positive", this.props.section_type);
