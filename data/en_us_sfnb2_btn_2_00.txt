@@ -91,7 +91,7 @@ Click when the image that you see is the same as the previous image.
 Page 11.4: 1-Back Demo Section 4
 Now we will try the 1-BACK practice again.
 Like the first time you tried the practice, you will not have the list at the top of the screen to remind you of the previous images.
-Remember to Click when the image on the screen is the same as the previous image.
+Remember to click when the image on the screen is the same as the previous image.
 Do you have any questions?
 
 Page 12: 2-Back Instructions
@@ -135,7 +135,7 @@ During the demonstration, images will appear in the window just as they would du
 
 Page 16.3: 2-Back Demo Section 3
 What you will see during the test is inside this window.
-click when the image that you see is the same as the one before the previous image.
+Click when the image that you see is the same as the one before the previous image.
 
 Page 16.4: 2-Back Demo Section 4
 Now we will try the 2-BACK practice again.

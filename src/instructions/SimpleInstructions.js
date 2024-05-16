@@ -6,7 +6,7 @@ import {Row} from '../layouts/Row.js';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const SimpleInstructions = props => {
-  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text, hideGoBack} = props;
+  const {instructions, onGoBack, onContinue, continue_button_text, back_button_text, hideGoBack, instructions_class} = props;
 
   return (
     <>
@@ -21,7 +21,7 @@ export const SimpleInstructions = props => {
           }
           else
           {
-            return <div key={index*10 + 5}><p>{instruction}</p><br/></div>
+            return <div key={index*10 + 5}><p className={instructions_class || ''}>{instruction}</p><br/></div>
           }
         }
       })}
