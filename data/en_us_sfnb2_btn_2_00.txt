@@ -14,7 +14,7 @@ CLICK HERE TO CONTINUE
 
 Page 2: Instructions
 You will see one image on the screen at a time.
-For each image, decide whether or not to Click.
+For each image, decide whether or not to click.
 There are three parts with different rules:
 0-BACK
 1-BACK

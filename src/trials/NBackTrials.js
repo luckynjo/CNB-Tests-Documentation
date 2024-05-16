@@ -56,11 +56,6 @@ export default class NBackTrials extends React.Component
     window.addEventListener("keydown", this.keyDown, false);
     if(this.props.response_device !== "keyboard")
     {
-        const frame = document.querySelector(".frame");
-        if (frame) {
-            frame.classList.add("nback");
-            frame.focus();
-        }
         window.addEventListener("click", this.onClick, false);
         window.addEventListener("pointerdown", this.onPointerDown, false);
         window.addEventListener("pointerup", this.onPointerUp, false);
@@ -118,6 +113,7 @@ export default class NBackTrials extends React.Component
     window.removeEventListener("keydown", this.keyDown, false);
     if(this.props.response_device !== "keyboard")
     {
+        this.removeClickStyle();
         window.removeEventListener("click", this.onClick, false);
         clearTimeout(this.visualFeedbackTimeout);
         window.removeEventListener("pointerdown", this.onPointerDown, false);
@@ -280,10 +276,7 @@ export default class NBackTrials extends React.Component
       window.removeEventListener("keydown", this.keyDown, false);
       if(this.props.response_device !== "keyboard")
       {
-          const frame = document.querySelector(".frame");
-          if (frame) {
-              frame.classList.remove("nback");
-          }
+          this.removeClickStyle();
           window.removeEventListener("click", this.onClick, false);
           window.removeEventListener("pointerdown", this.onPointerDown, false);
           window.removeEventListener("pointerup", this.onPointerUp, false);
@@ -368,7 +361,11 @@ export default class NBackTrials extends React.Component
       window.removeEventListener("keydown", this.keyDown, false);
       if(this.props.response_device !== "keyboard")
       {
+          this.removeClickStyle();
           window.removeEventListener("click", this.onClick, false);
+          window.removeEventListener("pointerdown", this.onPointerDown, false);
+          window.removeEventListener("pointerup", this.onPointerUp, false);
+          window.removeEventListener("pointercancel", this.onPointerCancel, false);
       }
       this.props.onPracticeFailed("False_Negative", this.props.section_type);
     }
