@@ -551,3 +551,7 @@ p.instructions-text--small {
 .frame.nback-trial--click{
     border: solid 2px white;
 }
+
+svg.demo-click--icons{
+    transform: translateX(164px);
+}
