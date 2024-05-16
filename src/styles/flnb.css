@@ -552,6 +552,18 @@ p.instructions-text--small {
     border: solid 2px white;
 }
 
-svg.demo-click--icons{
+/***svg.demo-click--icons{
     transform: translateX(164px);
+}*/
+
+.mouse-or-hand{
+    font-size: 48px;
+    color:white;
+    line-height:16px;
+}
+
+div.lnb-demo.device-icons {
+    width: 184px;
+    margin: 0 auto;
+    padding-top: 16px;
 }

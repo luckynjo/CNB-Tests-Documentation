@@ -372,7 +372,7 @@ export default class NbackTask extends React.Component{
     }
     else if(section_title.match(PRACTICE_REGEX))
     {
-      return <NBackTrials id={Math.floor(10000*Math.random())} base_url={this.props.base_url} images={this.images} section_type={JSON.parse(timeline_object.content)[0]} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
+      return <NBackTrials test={test.test} id={Math.floor(10000*Math.random())} base_url={this.props.base_url} images={this.images} section_type={JSON.parse(timeline_object.content)[0]} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
     }
     else if(section_title.match(TEST_REGEX))
     {
