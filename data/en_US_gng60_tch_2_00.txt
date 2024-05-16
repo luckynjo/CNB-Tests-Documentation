@@ -1,0 +1,157 @@
+test: gng60-tch
+version: 2.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Tap or click
+Don't tap or click
+X
+Y
+TAP OR CLICK THE SCREEN TO CONTINUE
+
+Page 1: Title
+Go No Go Task
+CLICK HERE TO CONTINUE
+
+Page 2: Instructions
+This is a task to see how well you can decide when to respond and when not to respond.
+You will see letters appear in different places on the screen.
+Tap
+or click
+anywhere on the screen whenever you see the letter 'X' on the upper half of the screen. Remember, only
+tap
+or click
+when it's an 'X' (not a 'Y') and only when it's on the top half of the screen (not the bottom half).
+
+Page 3: Demo Instructions
+Tap or click
+X
+Tap or click  Don't tap or click
+X Y
+Remember – only tap or click the screen when you see the letter 'X' in the upper half of the screen.
+Don't tap or click  Don't tap or click
+X X
+Don't tap or click
+X
+
+Page 4: Begin Practice
+BEGIN PRACTICE
+
+Page 5: Countdown
+<countdown>
+3
+2
+1
+
+Page 6: Practice
+X
+X
+Y
+X
+Y
+X
+X
+Y
+X
+X
+X
+Y
+
+Page 6.1: Feedback False Negative
+That is not correct.
+That was an 'X' in the upper half of the screen.
+Remember to tap or click the screen whenever you see an 'X' in the upper half of the screen.
+Let's try that again.
+
+Page 6.2: Feedback False Positive Y
+That is not correct.
+That letter was 'Y', not 'X'.
+Only tap or click the screen when you see an 'X' in the upper half of the screen.
+Let's try that again.
+
+Page 6.3: Feedback False Positive X
+That is not correct.
+That was an 'X', but it was in the lower half of the screen.
+Only tap or click the screen when you see an 'X' in the upper half of the screen.
+Let's try that again.
+
+Page 7: Instructions
+You have completed the practice. We will now start the test.
+Remember to
+tap
+or click
+the screen only when you see the letter 'X' in the upper half of the screen.
+In the test, you will not be told if you make a mistake.
+
+Page 8: Begin Test
+BEGIN TEST
+
+Page 9: Countdown
+<countdown>
+3
+2
+1
+
+Page 10: Test
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+X
+Y
+X
+X
+Y
+X
+X
+X
+Y
+X
+X
+X
+X
+X
+X
+Y
+Y
+X
+X
+X
+X
+X

@@ -218,13 +218,14 @@ export default class TaskRunner extends React.Component
       <PMAT base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
-    else if(task === "timeline" && test.test.includes("gng150"))
+    else if(task === "timeline" && test.test.includes("gng"))
     {
+      let test_version = test.test.includes("gng60") ? "gng60" : "gng60";
       let response_device = "keyboard";
-      if(test.test.includes("gng150-tch")){
+      if(test.test.includes("gng150-tch") || test.test.includes("gng60-tch")){
         response_device = "touch";
       }
-      return <GNG response_device={response_device} base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
+      return <GNG test_version={test_version} response_device={response_device} base_url={this.props.base_url} timeline={timeline} test={test} test_trials={this.state.test_trials} />
     }
     else if(task === "timeline" && test.test.includes("adt36-a"))
     {

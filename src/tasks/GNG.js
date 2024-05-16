@@ -12,6 +12,7 @@ import {GNGPracticeTrials} from '../trials/GNGPracticeTrials.js';
 import {GNGTestTrials} from '../trials/GNGTestTrials.js';
 import {GNGPracticeTrialsWithBtn} from '../trials/GNGPracticeTrialsWithBtn.js';
 import {GNGTestTrialsWithBtn} from '../trials/GNGTestTrialsWithBtn.js';
+import {GNGShortTestTrialsWithBtn} from '../trials/GNGShortTestTrialsWithBtn.js';
 import {BeginPage} from '../components/BeginPage.js';
 import banner from '../assets/gng/banner.png';
 
@@ -239,9 +240,14 @@ export default class GNG extends React.Component {
     }
     else if(section_title.match(TEST_REGEX))
     {
-      if(this.props.response_device == "touch"){
+      if(this.props.test_version = "gng60" && this.props.response_device == "touch"){
+        return <GNGShortTestTrialsWithBtn base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete} continue_button_text={this.continue_button_text}/>
+      }
+
+      if(this.props.test_version = "gng150" && this.props.response_device == "touch"){
         return <GNGTestTrialsWithBtn base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete} continue_button_text={this.continue_button_text}/>
       }
+
       return <div className="container-8-by-6  dark frame">
         <GNGTestTrials base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete}/>
       </div>
