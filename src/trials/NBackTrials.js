@@ -231,16 +231,25 @@ export default class NBackTrials extends React.Component
 
   onPointerDown(e)
   {
+      if (this.props.test.includes("xf")) {
+          return;
+      }
       this.addClickStyle();
   }
 
   onPointerCancel()
   {
+      if (this.props.test.includes("xf")) {
+          return;
+      }
       this.removeClickStyle();
   }
 
   onPointerUp(e)
   {
+      if (this.props.test.includes("xf")) {
+          return;
+      }
       this.visualFeedbackTimeout = setTimeout(this.removeClickStyle, 64);
   }
 
