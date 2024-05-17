@@ -220,7 +220,7 @@ export default class TaskRunner extends React.Component
     }
     else if(task === "timeline" && test.test.includes("gng"))
     {
-      let test_version = test.test.includes("gng60") ? "gng60" : "gng60";
+      let test_version = test.test.includes("gng60") ? "gng60" : "gng150";
       let response_device = "keyboard";
       if(test.test.includes("gng150-tch") || test.test.includes("gng60-tch")){
         response_device = "touch";
