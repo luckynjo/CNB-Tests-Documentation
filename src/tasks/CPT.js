@@ -180,7 +180,7 @@ export default class CPT extends React.Component{
   {
     const index = this.state.index;
     this.setState((prevState, props) => {
-      return {index: index, feedback: null}
+      return {index: index-1, feedback: null}
     });
   }
 
@@ -199,8 +199,8 @@ export default class CPT extends React.Component{
     if(feedback)
     {
       return <div>
-      {feedback.section_title.match(FALSE_POSITIVE_REGEX) && <CPTFalsePositiveInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text} />}
-      {feedback.section_title.match(FALSE_NEGATIVE_REGEX) && <CPTFalseNegativeInstructions instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text}/>}
+      {feedback.section_title.match(FALSE_POSITIVE_REGEX) && <CPTFalsePositiveInstructions test={this.props.test.test} response_device={this.props.response_device} instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text} />}
+      {feedback.section_title.match(FALSE_NEGATIVE_REGEX) && <CPTFalseNegativeInstructions test={this.props.test.test} response_device={this.props.response_device} instructions={JSON.parse(feedback.content)} onContinue={this.restartPractice} spacebar_text={this.spacebar_text} continue_button_text={this.continue_button_text}/>}
       </div>
     }
     else if(index === 0)
@@ -230,15 +230,15 @@ export default class CPT extends React.Component{
     }
     else if(section_title.includes("_Countdown"))
     {
-      return <CPTCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next}/>
+      return <CPTCountdownInstructions seconds={5} instructions={JSON.parse(timeline_object.content)} callback={this.next} response_device={this.props.response_device} />
     }
     else if(section_title.match(PRACTICE_REGEX))
     {
-      return <CPTTrials base_url={this.props.base_url} images={this.images} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
+      return <CPTTrials base_url={this.props.base_url} test={this.props.test.test} images={this.images} trials={this.props.practice_trials} practice={true} onPracticeComplete={this.onPracticeComplete} onPracticeFailed={this.onPracticeFailed}/>
     }
     else if(section_title.match(TEST_REGEX))
     {
-      return <CPTTrials base_url={this.props.base_url} images={this.images} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete}/>
+      return <CPTTrials base_url={this.props.base_url} test={this.props.test.test} images={this.images} trials={this.props.test_trials} onTrialsComplete={this.onTrialsComplete}/>
     }
     else
     {

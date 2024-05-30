@@ -36,6 +36,10 @@ export class CPTTrials extends React.Component
     this.taskStart = new Date();
     this.canvasRef = React.createRef();
     this.keyDown = this.keyDown.bind(this);
+    this.onClick = this.onClick.bind(this);
+    this.onPointerDown = this.onPointerDown.bind(this);
+    this.onPointerUp = this.onPointerUp.bind(this);
+    this.onPointerCancel = this.onPointerCancel.bind(this);
     this.update = this.update.bind(this);
 
     this.nextTestSlide = this.nextTestSlide.bind(this);
@@ -43,11 +47,22 @@ export class CPTTrials extends React.Component
     this.nextSlide = this.nextSlide.bind(this);
     this.duration = 1000;
     this.correct = 0;
+
+    this.addClickStyle = this.addClickStyle.bind(this);
+    this.removeClickStyle = this.removeClickStyle.bind(this);
+    this.visualFeedbackTimeout = -1;
   }
 
   componentDidMount()
   {
     window.addEventListener("keydown", this.keyDown, false);
+    if(this.props.response_device !== "keyboard")
+    {
+        window.addEventListener("click", this.onClick, false);
+        window.addEventListener("pointerdown", this.onPointerDown, false);
+        window.addEventListener("pointerup", this.onPointerUp, false);
+        window.addEventListener("pointercancel", this.onPointerCancel, false);
+    }
     this.canvasSetup();
     this.trialStart = new Date();
     this.start();
@@ -98,7 +113,76 @@ export class CPTTrials extends React.Component
   {
     this.stop();
     window.removeEventListener("keydown", this.keyDown, false);
+    if(this.props.response_device !== "keyboard")
+    {
+        this.removeClickStyle();
+        window.removeEventListener("click", this.onClick, false);
+        clearTimeout(this.visualFeedbackTimeout);
+        window.removeEventListener("pointerdown", this.onPointerDown, false);
+        window.removeEventListener("pointerup", this.onPointerUp, false);
+        window.removeEventListener("pointercancel", this.onPointerCancel, false);
+    }
   }
+
+  onClick(e)
+  {
+    if(this.allow_responses === RESPONSE_NOT_ALLOWED)
+    {
+      return;
+    }
+    if(this.props.practice)
+    {
+      this.onPracticeResponse(e);
+    }
+    else
+    {
+      this.onTestResponse(e);
+    }
+  }
+
+  onPointerDown(e)
+  {
+      if (this.props.test.includes("xf")) {
+          return;
+      }
+      this.addClickStyle();
+  }
+
+  onPointerCancel()
+  {
+      if (this.props.test.includes("xf")) {
+          return;
+      }
+      this.removeClickStyle();
+  }
+
+  onPointerUp(e)
+  {
+      if (this.props.test.includes("xf")) {
+          return;
+      }
+      this.visualFeedbackTimeout = setTimeout(this.removeClickStyle, 64);
+  }
+
+  addClickStyle()
+  {
+      const frame = document.querySelector(".frame");
+      if (!frame.classList.contains("cpt-trial--click"))
+      {
+          console.log("added");
+          frame.classList.add("cpt-trial--click");
+      }
+  }
+
+  removeClickStyle()
+  {
+      const frame = document.querySelector(".frame");
+      if (frame.classList.contains("cpt-trial--click")) {
+          console.log("removed");
+          frame.classList.remove("cpt-trial--click");
+      }
+  }
+
 
   update(timestamp)
   {
@@ -205,6 +289,14 @@ export class CPTTrials extends React.Component
     {
       this.stop();
       window.removeEventListener("keydown", this.keyDown, false);
+      if(this.props.response_device !== "keyboard")
+      {
+          this.removeClickStyle();
+          window.removeEventListener("click", this.onClick, false);
+          window.removeEventListener("pointerdown", this.onPointerDown, false);
+          window.removeEventListener("pointerup", this.onPointerUp, false);
+          window.removeEventListener("pointercancel", this.onPointerCancel, false);
+      }
       this.correct = 0;
       this.props.onPracticeFailed("False_Positive");
     }
@@ -285,6 +377,14 @@ export class CPTTrials extends React.Component
       this.stop();
       this.correct = 0;
       window.removeEventListener("keydown", this.keyDown, false);
+      if(this.props.response_device !== "keyboard")
+      {
+          this.removeClickStyle();
+          window.removeEventListener("click", this.onClick, false);
+          window.removeEventListener("pointerdown", this.onPointerDown, false);
+          window.removeEventListener("pointerup", this.onPointerUp, false);
+          window.removeEventListener("pointercancel", this.onPointerCancel, false);
+      }
       this.props.onPracticeFailed("False_Negative");
     }
     else

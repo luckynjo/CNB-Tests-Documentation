@@ -14,7 +14,7 @@ import {useEffect, useState} from 'react';
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */
 export const CPTFalsePositiveInstructions = props => {
-  const {instructions, onContinue, spacebar_text, ...rest} = props;
+  const {instructions, test, response_device, onContinue, spacebar_text, continue_button_text, ...rest} = props;
 
   let [pressed, setPressed] = useState(false);
 
@@ -82,15 +82,29 @@ export const CPTFalsePositiveInstructions = props => {
 
     </div>
 
-    <div className="position-bottom--absolute-with-keyboard">
+    <div className={response_device === "keyboard" ? "position-bottom--absolute-with-keyboard" : "position-bottom--absolute"}>
 
-    <table className="keyboard-table">
+    <table className={response_device === "keyboard" ? "keyboard-table" : "buttons-table"}>
     <tbody>
-    <tr className="flex fit-content center--horizontal">
-
-    <td colSpan={2}><p className="center--horizontal text--center">{spacebar_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p></td>
-    <td><div><img src={keyboard} alt="Keyboard image" className="center--horizontal keyboard--continue"/></div></td>
+    {response_device === "keyboard" &&
+      <tr className="flex fit-content center--horizontal">
+        <td colSpan={2}>
+          <p className="center--horizontal text--center">{spacebar_text || 'PRESS THE SPACEBAR TO CONTINUE'}</p>
+        </td>
+        <td>
+          <div>
+            <img src={keyboard} alt="Keyboard image" className="center--horizontal keyboard--continue"/>
+          </div>
+        </td>
+      </tr>
+    }
+    {response_device !== "keyboard" &&
+    <tr>
+      <td></td>
+      <td><ContinueButton text={continue_button_text} onClick={onContinue}/></td>
+      <td></td>
     </tr>
+    }
     <tr>
     <td><div></div></td>
     <td><div></div></td>

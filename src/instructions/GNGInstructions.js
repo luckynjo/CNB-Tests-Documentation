@@ -2,8 +2,8 @@ import {SimpleInstructionsParser} from '../utils/SimpleInstructionsParser.js';
 import {ContinueButton} from '../components/ContinueButton.js';
 import {GoBackButton} from '../components/GoBackButton.js';
 import {Row} from '../layouts/Row.js';
-import click_icon from '../assets/gng/click_2.svg';
-import tap_icon from '../assets/gng/tap_2.svg';
+import click_icon from '../assets/gng/mouse_icon_blue.svg';
+import tap_icon from '../assets/gng/tap_icon_blue.svg';
 /***
 Instructions renders text / images / html content that is defined in a test and passed as props.
 */

@@ -8,6 +8,8 @@ import upenn_shield_dark from '../assets/upenn_shield_dark.png';
 import upenn_shield from '../assets/upenn_shield.png';
 import logotype_dark from '../assets/logotype_white.png';
 import logotype_light from '../assets/logotype_light.png';
+import penncnb_logo from '../assets/penn_cnb_logo.png';
+
 const AudioPlayer = props => {
 
 }
@@ -19,6 +21,7 @@ export default function TitlePage(props)
 
   let audioPlayer = null;
   let buttonInvisibility  = '';
+  let current_year = new Date().getFullYear();
 
   if(props.audio)
   {
@@ -27,21 +30,22 @@ export default function TitlePage(props)
   }
 
   // Specifically for PVT, remove copyright sign from test title.
-  let title = (<p className={'test-header text--right right'}>{props.content[0] || props.title} &copy;</p>);
+  let title = (<p className={'test-header text--right title-page-right'}>{props.content[0] || props.title} &copy;</p>);
   if(props.copyrightTitle === 0)
   {
-    title = (<p className={'test-header text--right right'}>{props.content[0] || props.title}</p>);
+    title = (<p className={'test-header text--right title-page-right'}>{props.content[0] || props.title}</p>);
   }
 
   return (
     <div className={props.container_style || 'page'}>
       <div className="section--header">
         <div>
-          <img src={props.theme == "light" ? upenn_shield : upenn_shield_dark}></img>
+          {/*<img src={props.theme == "light" ? upenn_shield : upenn_shield_dark}></img>*/}
+          <img src={penncnb_logo} width="170px"/>
         </div>
-        <div className="right">
-          <img src={props.theme == "light" ? logotype_light : logotype_dark} className="right"></img>
-          {title}
+        <div className="title-page-right">
+          <div style={{float: "right"}}><img src={props.theme == "light" ? logotype_light : logotype_dark}></img><img src={props.theme == "light" ? upenn_shield : upenn_shield_dark} width="40px"/></div>
+          <div>{title}</div>
         </div>
       </div>
 
@@ -66,7 +70,7 @@ export default function TitlePage(props)
         <td><p className="small text--center test-form">{props.content[1].trim() !== props.continue_button_text.trim() && props.content[1]}</p></td>
         <td><ContinueButton text={props.continue_button_text} classList={buttonInvisibility} onClick={() => props.onClick()}/></td>
         <td><p className="small text--center test-name">{props.test}</p></td></tr>
-        <tr><td colSpan="3"><p className="copyright text--center">{props.citation || 'Copyright (c) 2005-2022 University of Pennsylvania  All Rights Reserved'}</p></td></tr>
+        <tr><td colSpan="3"><p className="copyright text--center">{props.citation || `Copyright (c) 2005-${current_year} University of Pennsylvania  All Rights Reserved`}</p></td></tr>
         </tbody>
       </table>
       </div>
