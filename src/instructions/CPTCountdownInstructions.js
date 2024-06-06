@@ -5,13 +5,15 @@ import {Paragraph} from '../components/Paragraph.js';
 import {Image} from '../components/Image.js';
 import {Row} from '../layouts/Row.js';
 import keyboard_pic from '../assets/keyboard.png';
+import click_icon from '../assets/mouse_icon_blue.svg';
+import tap_icon from '../assets/tap_icon_blue.svg';
 
 /****
  Function to display countdown timer for CPT task.
 */
 
 export const CPTCountdownInstructions = props => {
-  const {seconds, instructions, callback, ...rest} = props;
+  const {seconds, instructions, callback, response_device, ...rest} = props;
   let [remainingTime, setRemainingTime] = useState(seconds);
 
   useEffect(() => {
@@ -46,10 +48,21 @@ export const CPTCountdownInstructions = props => {
     <div className="position-bottom--absolute-with-keyboard">
     <table className="keyboard-table">
     <tbody>
-    <tr>
-    <td colSpan={2}><p className="text--center">{instructions[2] || 'Use the spacebar to respond'}</p></td>
-    <td><div><img src={keyboard_pic} className="keyboard--continue"/></div></td>
-    </tr>
+    {response_device === "keyboard" ?
+      (<tr>
+      <td colSpan={2}><p className="text--center">{instructions[2] || 'Use the spacebar to respond'}</p></td>
+      <td><div><img src={keyboard_pic} className="keyboard--continue"/></div></td>
+      </tr>) :
+      (<tr>
+        <td colSpan={2}><p className="text--center">{instructions[2]}</p></td>
+        <td>
+          <div>
+            <img src={tap_icon} className="tap--icon"/>
+            <img src={click_icon} className="tap--icon"/>
+          </div>
+        </td>
+      </tr>)
+    }
     <tr>
     <td><div></div></td>
     <td><div></div></td>

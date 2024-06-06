@@ -37,6 +37,10 @@ font-size:20pt;
 font-size:14pt;
 }
 
+img.tap--icon{
+  width: 50px;
+  height: auto;
+}
 
 img.keyboard--continue{
   height: 100px;
@@ -89,6 +93,7 @@ height:600px;
 div.section--header{
 display:flex;
 margin: 16px;
+justify-content: space-around;
 }
 
 div.section--header div.right{
@@ -114,7 +119,7 @@ table, tr, td{
   border-collapse: collapse;
 }
 p.test-header{
-font-size: 22pt;
+font-size: 20pt; /*22pt*/
 font-weight:bold
 }
 div.section--body
@@ -405,3 +410,8 @@ div.instructions.top{
   bottom: 66px;
 }
 */
+
+.title-page-right {
+  min-width: 600px;
+  float: right;
+}

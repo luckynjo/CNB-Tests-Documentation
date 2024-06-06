@@ -232,24 +232,24 @@ export default class GNG extends React.Component {
       const feedback_false_pos_y = JSON.parse(this.props.timeline[this.state.index+2].content);
       const feedback_false_pos_x = JSON.parse(this.props.timeline[this.state.index+3].content);
       if(this.props.response_device == "touch"){
-        return <GNGPracticeTrialsWithBtn base_url={this.props.base_url} section="practice" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onPracticeComplete} feedback_false_neg={feedback_false_neg} continue_button_text={this.continue_button_text} feedback_false_pos_y={feedback_false_pos_y} feedback_false_pos_x={feedback_false_pos_x} back={this.back} incorrect_practice_cnt={this.state.incorrect_practice_cnt} addIncorrectPracticeCnt={this.addIncorrectPracticeCnt} spacebar_text={this.spacebar_text}/>
+        return <GNGPracticeTrialsWithBtn test={this.props.test.test} base_url={this.props.base_url} section="practice" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onPracticeComplete} feedback_false_neg={feedback_false_neg} continue_button_text={this.continue_button_text} feedback_false_pos_y={feedback_false_pos_y} feedback_false_pos_x={feedback_false_pos_x} back={this.back} incorrect_practice_cnt={this.state.incorrect_practice_cnt} addIncorrectPracticeCnt={this.addIncorrectPracticeCnt} spacebar_text={this.spacebar_text}/>
       }
       return <div className="container-8-by-6  dark frame">
-        <GNGPracticeTrials base_url={this.props.base_url} section="practice" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onPracticeComplete} feedback_false_neg={feedback_false_neg} feedback_false_pos_y={feedback_false_pos_y} feedback_false_pos_x={feedback_false_pos_x} back={this.back} incorrect_practice_cnt={this.state.incorrect_practice_cnt} addIncorrectPracticeCnt={this.addIncorrectPracticeCnt} spacebar_text={this.spacebar_text}/>
+        <GNGPracticeTrials test={this.props.test.test} base_url={this.props.base_url} section="practice" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onPracticeComplete} feedback_false_neg={feedback_false_neg} feedback_false_pos_y={feedback_false_pos_y} feedback_false_pos_x={feedback_false_pos_x} back={this.back} incorrect_practice_cnt={this.state.incorrect_practice_cnt} addIncorrectPracticeCnt={this.addIncorrectPracticeCnt} spacebar_text={this.spacebar_text}/>
       </div>
     }
     else if(section_title.match(TEST_REGEX))
     {
       if(this.props.test_version = "gng60" && this.props.response_device == "touch"){
-        return <GNGShortTestTrialsWithBtn base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete} continue_button_text={this.continue_button_text}/>
+        return <GNGShortTestTrialsWithBtn test={this.props.test.test} base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete} continue_button_text={this.continue_button_text}/>
       }
 
       if(this.props.test_version = "gng150" && this.props.response_device == "touch"){
-        return <GNGTestTrialsWithBtn base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete} continue_button_text={this.continue_button_text}/>
+        return <GNGTestTrialsWithBtn test={this.props.test.test} base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete} continue_button_text={this.continue_button_text}/>
       }
 
       return <div className="container-8-by-6  dark frame">
-        <GNGTestTrials base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete}/>
+        <GNGTestTrials test={this.props.test.test} base_url={this.props.base_url} section="test" trials={JSON.parse(timeline_object.content)} onTrialsComplete={this.onTrialsComplete}/>
       </div>
     }
     else

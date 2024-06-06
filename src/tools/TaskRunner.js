@@ -124,8 +124,12 @@ export default class TaskRunner extends React.Component
     }
     else if(task === "timeline" && test.test.includes("cpt"))
     {
+      let response_device = "keyboard";
+      if(test.test.includes("tch")){
+        response_device = "touch";
+      }
       return <div className="container-8-by-6  dark frame">
-      <CPT base_url={this.props.base_url} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
+      <CPT base_url={this.props.base_url} response_device={response_device} timeline={timeline} test={test} practice_trials={this.state.practice_trials} test_trials={this.state.test_trials} />
       </div>
     }
     else if(task === "timeline" && test.test.includes("tap-4.00"))

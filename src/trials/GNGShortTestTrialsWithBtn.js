@@ -82,16 +82,26 @@ export class GNGShortTestTrialsWithBtn extends React.Component {
     this.setStimuli = this.setStimuli.bind(this);
     this.setShowBlank = this.setShowBlank.bind(this);
     this.onPress = this.onPress.bind(this);
+    this.addClickStyle = this.addClickStyle.bind(this);
+    this.removeClickStyle = this.removeClickStyle.bind(this);
+    this.onPointerDown = this.onPointerDown.bind(this);
+    this.onPointerUp = this.onPointerUp.bind(this);
+    this.visualFeedbackTimeout = -1;
   }
 
   componentDidMount(){
     //window.addEventListener("keydown", this.keyDown, false);
     window.addEventListener("click", this.onPress, false);
+    window.addEventListener("pointerdown", this.onPointerDown, false);
+    window.addEventListener("pointerup", this.onPointerUp, false);
     this.setStimuli();
   }
 
   componentWillUnmount(){
     window.removeEventListener("click", this.onPress, false);
+    clearTimeout(this.visualFeedbackTimeout);
+    window.removeEventListener("pointerdown", this.onPointerDown, false);
+    window.removeEventListener("pointerup", this.onPointerUp, false);
     if(this.timeid){
       clearTimeout(this.timeid);
     }
@@ -100,13 +110,43 @@ export class GNGShortTestTrialsWithBtn extends React.Component {
     }
   }
 
+  onPointerDown(){
+    if (this.props.test.includes("xf")) {
+        return;
+    }
+    this.addClickStyle();
+  }
+
+  onPointerUp(){
+    if (this.props.test.includes("xf")) {
+        return;
+    }
+    this.visualFeedbackTimeout = setTimeout(this.removeClickStyle, 64);
+  }
+
+  addClickStyle()
+  {
+      const frame = document.querySelector(".frame");
+      if (!frame.classList.contains("gng-trial-click"))
+      {
+          frame.classList.add("gng-trial-click");
+      }
+  }
+
+  removeClickStyle()
+  {
+      const frame = document.querySelector(".frame");
+      if (frame.classList.contains("gng-trial-click")) {
+          frame.classList.remove("gng-trial-click");
+      }
+  }
+
   setStimuli()
   {
     const currIndex = this.state.index;
     const trialsCount = this.props.trials.length;
     const index = this.state.index;
     const nextIndex = currIndex + 1;
-    console.log(this.state.responses);
     if(nextIndex < trialsCount){
       this.timeid = setTimeout(() => {
         const responses = this.state.responses;

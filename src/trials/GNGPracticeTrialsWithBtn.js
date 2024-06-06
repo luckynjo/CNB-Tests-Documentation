@@ -37,11 +37,17 @@ export class GNGPracticeTrialsWithBtn extends React.Component {
     this.setStimuli = this.setStimuli.bind(this);
     this.setShowBlank = this.setShowBlank.bind(this);
     this.onPress = this.onPress.bind(this);
-
+    this.addClickStyle = this.addClickStyle.bind(this);
+    this.removeClickStyle = this.removeClickStyle.bind(this);
+    this.onPointerDown = this.onPointerDown.bind(this);
+    this.onPointerUp = this.onPointerUp.bind(this);
+    this.visualFeedbackTimeout = -1;
   }
 
   componentDidMount(){
     window.addEventListener("click", this.onPress, false);
+    window.addEventListener("pointerdown", this.onPointerDown, false);
+    window.addEventListener("pointerup", this.onPointerUp, false);
     if(this.props.incorrect_practice_cnt > 3){
       this.props.onTrialsComplete();
     }
@@ -51,12 +57,46 @@ export class GNGPracticeTrialsWithBtn extends React.Component {
 
   componentWillUnmount(){
     window.removeEventListener("click", this.onPress, false);
+    clearTimeout(this.visualFeedbackTimeout);
+    window.removeEventListener("pointerdown", this.onPointerDown, false);
+    window.removeEventListener("pointerup", this.onPointerUp, false);
     if(this.timeid){
       clearTimeout(this.timeid);
     }
     if(this.timeid2){
       clearTimeout(this.timeid2);
     }
+  }
+
+  onPointerDown(){
+    if (this.props.test.includes("xf")) {
+        return;
+    }
+    this.addClickStyle();
+  }
+
+  onPointerUp(){
+    if (this.props.test.includes("xf")) {
+        return;
+    }
+    this.visualFeedbackTimeout = setTimeout(this.removeClickStyle, 64);
+  }
+
+  addClickStyle()
+  {
+      const frame = document.querySelector(".frame");
+      if (!frame.classList.contains("gng-trial-click"))
+      {
+          frame.classList.add("gng-trial-click");
+      }
+  }
+
+  removeClickStyle()
+  {
+      const frame = document.querySelector(".frame");
+      if (frame.classList.contains("gng-trial-click")) {
+          frame.classList.remove("gng-trial-click");
+      }
   }
 
   setStimuli()
@@ -149,7 +189,6 @@ export class GNGPracticeTrialsWithBtn extends React.Component {
   onPress(evt)
   {
     evt.stopPropagation();
-    console.log("pressed");
     if(this.state.is_pressed){
       return;
     }

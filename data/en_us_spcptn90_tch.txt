@@ -1,0 +1,84 @@
+test: spcptn90-tch
+version: 2.00
+language: en_US
+
+Page 0: Common
+CLICK HERE TO CONTINUE
+GO BACK
+Tap or click the screen to continue
+
+Page 1: Title
+Short Penn Continuous Performance test.
+Number
+CLICK HERE TO CONTINUE
+
+Page 2: Number Instructions
+In this test you will see lines on the screen.
+Whenever the lines make a complete NUMBER, quickly tap or click the screen.
+For example:
+DON'T TAP OR CLICK
+DON'T TAP OR CLICK
+DO TAP OR CLICK
+Let's practice.
+CLICK HERE TO CONTINUE
+
+Page 3: Begin Practice
+BEGIN NUMBER PRACTICE
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 4: Countdown
+Get Ready!
+The practice will begin in:
+Tap or click the screen to respond.
+
+Page 5: Practice
+<number_practice>
+Tap or click the screen to continue.
+
+Page 5.1: Feedback Correct
+Correct!
+
+Page 5.2: Feedback False Negative
+That was INCORRECT.
+You saw a complete number but did not tap or click the screen.
+Tap or click the screen whenever you see a complete NUMBER.
+DO TAP OR CLICK
+
+Page 5.3: Feedback False Positive
+That was INCORRECT.
+You did not see a complete number.
+Tap or click the screen ONLY when you see a complete NUMBER.
+DON'T TAP OR CLICK
+DON'T TAP OR CLICK
+DON'T TAP OR CLICK
+DON'T TAP OR CLICK
+DO TAP OR CLICK
+
+Page 6: Number Test Instructions
+Great!
+Remember: Tap or click the screen when you see a NUMBER.
+In the test, you will see different numbers than you saw in the practice.
+Here are some examples:
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 7: Instructions
+The test will begin now.
+During the test, you will NOT be told if your responses are CORRECT or INCORRECT.
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 8: Begin Test
+BEGIN TEST
+CLICK HERE TO CONTINUE
+GO BACK
+
+Page 9: Countdown
+Get Ready!
+The test will begin in:
+Tap or click the screen to respond.
+
+Page 10: Test
+<number_test>
+Tap or click the screen to respond.
