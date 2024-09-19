@@ -1,14 +1,31 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
 import AudioConsentPopup from './AudioConsentPopup';
+import mic from '../assets/mic.svg';
+import stop_btn from '../assets/record-btn.svg';
 
 export default function VoiceRecorder(props) {
     const [isRecording, setIsRecording] = useState(false);
     const [audioBlob, setAudioBlob] = useState(null);
     const [audioUrl, setAudioUrl] = useState('');
+    const [recordingTime, setRecordingTime] = useState(0);
+    const [timerVisible, setTimerVisible] = useState(false);
     const mediaRecorderRef = useRef(null);
     const audioChunksRef = useRef([]);
     const [hasConsented, setHasConsented] = useState(null);
+
+    useEffect(() => {
+        let timer;
+        if (isRecording) {
+            setTimerVisible(true);
+            timer = setInterval(() => {
+                setRecordingTime((prevTime) => prevTime + 1);
+            }, 1000);
+        } else {
+            clearInterval(timer);
+        }
+        return () => clearInterval(timer);
+    }, [isRecording]);
 
     const startRecording = async () => {
         const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -27,11 +44,13 @@ export default function VoiceRecorder(props) {
 
         mediaRecorderRef.current.start();
         setIsRecording(true);
+        setRecordingTime(0);
     };
 
     const stopRecording = () => {
         mediaRecorderRef.current.stop();
         setIsRecording(false);
+        setTimerVisible(false);
     };
 
     const saveRecording = async() => {
@@ -58,12 +77,18 @@ export default function VoiceRecorder(props) {
         setHasConsented(consent);
 
         if (consent) {
-            alert('You consented your audio to being recorded. Recording will begin now');
-            startRecording();
+            alert('You consented your audio to being recorded.');
+            // startRecording();
         } else {
-            alert('You did not consent your audio to being recorded. Recording will not start');
+            alert('You did not consent your audio to being recorded.');
         }
     };
+
+    const formatTime = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    }
 
     return (
 
@@ -71,9 +96,10 @@ export default function VoiceRecorder(props) {
             {hasConsented === null && <AudioConsentPopup onConsent={handleConsent} />}
             {hasConsented === true && (
             <>
-                <button onClick={startRecording} disabled={isRecording}>Start Recording</button>
-                <button onClick={stopRecording} disabled={!isRecording}>Stop Recording</button>
-                <button onClick={saveRecording} disabled={!audioBlob}>Save Recording</button>
+                {(!isRecording && !audioBlob) && <p>Click the button to start recording...</p>}
+                {!isRecording && <button onClick={startRecording}><img src={mic}/></button>}
+                {isRecording && <button onClick={stopRecording}><img src={stop_btn}/>{timerVisible && (<p>{formatTime(recordingTime)}</p>)}</button>}
+                {(!isRecording && audioBlob) && <button onClick={saveRecording}>Save Recording</button>}
         {audioUrl && (
             <div>
                 <p>Playback</p>
