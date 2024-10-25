@@ -18,7 +18,8 @@ export class PLLTTrials extends React.Component{
 
   onResponse(evt, data)
   {
-    //console.log('Response ', data);
+    console.log('Response ', data);
+    console.log("State: ", this.state.responses);
     let responses = this.state.responses;
     const qid = this.state.stimulus.question_number;
     const count = this.state.responseCount + 1;
@@ -78,7 +79,6 @@ export class PLLTTrials extends React.Component{
   {
     const all_responses = [this.props.words.slice(0, this.props.words.length/2), this.props.words.slice(this.props.words.length/2)];
     const responses = all_responses[responseIndex];
-    //console.log('Given responses ', responses);
     const count = responses.length;
     const wordsLeft = responses && responses.slice(0, count/2) || [];
     const wordsRight = responses && responses.slice(count/2) || [];
@@ -100,10 +100,10 @@ export class PLLTTrials extends React.Component{
     const words = wordsLeft.map((word, index) =>
     <tr key={index}>
     <td>
-    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsLeft[index])} onClick={(e) => this.onResponse(e, responsesLeft[index].trim())}>{"** " + wordsLeft[index] + " **"}</button>
+    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsLeft[index])} onClick={(e) => this.onResponse(e, wordsLeft[index].trim())}>{"** " + wordsLeft[index] + " **"}</button>
     </td>
     <td>
-    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsRight[index])} onClick={(e) => this.onResponse(e, responsesRight[index].trim())}>{"** " + wordsRight[index] + " **"}</button>
+    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsRight[index])} onClick={(e) => this.onResponse(e, wordsRight[index].trim())}>{"** " + wordsRight[index] + " **"}</button>
     </td>
     {index === 0 &&
       (
