@@ -2,7 +2,7 @@
   "name": "cnb_cognitive_tests",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://penncnp-dev.pmacs.upenn.edu/tests/assess",
+  "homepage": "https://webcnp.med.upenn.edu/tests/zassess",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -20,7 +20,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "postbuild": "mv build assess && tar -zcvf assess.tar.gz assess"
+        "postbuild": "mv build zassess && tar -zcvf zassess.tar.gz zassess"
     },
   "eslintConfig": {
     "extends": [

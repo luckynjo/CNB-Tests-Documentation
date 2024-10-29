@@ -18,8 +18,8 @@ export class PLLTTrials extends React.Component{
 
   onResponse(evt, data)
   {
-    console.log('Response ', data);
-    console.log("State: ", this.state.responses);
+    //console.log('Response ', data);
+    //console.log("State: ", this.state.responses);
     let responses = this.state.responses;
     const qid = this.state.stimulus.question_number;
     const count = this.state.responseCount + 1;
@@ -43,7 +43,7 @@ export class PLLTTrials extends React.Component{
       responses.push(new CNBResponse(qid, response, ""));
     }
 
-    if(count >= 25 && data !== "NEXT")
+    if(count >= 32 && data !== "NEXT")
     {
       responses.push(new CNBResponse(qid, "NEXT", ""));
       trial_completed = true;
