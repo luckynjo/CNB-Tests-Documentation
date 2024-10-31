@@ -13,11 +13,13 @@ export class PLLTTrials extends React.Component{
       trial: trial,
       stimulus: stimulus
     }
+//console.log('Given trials ', stimulus);
     this.renderResponses = this.renderResponses.bind(this);
 	}
 
-  onResponse(evt, data)
+  onResponse(evt, data, word)
   {
+console.log("Response for word ", word, " is ", data);
     //console.log('Response ', data);
     //console.log("State: ", this.state.responses);
     let responses = this.state.responses;
@@ -82,9 +84,14 @@ export class PLLTTrials extends React.Component{
     const count = responses.length;
     const wordsLeft = responses && responses.slice(0, count/2) || [];
     const wordsRight = responses && responses.slice(count/2) || [];
-    const response_values = JSON.parse(this.state.stimulus.stimulus);
+    const all_response_values = JSON.parse(this.state.stimulus.stimulus);
+const response_sections = [all_response_values.slice(0, all_response_values.length/2), all_response_values.slice(all_response_values.length/2)];
+const response_values = response_sections[responseIndex]; 
+//console.log("Response values ", response_values);
     const responsesLeft = response_values.slice(0, count/2) || [];
     const responsesRight = response_values.slice(count/2) || [];
+//console.log("Left responses ", responsesLeft);
+//console.log("Right responses ", responsesRight);
     const className = ' ';
     let active = false;
     let activeCount = active ? active.length : -1;
@@ -100,10 +107,12 @@ export class PLLTTrials extends React.Component{
     const words = wordsLeft.map((word, index) =>
     <tr key={index}>
     <td>
-    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsLeft[index])} onClick={(e) => this.onResponse(e, wordsLeft[index].trim())}>{"** " + wordsLeft[index] + " **"}</button>
+    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsLeft[index])} 
+onClick={(e) => this.onResponse(e, responsesLeft[index], wordsLeft[index].trim())}>{"** " + wordsLeft[index] + " **"}</button>
     </td>
     <td>
-    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsRight[index])} onClick={(e) => this.onResponse(e, wordsRight[index].trim())}>{"** " + wordsRight[index] + " **"}</button>
+    <button style={this.props.form && this.props.form === "c" && this.props.language === "de_DE" ? {fontSize:"14px"} : {}} className={"pllt-response-button " + activeClass(wordsRight[index])} 
+onClick={(e) => this.onResponse(e, responsesRight[index], wordsRight[index].trim())}>{"** " + wordsRight[index] + " **"}</button>
     </td>
     {index === 0 &&
       (
