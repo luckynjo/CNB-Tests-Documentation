@@ -55,10 +55,8 @@ height:380px;
 
 p,span{
   margin: 0;
-width:100%;
-font-size:18pt;
-}
-p, h1, h2, h3, h4, table, tr, td{
+  width:100%;
+  font-size: 25px;
 }
 
 .light p{
@@ -265,11 +263,6 @@ textarea{
   font-size: 16pt;
 }
 
-
-
-
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -303,7 +296,7 @@ body {
 .test_version-editor
 {
   width:90%;
-  margin: 0  auto;
+  margin: 0 0 0 50px;
 }
 
 header {
@@ -398,4 +391,168 @@ table.translation-view td h4 {
 
 .admin-area, div.admin-area p{
   font-weight: normal;
+}
+
+
+
+/* NEW Additions */
+table.trials-view th, table.trials-view td {
+  padding: 15px;
+}
+table.trials-view tr {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+table.trials-view th, table.trials-view td {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+table{
+  margin : 0;
+}
+.slideshowBtns:hover {
+  opacity: 0.75 !important;
+  cursor: pointer;
+}
+#toggleViewBtn:hover{
+  transition: transform 0.25s linear;
+  transform: scale(1.02);
+  /* New: Simulate a double border using multiple box-shadows */
+  box-shadow: 0 0 0 2px #FFFFFF, /* Inner white border */
+  0 0 0 5px #4A6572; /* Outer blue-gray border */
+}
+#toggleResetSearchBtn:hover{
+  transition: transform 0.25s linear;
+  transform: scale(1.02);
+  /* New: Simulate a double border using multiple box-shadows */
+  box-shadow: 0 0 0 2px #FFFFFF, /* Inner white border */
+  0 0 0 5px #4A6572; /* Outer blue-gray border */
+}
+#searchbar:focus{
+  border: none;
+  outline: none;
+}
+#searchbar::placeholder, #search_val::placeholder{
+  color: white;
+}
+#searchbarContainer:hover{
+  transition: transform 0.25s linear;
+  transform: scale(1.01);
+  /* New: Simulate a double border using multiple box-shadows */
+  box-shadow: 0 0 0 2px #FFFFFF, /* Inner white border */
+  0 0 0 5px #4A6572; /* Outer blue-gray border */
+  z-index: 10;
+}
+
+#searchDetailsWrapper{
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  gap: 15px;
+  width: 200%;
+  z-index: 2;
+  padding-top: 55px;
+  font-size: 20px;
+  font-weight: 600;
+  /* color: rgb(255, 255, 255); */
+  /* background-color: rgb(29, 39, 52); */
+  /* border-radius: 8px; */
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  /* box-sizing: border-box; */
+  text-align: left;
+  max-height: 0;
+  opacity: 0;
+  /* overflow: hidden; */
+  transition: maxHeight 0.5s, padding 0.3s, opacity 0.3s;
+}
+
+#searchDetailsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* position: absolute; */
+  /* left: 0;
+  right: 0;
+  top: 55px; */
+  gap: 15px;
+  width: 100%;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(29, 39, 52);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+  text-align: left;
+  padding:30px 24px;
+  /* max-height: 0;
+  opacity: 0;
+  overflow: hidden; */
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px #4A6572;
+  transition: transform 0.25s linear;
+}
+
+#searchbarContainer:hover ~ #searchDetailsWrapper {
+  display: flex;
+  max-height: fit-content;
+  /* padding: 24px; */
+  opacity: 1;
+  /* box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px #4A6572; */
+}
+#searchDetailsWrapper:hover {
+  display: flex;
+  max-height: fit-content;
+  /* padding:20px 24px; */
+  opacity: 1;
+  /* box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px #4A6572; */
+}
+
+.memory-button, .response-button {
+  color: #fff;
+  background: #036;
+  border-radius: 16px;
+  font-weight: 700;
+  margin: 8px;
+}
+/* .memory-button {
+  font-size: 24pt;
+  width: 180px;
+  height: 73px;
+  line-height: 73px;
+  font-size: 24px;
+  text-align: center;
+}
+.button {
+  border: none;
+  outline: none;
+  opacity: 0.85;
+  cursor: pointer;
+} */
+ 
+
+
+
+/* more new stuff */
+
+#helpSearchBtn:hover{
+  transition: transform 0.25s linear;
+  transform: scale(1.01);
+  /* New: Simulate a double border using multiple box-shadows */
+  box-shadow: 0 0 0 2px #FFFFFF, /* Inner white border */
+  0 0 0 5px #4A6572; /* Outer blue-gray border */
+  z-index: 10;
+}
+#searchMenuBtn:hover{
+  transition: transform 0.25s linear;
+  transform: scale(1.01);
+  /* New: Simulate a double border using multiple box-shadows */
+  box-shadow: 0 0 0 2px #FFFFFF, /* Inner white border */
+  0 0 0 5px #4A6572; /* Outer blue-gray border */
+  z-index: 10;
 }
